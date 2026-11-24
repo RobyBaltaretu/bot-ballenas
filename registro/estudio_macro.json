@@ -1,0 +1,238 @@
+{
+ "pares": 20,
+ "mejora_en": 7,
+ "diferencia_media_r": -0.0058,
+ "p_signos": 0.9423,
+ "por_intervalo": {
+  "1h": {
+   "pares": 10,
+   "mejora_en": 3,
+   "r_sin": -0.0352,
+   "r_con": -0.0408,
+   "ops_sin": 79417,
+   "ops_con": 77017
+  },
+  "4h": {
+   "pares": 10,
+   "mejora_en": 4,
+   "r_sin": 0.0289,
+   "r_con": 0.023,
+   "ops_sin": 21905,
+   "ops_con": 21399
+  }
+ },
+ "lectura": "No abrir cerca de una cita macro mejora el R medio en 7 de 20 pares (-0.006 R de diferencia media; prueba de signos p = 0.942). No hay mejora consistente: no se lleva a investigación.",
+ "completo": true,
+ "fecha": "2026-11-22T18:53:15+00:00",
+ "ventana_h": {
+  "antes": 12,
+  "despues": 2
+ },
+ "citas": 158,
+ "r_medio_cerca": 0.1047,
+ "n_cerca": 2906,
+ "minutos_datos": 58.9,
+ "minutos": 0.7,
+ "filas": [
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "n_sin": 13703,
+   "n_con": 13250,
+   "r_sin": -0.028,
+   "r_con": -0.0322,
+   "n_cerca": 453,
+   "r_cerca": 0.0938
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "n_sin": 5712,
+   "n_con": 5553,
+   "r_sin": 0.0103,
+   "r_con": 0.0172,
+   "n_cerca": 159,
+   "r_cerca": -0.2338
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "n_sin": 12498,
+   "n_con": 12097,
+   "r_sin": 0.0057,
+   "r_con": 0.0028,
+   "n_cerca": 401,
+   "r_cerca": 0.0951
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "n_sin": 6851,
+   "n_con": 6685,
+   "r_sin": 0.0173,
+   "r_con": 0.0255,
+   "n_cerca": 166,
+   "r_cerca": -0.3102
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "n_sin": 9660,
+   "n_con": 9450,
+   "r_sin": -0.1467,
+   "r_con": -0.1518,
+   "n_cerca": 210,
+   "r_cerca": 0.079
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "n_sin": 9351,
+   "n_con": 9088,
+   "r_sin": 0.0179,
+   "r_con": 0.0199,
+   "n_cerca": 263,
+   "r_cerca": -0.0535
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "n_sin": 10731,
+   "n_con": 10459,
+   "r_sin": -0.1809,
+   "r_con": -0.1879,
+   "n_cerca": 272,
+   "r_cerca": 0.0907
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "n_sin": 3527,
+   "n_con": 3403,
+   "r_sin": 0.0046,
+   "r_con": -0.0108,
+   "n_cerca": 124,
+   "r_cerca": 0.4283
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "n_sin": 3577,
+   "n_con": 3402,
+   "r_sin": 0.1112,
+   "r_con": 0.0736,
+   "n_cerca": 175,
+   "r_cerca": 0.8423
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "n_sin": 3807,
+   "n_con": 3630,
+   "r_sin": -0.1632,
+   "r_con": -0.1642,
+   "n_cerca": 177,
+   "r_cerca": -0.1426
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "n_sin": 3684,
+   "n_con": 3595,
+   "r_sin": 0.0914,
+   "r_con": 0.0842,
+   "n_cerca": 89,
+   "r_cerca": 0.382
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "n_sin": 1456,
+   "n_con": 1411,
+   "r_sin": 0.1042,
+   "r_con": 0.0758,
+   "n_cerca": 45,
+   "r_cerca": 0.9961
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "n_sin": 3430,
+   "n_con": 3338,
+   "r_sin": 0.0066,
+   "r_con": 0.0042,
+   "n_cerca": 92,
+   "r_cerca": 0.0936
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "n_sin": 1928,
+   "n_con": 1881,
+   "r_sin": 0.0143,
+   "r_con": 0.0037,
+   "n_cerca": 47,
+   "r_cerca": 0.4376
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "n_sin": 2647,
+   "n_con": 2578,
+   "r_sin": -0.065,
+   "r_con": -0.0632,
+   "n_cerca": 69,
+   "r_cerca": -0.1325
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "n_sin": 2512,
+   "n_con": 2470,
+   "r_sin": 0.1435,
+   "r_con": 0.1447,
+   "n_cerca": 42,
+   "r_cerca": 0.0748
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "n_sin": 2953,
+   "n_con": 2910,
+   "r_sin": -0.1074,
+   "r_con": -0.1048,
+   "n_cerca": 43,
+   "r_cerca": -0.2851
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "n_sin": 1158,
+   "n_con": 1127,
+   "r_sin": 0.0611,
+   "r_con": 0.0565,
+   "n_cerca": 31,
+   "r_cerca": 0.2297
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "n_sin": 1050,
+   "n_con": 1028,
+   "r_sin": 0.2286,
+   "r_con": 0.2457,
+   "n_cerca": 22,
+   "r_cerca": -0.5695
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "n_sin": 1087,
+   "n_con": 1061,
+   "r_sin": -0.188,
+   "r_con": -0.2165,
+   "n_cerca": 26,
+   "r_cerca": 0.9768
+  }
+ ]
+}

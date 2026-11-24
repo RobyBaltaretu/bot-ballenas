@@ -1,0 +1,90 @@
+{
+ "bot_parado": {
+  "activa": false,
+  "primer_ts": 1795143969.3173056,
+  "ultimo_ts": 1795143969.3173056,
+  "texto": "El bot lleva 6 min sin escribir datos.",
+  "gravedad": "grave",
+  "resuelta_ts": 1795144571.0347679
+ },
+ "conciliacion": {
+  "activa": false,
+  "primer_ts": 1794044553.5357547,
+  "ultimo_ts": 1794044553.5357547,
+  "texto": "La cuenta no cuadra con el registro del bot.",
+  "gravedad": "grave",
+  "resuelta_ts": 1794045130.802987
+ },
+ "componente:api_rest": {
+  "activa": false,
+  "primer_ts": 1795253568.1245046,
+  "ultimo_ts": 1795253568.1245046,
+  "texto": "api_rest: no pude leer precios: ServerError.",
+  "gravedad": "aviso",
+  "resuelta_ts": 1795254171.7123017
+ },
+ "componente:ballenas": {
+  "activa": false,
+  "primer_ts": 1794044553.5357547,
+  "ultimo_ts": 1794044553.5357547,
+  "texto": "ballenas: no se pudo leer ninguna ballena.",
+  "gravedad": "aviso",
+  "resuelta_ts": 1794045130.802987
+ },
+ "componente:conciliacion": {
+  "activa": false,
+  "primer_ts": 1795439921.1936917,
+  "ultimo_ts": 1795439921.1936917,
+  "texto": "conciliacion: no pude leer la cuenta.",
+  "gravedad": "aviso",
+  "resuelta_ts": 1795440524.254157
+ },
+ "componente:panel": {
+  "activa": false,
+  "primer_ts": 1795249964.2221284,
+  "ultimo_ts": 1795249964.2221284,
+  "texto": "panel: el panel no da señales desde hace 319 s.",
+  "gravedad": "aviso",
+  "resuelta_ts": 1795250565.735139
+ },
+ "websocket": {
+  "activa": false,
+  "primer_ts": 1794066744.2692876,
+  "ultimo_ts": 1794068545.7895272,
+  "texto": "15 reconexiones del websocket en 24 h.",
+  "gravedad": "aviso",
+  "resuelta_ts": 1794069145.9386256
+ },
+ "bloqueo:la lectura de la cuenta no es reciente: ": {
+  "activa": false,
+  "primer_ts": 1794196997.6205394,
+  "ultimo_ts": 1794196997.6205394,
+  "texto": "Entradas bloqueadas: la lectura de la cuenta no es reciente: saldo/equity sin reconciliar",
+  "gravedad": "aviso",
+  "resuelta_ts": 1794197599.925063
+ },
+ "bloqueo:datos de precios obsoletos o no disponib": {
+  "activa": false,
+  "primer_ts": 1794196997.6205394,
+  "ultimo_ts": 1794196997.6205394,
+  "texto": "Entradas bloqueadas: datos de precios obsoletos o no disponibles",
+  "gravedad": "aviso",
+  "resuelta_ts": 1794197599.925063
+ },
+ "bloqueo:ejecución degradada: 5 errores seguidos ": {
+  "activa": false,
+  "primer_ts": 1794480378.370972,
+  "ultimo_ts": 1794512206.0197904,
+  "texto": "Entradas bloqueadas: ejecución degradada: 5 errores seguidos con el exchange: lectura de la cuenta: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Read timed out. (read timeout=20)",
+  "gravedad": "aviso",
+  "resuelta_ts": 1794512807.4782813
+ },
+ "bloqueo:conciliación con el exchange pendiente o": {
+  "activa": false,
+  "primer_ts": 1795439921.1936917,
+  "ultimo_ts": 1795439921.1936917,
+  "texto": "Entradas bloqueadas: conciliación con el exchange pendiente o fallida",
+  "gravedad": "aviso",
+  "resuelta_ts": 1795440524.254157
+ }
+}

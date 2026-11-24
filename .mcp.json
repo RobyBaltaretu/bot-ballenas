@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "ai-central-brain": {
+      "type": "stdio",
+      "command": "C:/Program Files/nodejs/node.exe",
+      "args": ["C:/Users/rober/Documents/bot-ballenas-v6/ai-central-brain/packages/mcp-server/dist/stdio.js"],
+      "env": {
+        "AI_CENTRAL_BRAIN_HOME": "C:/Users/rober/.ai-central-brain",
+        "AI_CENTRAL_BRAIN_CLIENT_ID": "client:claude",
+        "AI_CENTRAL_BRAIN_AGENT_KIND": "CLAUDE_CODE",
+        "AI_CENTRAL_BRAIN_INTEGRATION_MODE": "DIRECT_MCP",
+        "AI_CENTRAL_BRAIN_PROVIDER": "anthropic"
+      }
+    }
+  }
+}

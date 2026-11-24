@@ -1,0 +1,10 @@
+{
+ "version": 1,
+ "creado": 1795076741.2023544,
+ "cuenta_inicial_usd": 200.0,
+ "libre_usd": 200.0,
+ "perp": {},
+ "posiciones": {},
+ "cerradas": [],
+ "congeladas": {}
+}

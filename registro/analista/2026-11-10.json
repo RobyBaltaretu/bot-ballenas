@@ -1,0 +1,82 @@
+{
+ "ts": 1794265423.2546299,
+ "dia": "2026-11-10",
+ "hallazgos": [
+  "Últimos 7 días: 11 cerradas, -6.60 $ netos. La peor fue ENA (retroceso_4h): -4.34 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "Con 26 operaciones (22 cerradas y 4 abiertas) no hay suficiente evidencia estadística (menos de 30) para afirmar una ventaja real. La mayoría de estrategias no superan los criterios de laboratorio y presentan R negativos en vivo.",
+  "hallazgos": [
+   {
+    "texto": "kPEPE (L) cerrada por stop-loss con pnl_neto -1.81151686 y r_neto -1.66356901",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "ETH (S) cerrada por stop-loss con pnl_neto -0.56436941 y r_neto -1.14772214",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "XRP (S) en posición abierta tiene sl 1.1855, sl_inicial 1.2531 y en_breakeven true (stop movido correctamente)",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Todas las estrategias en laboratorio aparecen como \"no_supera\" (p.ej. ruptura_4h o_r 0.009, holdout r -0.004)",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "En vivo, la única operación de momentum_4h muestra r_medio 0.834 pero solo 1 operación (n=1)",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R negativo en holdout y solo 1 operación en vivo con R 0.68 insuficiente"
+   },
+   {
+    "clave": "ruptura_1h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R medio -0.712 en vivo (5 ops) y mayoría de cierres por stop-loss"
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R medio -1.021 en vivo (2 ops) y pérdidas acumuladas"
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R medio -1.114 en vivo (1 op) y pérdidas"
+   },
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo 0.834 en vivo pero solo 1 operación; laboratorio no supera, necesita más datos"
+   },
+   {
+    "clave": "funding_1h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R medio -1.114 en vivo (1 op) y pérdidas"
+   },
+   {
+    "clave": "funding_4h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R negativo en out‑of‑sample"
+   },
+   {
+    "clave": "reversion_4h",
+    "recomendacion": "retirar",
+    "motivo": "Laboratorio no supera, R negativo en out‑of‑sample"
+   }
+  ],
+  "correcciones": [
+   "No se detectan errores en los stops: el caso de XRP tiene en_breakeven true y el stop se movió por encima de la entrada, lo cual es correcto según la regla."
+  ],
+  "ideas": []
+ }
+}

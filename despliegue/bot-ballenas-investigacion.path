@@ -1,0 +1,9 @@
+[Unit]
+Description=Lanza el investigacion del bot cuando el propio bot o el panel lo piden (archivo de solicitud)
+
+[Path]
+PathExists=/opt/bot-ballenas/solicitudes/investigacion
+Unit=bot-ballenas-investigacion.service
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,3265 @@
+{
+ "efectivo": 221.89858117122705,
+ "saldo_inicial": 232,
+ "posiciones": {},
+ "ordenes": [],
+ "fills": [
+  {
+   "coin": "kPEPE",
+   "time": 1792756876427,
+   "px": "0.005062",
+   "sz": "2952.0",
+   "side": "B",
+   "closedPnl": "0.0",
+   "fee": "0.002241",
+   "startPosition": "0.0",
+   "oid": 2,
+   "cloid": "0x1ba17c15a5714f24bb47ef2b04f703c3",
+   "crossed": false,
+   "tid": "papel-1",
+   "nota": null
+  },
+  {
+   "coin": "kPEPE",
+   "time": 1792756887582,
+   "px": "0.005058",
+   "sz": "4714.0",
+   "side": "B",
+   "closedPnl": "0.0",
+   "fee": "0.003577",
+   "startPosition": "2952.0",
+   "oid": 5,
+   "cloid": "0x90cea631ab164239a753df3d1ec5e073",
+   "crossed": false,
+   "tid": "papel-2",
+   "nota": null
+  },
+  {
+   "coin": "kPEPE",
+   "time": 1792766977852,
+   "px": "0.004826",
+   "sz": "7666.0",
+   "side": "A",
+   "closedPnl": "-1.79032",
+   "fee": "0.016648",
+   "startPosition": "7666.0",
+   "oid": 6,
+   "cloid": "0x1f4ca90582ee417c93065ae96b41b75f",
+   "crossed": true,
+   "tid": "papel-3",
+   "nota": "stop activado por la marca 0.004825"
+  },
+  {
+   "coin": "kPEPE",
+   "time": 1792857684271,
+   "px": "0.004297",
+   "sz": "5318.0",
+   "side": "A",
+   "closedPnl": "0.0",
+   "fee": "0.003428",
+   "startPosition": "0.0",
+   "oid": 9,
+   "cloid": "0xdf7b42761cff4be585264beda43b0da6",
+   "crossed": false,
+   "tid": "papel-4",
+   "nota": null
+  },
+  {
+   "coin": "ETH",
+   "time": 1792858498371,
+   "px": "2306.7",
+   "sz": "0.0111",
+   "side": "A",
+   "closedPnl": "0.0",
+   "fee": "0.003841",
+   "startPosition": "0.0",
+   "oid": 13,
+   "cloid": "0x91e16eea25a64c4788637de0fa8e0657",
+   "crossed": false,
+   "tid": "papel-5",
+   "nota": null
+  },
+  {
+   "coin": "NEAR",
+   "time": 1792868465964,
+   "px": "4.4677",
+   "sz": "2.4",
+   "side": "B",
+   "closedPnl": "0.0",
+   "fee": "0.001608",
+   "startPosition": "0.0",
+   "oid": 17,
+   "cloid": "0xee5ebe035160490981d8934972a883d7",
+   "crossed": false,
+   "tid": "papel-6",
+   "nota": null
+  },
+  {
+   "coin": "ETH",
+   "time": 1792884775134,
+   "px": "2356.3",
+   "sz": "0.0111",
+   "side": "B",
+   "closedPnl": "-0.55056",
+   "fee": "0.01177",
+   "startPosition": "-0.0111",
+   "oid": 14,
+   "cloid": "0x2ee9daf980cd44549f1bd328b43a27f6",
+   "crossed": true,
+   "tid": "papel-7",
+   "nota": "stop activado por la marca 2356.0"
+  },
+  {
+   "coin": "FARTCOIN",
+   "time": 1792933283892,
+   "px": "0.12356999999999999",
+   "sz": "83.4",
+   "side": "A",
+   "closedPnl": "0.0",
+   "fee": "0.004638",
+   "startPosition": "0.0",
+   "oid": 21,
+   "cloid": "0x4df37d90358342ddabeaefa5f8c461c9",
+   "crossed": true,
+   "tid": "papel-8",
+   "nota": null
+  },
+  {
+   "coin": "XMR",
+   "time": 1792933311293,
+   "px": "607.7",
+   "sz": "0.021",
+   "side": "B",
+   "closedPnl": "0.0",
+   "fee": "0.005743",
+   "startPosition": "0.0",
+   "oid": 24,
+   "cloid": "0x404701d578124a1b8c30ba735607a62e",
+   "crossed": true,
+   "tid": "papel-9",
+   "nota": null
+  },
+  {
+   "coin": "NEAR",
+   "time": 1792933337117,
+   "px": "4.4569",
+   "sz": "2.4",
+   "side": "A",
+   "closedPnl": "-0.02592",
+   "fee": "0.004813",
+   "startPosition": "2.4",
+   "oid": 26,
+   "cloid": "0x54146e338f48428582388f963678e91a",
+   "crossed": true,
+   "tid": "papel-10",
+   "nota": null
+  },
+  {
+   "coin": "NEAR",
+   "time": 1792987283744,
+   "px": "4.4583",
+   "sz": "13.1",
+   "side": "A",
+   "closedPnl": "0.0",
+   "fee": "0.008761",
+   "startPosition": "0.0",
+   "oid": 27,
+   "cloid": "0x562f6407493444619d78261dae8c0ecf",
+   "crossed": false,
+   "tid": "papel-11",
+   "nota": null
+  },
+  {
+   "coin": "XMR",
+   "time": 1793002506363,
+   "px": "583.21",
+   "sz": "0.021",
+   "side": "A",
+   "closedPnl": "-0.51429",
+   "fee": "0.005511",
+   "startPosition": "0.021",
+   "oid": 25,
+   "cloid": "0xa09583a95403461b88eef369952e7902",
+   "crossed": true,
+   "tid": "papel-12",
+   "nota": "stop activado por la marca 583.28"
+  },
+  {
+   "coin": "HYPE",
+   "time": 1793026852951,
+   "px": "78.199",
+   "sz": "0.24",
+   "side": "B",
+   "closedPnl": "0.0",
+   "fee": "0.002815",
+   "startPosition": "0.0",
+   "oid": 31,
+   "cloid": "0x54654f4cbd7741fc9ebc04db1e83853d",
+   "crossed": false,
+   "tid": "papel-13",
+   "nota": null
+  },
+  {
+   "coin": "FARTCOIN",
+   "time": 1793029005035,
+   "px": "0.1299",
+   "sz": "83.4",
+   "side": "B",
+   "closedPnl": "-0.527922",
+   "fee": "0.004875",
+   "startPosition": "-83.4",
+   "oid": 22,
+   "cloid": "0xdc4aa162817a45afa182189db9418feb",
+   "crossed": true,
+   "tid": "papel-14",
+   "nota": "stop activado por la marca 0.12986"
+  },
+  {
+   "coin": "HYPE",
+   "time": 1793045062542,
+   "px": "78.286",
+   "sz": "0.24",
+   "side": "A",
+   "closedPnl": "0.02088",
+   "fee": "0.008455",
+   "startPosition": "0.24",
+   "oid": 34,
+   "cloid": "0xce2df0e9e03c47348e56e7871317d12d",
+   "crossed": true,
+   "tid": "papel-15",
+   "nota": "stop activado por la marca 78.272"
+  },
+  {
+   "coin": "WLD",
+   "time": 1793106065238,
+   "px": "0.43524",
+   "sz": "32.3",
+   "side": "B",
+   "closedPnl": "0.0",
+   "fee": "0.002109",
+   "startPosition": "0.0",
+   "oid": 35,
+   "cloid": "0xc88186679b4f4c3fa3699c8a6962ac08",
+   "crossed": false,
+   "tid": "papel-16",
+   "nota": null
+  },
+  {
+   "coin": "NEAR",
+   "time": 1793136995872,
+   "px": "4.7868",
+   "sz": "13.1",
+   "side": "B",
+   "closedPnl": "-4.30335",
+   "fee": "0.028218",
+   "startPosition": "-13.1",
+   "oid": 28,
+   "cloid": "0x82574d4c1a134ef08c5d5c3174337327",
+   "crossed": true,
+   "tid": "papel-17",
+   "nota": "stop activado por la marca 4.7889"
+  },
+  {
+   "coin": "kPEPE",
+   "time": 1793150943036,
+   "px": "0.004716",
+   "sz": "5318.0",
+   "side": "B",
+   "closedPnl": "-2.228242",
+   "fee": "0.011286",
+   "startPosition": "-5318.0",
+   "oid": 10,
+   "cloid": "0x1dbb4544f4194b908a391f4de6318c2a",
+   "crossed": true,
+   "tid": "papel-18",
+   "nota": "stop activado por la marca 0.004707"
+  },
+  {
+   "coin": "WLD",
+   "time": 1793170884639,
+   "px": "0.43321",
+   "sz": "32.3",
+   "side": "A",
+   "closedPnl": "-0.065569",
+   "fee": "0.006297",
+   "startPosition": "32.3",
+   "oid": 38,
+   "cloid": "0x29df018e79064da0b9065c6666f8cb1d",
+   "crossed": true,
+   "tid": "papel-19",
+   "nota": null
+  }
+ ],
+ "oid": 38,
+ "apalancamiento": {
+  "kPEPE": 1,
+  "ETH": 1,
+  "NEAR": 1,
+  "FARTCOIN": 1,
+  "XMR": 1,
+  "HYPE": 1,
+  "WLD": 1
+ },
+ "historial_ordenes": {
+  "2": {
+   "oid": 2,
+   "coin": "kPEPE",
+   "cloid": "0x1ba17c15a5714f24bb47ef2b04f703c3",
+   "origSz": "2952.0",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792756876427,
+   "avgPx": "0.005062"
+  },
+  "3": {
+   "oid": 3,
+   "coin": "kPEPE",
+   "cloid": "0xacea626f965245dda6d09e5a699aef16",
+   "origSz": "2952.0",
+   "sz": "2952.0",
+   "status": "canceled",
+   "statusTimestamp": 1792759265232
+  },
+  "4": {
+   "oid": 4,
+   "coin": "kPEPE",
+   "cloid": "0x09f5d1884a694fb98880a29081829665",
+   "origSz": "2952.0",
+   "sz": "2952.0",
+   "status": "canceled",
+   "statusTimestamp": 1792759265253
+  },
+  "5": {
+   "oid": 5,
+   "coin": "kPEPE",
+   "cloid": "0x90cea631ab164239a753df3d1ec5e073",
+   "origSz": "4714.0",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792756887582,
+   "avgPx": "0.005058"
+  },
+  "6": {
+   "oid": 6,
+   "coin": "kPEPE",
+   "cloid": "0x1f4ca90582ee417c93065ae96b41b75f",
+   "origSz": "7666.0",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792766977852,
+   "avgPx": "0.004826"
+  },
+  "7": {
+   "oid": 7,
+   "coin": "kPEPE",
+   "cloid": "0x19ed9ad09b2047c791dc3b86c409ac6a",
+   "origSz": "3833.0",
+   "sz": "3833.0",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1792766977852
+  },
+  "8": {
+   "oid": 8,
+   "coin": "kPEPE",
+   "cloid": "0x6ed9090f3e344966bd14bea1581d3181",
+   "origSz": "3833.0",
+   "sz": "3833.0",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1792766977852
+  },
+  "9": {
+   "oid": 9,
+   "coin": "kPEPE",
+   "cloid": "0xdf7b42761cff4be585264beda43b0da6",
+   "origSz": "5318.0",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792857684271,
+   "avgPx": "0.004297"
+  },
+  "10": {
+   "oid": 10,
+   "coin": "kPEPE",
+   "cloid": "0x1dbb4544f4194b908a391f4de6318c2a",
+   "origSz": "5318.0",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793150943036,
+   "avgPx": "0.004716"
+  },
+  "11": {
+   "oid": 11,
+   "coin": "kPEPE",
+   "cloid": "0xca3cc3f2682d4bdcb3cc8f2aab21b567",
+   "origSz": "2659.0",
+   "sz": "2659.0",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1793150943036
+  },
+  "12": {
+   "oid": 12,
+   "coin": "kPEPE",
+   "cloid": "0xa5f9b74329a04032a179102140603c2a",
+   "origSz": "2659.0",
+   "sz": "2659.0",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1793150943036
+  },
+  "13": {
+   "oid": 13,
+   "coin": "ETH",
+   "cloid": "0x91e16eea25a64c4788637de0fa8e0657",
+   "origSz": "0.0111",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792858498371,
+   "avgPx": "2306.7"
+  },
+  "14": {
+   "oid": 14,
+   "coin": "ETH",
+   "cloid": "0x2ee9daf980cd44549f1bd328b43a27f6",
+   "origSz": "0.0111",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792884775134,
+   "avgPx": "2356.3"
+  },
+  "15": {
+   "oid": 15,
+   "coin": "ETH",
+   "cloid": "0xd0bd2f85dd3a4f88818aee724ffb3f13",
+   "origSz": "0.0055",
+   "sz": "0.0055",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1792884775134
+  },
+  "16": {
+   "oid": 16,
+   "coin": "ETH",
+   "cloid": "0xbc74ef1e12014131974b010a893146e7",
+   "origSz": "0.0056",
+   "sz": "0.0056",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1792884775134
+  },
+  "17": {
+   "oid": 17,
+   "coin": "NEAR",
+   "cloid": "0xee5ebe035160490981d8934972a883d7",
+   "origSz": "2.4",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792868465964,
+   "avgPx": "4.4677"
+  },
+  "18": {
+   "oid": 18,
+   "coin": "NEAR",
+   "cloid": "0x0d67610a8a47434589ba71d244ed04f1",
+   "origSz": "2.4",
+   "sz": "2.4",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1792933337143
+  },
+  "19": {
+   "oid": 19,
+   "coin": "NEAR",
+   "cloid": "0x60ebd3a8d7df4cf693d17a888c2497f3",
+   "origSz": "2.4",
+   "sz": "2.4",
+   "status": "canceled",
+   "statusTimestamp": 1792933335665
+  },
+  "20": {
+   "oid": 20,
+   "coin": "FARTCOIN",
+   "cloid": "0x3321670e9d9d4ecaa9146cfe82ab568b",
+   "origSz": "83.4",
+   "sz": "83.4",
+   "status": "canceled",
+   "statusTimestamp": 1792933282929
+  },
+  "21": {
+   "oid": 21,
+   "coin": "FARTCOIN",
+   "cloid": "0x4df37d90358342ddabeaefa5f8c461c9",
+   "origSz": "83.4",
+   "sz": "0.0",
+   "avgPx": "0.12356999999999999",
+   "status": "filled",
+   "statusTimestamp": 1792933283892
+  },
+  "22": {
+   "oid": 22,
+   "coin": "FARTCOIN",
+   "cloid": "0xdc4aa162817a45afa182189db9418feb",
+   "origSz": "83.4",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793029005035,
+   "avgPx": "0.1299"
+  },
+  "23": {
+   "oid": 23,
+   "coin": "XMR",
+   "cloid": "0x98fe471a5fa64ec9bf4d8912eb24e30d",
+   "origSz": "0.021",
+   "sz": "0.021",
+   "status": "canceled",
+   "statusTimestamp": 1792933310322
+  },
+  "24": {
+   "oid": 24,
+   "coin": "XMR",
+   "cloid": "0x404701d578124a1b8c30ba735607a62e",
+   "origSz": "0.021",
+   "sz": "0.0",
+   "avgPx": "607.7",
+   "status": "filled",
+   "statusTimestamp": 1792933311293
+  },
+  "25": {
+   "oid": 25,
+   "coin": "XMR",
+   "cloid": "0xa09583a95403461b88eef369952e7902",
+   "origSz": "0.021",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793002506363,
+   "avgPx": "583.21"
+  },
+  "26": {
+   "oid": 26,
+   "coin": "NEAR",
+   "cloid": "0x54146e338f48428582388f963678e91a",
+   "origSz": "2.4",
+   "sz": "0.0",
+   "avgPx": "4.4569",
+   "status": "filled",
+   "statusTimestamp": 1792933337117
+  },
+  "27": {
+   "oid": 27,
+   "coin": "NEAR",
+   "cloid": "0x562f6407493444619d78261dae8c0ecf",
+   "origSz": "13.1",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1792987283744,
+   "avgPx": "4.4583"
+  },
+  "28": {
+   "oid": 28,
+   "coin": "NEAR",
+   "cloid": "0x82574d4c1a134ef08c5d5c3174337327",
+   "origSz": "13.1",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793136995873,
+   "avgPx": "4.7868"
+  },
+  "29": {
+   "oid": 29,
+   "coin": "NEAR",
+   "cloid": "0xc380f076efa2456892b4c9ad76d010a9",
+   "origSz": "6.5",
+   "sz": "6.5",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1793136995873
+  },
+  "30": {
+   "oid": 30,
+   "coin": "NEAR",
+   "cloid": "0x8a84867658f84e08bec38e60592088e2",
+   "origSz": "6.6",
+   "sz": "6.6",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1793136995873
+  },
+  "31": {
+   "oid": 31,
+   "coin": "HYPE",
+   "cloid": "0x54654f4cbd7741fc9ebc04db1e83853d",
+   "origSz": "0.24",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793026852951,
+   "avgPx": "78.199"
+  },
+  "32": {
+   "oid": 32,
+   "coin": "HYPE",
+   "cloid": "0xe560c2afc42347b3b27aa0e778fa6725",
+   "origSz": "0.24",
+   "sz": "0.24",
+   "status": "canceled",
+   "statusTimestamp": 1793036355181
+  },
+  "33": {
+   "oid": 33,
+   "coin": "HYPE",
+   "cloid": "0x038514a3f8a54484820bc4549d9d52ca",
+   "origSz": "0.24",
+   "sz": "0.24",
+   "status": "canceled",
+   "statusTimestamp": 1793045062588
+  },
+  "34": {
+   "oid": 34,
+   "coin": "HYPE",
+   "cloid": "0xce2df0e9e03c47348e56e7871317d12d",
+   "origSz": "0.24",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793045062542,
+   "avgPx": "78.286"
+  },
+  "35": {
+   "oid": 35,
+   "coin": "WLD",
+   "cloid": "0xc88186679b4f4c3fa3699c8a6962ac08",
+   "origSz": "32.3",
+   "sz": "0.0",
+   "status": "filled",
+   "statusTimestamp": 1793106065238,
+   "avgPx": "0.43524"
+  },
+  "36": {
+   "oid": 36,
+   "coin": "WLD",
+   "cloid": "0x0d5417a6f9544d1594da9892cfe7d881",
+   "origSz": "32.3",
+   "sz": "32.3",
+   "status": "reduceOnlyCanceled",
+   "statusTimestamp": 1793170884676
+  },
+  "37": {
+   "oid": 37,
+   "coin": "WLD",
+   "cloid": "0xb06b1a740880491697fccf705c6a9154",
+   "origSz": "32.3",
+   "sz": "32.3",
+   "status": "canceled",
+   "statusTimestamp": 1793170882917
+  },
+  "38": {
+   "oid": 38,
+   "coin": "WLD",
+   "cloid": "0x29df018e79064da0b9065c6666f8cb1d",
+   "origSz": "32.3",
+   "sz": "0.0",
+   "avgPx": "0.43321",
+   "status": "filled",
+   "statusTimestamp": 1793170884639
+  }
+ },
+ "funding": [
+  {
+   "time": 1792760400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00048555",
+    "szi": "7666.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792764000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00048631",
+    "szi": "7666.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792861200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028624",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792861200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.00011664",
+    "szi": "-0.0111",
+    "fundingRate": "4.5333e-06"
+   }
+  },
+  {
+   "time": 1792864800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.0002889",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792864800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.00022428",
+    "szi": "-0.0111",
+    "fundingRate": "8.6972e-06"
+   }
+  },
+  {
+   "time": 1792868400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029502",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792868400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.00032444",
+    "szi": "-0.0111",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792872000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029807",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792872000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.00032511",
+    "szi": "-0.0111",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792872000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.0001341",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792875600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029894",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792875600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.00032566",
+    "szi": "-0.0111",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792875600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.0001342",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792879200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029914",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792879200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.00015986",
+    "szi": "-0.0111",
+    "fundingRate": "6.1527e-06"
+   }
+  },
+  {
+   "time": 1792879200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "2.3e-07",
+    "szi": "2.4",
+    "fundingRate": "-2.15e-08"
+   }
+  },
+  {
+   "time": 1792882800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029914",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792882800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "ETH",
+    "usdc": "0.0003256",
+    "szi": "-0.0111",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792882800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "1.317e-05",
+    "szi": "2.4",
+    "fundingRate": "-1.2272e-06"
+   }
+  },
+  {
+   "time": 1792886400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029967",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792886400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013497",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792890000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-4.984e-05",
+    "szi": "-5318.0",
+    "fundingRate": "-2.075e-06"
+   }
+  },
+  {
+   "time": 1792890000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.0001352",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792893600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00030007",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792893600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013514",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792897200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029708",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792897200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013373",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792900800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00050277",
+    "szi": "-5318.0",
+    "fundingRate": "-2.10748e-05"
+   }
+  },
+  {
+   "time": 1792900800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "5.011e-05",
+    "szi": "2.4",
+    "fundingRate": "-4.6534e-06"
+   }
+  },
+  {
+   "time": 1792904400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029787",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792904400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013474",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792908000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029269",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792908000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013317",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792911600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00120824",
+    "szi": "-5318.0",
+    "fundingRate": "-5.20738e-05"
+   }
+  },
+  {
+   "time": 1792911600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-7.073e-05",
+    "szi": "2.4",
+    "fundingRate": "6.68e-06"
+   }
+  },
+  {
+   "time": 1792915200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00053679",
+    "szi": "-5318.0",
+    "fundingRate": "-2.30188e-05"
+   }
+  },
+  {
+   "time": 1792915200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-3.915e-05",
+    "szi": "2.4",
+    "fundingRate": "3.6732e-06"
+   }
+  },
+  {
+   "time": 1792918800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00025387",
+    "szi": "-5318.0",
+    "fundingRate": "1.09365e-05"
+   }
+  },
+  {
+   "time": 1792918800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013154",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792922400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.0001284",
+    "szi": "-5318.0",
+    "fundingRate": "5.4972e-06"
+   }
+  },
+  {
+   "time": 1792922400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013215",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792926000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00013467",
+    "szi": "-5318.0",
+    "fundingRate": "5.7463e-06"
+   }
+  },
+  {
+   "time": 1792926000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013236",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792929600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029688",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792929600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013448",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792933200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00014758",
+    "szi": "-5318.0",
+    "fundingRate": "6.2444e-06"
+   }
+  },
+  {
+   "time": 1792933200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00013383",
+    "szi": "2.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792936800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029123",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792936800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00012807",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792936800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015986",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792940400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029322",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792940400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.0001292",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792940400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00060639",
+    "szi": "0.021",
+    "fundingRate": "4.74927e-05"
+   }
+  },
+  {
+   "time": 1792944000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029116",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792944000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00012984",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792944000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00117758",
+    "szi": "0.021",
+    "fundingRate": "9.24255e-05"
+   }
+  },
+  {
+   "time": 1792947600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029276",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792947600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013115",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792947600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00075919",
+    "szi": "0.021",
+    "fundingRate": "5.99023e-05"
+   }
+  },
+  {
+   "time": 1792951200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-1.39e-06",
+    "szi": "-5318.0",
+    "fundingRate": "-5.95e-08"
+   }
+  },
+  {
+   "time": 1792951200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013137",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792951200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00043883",
+    "szi": "0.021",
+    "fundingRate": "3.47113e-05"
+   }
+  },
+  {
+   "time": 1792954800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-9.291e-05",
+    "szi": "-5318.0",
+    "fundingRate": "-3.9843e-06"
+   }
+  },
+  {
+   "time": 1792954800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013139",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792954800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00047588",
+    "szi": "0.021",
+    "fundingRate": "3.7634e-05"
+   }
+  },
+  {
+   "time": 1792958400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00054376",
+    "szi": "-5318.0",
+    "fundingRate": "-2.34303e-05"
+   }
+  },
+  {
+   "time": 1792958400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013079",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792958400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00168877",
+    "szi": "0.021",
+    "fundingRate": "0.0001350828"
+   }
+  },
+  {
+   "time": 1792962000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00054775",
+    "szi": "-5318.0",
+    "fundingRate": "-2.36673e-05"
+   }
+  },
+  {
+   "time": 1792962000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "2.512e-05",
+    "szi": "-83.4",
+    "fundingRate": "2.4135e-06"
+   }
+  },
+  {
+   "time": 1792962000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00026111",
+    "szi": "0.021",
+    "fundingRate": "2.06864e-05"
+   }
+  },
+  {
+   "time": 1792965600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00056417",
+    "szi": "-5318.0",
+    "fundingRate": "-2.46485e-05"
+   }
+  },
+  {
+   "time": 1792965600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-8.443e-05",
+    "szi": "-83.4",
+    "fundingRate": "-8.1785e-06"
+   }
+  },
+  {
+   "time": 1792965600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015656",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792969200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00010503",
+    "szi": "-5318.0",
+    "fundingRate": "4.576e-06"
+   }
+  },
+  {
+   "time": 1792969200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013002",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792969200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.0014914",
+    "szi": "0.021",
+    "fundingRate": "0.0001198349"
+   }
+  },
+  {
+   "time": 1792972800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028451",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792972800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00012951",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792972800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015598",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792976400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00022873",
+    "szi": "-5318.0",
+    "fundingRate": "1.0028e-05"
+   }
+  },
+  {
+   "time": 1792976400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013022",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792976400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-3e-08",
+    "szi": "0.021",
+    "fundingRate": "2.3e-09"
+   }
+  },
+  {
+   "time": 1792980000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00102224",
+    "szi": "-5318.0",
+    "fundingRate": "-4.51865e-05"
+   }
+  },
+  {
+   "time": 1792980000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-0.00081232",
+    "szi": "-83.4",
+    "fundingRate": "-7.8504e-05"
+   }
+  },
+  {
+   "time": 1792980000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015514",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792983600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028338",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792983600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-0.00029607",
+    "szi": "-83.4",
+    "fundingRate": "-2.88127e-05"
+   }
+  },
+  {
+   "time": 1792983600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.0003965",
+    "szi": "0.021",
+    "fundingRate": "3.17507e-05"
+   }
+  },
+  {
+   "time": 1792987200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00057069",
+    "szi": "-5318.0",
+    "fundingRate": "-2.50555e-05"
+   }
+  },
+  {
+   "time": 1792987200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00012844",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792987200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.000155",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792990800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029076",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792990800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-0.00016018",
+    "szi": "-83.4",
+    "fundingRate": "-1.53359e-05"
+   }
+  },
+  {
+   "time": 1792990800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015552",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792990800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073884",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792994400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029528",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792994400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013087",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792994400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015492",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792994400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "5.178e-05",
+    "szi": "-13.1",
+    "fundingRate": "8.747e-07"
+   }
+  },
+  {
+   "time": 1792998000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029475",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1792998000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-5.598e-05",
+    "szi": "-83.4",
+    "fundingRate": "-5.4018e-06"
+   }
+  },
+  {
+   "time": 1792998000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015854",
+    "szi": "0.021",
+    "fundingRate": "1.29132e-05"
+   }
+  },
+  {
+   "time": 1792998000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073193",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793001600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029342",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793001600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00012914",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793001600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "XMR",
+    "usdc": "-0.00015379",
+    "szi": "0.021",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793001600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073245",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793005200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029329",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793005200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-0.00053415",
+    "szi": "-83.4",
+    "fundingRate": "-5.10458e-05"
+   }
+  },
+  {
+   "time": 1793005200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074212",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793008800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029123",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793008800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "-0.00028507",
+    "szi": "-83.4",
+    "fundingRate": "-2.72774e-05"
+   }
+  },
+  {
+   "time": 1793008800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074523",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793012400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029229",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793012400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013004",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793012400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.0007422",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793016000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029063",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793016000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013094",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793016000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.0007503",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793019600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028943",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793019600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013077",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793019600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074661",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793023200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028903",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793023200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013011",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793023200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074228",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793026800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029043",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793026800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "FARTCOIN",
+    "usdc": "0.00013325",
+    "szi": "-83.4",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793026800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00076152",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793030400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.0002907",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793030400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074991",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793030400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "HYPE",
+    "usdc": "-0.00023512",
+    "szi": "0.24",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793034000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00053446",
+    "szi": "-5318.0",
+    "fundingRate": "-2.28825e-05"
+   }
+  },
+  {
+   "time": 1793034000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.0007393",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793034000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "HYPE",
+    "usdc": "-0.00023505",
+    "szi": "0.24",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793037600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029023",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793037600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073843",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793037600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "HYPE",
+    "usdc": "-0.00023905",
+    "szi": "0.24",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793041200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028664",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793041200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073075",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793041200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "HYPE",
+    "usdc": "-0.00023653",
+    "szi": "0.24",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793044800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028697",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793044800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00208766",
+    "szi": "-13.1",
+    "fundingRate": "-3.55647e-05"
+   }
+  },
+  {
+   "time": 1793044800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "HYPE",
+    "usdc": "-0.0002355",
+    "szi": "0.24",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793048400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.0003468",
+    "szi": "-5318.0",
+    "fundingRate": "-1.52046e-05"
+   }
+  },
+  {
+   "time": 1793048400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.0004556",
+    "szi": "-13.1",
+    "fundingRate": "-7.8032e-06"
+   }
+  },
+  {
+   "time": 1793052000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028511",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793052000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073082",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793055600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028418",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793055600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00112886",
+    "szi": "-13.1",
+    "fundingRate": "-1.93256e-05"
+   }
+  },
+  {
+   "time": 1793059200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028697",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793059200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073851",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793062800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.0002881",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793062800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073098",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793066400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028624",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793066400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073204",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793070000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028684",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793070000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00072983",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793073600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028704",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793073600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00072535",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793077200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028757",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793077200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "-0.00092967",
+    "szi": "-13.1",
+    "fundingRate": "-1.60472e-05"
+   }
+  },
+  {
+   "time": 1793080800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028943",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793080800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00072844",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793084400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028617",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793084400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00072383",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793088000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028564",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793088000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073105",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793091600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028558",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793091600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00056509",
+    "szi": "-13.1",
+    "fundingRate": "9.6741e-06"
+   }
+  },
+  {
+   "time": 1793095200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028531",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793095200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00072648",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793098800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028598",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793098800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073638",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793102400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028378",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793102400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073458",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793106000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028883",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793106000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074828",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793109600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00028757",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793109600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00073876",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793109600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017232",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793113200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "-0.00119517",
+    "szi": "-5318.0",
+    "fundingRate": "-5.10541e-05"
+   }
+  },
+  {
+   "time": 1793113200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074203",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793113200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017429",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793116800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029315",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793116800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00074774",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793116800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.0001761",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793120400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00030392",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793120400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00075497",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793120400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017654",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793124000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029801",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793124000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00075549",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793124000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017632",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793127600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029674",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793127600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00075898",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793127600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017665",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793131200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.0003008",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793131200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00075967",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793131200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017664",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793134800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00029947",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793134800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "NEAR",
+    "usdc": "0.00075726",
+    "szi": "-13.1",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793134800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017591",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793138400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.0003016",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793138400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.0001767",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793142000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00030446",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793142000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017636",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793145600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00030545",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793145600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-3.926e-05",
+    "szi": "32.3",
+    "fundingRate": "2.7662e-06"
+   }
+  },
+  {
+   "time": 1793149200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "kPEPE",
+    "usdc": "0.00030598",
+    "szi": "-5318.0",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793149200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "9.721e-05",
+    "szi": "32.3",
+    "fundingRate": "-6.8437e-06"
+   }
+  },
+  {
+   "time": 1793152800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00017844",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793156400000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "0.00020026",
+    "szi": "32.3",
+    "fundingRate": "-1.40653e-05"
+   }
+  },
+  {
+   "time": 1793160000000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-9.906e-05",
+    "szi": "32.3",
+    "fundingRate": "6.9873e-06"
+   }
+  },
+  {
+   "time": 1793163600000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.0001763",
+    "szi": "32.3",
+    "fundingRate": "1.25e-05"
+   }
+  },
+  {
+   "time": 1793167200000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "-0.00014814",
+    "szi": "32.3",
+    "fundingRate": "1.05826e-05"
+   }
+  },
+  {
+   "time": 1793170800000,
+   "hash": null,
+   "simulado": true,
+   "delta": {
+    "type": "funding",
+    "coin": "WLD",
+    "usdc": "0.00025452",
+    "szi": "32.3",
+    "fundingRate": "-1.816e-05"
+   }
+  }
+ ],
+ "ultima_hora_funding": 498103,
+ "n_fill": 19
+}

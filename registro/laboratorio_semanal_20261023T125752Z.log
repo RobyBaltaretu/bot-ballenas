@@ -1,0 +1,403 @@
+Eligiendo las monedas más líquidas...
+  BTC, ETH, ZEC, HYPE, SOL, NEAR, PUMP, WLD, XMR, XRP, LIT, kPEPE, ENA, VVV, ZRO, DOGE, UNI, SUI, STRK, ARB, AAVE, ADA, INJ, TAO, XPL, PONS, CRV, LINK, BNB, ALT, ONDO, CASHCAT, DOT, AERO, GRAM, LTC, FIL, AVAX, USELESS, FARTCOIN
+Descargando velas de 1 h y 4 h y funding (la primera vez tarda unos minutos)...
+  Historia ampliada con datos públicos de binance y bybit (6 años en 4 h, 4 en 1 h; Hyperliquid manda donde tiene datos)
+  [1/40] BTC · +8149 velas 4 h y +30064 de 1 h de binance
+  [2/40] ETH · +8149 velas 4 h y +30064 de 1 h de binance
+  [3/40] ZEC · +9834 velas 4 h y +30064 de 1 h de binance
+  [4/40] HYPE · +0 velas 4 h y +7266 de 1 h de binance
+  [5/40] SOL · +8149 velas 4 h y +30064 de 1 h de binance
+  [6/40] NEAR · +8149 velas 4 h y +30064 de 1 h de binance
+  [7/40] PUMP · +0 velas 4 h y +6285 de 1 h de binance
+  [8/40] WLD · +2122 velas 4 h y +23488 de 1 h de binance
+  [9/40] XMR · +10463 velas 4 h y +30064 de 1 h de binance
+  [10/40] XRP · +8149 velas 4 h y +30064 de 1 h de binance
+  [11/40] LIT · +0 velas 4 h y +2291 de 1 h de binance
+  [12/40] kPEPE · +2601 velas 4 h y +25404 de 1 h de binance
+  [13/40] ENA · +604 velas 4 h y +17416 de 1 h de binance
+  [14/40] VVV · +0 velas 4 h y +10172 de 1 h de binance
+  [15/40] ZRO · +130 velas 4 h y +15518 de 1 h de binance
+  [16/40] DOGE · +8149 velas 4 h y +30064 de 1 h de binance
+  [17/40] UNI · +8149 velas 4 h y +30064 de 1 h de binance
+  [18/40] SUI · +2613 velas 4 h y +25452 de 1 h de binance
+  [19/40] STRK · +855 velas 4 h y +18419 de 1 h de binance
+  [20/40] ARB · +2860 velas 4 h y +26437 de 1 h de binance
+  [21/40] AAVE · +8149 velas 4 h y +30064 de 1 h de binance
+  [22/40] ADA · +8149 velas 4 h y +30064 de 1 h de binance
+  [23/40] INJ · +4171 velas 4 h y +30064 de 1 h de binance
+  [24/40] TAO · +550 velas 4 h y +17198 de 1 h de binance
+  [25/40] XPL · +0 velas 4 h y +5252 de 1 h de binance
+  [26/40] PONS · +0 velas 4 h y +0 de 1 h de binance
+  [27/40] CRV · +8149 velas 4 h y +30064 de 1 h de binance
+  [28/40] LINK · +8150 velas 4 h y +30065 de 1 h de binance
+  [29/40] BNB · +8150 velas 4 h y +30065 de 1 h de binance
+  [30/40] ALT · +1013 velas 4 h y +19047 de 1 h de binance
+  [31/40] ONDO · +1043 velas 4 h y +19168 de 1 h de binance
+  [32/40] CASHCAT · +0 velas 4 h y +0 de 1 h de bybit
+  [33/40] DOT · +8149 velas 4 h y +30064 de 1 h de binance
+  [34/40] AERO · +1051 velas 4 h y +11511 de 1 h de binance
+  [35/40] GRAM · +0 velas 4 h y +1 de 1 h de binance
+  [36/40] LTC · +8150 velas 4 h y +30065 de 1 h de binance
+  [37/40] FIL · +8149 velas 4 h y +30064 de 1 h de binance
+  [38/40] AVAX · +8150 velas 4 h y +30065 de 1 h de binance
+  [39/40] USELESS · +2335 velas 4 h y +9340 de 1 h de binance
+  [40/40] FARTCOIN · +0 velas 4 h y +11122 de 1 h de binance
+  Velas añadidas desde el archivo propio del bot: 4h: 0, 1h: 0
+  Historia externa aceptada en 40 de 40 monedas.
+  Monedas veteranas (historia completa): AAVE, ADA, AVAX, BNB, BTC, CRV, DOGE, DOT, ETH, FIL, LINK, LTC, NEAR, SOL, UNI, XMR, XRP, ZEC
+
+Variantes en esta ejecución: 232 · probadas desde siempre (lab + investigación): 294. El umbral de t se corrige por el total (Student, una cola; con 60 operaciones: t ≥ 3.80).
+
+================ VELAS DE 4H · 2020-10-23 → 2026-10-23 · 5 tramos de prueba desde 2022-11-07 · holdout 2025-11-28 → 2026-10-23 ================
+  Simulación de todas las variantes en 43 s.
+
+❌ RUPTURA (4h)  parámetros finales: {'n': 20, 'ema': 50, 'vol_min': 1.1, 'sl_atr': 2.5}  · no supera
+  fuera de muestra         591 ops |   41% ganan | media +0.063 R | FB  1.15 | t  1.42 | caída  19.7 R |  16.0 ops/mes
+  holdout final            185 ops |   34% ganan | media -0.037 R | FB  0.93 | t -0.44 | caída  18.8 R |  17.2 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble   591 ops |   40% ganan | media +0.001 R | FB  1.00 | t  0.02 | caída  30.3 R |  16.0 ops/mes
+  estrés: deslizamiento ×3   591 ops |   39% ganan | media -0.031 R | FB  0.93 | t -0.69 | caída  42.3 R |  16.0 ops/mes
+  estrés: salidas por stop 0.15 R peor   591 ops |   40% ganan | media -0.038 R | FB  0.92 | t -0.84 | caída  46.7 R |  16.0 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)   591 ops |   40% ganan | media +0.020 R | FB  1.05 | t  0.45 | caída  24.8 R |  16.0 ops/mes
+  estrés: costes ×2 y huecos en stops   591 ops |   40% ganan | media -0.100 R | FB  0.81 | t -2.18 | caída  79.1 R |  16.0 ops/mes
+  base: entrada aleatoria   591 ops |   34% ganan | media -0.133 R | FB  0.76 | t -2.95 | caída 103.6 R |  16.0 ops/mes
+  base: siempre largo      591 ops |   32% ganan | media -0.177 R | FB  0.67 | t -4.13 | caída 110.9 R |  16.0 ops/mes
+      ✗ t ≥ 3.60 (Student, una cola, 590 gl, corrigiendo por 294 variantes) (1.42)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.0441, 'superior': 0.1622})
+      ✗ holdout final con media > 0 (-0.0369)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.0306)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.0384)
+
+❌ RETROCESO (4h)  parámetros finales: {'rapida': 20, 'lenta': 50, 'er_min': 0.4, 'sl_atr': 2.0}  · no supera
+  fuera de muestra         140 ops |   59% ganan | media +0.039 R | FB  1.10 | t  0.50 | caída  12.4 R |   3.8 ops/mes
+  holdout final             73 ops |   47% ganan | media -0.213 R | FB  0.62 | t -1.88 | caída  15.6 R |   7.0 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble   140 ops |   59% ganan | media -0.042 R | FB  0.90 | t -0.54 | caída  18.9 R |   3.8 ops/mes
+  estrés: deslizamiento ×3   140 ops |   59% ganan | media -0.080 R | FB  0.82 | t -1.02 | caída  22.8 R |   3.8 ops/mes
+  estrés: salidas por stop 0.15 R peor   140 ops |   59% ganan | media -0.084 R | FB  0.82 | t -1.04 | caída  23.1 R |   3.8 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)   140 ops |   59% ganan | media +0.007 R | FB  1.02 | t  0.09 | caída  14.5 R |   3.8 ops/mes
+  estrés: costes ×2 y huecos en stops   140 ops |   59% ganan | media -0.166 R | FB  0.66 | t -2.06 | caída  32.4 R |   3.8 ops/mes
+  base: entrada aleatoria   140 ops |   54% ganan | media -0.019 R | FB  0.96 | t -0.22 | caída  10.8 R |   3.8 ops/mes
+  base: siempre largo      140 ops |   42% ganan | media -0.221 R | FB  0.62 | t -2.68 | caída  32.1 R |   3.8 ops/mes
+      ✗ t ≥ 3.67 (Student, una cola, 139 gl, corrigiendo por 294 variantes) (0.5)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.0967, 'superior': 0.1616})
+      ✗ holdout final con media > 0 (-0.2134)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.0424)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.0801)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.0838)
+      ✗ positiva en monedas con historia completa (-0.0202)
+
+❌ REVERSION (4h)  parámetros finales: {'rsi_n': 7, 'rsi_bajo': 30, 'er_max': 0.2, 'desvio_atr': 2.5, 'sl_atr': 2.0}  · no supera
+  fuera de muestra          85 ops |   54% ganan | media -0.023 R | FB  0.93 | t -0.29 | caída   6.2 R |   2.3 ops/mes
+  holdout final             56 ops |   43% ganan | media -0.164 R | FB  0.63 | t -1.52 | caída  11.4 R |   5.2 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble    85 ops |   52% ganan | media -0.099 R | FB  0.73 | t -1.23 | caída   9.9 R |   2.3 ops/mes
+  estrés: deslizamiento ×3    85 ops |   51% ganan | media -0.139 R | FB  0.64 | t -1.73 | caída  11.8 R |   2.3 ops/mes
+  estrés: salidas por stop 0.15 R peor    85 ops |   54% ganan | media -0.096 R | FB  0.74 | t -1.13 | caída  10.4 R |   2.3 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)    85 ops |   53% ganan | media -0.045 R | FB  0.87 | t -0.56 | caída   7.3 R |   2.3 ops/mes
+  estrés: costes ×2 y huecos en stops    85 ops |   52% ganan | media -0.172 R | FB  0.58 | t -2.03 | caída  14.6 R |   2.3 ops/mes
+  base: entrada aleatoria    85 ops |   42% ganan | media -0.079 R | FB  0.78 | t -0.99 | caída  12.4 R |   2.3 ops/mes
+  base: siempre largo       85 ops |   56% ganan | media -0.032 R | FB  0.90 | t -0.39 | caída   8.7 R |   2.3 ops/mes
+      ✗ media fuera de muestra > 0 (-0.0234)
+      ✗ t ≥ 3.74 (Student, una cola, 84 gl, corrigiendo por 294 variantes) (-0.29)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.1174, 'superior': 0.1461})
+      ✗ holdout final con media > 0 (-0.1644)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.0993)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.1393)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.0957)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.0451)
+      ✗ positiva en monedas con historia completa (-0.0537)
+
+❌ FUNDING (4h)  parámetros finales: {'rapida': 20, 'percentil': 97, 'horas': 24, 'sl_atr': 1.5}  · no supera
+  fuera de muestra          30 ops |   43% ganan | media -0.216 R | FB  0.59 | t -1.33 | caída   9.9 R |   0.8 ops/mes
+  holdout final             16 ops |   38% ganan | media -0.432 R | FB  0.32 | t -2.21 | caída   6.9 R |   2.7 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble    30 ops |   43% ganan | media -0.310 R | FB  0.46 | t -1.91 | caída  11.8 R |   0.8 ops/mes
+  estrés: deslizamiento ×3    30 ops |   40% ganan | media -0.366 R | FB  0.40 | t -2.25 | caída  13.3 R |   0.8 ops/mes
+  estrés: salidas por stop 0.15 R peor    30 ops |   43% ganan | media -0.336 R | FB  0.44 | t -2.04 | caída  12.4 R |   0.8 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)    30 ops |   43% ganan | media -0.250 R | FB  0.54 | t -1.56 | caída  10.2 R |   0.8 ops/mes
+  estrés: costes ×2 y huecos en stops    30 ops |   43% ganan | media -0.430 R | FB  0.34 | t -2.61 | caída  14.9 R |   0.8 ops/mes
+  base: entrada aleatoria    30 ops |   40% ganan | media -0.364 R | FB  0.38 | t -2.50 | caída  11.6 R |   0.8 ops/mes
+  base: siempre largo       30 ops |   43% ganan | media -0.216 R | FB  0.59 | t -1.33 | caída   9.9 R |   0.8 ops/mes
+      ✗ media fuera de muestra > 0 (-0.2156)
+      ✗ t ≥ 4.06 (Student, una cola, 29 gl, corrigiendo por 294 variantes) (-1.33)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.6182, 'superior': -0.1144})
+      ✗ holdout final con media > 0 (-0.4319)
+      ✗ mejor que la línea base 'siempre largo' (30 operaciones comparables) (-0.2156)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.3102)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.3661)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.3356)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.2499)
+      ✗ positiva en monedas con historia completa (-0.2156)
+
+❌ FUERZA (4h)  parámetros finales: {'lookback': 42, 'rebalanceo': 84, 'top': 2, 'sl_atr': 2.5}  · no supera
+  fuera de muestra          67 ops |   45% ganan | media +0.532 R | FB  1.97 | t  2.09 | caída   7.3 R |   1.9 ops/mes
+  holdout final             20 ops |   20% ganan | media -0.217 R | FB  0.68 | t -0.66 | caída   7.8 R |   1.9 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble    67 ops |   43% ganan | media +0.471 R | FB  1.81 | t  1.85 | caída   7.7 R |   1.9 ops/mes
+  estrés: deslizamiento ×3    67 ops |   43% ganan | media +0.439 R | FB  1.73 | t  1.72 | caída   7.9 R |   1.9 ops/mes
+  estrés: salidas por stop 0.15 R peor    67 ops |   45% ganan | media +0.454 R | FB  1.72 | t  1.73 | caída   8.3 R |   1.9 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)    67 ops |   45% ganan | media +0.415 R | FB  1.72 | t  1.68 | caída   7.4 R |   1.9 ops/mes
+  estrés: costes ×2 y huecos en stops    67 ops |   43% ganan | media +0.393 R | FB  1.59 | t  1.50 | caída   8.8 R |   1.9 ops/mes
+  base: entrada aleatoria    67 ops |   31% ganan | media -0.072 R | FB  0.90 | t -0.36 | caída  16.5 R |   1.9 ops/mes
+  base: siempre largo       67 ops |   31% ganan | media +0.236 R | FB  1.34 | t  0.87 | caída  10.4 R |   1.9 ops/mes
+      ✗ t ≥ 3.78 (Student, una cola, 66 gl, corrigiendo por 294 variantes) (2.09)
+      ✗ holdout final con media > 0 (-0.2168)
+
+❌ MOMENTUM (4h)  parámetros finales: {'lookback': 180, 'rebalanceo': 42, 'umbral_atr': 6.0, 'eficiencia_min': 0.1, 'sl_atr': 3.0}  · no supera
+  fuera de muestra         310 ops |   42% ganan | media +0.049 R | FB  1.09 | t  0.59 | caída  22.2 R |   8.5 ops/mes
+  holdout final            112 ops |   49% ganan | media +0.183 R | FB  1.42 | t  1.25 | caída  11.6 R |  10.9 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble   310 ops |   39% ganan | media -0.005 R | FB  0.99 | t -0.06 | caída  25.2 R |   8.5 ops/mes
+  estrés: deslizamiento ×3   310 ops |   39% ganan | media -0.030 R | FB  0.95 | t -0.36 | caída  26.8 R |   8.5 ops/mes
+  estrés: salidas por stop 0.15 R peor   310 ops |   42% ganan | media -0.018 R | FB  0.97 | t -0.21 | caída  27.2 R |   8.5 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)   310 ops |   39% ganan | media -0.013 R | FB  0.98 | t -0.16 | caída  25.5 R |   8.5 ops/mes
+  estrés: costes ×2 y huecos en stops   310 ops |   39% ganan | media -0.072 R | FB  0.88 | t -0.83 | caída  36.4 R |   8.5 ops/mes
+  base: entrada aleatoria   310 ops |   39% ganan | media -0.070 R | FB  0.87 | t -1.02 | caída  45.1 R |   8.5 ops/mes
+  base: siempre largo      310 ops |   38% ganan | media -0.071 R | FB  0.87 | t -0.89 | caída  29.8 R |   8.5 ops/mes
+      ✗ t ≥ 3.62 (Student, una cola, 309 gl, corrigiendo por 294 variantes) (0.59)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.1163, 'superior': 0.2235})
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.0046)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.0301)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.0182)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.0131)
+
+================ VELAS DE 1H · 2022-10-23 → 2026-10-23 · 5 tramos de prueba desde 2024-03-03 · holdout 2026-03-18 → 2026-10-23 ================
+  Simulación de todas las variantes en 141 s.
+
+❌ RUPTURA (1h)  parámetros finales: {'n': 40, 'ema': 100, 'vol_min': 1.1, 'sl_atr': 2.5}  · no supera
+  fuera de muestra        3093 ops |   36% ganan | media -0.046 R | FB  0.90 | t -2.40 | caída 155.6 R | 124.8 ops/mes
+  holdout final            711 ops |   32% ganan | media -0.175 R | FB  0.67 | t -4.59 | caída 126.0 R |  98.0 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble  3093 ops |   35% ganan | media -0.122 R | FB  0.76 | t -6.38 | caída 389.8 R | 124.8 ops/mes
+  estrés: deslizamiento ×3  3093 ops |   34% ganan | media -0.148 R | FB  0.72 | t -7.75 | caída 470.3 R | 124.8 ops/mes
+  estrés: salidas por stop 0.15 R peor  3093 ops |   36% ganan | media -0.147 R | FB  0.73 | t -7.45 | caída 468.2 R | 124.8 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)  3093 ops |   35% ganan | media -0.064 R | FB  0.86 | t -3.37 | caída 211.6 R | 124.8 ops/mes
+  estrés: costes ×2 y huecos en stops  3093 ops |   35% ganan | media -0.223 R | FB  0.62 | t -11.30 | caída 702.4 R | 124.8 ops/mes
+  base: entrada aleatoria  3093 ops |   37% ganan | media -0.091 R | FB  0.81 | t -5.05 | caída 286.4 R | 124.8 ops/mes
+  base: siempre largo     3093 ops |   33% ganan | media -0.172 R | FB  0.68 | t -9.31 | caída 551.5 R | 124.8 ops/mes
+      ✗ media fuera de muestra > 0 (-0.0459)
+      ✗ t ≥ 3.59 (Student, una cola, 3092 gl, corrigiendo por 294 variantes) (-2.4)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.1042, 'superior': 0.0102})
+      ✗ holdout final con media > 0 (-0.1745)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.1219)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.1481)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.1473)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.0641)
+      ✗ positiva en monedas con historia completa (-0.0573)
+
+❌ RETROCESO (1h)  parámetros finales: {'rapida': 20, 'lenta': 100, 'er_min': 0.4, 'sl_atr': 2.0}  · no supera
+  fuera de muestra         704 ops |   51% ganan | media -0.095 R | FB  0.81 | t -2.62 | caída  79.7 R |  28.5 ops/mes
+  holdout final            143 ops |   49% ganan | media -0.125 R | FB  0.75 | t -1.54 | caída  22.6 R |  19.8 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble   704 ops |   50% ganan | media -0.196 R | FB  0.64 | t -5.39 | caída 140.6 R |  28.5 ops/mes
+  estrés: deslizamiento ×3   704 ops |   50% ganan | media -0.227 R | FB  0.59 | t -6.23 | caída 161.7 R |  28.5 ops/mes
+  estrés: salidas por stop 0.15 R peor   704 ops |   51% ganan | media -0.215 R | FB  0.62 | t -5.75 | caída 153.5 R |  28.5 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)   704 ops |   50% ganan | media -0.110 R | FB  0.78 | t -3.05 | caída  86.5 R |  28.5 ops/mes
+  estrés: costes ×2 y huecos en stops   704 ops |   50% ganan | media -0.316 R | FB  0.48 | t -8.44 | caída 224.2 R |  28.5 ops/mes
+  base: entrada aleatoria   704 ops |   49% ganan | media -0.094 R | FB  0.81 | t -2.57 | caída  66.2 R |  28.5 ops/mes
+  base: siempre largo      704 ops |   43% ganan | media -0.238 R | FB  0.59 | t -6.60 | caída 178.8 R |  28.5 ops/mes
+      ✗ media fuera de muestra > 0 (-0.0952)
+      ✗ t ≥ 3.60 (Student, una cola, 703 gl, corrigiendo por 294 variantes) (-2.62)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.1806, 'superior': -0.0168})
+      ✗ holdout final con media > 0 (-0.125)
+      ✗ mejor que la línea base 'entrada aleatoria' (704 operaciones comparables) (-0.0938)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.1964)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.2267)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.2147)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.1103)
+      ✗ positiva en monedas con historia completa (-0.1653)
+
+❌ REVERSION (1h)  parámetros finales: {'rsi_n': 14, 'rsi_bajo': 20, 'er_max': 0.35, 'desvio_atr': 2.5, 'sl_atr': 2.0}  · no supera
+  fuera de muestra          39 ops |   46% ganan | media -0.266 R | FB  0.46 | t -2.14 | caída  11.5 R |   1.7 ops/mes
+  holdout final             13 ops |   62% ganan | media +0.196 R | FB  2.29 | t  1.22 | caída   1.4 R |   2.0 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble    39 ops |   44% ganan | media -0.352 R | FB  0.35 | t -2.84 | caída  14.6 R |   1.7 ops/mes
+  estrés: deslizamiento ×3    39 ops |   44% ganan | media -0.388 R | FB  0.31 | t -3.13 | caída  15.8 R |   1.7 ops/mes
+  estrés: salidas por stop 0.15 R peor    39 ops |   46% ganan | media -0.354 R | FB  0.37 | t -2.69 | caída  14.7 R |   1.7 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)    39 ops |   46% ganan | media -0.274 R | FB  0.45 | t -2.23 | caída  11.8 R |   1.7 ops/mes
+  estrés: costes ×2 y huecos en stops    39 ops |   44% ganan | media -0.441 R | FB  0.28 | t -3.34 | caída  17.7 R |   1.7 ops/mes
+  base: entrada aleatoria    39 ops |   72% ganan | media +0.201 R | FB  2.48 | t  2.42 | caída   2.1 R |   1.7 ops/mes
+  base: siempre largo       39 ops |   38% ganan | media -0.354 R | FB  0.38 | t -2.81 | caída  14.2 R |   1.7 ops/mes
+      ✗ media fuera de muestra > 0 (-0.2656)
+      ✗ t ≥ 3.94 (Student, una cola, 38 gl, corrigiendo por 294 variantes) (-2.14)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.4378, 'superior': -0.1016})
+      ✗ mejor que la línea base 'entrada aleatoria' (39 operaciones comparables) (0.2013)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.3524)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.3883)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.3541)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.2744)
+      ✗ positiva en monedas con historia completa (-0.2949)
+
+❌ FUNDING (1h)  parámetros finales: {'rapida': 10, 'percentil': 97, 'horas': 8, 'sl_atr': 2.5}  · no supera
+  fuera de muestra         389 ops |   49% ganan | media -0.067 R | FB  0.83 | t -1.58 | caída  37.5 R |  15.8 ops/mes
+  holdout final             55 ops |   51% ganan | media -0.094 R | FB  0.79 | t -0.77 | caída  11.1 R |   8.0 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble   389 ops |   47% ganan | media -0.139 R | FB  0.68 | t -3.26 | caída  63.4 R |  15.8 ops/mes
+  estrés: deslizamiento ×3   389 ops |   46% ganan | media -0.167 R | FB  0.63 | t -3.91 | caída  73.6 R |  15.8 ops/mes
+  estrés: salidas por stop 0.15 R peor   389 ops |   49% ganan | media -0.136 R | FB  0.70 | t -3.03 | caída  62.2 R |  15.8 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)   389 ops |   49% ganan | media -0.095 R | FB  0.77 | t -2.24 | caída  47.4 R |  15.8 ops/mes
+  estrés: costes ×2 y huecos en stops   389 ops |   47% ganan | media -0.207 R | FB  0.57 | t -4.63 | caída  88.2 R |  15.8 ops/mes
+  base: entrada aleatoria   389 ops |   44% ganan | media -0.142 R | FB  0.69 | t -3.25 | caída  59.0 R |  15.7 ops/mes
+  base: siempre largo      389 ops |   43% ganan | media -0.167 R | FB  0.62 | t -4.07 | caída  68.2 R |  15.8 ops/mes
+      ✗ media fuera de muestra > 0 (-0.0674)
+      ✗ t ≥ 3.61 (Student, una cola, 388 gl, corrigiendo por 294 variantes) (-1.58)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.1506, 'superior': 0.0012})
+      ✗ holdout final con media > 0 (-0.0937)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.1388)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.1668)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.1361)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.0952)
+      ✗ positiva en monedas con historia completa (-0.0719)
+
+❌ FUERZA (1h)  parámetros finales: {'lookback': 42, 'rebalanceo': 84, 'top': 1, 'sl_atr': 3.5}  · no supera
+  fuera de muestra         169 ops |   33% ganan | media -0.164 R | FB  0.74 | t -1.50 | caída  32.9 R |   6.9 ops/mes
+  holdout final             32 ops |   44% ganan | media -0.086 R | FB  0.83 | t -0.45 | caída   8.5 R |   4.5 ops/mes
+  holdout reservado      0 operaciones nuevas SELLADAS (se abrirá con 10; no se mira su resultado)
+  estrés: comisiones y deslizamiento de ida y vuelta al doble   169 ops |   33% ganan | media -0.220 R | FB  0.67 | t -2.01 | caída  42.2 R |   6.9 ops/mes
+  estrés: deslizamiento ×3   169 ops |   33% ganan | media -0.238 R | FB  0.65 | t -2.17 | caída  45.0 R |   6.9 ops/mes
+  estrés: salidas por stop 0.15 R peor   169 ops |   33% ganan | media -0.249 R | FB  0.65 | t -2.19 | caída  47.3 R |   6.9 ops/mes
+  estrés: funding pagado ×3 (y sin cobrar el favorable)   169 ops |   32% ganan | media -0.205 R | FB  0.68 | t -1.90 | caída  39.4 R |   6.9 ops/mes
+  estrés: costes ×2 y huecos en stops   169 ops |   33% ganan | media -0.306 R | FB  0.59 | t -2.69 | caída  56.6 R |   6.9 ops/mes
+  base: entrada aleatoria   169 ops |   36% ganan | media +0.011 R | FB  1.02 | t  0.10 | caída  15.6 R |   6.9 ops/mes
+  base: siempre largo      169 ops |   26% ganan | media -0.233 R | FB  0.67 | t -1.90 | caída  49.7 R |   6.9 ops/mes
+      ✗ media fuera de muestra > 0 (-0.164)
+      ✗ t ≥ 3.66 (Student, una cola, 168 gl, corrigiendo por 294 variantes) (-1.5)
+      ✗ límite inferior del IC bootstrap > 0 ({'nivel': 0.9, 'inferior': -0.3404, 'superior': -0.0226})
+      ✗ holdout final con media > 0 (-0.0865)
+      ✗ mejor que la línea base 'entrada aleatoria' (169 operaciones comparables) (0.0112)
+      ✗ sigue > 0 en el escenario 'comisiones y deslizamiento de ida y vuelta al doble' (-0.2205)
+      ✗ sigue > 0 en el escenario 'deslizamiento ×3' (-0.2383)
+      ✗ sigue > 0 en el escenario 'salidas por stop 0.15 R peor' (-0.2492)
+      ✗ sigue > 0 en el escenario 'funding pagado ×3 (y sin cobrar el favorable)' (-0.2053)
+      ✗ positiva en monedas con historia completa (-0.17)
+
+================ CEREBRO (4h): 1685 candidatas de todas las estrategias ================
+  todas las candidatas    1223 ops |   44% ganan | media +0.070 R | FB  1.16 | t  1.98 | caída  41.0 R |  33.1 ops/mes
+  cerebro solo hyperliqu   406 ops |   47% ganan | media +0.234 R | FB  1.59 | t  3.50 | caída  15.6 R |  13.8 ops/mes  · no_supera
+  cerebro con todo         441 ops |   52% ganan | media +0.329 R | FB  1.92 | t  5.01 | caída  17.4 R |  15.0 ops/mes  · exploratorio
+  modelo para el bot: cerebro con todo (exploratorio)
+  pesos (R por desviación típica): tendencia +0.041, impulso6 +0.032, volatilidad +0.006, funding8h +0.141, dif_funding8h -0.062, flujo1 +0.130, flujo6 +0.068, base_pct +0.054
+  1674 de 1685 candidatas tienen datos de Binance/Bybit. Solo evidencia: no activa nada.
+
+================ CEREBRO (1h): 5348 candidatas de todas las estrategias ================
+  todas las candidatas    4394 ops |   39% ganan | media -0.062 R | FB  0.87 | t -3.95 | caída 293.5 R | 177.2 ops/mes
+  cerebro solo hyperliqu   514 ops |   45% ganan | media -0.017 R | FB  0.96 | t -0.38 | caída  43.6 R |  26.1 ops/mes  · no_supera
+  cerebro con todo         708 ops |   42% ganan | media -0.001 R | FB  1.00 | t -0.02 | caída  50.2 R |  35.8 ops/mes  · no_supera
+  modelo para el bot: cerebro con todo (no_supera)
+  pesos (R por desviación típica): tendencia +0.093, impulso6 +0.011, volatilidad -0.044, funding8h +0.092, dif_funding8h -0.013, flujo1 +0.020, flujo6 +0.035, base_pct +0.000
+  5341 de 5348 candidatas tienen datos de Binance/Bybit. Solo evidencia: no activa nada.
+
+================ APORTACIÓN Y SOLAPAMIENTO (fuera de muestra; solo informe) ================
+  fuerza_4h          67 ops · +35.7 R · caída 7.3 R · corr. BTC 0.04 · aporta 35.66 R a la combinación · solapamiento {'momentum_4h': 0.403, 'fuerza_1h': 0.104}
+  momentum_4h       310 ops · +15.2 R · caída 23.0 R · corr. BTC -0.07 · aporta 15.22 R a la combinación · solapamiento {'fuerza_4h': 0.106, 'fuerza_1h': 0.042}
+  fuerza_1h         169 ops · -27.7 R · caída 32.2 R · corr. BTC 0.03 · aporta -27.71 R a la combinación · solapamiento {'fuerza_4h': 0.041, 'momentum_4h': 0.077}
+  reversion_4h por régimen de BTC: alcista · vol alta: 24 ops -0.069 R, alcista · vol baja: 20 ops -0.140 R, bajista · vol alta: 29 ops +0.159 R, bajista · vol baja: 12 ops -0.177 R
+  reversion_1h por régimen de BTC: alcista · vol alta: 7 ops +0.049 R, alcista · vol baja: 7 ops -0.258 R, bajista · vol alta: 16 ops -0.358 R, bajista · vol baja: 9 ops -0.351 R
+
+================ INVESTIGACIÓN: carry de funding cubierto (modelado, % del tamaño) ================
+  fuera de muestra        1161 ops |   45% ganan | media +0.447 % | FB  5.67 | t  8.88 | caída   7.7 % |  31.4 ops/mes
+  holdout                  493 ops |   37% ganan | media +0.180 % | FB  2.73 | t  3.98 | caída   3.5 % |  45.2 ops/mes
+  umbral elegido: 20 % anual · coste por operación 0.23 % · modelo simplificado: sin riesgo de base, sin comprobar que exista spot ni coste de préstamo
+
+================ INVESTIGACIÓN: carry de funding REALISTA (con base y contado) ================
+  fuera de muestra         333 ops |   83% ganan | media +1.081 % | FB 58.33 | t 10.45 | caída   0.7 % |   9.6 ops/mes · funding 1.1753 % · base 0.1359 % · peor base -0.902 % · 12.48 %/año s/capital
+  holdout                  103 ops |   84% ganan | media +0.407 % | FB 38.02 | t  9.99 | caída   0.2 % |   9.8 ops/mes · funding 0.4993 % · base 0.1381 % · peor base -0.372 % · 7.37 %/año s/capital
+  solo monedas con conta    53 ops |   76% ganan | media +0.846 % | FB 48.41 | t  3.54 | caída   0.2 % |   1.6 ops/mes · funding 0.9657 % · base 0.1102 % · peor base -0.254 % · 10.79 %/año s/capital
+  solo funding de hyperl   236 ops |   86% ganan | media +1.036 % | FB 66.01 | t  8.91 | caída   0.7 % |  14.4 ops/mes · funding 1.1206 % · base 0.1453 % · peor base -0.902 % · 12.7 %/año s/capital
+  contado de Binance como referencia de la pata spot; operarlo exige contado en Hyperliquid (supuesto: BTC, ETH, SOL, HYPE) y vigilar el margen del corto
+
+================ INVESTIGACIÓN: desequilibrio del libro de órdenes ================
+  hay 2 días de libro archivado; hacen falta 14
+
+================ INVESTIGACIÓN: datos de Binance y Bybit (funding e interés abierto) ================
+  hay 1 días de datos de Binance/Bybit archivados; hacen falta 14
+Buscando hasta 60 ballenas candidatas (tarda unos minutos)...
+Descargando el historial de 46 ballenas...
+  [1/46] 0xf02d16a2  15195 órdenes
+  [2/46] 0xf818fa41  5281 órdenes
+  [3/46] 0x218a65e2  5662 órdenes
+  [4/46] 0x77375a8c  11175 órdenes
+  [5/46] 0x4ba39799  4281 órdenes
+  [6/46] 0xbe195419  10634 órdenes
+  [7/46] 0xe81309ec  185 órdenes
+  [8/46] 0x6859da14  11005 órdenes
+  [9/46] 0x92bbd811  10416 órdenes
+  [10/46] 0xcac19662  10787 órdenes
+  [11/46] 0x3440f23a  10774 órdenes
+  [12/46] 0x58b27998  7598 órdenes
+  [13/46] 0x61387d7e  116 órdenes
+  [14/46] 0x47f5a639  11041 órdenes
+  [15/46] 0x08c14b32  6357 órdenes
+  [16/46] 0x60a8c761  10330 órdenes
+  [17/46] 0x325edd95  10527 órdenes
+  [18/46] 0x3ee505ba  3423 órdenes
+  [19/46] 0xd507eeef  10066 órdenes
+  [20/46] 0xc435249d  11029 órdenes
+  [21/46] 0xa0b70201  2195 órdenes
+  [22/46] 0x5559da6e  5538 órdenes
+  [23/46] 0xb3e47536  5530 órdenes
+  [24/46] 0xaf0fdd39  11732 órdenes
+  [25/46] 0xbd334a55  3237 órdenes
+  [26/46] 0x668cec05  8636 órdenes
+  [27/46] 0x6f97d329  13949 órdenes
+  [28/46] 0xaea8e3bd  10876 órdenes
+  [29/46] 0x2d99fe0f  805 órdenes
+  [30/46] 0xf8999371  665 órdenes
+  [31/46] 0x4a96036f  8382 órdenes
+  [32/46] 0xfdf891f2  3626 órdenes
+  [33/46] 0x089fe537  1426 órdenes
+  [34/46] 0x9c16bc8f  583 órdenes
+  [35/46] 0x4c6d679e  15868 órdenes
+  [36/46] 0x71dfc07d  10884 órdenes
+  [37/46] 0xc2ba3e05  1855 órdenes
+  [38/46] 0xf3eb9dc9  6504 órdenes
+  [39/46] 0x67fcc46e  10989 órdenes
+  [40/46] 0xdc7be236  196 órdenes
+  [41/46] 0x9b28837d  2543 órdenes
+  [42/46] 0xed48b856  296 órdenes
+  [43/46] 0x3b9e9c9f  3520 órdenes
+  [44/46] 0xb6ca5d1e  4636 órdenes
+  [45/46] 0x5cbdb794  13694 órdenes
+  [46/46] 0xa445a0a1  10753 órdenes
+
+================ BALLENAS (flujo de grandes cuentas, historial reciente) ================
+
+Puntuación (movimiento del precio en las 4 h siguientes a que carguen, en ATR):
+  0x325edd95    79 cargas | media +0.949 ATR | t  5.94  ✓ predictiva
+  0x77375a8c   107 cargas | media +0.657 ATR | t  3.58  ✓ predictiva
+  0xf818fa41     9 cargas | media +0.973 ATR | t  3.57  ✓ predictiva
+  0x4ba39799    37 cargas | media +0.485 ATR | t  3.32  ✓ predictiva
+  0x92bbd811    25 cargas | media +0.908 ATR | t  2.84  ✓ predictiva
+  0xbe195419    23 cargas | media +0.786 ATR | t  2.75  ✓ predictiva
+  0xaf0fdd39   159 cargas | media +0.299 ATR | t  2.57  ✓ predictiva
+  0xcac19662    10 cargas | media +0.805 ATR | t  2.52  ✓ predictiva
+  0xc435249d    15 cargas | media +0.429 ATR | t  2.25  ✓ predictiva
+  0xbd334a55    23 cargas | media +0.545 ATR | t  2.02  ✓ predictiva
+  0xb6ca5d1e   291 cargas | media +0.124 ATR | t  1.59  ✓ predictiva
+  0xaea8e3bd    23 cargas | media +0.520 ATR | t  1.57  ✓ predictiva
+  ... 19 de 46 ballenas anticipan el precio (media ≥ +0,05 ATR, t ≥ 1, ≥ 8 cargas)
+
+Copiar su flujo · periodo de validación desde 2026-07-25:
+  todas las ballenas       984 ops |   48% ganan | media -0.092 R | FB  0.78 | t -3.40 | caída 122.7 R | 333.1 ops/mes
+  solo predictivas (4)      83 ops |   47% ganan | media -0.092 R | FB  0.79 | t -0.93 | caída  12.8 R |  28.4 ops/mes
+❌ Seguir solo a las ballenas predictivas: no supera la validación (sigue en investigación).
+
+================ MERCADO (grabado por el bot: interés abierto y operaciones grandes) ================
+  Hay 1.0 días grabados; hacen falta al menos 14. Deja el bot en marcha y repite el laboratorio más adelante.
+
+================ RESUMEN ================
+Ningún módulo ha superado la validación. Nada cambia: el bot sigue en simulado/shadow acumulando datos.
+El más prometedor: fuerza (4h), +0.532 R de media fuera de muestra (no basta para afirmar ventaja).
+Modelo del cerebro guardado (cerebro_modelo.json · cerebro-lab-20261023T125753Z · huella 7300f34a4566d624).
+
+Guardado en estrategia_elegida.json (el bot en marcha lo recarga solo en unos minutos).
+Evidencia añadida a promociones.json (no cambia ninguna etapa; ver: python promocion.py estado).
+Memoria preentrenada con 4000 casos históricos (aprendizaje_lab.json; el bot la recarga solo).
+
+AVISOS:
+ - Universo 'en el momento' dentro de las monedas que existen hoy: las retiradas (delisted) no tienen datos,
+   así que queda algo de sesgo de supervivencia: el pasado puede parecer mejor de lo que fue.
+ - Dentro de una vela no se sabe el orden de los precios; si tocó stop y objetivo, se cuenta el stop.
+ - Solo cuenta lo que funciona FUERA DE MUESTRA y en el holdout. Aun así, el futuro puede ser distinto,
+   y superar el laboratorio no autoriza nada: el paso a real lo aprueba una persona con promocion.py.

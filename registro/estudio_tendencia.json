@@ -1,0 +1,279 @@
+{
+ "estudio": "A_tendencia_lenta",
+ "generado": "2026-11-13T09:24:47Z",
+ "periodo": {
+  "desde": "2021-11-01",
+  "hasta": "2026-11-12",
+  "dias": 1838
+ },
+ "monedas_en_cache": 68,
+ "ventanas": [
+  5,
+  10,
+  20,
+  30,
+  60,
+  90,
+  150,
+  250,
+  360
+ ],
+ "limitaciones": [
+  "sesgo de supervivencia: solo monedas que siguen listadas hoy",
+  "precios y funding de Binance",
+  "fracción de cada porción constante entre entrada y salida"
+ ],
+ "bruto": {
+  "dias": 1838,
+  "sharpe": 0.648,
+  "cagr_pct": 4.19,
+  "volatilidad_anual_pct": 6.68,
+  "caida_max_pct": 9.38,
+  "t_dias": 1.45,
+  "media_diaria_pct": 0.0119
+ },
+ "neto_costes": {
+  "dias": 1838,
+  "sharpe": 0.616,
+  "cagr_pct": 3.97,
+  "volatilidad_anual_pct": 6.68,
+  "caida_max_pct": 9.69,
+  "t_dias": 1.38,
+  "media_diaria_pct": 0.0113
+ },
+ "neto_costes_y_funding": {
+  "dias": 1838,
+  "sharpe": 0.512,
+  "cagr_pct": 3.24,
+  "volatilidad_anual_pct": 6.66,
+  "caida_max_pct": 10.05,
+  "t_dias": 1.15,
+  "media_diaria_pct": 0.0093
+ },
+ "neto_desarrollo": {
+  "dias": 1562,
+  "sharpe": 0.635,
+  "cagr_pct": 4.25,
+  "volatilidad_anual_pct": 6.94,
+  "caida_max_pct": 7.85,
+  "t_dias": 1.31,
+  "media_diaria_pct": 0.0121
+ },
+ "neto_holdout": {
+  "dias": 276,
+  "sharpe": -0.46,
+  "cagr_pct": -2.32,
+  "volatilidad_anual_pct": 4.85,
+  "caida_max_pct": 3.65,
+  "t_dias": -0.4,
+  "media_diaria_pct": -0.0061
+ },
+ "por_anio": {
+  "2021": {
+   "dias": 61,
+   "sharpe": -2.697,
+   "cagr_pct": -11.44,
+   "volatilidad_anual_pct": 4.47,
+   "caida_max_pct": 2.72,
+   "t_dias": -1.1,
+   "media_diaria_pct": -0.033
+  },
+  "2022": {
+   "dias": 365,
+   "sharpe": -1.362,
+   "cagr_pct": -3.74,
+   "volatilidad_anual_pct": 2.77,
+   "caida_max_pct": 3.81,
+   "t_dias": -1.36,
+   "media_diaria_pct": -0.0103
+  },
+  "2023": {
+   "dias": 365,
+   "sharpe": 1.866,
+   "cagr_pct": 16.92,
+   "volatilidad_anual_pct": 8.57,
+   "caida_max_pct": 4.82,
+   "t_dias": 1.87,
+   "media_diaria_pct": 0.0438
+  },
+  "2024": {
+   "dias": 366,
+   "sharpe": 1.143,
+   "cagr_pct": 11.1,
+   "volatilidad_anual_pct": 9.61,
+   "caida_max_pct": 7.85,
+   "t_dias": 1.14,
+   "media_diaria_pct": 0.0301
+  },
+  "2025": {
+   "dias": 365,
+   "sharpe": -0.296,
+   "cagr_pct": -1.68,
+   "volatilidad_anual_pct": 5.25,
+   "caida_max_pct": 3.96,
+   "t_dias": -0.3,
+   "media_diaria_pct": -0.0043
+  },
+  "2026": {
+   "dias": 316,
+   "sharpe": -0.629,
+   "cagr_pct": -2.96,
+   "volatilidad_anual_pct": 4.6,
+   "caida_max_pct": 5.05,
+   "t_dias": -0.58,
+   "media_diaria_pct": -0.0079
+  }
+ },
+ "exposicion_media": 0.074,
+ "exposicion_maxima": 0.372,
+ "dias_en_efectivo_pct": 6.7,
+ "btc_mantener": {
+  "dias": 1838,
+  "sharpe": 0.314,
+  "cagr_pct": 3.07,
+  "volatilidad_anual_pct": 50.84,
+  "caida_max_pct": 76.67,
+  "t_dias": 0.7,
+  "media_diaria_pct": 0.0437
+ },
+ "btc_misma_volatilidad": {
+  "dias": 1838,
+  "sharpe": 0.314,
+  "cagr_pct": 1.89,
+  "volatilidad_anual_pct": 6.66,
+  "caida_max_pct": 15.14,
+  "t_dias": 0.7,
+  "media_diaria_pct": 0.0057
+ },
+ "estrategia_menos_btc_misma_vol": {
+  "t_dias": 0.46,
+  "media_diaria_pct": 0.0036
+ },
+ "ventanas_sueltas": {
+  "5": {
+   "dias": 1838,
+   "sharpe": 0.598,
+   "cagr_pct": 4.78,
+   "volatilidad_anual_pct": 8.39,
+   "caida_max_pct": 15.43,
+   "t_dias": 1.34,
+   "media_diaria_pct": 0.0137
+  },
+  "10": {
+   "dias": 1838,
+   "sharpe": 0.636,
+   "cagr_pct": 4.92,
+   "volatilidad_anual_pct": 8.06,
+   "caida_max_pct": 12.77,
+   "t_dias": 1.43,
+   "media_diaria_pct": 0.014
+  },
+  "20": {
+   "dias": 1838,
+   "sharpe": 0.645,
+   "cagr_pct": 5.1,
+   "volatilidad_anual_pct": 8.24,
+   "caida_max_pct": 13.44,
+   "t_dias": 1.45,
+   "media_diaria_pct": 0.0146
+  },
+  "30": {
+   "dias": 1838,
+   "sharpe": 0.518,
+   "cagr_pct": 4.06,
+   "volatilidad_anual_pct": 8.35,
+   "caida_max_pct": 11.38,
+   "t_dias": 1.16,
+   "media_diaria_pct": 0.0118
+  },
+  "60": {
+   "dias": 1838,
+   "sharpe": 0.452,
+   "cagr_pct": 3.5,
+   "volatilidad_anual_pct": 8.38,
+   "caida_max_pct": 10.88,
+   "t_dias": 1.01,
+   "media_diaria_pct": 0.0104
+  },
+  "90": {
+   "dias": 1838,
+   "sharpe": 0.33,
+   "cagr_pct": 2.39,
+   "volatilidad_anual_pct": 8.18,
+   "caida_max_pct": 11.17,
+   "t_dias": 0.74,
+   "media_diaria_pct": 0.0074
+  },
+  "150": {
+   "dias": 1838,
+   "sharpe": 0.185,
+   "cagr_pct": 1.16,
+   "volatilidad_anual_pct": 8.0,
+   "caida_max_pct": 13.17,
+   "t_dias": 0.41,
+   "media_diaria_pct": 0.004
+  },
+  "250": {
+   "dias": 1838,
+   "sharpe": 0.136,
+   "cagr_pct": 0.66,
+   "volatilidad_anual_pct": 6.34,
+   "caida_max_pct": 11.53,
+   "t_dias": 0.3,
+   "media_diaria_pct": 0.0024
+  },
+  "360": {
+   "dias": 1838,
+   "sharpe": 0.329,
+   "cagr_pct": 1.9,
+   "volatilidad_anual_pct": 6.32,
+   "caida_max_pct": 9.07,
+   "t_dias": 0.74,
+   "media_diaria_pct": 0.0057
+  }
+ },
+ "pbo_ventanas": {
+  "pbo": 0.543,
+  "repartos": 70,
+  "configuraciones": 9,
+  "logit_medio": 0.019
+ },
+ "sharpe_deflactado_prob": 0.616,
+ "robustez": {
+  "coste_x2": {
+   "dias": 1838,
+   "sharpe": 0.479,
+   "cagr_pct": 3.02,
+   "volatilidad_anual_pct": 6.66,
+   "caida_max_pct": 10.35,
+   "t_dias": 1.08,
+   "media_diaria_pct": 0.0087
+  },
+  "sin_funding": {
+   "dias": 1838,
+   "sharpe": 0.616,
+   "cagr_pct": 3.97,
+   "volatilidad_anual_pct": 6.68,
+   "caida_max_pct": 9.69,
+   "t_dias": 1.38,
+   "media_diaria_pct": 0.0113
+  }
+ },
+ "veredicto": {
+  "criterios": {
+   "sharpe_neto_mayor_0_5": true,
+   "holdout_positivo": false,
+   "t_dias_mayor_2.13": false,
+   "mejor_que_btc_misma_volatilidad": true,
+   "pbo_menor_0_5": false,
+   "anios_negativos_hasta_40pct": false
+  },
+  "supera": false,
+  "anios_negativos": [
+   2022,
+   2025,
+   2026
+  ],
+  "lectura": "No cumple: holdout_positivo, t_dias_mayor_2.13, pbo_menor_0_5, anios_negativos_hasta_40pct."
+ }
+}

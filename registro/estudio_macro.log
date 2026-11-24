@@ -1,0 +1,64 @@
+Eligiendo las monedas más líquidas...
+  BTC, ETH, HYPE, ZEC, SOL, NEAR, XRP, PUMP, VVV, AAVE, XMR, LIT, kPEPE, ADA, UNI, ENA, DOGE, BNB, LINK, TRUMP, TRX, ZRO, SUI, FARTCOIN, WLD, TAO, GRAM, ARB, AVAX, INJ, CRV, WIF, kBONK
+Descargando velas de 1 h y 4 h y funding (la primera vez tarda unos minutos)...
+  Historia ampliada con datos públicos de binance y bybit (6 años en 4 h, 4 en 1 h; Hyperliquid manda donde tiene datos)
+  [1/33] BTC · +8149 velas 4 h y +30065 de 1 h de binance
+  [2/33] ETH · +8149 velas 4 h y +30065 de 1 h de binance
+  [3/33] HYPE · +0 velas 4 h y +7992 de 1 h de binance
+  [4/33] ZEC · +9652 velas 4 h y +30065 de 1 h de binance
+  [5/33] SOL · +8149 velas 4 h y +30065 de 1 h de binance
+  [6/33] NEAR · +8149 velas 4 h y +30065 de 1 h de binance
+  [7/33] XRP · +8149 velas 4 h y +30065 de 1 h de binance
+  [8/33] PUMP · +0 velas 4 h y +7012 de 1 h de binance
+  [9/33] VVV · +0 velas 4 h y +10898 de 1 h de binance
+  [10/33] AAVE · +8149 velas 4 h y +30065 de 1 h de binance
+  [11/33] XMR · +10281 velas 4 h y +30065 de 1 h de binance
+  [12/33] LIT · +0 velas 4 h y +3017 de 1 h de binance
+  [13/33] kPEPE · +2783 velas 4 h y +26130 de 1 h de binance
+  [14/33] ADA · +8149 velas 4 h y +30065 de 1 h de binance
+  [15/33] UNI · +8149 velas 4 h y +30065 de 1 h de binance
+  [16/33] ENA · +786 velas 4 h y +18142 de 1 h de binance
+  [17/33] DOGE · +8149 velas 4 h y +30065 de 1 h de binance
+  [18/33] BNB · +8149 velas 4 h y +30066 de 1 h de binance
+  [19/33] LINK · +8149 velas 4 h y +30065 de 1 h de binance
+  [20/33] TRUMP · +0 velas 4 h y +11157 de 1 h de binance
+  [21/33] TRX · +8149 velas 4 h y +30065 de 1 h de binance
+  [22/33] ZRO · +312 velas 4 h y +16244 de 1 h de binance
+  [23/33] SUI · +2795 velas 4 h y +26178 de 1 h de binance
+  [24/33] FARTCOIN · +0 velas 4 h y +11848 de 1 h de binance
+  [25/33] WLD · +2304 velas 4 h y +24214 de 1 h de binance
+  [26/33] TAO · +732 velas 4 h y +17924 de 1 h de binance
+  [27/33] GRAM · +0 velas 4 h y +1 de 1 h de binance
+  [28/33] ARB · +3042 velas 4 h y +27164 de 1 h de binance
+  [29/33] AVAX · +8149 velas 4 h y +30066 de 1 h de binance
+  [30/33] INJ · +4353 velas 4 h y +30066 de 1 h de binance
+  [31/33] CRV · +8149 velas 4 h y +30066 de 1 h de binance
+  [32/33] WIF · +1236 velas 4 h y +19941 de 1 h de binance
+  [33/33] kBONK · +1578 velas 4 h y +21308 de 1 h de binance
+  Velas añadidas desde el archivo propio del bot: 4h: 0, 1h: 0
+  Historia externa aceptada en 33 de 33 monedas.
+  Monedas veteranas (historia completa): AAVE, ADA, AVAX, BNB, BTC, CRV, DOGE, ETH, LINK, NEAR, SOL, TRX, UNI, XMR, XRP, ZEC
+Datos listos en 58.9 min. Empiezo las comparaciones.
+  1h {"n": 20, "tipo": "ruptura"}: todas -0.028 R (13703), sin las de cerca -0.032 R (13250), las de cerca +0.094 R (453)
+  1h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"}: todas +0.010 R (5712), sin las de cerca +0.017 R (5553), las de cerca -0.234 R (159)
+  1h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0}: todas +0.006 R (12498), sin las de cerca +0.003 R (12097), las de cerca +0.095 R (401)
+  1h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"}: todas +0.017 R (6851), sin las de cerca +0.025 R (6685), las de cerca -0.310 R (166)
+  1h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"}: todas -0.147 R (9660), sin las de cerca -0.152 R (9450), las de cerca +0.079 R (210)
+  1h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"}: todas +0.018 R (9351), sin las de cerca +0.020 R (9088), las de cerca -0.053 R (263)
+  1h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"}: todas -0.181 R (10731), sin las de cerca -0.188 R (10459), las de cerca +0.091 R (272)
+  1h {"n": 20, "ratio": 0.8, "tipo": "compresion"}: todas +0.005 R (3527), sin las de cerca -0.011 R (3403), las de cerca +0.428 R (124)
+  1h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"}: todas +0.111 R (3577), sin las de cerca +0.074 R (3402), las de cerca +0.842 R (175)
+  1h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"}: todas -0.163 R (3807), sin las de cerca -0.164 R (3630), las de cerca -0.143 R (177)
+  4h {"n": 20, "tipo": "ruptura"}: todas +0.091 R (3684), sin las de cerca +0.084 R (3595), las de cerca +0.382 R (89)
+  4h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"}: todas +0.104 R (1456), sin las de cerca +0.076 R (1411), las de cerca +0.996 R (45)
+  4h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0}: todas +0.007 R (3430), sin las de cerca +0.004 R (3338), las de cerca +0.094 R (92)
+  4h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"}: todas +0.014 R (1928), sin las de cerca +0.004 R (1881), las de cerca +0.438 R (47)
+  4h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"}: todas -0.065 R (2647), sin las de cerca -0.063 R (2578), las de cerca -0.133 R (69)
+  4h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"}: todas +0.143 R (2512), sin las de cerca +0.145 R (2470), las de cerca +0.075 R (42)
+  4h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"}: todas -0.107 R (2953), sin las de cerca -0.105 R (2910), las de cerca -0.285 R (43)
+  4h {"n": 20, "ratio": 0.8, "tipo": "compresion"}: todas +0.061 R (1158), sin las de cerca +0.057 R (1127), las de cerca +0.230 R (31)
+  4h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"}: todas +0.229 R (1050), sin las de cerca +0.246 R (1028), las de cerca -0.570 R (22)
+  4h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"}: todas -0.188 R (1087), sin las de cerca -0.216 R (1061), las de cerca +0.977 R (26)
+
+Hecho en 0.7 min: 20 pares. No abrir cerca de una cita macro mejora el R medio en 7 de 20 pares (-0.006 R de diferencia media; prueba de signos p = 0.942). No hay mejora consistente: no se lleva a investigación.
+Resultado: registro/estudio_macro.json

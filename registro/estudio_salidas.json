@@ -1,0 +1,738 @@
+{
+ "por_salida": {
+  "corta": {
+   "combinaciones": 20,
+   "ops": 150967,
+   "r_senal": -0.1065,
+   "r_aleatoria": -0.1075
+  },
+  "larga": {
+   "combinaciones": 20,
+   "ops": 121515,
+   "r_senal": -0.129,
+   "r_aleatoria": -0.0991
+  },
+  "media": {
+   "combinaciones": 20,
+   "ops": 133156,
+   "r_senal": -0.126,
+   "r_aleatoria": -0.1043
+  },
+  "sin_objetivo": {
+   "combinaciones": 20,
+   "ops": 111107,
+   "r_senal": -0.0086,
+   "r_aleatoria": -0.0377
+  }
+ },
+ "por_disparo": {
+  "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}": {
+   "combinaciones": 8,
+   "ops": 68118,
+   "r_senal": -0.1628,
+   "r_aleatoria": -0.0617
+  },
+  "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}": {
+   "combinaciones": 8,
+   "ops": 63925,
+   "r_senal": -0.054,
+   "r_aleatoria": -0.0747
+  },
+  "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}": {
+   "combinaciones": 8,
+   "ops": 21938,
+   "r_senal": -0.1954,
+   "r_aleatoria": -0.0696
+  },
+  "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}": {
+   "combinaciones": 8,
+   "ops": 21652,
+   "r_senal": -0.0162,
+   "r_aleatoria": -0.0657
+  },
+  "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}": {
+   "combinaciones": 8,
+   "ops": 31727,
+   "r_senal": -0.0564,
+   "r_aleatoria": -0.0929
+  },
+  "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}": {
+   "combinaciones": 8,
+   "ops": 84323,
+   "r_senal": -0.0689,
+   "r_aleatoria": -0.1149
+  },
+  "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}": {
+   "combinaciones": 8,
+   "ops": 57868,
+   "r_senal": -0.1373,
+   "r_aleatoria": -0.0785
+  },
+  "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}": {
+   "combinaciones": 8,
+   "ops": 46429,
+   "r_senal": -0.0595,
+   "r_aleatoria": -0.0811
+  },
+  "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}": {
+   "combinaciones": 8,
+   "ops": 22227,
+   "r_senal": -0.0928,
+   "r_aleatoria": -0.1268
+  },
+  "{\"n\": 20, \"tipo\": \"ruptura\"}": {
+   "combinaciones": 8,
+   "ops": 98538,
+   "r_senal": -0.0819,
+   "r_aleatoria": -0.1055
+  }
+ },
+ "rango_entre_salidas_aleatoria": 0.0698,
+ "rango_entre_salidas_senal": 0.1204,
+ "rango_entre_disparos_senal": 0.1792,
+ "completo": true,
+ "fecha": "2026-11-04T18:50:30+00:00",
+ "minutos": 152.8,
+ "filas": [
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "corta",
+   "n": 25041,
+   "r_senal": -0.1219,
+   "r_aleatoria": -0.1235
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "larga",
+   "n": 17657,
+   "r_senal": -0.1376,
+   "r_aleatoria": -0.1243
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "media",
+   "n": 20351,
+   "r_senal": -0.1424,
+   "r_aleatoria": -0.1352
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "sin_objetivo",
+   "n": 15152,
+   "r_senal": -0.0195,
+   "r_aleatoria": -0.1393
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "corta",
+   "n": 6496,
+   "r_senal": -0.089,
+   "r_aleatoria": -0.1181
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "larga",
+   "n": 6283,
+   "r_senal": -0.1004,
+   "r_aleatoria": -0.1756
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "media",
+   "n": 6359,
+   "r_senal": -0.1104,
+   "r_aleatoria": -0.1318
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "sin_objetivo",
+   "n": 6272,
+   "r_senal": 0.0323,
+   "r_aleatoria": -0.1403
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "corta",
+   "n": 20491,
+   "r_senal": -0.1055,
+   "r_aleatoria": -0.1285
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "larga",
+   "n": 15251,
+   "r_senal": -0.1203,
+   "r_aleatoria": -0.1717
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "media",
+   "n": 17112,
+   "r_senal": -0.1211,
+   "r_aleatoria": -0.1413
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "sin_objetivo",
+   "n": 13897,
+   "r_senal": 0.0012,
+   "r_aleatoria": -0.1325
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "corta",
+   "n": 10911,
+   "r_senal": -0.0782,
+   "r_aleatoria": -0.1029
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "larga",
+   "n": 8553,
+   "r_senal": -0.0762,
+   "r_aleatoria": -0.076
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "media",
+   "n": 9429,
+   "r_senal": -0.0901,
+   "r_aleatoria": -0.1093
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "sin_objetivo",
+   "n": 7557,
+   "r_senal": 0.0315,
+   "r_aleatoria": -0.0851
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "corta",
+   "n": 12199,
+   "r_senal": -0.1496,
+   "r_aleatoria": -0.098
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "larga",
+   "n": 10900,
+   "r_senal": -0.182,
+   "r_aleatoria": -0.0727
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "media",
+   "n": 11823,
+   "r_senal": -0.1732,
+   "r_aleatoria": -0.0945
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "sin_objetivo",
+   "n": 10694,
+   "r_senal": -0.1354,
+   "r_aleatoria": -0.0419
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "corta",
+   "n": 15036,
+   "r_senal": -0.106,
+   "r_aleatoria": -0.1192
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "larga",
+   "n": 12044,
+   "r_senal": -0.1285,
+   "r_aleatoria": -0.1083
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "media",
+   "n": 13191,
+   "r_senal": -0.1233,
+   "r_aleatoria": -0.1143
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "sin_objetivo",
+   "n": 10320,
+   "r_senal": 0.0204,
+   "r_aleatoria": -0.1025
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "corta",
+   "n": 15525,
+   "r_senal": -0.1453,
+   "r_aleatoria": -0.1088
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "larga",
+   "n": 12601,
+   "r_senal": -0.2019,
+   "r_aleatoria": -0.0888
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "media",
+   "n": 13947,
+   "r_senal": -0.1805,
+   "r_aleatoria": -0.1094
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "sin_objetivo",
+   "n": 11882,
+   "r_senal": -0.1796,
+   "r_aleatoria": -0.0382
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "corta",
+   "n": 4738,
+   "r_senal": -0.1252,
+   "r_aleatoria": -0.1596
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "larga",
+   "n": 4004,
+   "r_senal": -0.1243,
+   "r_aleatoria": -0.1872
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "media",
+   "n": 4146,
+   "r_senal": -0.1292,
+   "r_aleatoria": -0.2009
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "sin_objetivo",
+   "n": 3965,
+   "r_senal": 0.0168,
+   "r_aleatoria": -0.1495
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "corta",
+   "n": 4439,
+   "r_senal": -0.0784,
+   "r_aleatoria": -0.1258
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "larga",
+   "n": 4189,
+   "r_senal": -0.0898,
+   "r_aleatoria": -0.1235
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "media",
+   "n": 4331,
+   "r_senal": -0.1001,
+   "r_aleatoria": -0.1116
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "sin_objetivo",
+   "n": 3898,
+   "r_senal": 0.1132,
+   "r_aleatoria": -0.0661
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "corta",
+   "n": 4453,
+   "r_senal": -0.19,
+   "r_aleatoria": -0.1272
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "larga",
+   "n": 4195,
+   "r_senal": -0.2076,
+   "r_aleatoria": -0.1073
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "media",
+   "n": 4331,
+   "r_senal": -0.2061,
+   "r_aleatoria": -0.1419
+  },
+  {
+   "intervalo": "1h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "sin_objetivo",
+   "n": 4126,
+   "r_senal": -0.1722,
+   "r_aleatoria": -0.0112
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "corta",
+   "n": 6366,
+   "r_senal": -0.0862,
+   "r_aleatoria": -0.0809
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "larga",
+   "n": 4724,
+   "r_senal": -0.118,
+   "r_aleatoria": -0.0779
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "media",
+   "n": 5319,
+   "r_senal": -0.1075,
+   "r_aleatoria": -0.0931
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"tipo\": \"ruptura\"}",
+   "salida": "sin_objetivo",
+   "n": 3928,
+   "r_senal": 0.0777,
+   "r_aleatoria": -0.0701
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "corta",
+   "n": 1613,
+   "r_senal": -0.0528,
+   "r_aleatoria": -0.0639
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "larga",
+   "n": 1568,
+   "r_senal": -0.1082,
+   "r_aleatoria": -0.0919
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "media",
+   "n": 1581,
+   "r_senal": -0.104,
+   "r_aleatoria": -0.0861
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lenta\": 100, \"rapida\": 20, \"tipo\": \"cruce_medias\"}",
+   "salida": "sin_objetivo",
+   "n": 1555,
+   "r_senal": 0.0816,
+   "r_aleatoria": 0.0642
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "corta",
+   "n": 5401,
+   "r_senal": -0.0611,
+   "r_aleatoria": -0.083
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "larga",
+   "n": 4041,
+   "r_senal": -0.0574,
+   "r_aleatoria": -0.1166
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "media",
+   "n": 4479,
+   "r_senal": -0.0835,
+   "r_aleatoria": -0.095
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"lookback\": 48, \"tipo\": \"momentum\", \"umbral_atr\": 2.0}",
+   "salida": "sin_objetivo",
+   "n": 3651,
+   "r_senal": -0.0036,
+   "r_aleatoria": -0.0506
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "corta",
+   "n": 2943,
+   "r_senal": -0.0521,
+   "r_aleatoria": -0.0792
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "larga",
+   "n": 2380,
+   "r_senal": -0.1159,
+   "r_aleatoria": -0.1117
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "media",
+   "n": 2589,
+   "r_senal": -0.0776,
+   "r_aleatoria": -0.066
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"seguir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "sin_objetivo",
+   "n": 2067,
+   "r_senal": -0.0177,
+   "r_aleatoria": -0.0184
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "corta",
+   "n": 3294,
+   "r_senal": -0.1328,
+   "r_aleatoria": -0.072
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "larga",
+   "n": 2936,
+   "r_senal": -0.1201,
+   "r_aleatoria": -0.072
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "media",
+   "n": 3199,
+   "r_senal": -0.1292,
+   "r_aleatoria": -0.1233
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"modo\": \"revertir\", \"n\": 14, \"nivel\": 30, \"tipo\": \"rsi\"}",
+   "salida": "sin_objetivo",
+   "n": 2823,
+   "r_senal": -0.076,
+   "r_aleatoria": -0.0535
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "corta",
+   "n": 3938,
+   "r_senal": -0.0556,
+   "r_aleatoria": -0.1008
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "larga",
+   "n": 3213,
+   "r_senal": -0.0793,
+   "r_aleatoria": -0.0155
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "media",
+   "n": 3508,
+   "r_senal": -0.0825,
+   "r_aleatoria": -0.0509
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"banda\"}",
+   "salida": "sin_objetivo",
+   "n": 2675,
+   "r_senal": 0.1227,
+   "r_aleatoria": 0.0141
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "corta",
+   "n": 4075,
+   "r_senal": -0.1655,
+   "r_aleatoria": -0.0881
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "larga",
+   "n": 3310,
+   "r_senal": -0.1665,
+   "r_aleatoria": -0.0568
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "media",
+   "n": 3666,
+   "r_senal": -0.1703,
+   "r_aleatoria": -0.0651
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"ema\": 20, \"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"banda\"}",
+   "salida": "sin_objetivo",
+   "n": 3112,
+   "r_senal": -0.0924,
+   "r_aleatoria": 0.0614
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "corta",
+   "n": 1474,
+   "r_senal": -0.1069,
+   "r_aleatoria": -0.1423
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "larga",
+   "n": 1289,
+   "r_senal": -0.1734,
+   "r_aleatoria": -0.0847
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "media",
+   "n": 1340,
+   "r_senal": -0.1247,
+   "r_aleatoria": -0.1183
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"n\": 20, \"ratio\": 0.8, \"tipo\": \"compresion\"}",
+   "salida": "sin_objetivo",
+   "n": 1271,
+   "r_senal": 0.0245,
+   "r_aleatoria": 0.0279
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "corta",
+   "n": 1267,
+   "r_senal": -0.0896,
+   "r_aleatoria": -0.1063
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "larga",
+   "n": 1191,
+   "r_senal": -0.0473,
+   "r_aleatoria": -0.0582
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "media",
+   "n": 1227,
+   "r_senal": -0.0582,
+   "r_aleatoria": -0.0689
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"seguir\", \"tipo\": \"vela_grande\"}",
+   "salida": "sin_objetivo",
+   "n": 1110,
+   "r_senal": 0.2207,
+   "r_aleatoria": 0.1347
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "corta",
+   "n": 1267,
+   "r_senal": -0.1385,
+   "r_aleatoria": -0.1214
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "larga",
+   "n": 1186,
+   "r_senal": -0.2252,
+   "r_aleatoria": -0.0616
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "media",
+   "n": 1228,
+   "r_senal": -0.2051,
+   "r_aleatoria": -0.0289
+  },
+  {
+   "intervalo": "4h",
+   "disparo": "{\"k\": 2.0, \"modo\": \"revertir\", \"tipo\": \"vela_grande\"}",
+   "salida": "sin_objetivo",
+   "n": 1152,
+   "r_senal": -0.2182,
+   "r_aleatoria": 0.0424
+  }
+ ]
+}

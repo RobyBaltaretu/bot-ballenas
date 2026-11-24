@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="panel-token" content="{{TOKEN}}">
+<meta name="panel-solo-lectura" content="{{SOLO_LECTURA}}">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#06080a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Bot de ballenas</title>
+<link rel="icon" href="/assets/icono.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/app.css">
+<script type="module" src="/assets/js/app.js"></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+<header class="cabecera" id="cabecera">
+  <div class="cabecera-fila">
+    <a class="marca" href="#/inicio"><img src="/assets/icono.svg" alt="" width="24" height="24"><span>Ballenas <span class="barra-marca">//</span> <span class="sub-marca">bot</span></span></a>
+    <div class="franja" id="franja" role="status" aria-live="polite"></div>
+    <div class="contadores" id="contadores" aria-label="Contadores del bot"></div>
+    <div class="reloj" id="reloj" aria-label="Hora UTC">--:--:--<small>UTC</small></div>
+    <nav class="navegacion" id="navegacion" aria-label="Secciones del panel">
+      <a href="#/inicio" data-vista="inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+        Inicio</a>
+      <a href="#/operaciones" data-vista="operaciones">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3"/></svg>
+        Operaciones</a>
+      <a href="#/actividad" data-vista="actividad">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+        Actividad</a>
+      <a href="#/estrategias" data-vista="estrategias">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3M7.5 15h9"/></svg>
+        Estrategias</a>
+      <a href="#/mas" data-vista="mas">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>
+        Más</a>
+    </nav>
+  </div>
+  <div class="cinta" id="cinta" aria-label="Últimos eventos del bot">
+    <span class="en-vivo">LIVE</span>
+    <div class="pista"><div class="rodillo" id="rodillo"><span class="item">Conectando con el feed…</span></div></div>
+  </div>
+</header>
+<div class="marco">
+  <nav class="lateral" id="lateral" aria-label="Secciones del panel (menú lateral)">
+    <div class="grupo"><span class="etq">Resumen</span>
+      <a href="#/inicio" data-vista="inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>Inicio</a>
+    </div>
+    <div class="grupo"><span class="etq">Dinero</span>
+      <a href="#/operaciones" data-vista="operaciones"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4v16M7 20l-3-3M7 20l3-3M17 20V4M17 4l-3 3M17 4l3 3"/></svg>Operaciones<span class="insignia info" id="ins-operaciones"></span></a>
+      <a href="#/actividad" data-vista="actividad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Actividad<span class="punto-vivo" aria-hidden="true"></span></a>
+    </div>
+    <div class="grupo"><span class="etq">Cerebro</span>
+      <a href="#/estrategias" data-vista="estrategias"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3M7.5 15h9"/></svg>Estrategias<span class="insignia" id="ins-estrategias"></span></a>
+      <a href="#/objetivo" data-vista="objetivo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>Objetivo y analista</a>
+      <a href="#/aprendizaje" data-vista="aprendizaje"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2.5zM8 7h7"/></svg>Aprendizaje</a>
+      <a href="#/ballenas" data-vista="ballenas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13c2-4 6-6 10-6 3 0 5 1 6 3l2-2v6l-2-2c-1 3-4 5-8 5-4 0-7-2-8-4z"/></svg>Ballenas</a>
+      <a href="#/macro" data-vista="macro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 15a4 4 0 0 1 .5-8 5 5 0 0 1 9.5 1.5A3.5 3.5 0 0 1 17 15M12 12l-2 4h3l-2 4"/></svg>Parte del mar</a>
+      <a href="#/sombras" data-vista="sombras"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 1 9-9M12 17a5 5 0 1 1 5-5M12 12l7-7"/></svg>Sónar de sombras</a>
+    </div>
+    <div class="grupo"><span class="etq">Sistema</span>
+      <a href="#/sistema" data-vista="sistema"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>Taller<span class="insignia" id="ins-sistema"></span></a>
+      <a href="#/configuracion" data-vista="configuracion"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="7" cy="18" r="2"/></svg>Configuración</a>
+      <a href="#/mas" data-vista="mas"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>Más</a>
+    </div>
+    <div class="pie-lateral" id="pie-lateral">conectando…</div>
+  </nav>
+  <main id="contenido" tabindex="-1">
+    <p class="cargando">Cargando…</p>
+  </main>
+</div>
+<dialog id="dialogo" aria-labelledby="dialogo-titulo">
+  <div class="dialogo-cabecera">
+    <h2 id="dialogo-titulo"></h2>
+    <button type="button" class="boton-icono" id="dialogo-cerrar" aria-label="Cerrar">×</button>
+  </div>
+  <div id="dialogo-cuerpo"></div>
+</dialog>
+<noscript><p class="aviso">Este panel necesita JavaScript.</p></noscript>
+</body>
+</html>

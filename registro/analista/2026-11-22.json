@@ -1,0 +1,62 @@
+{
+ "ts": 1795302212.564309,
+ "dia": "2026-11-22",
+ "hallazgos": [
+  "Últimos 7 días: 7 cerradas, +35.46 $ netos. La peor fue SKY (ruptura_4h): +0.00 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "El bot muestra una ligera ventaja en la estrategia ruptura_4h (R medio 0.973 con 6 ops), pero el resto de estrategias en vivo son insuficientes o negativas. No hay evidencia clara de ventaja sostenida.",
+  "hallazgos": [
+   {
+    "texto": "ruptura_4h tiene R medio 0.973 con 6 operaciones en vivo",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "momentum_4h tiene R medio 0.946 con 2 operaciones en vivo",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "fuerza_1h tiene R medio -1.098 con 2 operaciones en vivo",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "retroceso_4h tiene R medio -1.021 con 2 operaciones en vivo",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "PAXG en posición abierta tiene sl 3628.1 y sl_inicial 3825.3; en_breakeven es true, por lo que el stop movido es correcto",
+    "verificacion": "verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "mantener",
+    "motivo": "R medio positivo (0.973) y n>=5, sin indicios de deterioro."
+   },
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo (0.946) pero n<5, insuficiente para confirmar ventaja."
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio negativo (-1.098) y n<5, tendencia claramente desfavorable. (Rebajada de «retirar»: el laboratorio no da t ≤ −2 ni hay 5 operaciones negativas en vivo.)"
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo (-1.021) y n<5, tendencia desfavorable."
+   }
+  ],
+  "correcciones": [
+   "No se detectan errores en los stops; el sl de PAXG está correctamente ajustado por en_breakeven."
+  ],
+  "ideas": []
+ }
+}

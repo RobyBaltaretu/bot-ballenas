@@ -1,0 +1,65 @@
+{
+ "ts": 1794048731.9783456,
+ "dia": "2026-11-07",
+ "hallazgos": [
+  "Últimos 7 días: 11 cerradas, -6.60 $ netos. La peor fue ENA (retroceso_4h): -4.34 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Todavía no hay laboratorio de estas semanas (se ejecuta los domingos)."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "Menos de 30 operaciones totales (22 cerradas + 4 abiertas), por lo que no hay evidencia concluyente de ventaja; la mayoría de estrategias no superan el laboratorio y presentan R negativo en vivo.",
+  "hallazgos": [
+   {
+    "texto": "Operación cerrada kPEPE L stop‑loss con pérdida",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Posición abierta AAVE (momentum_4h) muestra pnl_no_realizado positivo",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Laboratorio ruptura_4h no supera (oos_r 0.036, holdout_r -0.065)",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "En vivo estrategia momentum_4h r_medio 0.834 y pnl_usd 0.82",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "En vivo estrategia fuerza_1h r_medio -1.114",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo y pnl en vivo positivo, pero pocos datos y laboratorio no supera"
+   },
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo en vivo pero laboratorio no supera"
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo y laboratorio no supera"
+   },
+   {
+    "clave": "ruptura_1h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo y laboratorio no supera"
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo y laboratorio no supera"
+   }
+  ],
+  "correcciones": [],
+  "ideas": []
+ }
+}

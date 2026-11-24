@@ -1,0 +1,69 @@
+{
+ "ts": 1794182585.9771924,
+ "dia": "2026-11-09",
+ "hallazgos": [
+  "Entradas bloqueadas: datos de precios obsoletos o no disponibles",
+  "Entradas bloqueadas: la lectura de la cuenta no es reciente: saldo/equity sin reconciliar",
+  "Últimos 7 días: 11 cerradas, -6.60 $ netos. La peor fue ENA (retroceso_4h): -4.34 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "No hay ventaja clara: con menos de 30 operaciones el desempeño neto es negativo y ninguna estrategia supera los criterios del laboratorio.",
+  "hallazgos": [
+   {
+    "texto": "Posición abierta en AAVE muestra pnl_no_realizado positivo",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Posición abierta en FARTCOIN muestra pnl_no_realizado positivo",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Posición abierta en AERO muestra pnl_no_realizado positivo",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Posición abierta en XRP muestra pnl_no_realizado positivo",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Total neto de operaciones cerradas es -6.58 USD, resultando en pérdida total -1.35 USD",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "Todas las estrategias en laboratorio tienen estado \"no_supera\"",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "En vivo, la estrategia fuerza_1h tiene r medio -1.114 (pérdida)",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "Stop‑loss de XRP está por debajo del precio de entrada a pesar de en_breakeven true",
+    "verificacion": "verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "retirar",
+    "motivo": "r medio negativo -1.114 y solo 1 operación, tendencia a pérdidas"
+   },
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "vigilar",
+    "motivo": "r medio positivo 0.834 pero solo 1 operación, datos insuficientes"
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "r medio -1.021 con 2 operaciones, pérdidas consistentes"
+   }
+  ],
+  "correcciones": [],
+  "ideas": []
+ }
+}

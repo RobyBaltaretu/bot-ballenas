@@ -1,0 +1,186 @@
+{
+ "estudio": "B_factor_funding",
+ "generado": "2026-11-13T09:26:32Z",
+ "periodo": {
+  "desde": "2021-02-01",
+  "hasta": "2026-11-12",
+  "dias": 2111
+ },
+ "monedas_en_cache": 68,
+ "limitaciones": [
+  "sesgo de supervivencia",
+  "precios y funding de Binance",
+  "patas a fracción constante"
+ ],
+ "bruto_sin_costes_ni_funding": {
+  "dias": 2111,
+  "sharpe": 0.989,
+  "cagr_pct": 16.4,
+  "volatilidad_anual_pct": 16.77,
+  "caida_max_pct": 23.05,
+  "t_dias": 2.38,
+  "media_diaria_pct": 0.0455
+ },
+ "neto": {
+  "dias": 2111,
+  "sharpe": 1.211,
+  "cagr_pct": 20.82,
+  "volatilidad_anual_pct": 16.78,
+  "caida_max_pct": 21.21,
+  "t_dias": 2.91,
+  "media_diaria_pct": 0.0557
+ },
+ "neto_desarrollo": {
+  "dias": 1794,
+  "sharpe": 1.114,
+  "cagr_pct": 19.38,
+  "volatilidad_anual_pct": 17.24,
+  "caida_max_pct": 21.21,
+  "t_dias": 2.47,
+  "media_diaria_pct": 0.0526
+ },
+ "neto_holdout": {
+  "dias": 317,
+  "sharpe": 1.922,
+  "cagr_pct": 29.31,
+  "volatilidad_anual_pct": 13.88,
+  "caida_max_pct": 4.94,
+  "t_dias": 1.79,
+  "media_diaria_pct": 0.0731
+ },
+ "por_anio": {
+  "2021": {
+   "dias": 334,
+   "sharpe": 2.14,
+   "cagr_pct": 62.07,
+   "volatilidad_anual_pct": 23.91,
+   "caida_max_pct": 16.54,
+   "t_dias": 2.05,
+   "media_diaria_pct": 0.1402
+  },
+  "2022": {
+   "dias": 365,
+   "sharpe": 1.057,
+   "cagr_pct": 15.06,
+   "volatilidad_anual_pct": 14.23,
+   "caida_max_pct": 9.44,
+   "t_dias": 1.06,
+   "media_diaria_pct": 0.0412
+  },
+  "2023": {
+   "dias": 365,
+   "sharpe": 0.437,
+   "cagr_pct": 5.01,
+   "volatilidad_anual_pct": 13.16,
+   "caida_max_pct": 11.98,
+   "t_dias": 0.44,
+   "media_diaria_pct": 0.0158
+  },
+  "2024": {
+   "dias": 366,
+   "sharpe": 0.474,
+   "cagr_pct": 7.31,
+   "volatilidad_anual_pct": 18.51,
+   "caida_max_pct": 14.54,
+   "t_dias": 0.47,
+   "media_diaria_pct": 0.024
+  },
+  "2025": {
+   "dias": 365,
+   "sharpe": 1.227,
+   "cagr_pct": 18.59,
+   "volatilidad_anual_pct": 14.79,
+   "caida_max_pct": 15.34,
+   "t_dias": 1.23,
+   "media_diaria_pct": 0.0497
+  },
+  "2026": {
+   "dias": 316,
+   "sharpe": 1.911,
+   "cagr_pct": 29.16,
+   "volatilidad_anual_pct": 13.9,
+   "caida_max_pct": 4.94,
+   "t_dias": 1.78,
+   "media_diaria_pct": 0.0728
+  }
+ },
+ "bruto_medio": 0.997,
+ "sharpe_deflactado_prob": 0.981,
+ "tres_que_mas_aportan": [
+  "SOL",
+  "TRX",
+  "BCH"
+ ],
+ "sin_esas_tres": {
+  "dias": 2111,
+  "sharpe": 1.183,
+  "cagr_pct": 20.76,
+  "volatilidad_anual_pct": 17.2,
+  "caida_max_pct": 24.8,
+  "t_dias": 2.84,
+  "media_diaria_pct": 0.0558
+ },
+ "coste_x2": {
+  "dias": 2111,
+  "sharpe": 1.042,
+  "cagr_pct": 17.44,
+  "volatilidad_anual_pct": 16.77,
+  "caida_max_pct": 22.34,
+  "t_dias": 2.51,
+  "media_diaria_pct": 0.0479
+ },
+ "controles": {
+  "senal_invertida": {
+   "dias": 2111,
+   "sharpe": -1.615,
+   "cagr_pct": -24.85,
+   "volatilidad_anual_pct": 16.81,
+   "caida_max_pct": 80.91,
+   "t_dias": -3.88,
+   "media_diaria_pct": -0.0743
+  },
+  "senal_aleatoria_sharpe_medio_20": -0.332,
+  "senal_aleatoria_sharpe_max_20": 0.277,
+  "senal_retrasada_7_dias": {
+   "dias": 2111,
+   "sharpe": 0.958,
+   "cagr_pct": 15.82,
+   "volatilidad_anual_pct": 16.81,
+   "caida_max_pct": 30.0,
+   "t_dias": 2.3,
+   "media_diaria_pct": 0.0441
+  }
+ },
+ "descomposicion": {
+  "precio_sin_costes": {
+   "dias": 2111,
+   "sharpe": 0.989,
+   "cagr_pct": 16.4,
+   "volatilidad_anual_pct": 16.77,
+   "caida_max_pct": 23.05,
+   "t_dias": 2.38,
+   "media_diaria_pct": 0.0455
+  },
+  "funding": {
+   "dias": 2111,
+   "sharpe": 19.82,
+   "cagr_pct": 6.79,
+   "volatilidad_anual_pct": 0.33,
+   "caida_max_pct": 0.09,
+   "t_dias": 47.66,
+   "media_diaria_pct": 0.018
+  }
+ },
+ "veredicto": {
+  "criterios": {
+   "sharpe_neto_mayor_0_4": true,
+   "holdout_positivo": true,
+   "caida_max_menor_35pct": true,
+   "sin_las_tres_mejores_sharpe_mayor_0": true,
+   "control_invertida_negativa": true,
+   "control_aleatoria_por_debajo_de_la_real": true
+  },
+  "supera": true,
+  "lectura": "Cumple todos los criterios fijados de antemano."
+ }
+}

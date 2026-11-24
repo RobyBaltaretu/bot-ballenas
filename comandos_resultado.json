@@ -1,0 +1,252 @@
+{
+  "claude-lab-4": {
+    "ok": true,
+    "mensaje": "Laboratorio lanzado en segundo plano. Tarda horas; el resultado queda en registro/ y en el panel.",
+    "ts": 1792760272.6999125
+  },
+  "claude-reinicio-v12": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792760272.7057157
+  },
+  "claude-bloque1": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792762941.0240188
+  },
+  "claude-bloque3": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792763319.259701
+  },
+  "claude-riesgo-2": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792765371.0099504
+  },
+  "claude-cerebro-validado": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792765470.8927531
+  },
+  "claude-lab-6": {
+    "ok": true,
+    "mensaje": "Laboratorio lanzado en segundo plano. Tarda horas; el resultado queda en registro/ y en el panel.",
+    "ts": 1792766188.6629448
+  },
+  "claude-agenda": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792766588.1966064
+  },
+  "claude-recarga-cerebro": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792772246.647769
+  },
+  "claude-inv-1": {
+    "ok": true,
+    "mensaje": "Investigacion lanzado en segundo plano. El resultado queda en registro/ y en el panel.",
+    "ts": 1792772257.2055194
+  },
+  "claude-exploracion-4h": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792773358.01615
+  },
+  "claude-resumen-cierres": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792847677.6897988
+  },
+  "claude-exploracion-amplia": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1792858428.677504
+  },
+  "reinicio-auditoria-20261028": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793227084.2952893
+  },
+  "reinicio-puesta-a-cero": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793227488.777489
+  },
+  "reinicio-diseno-083335": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793259225.6088994
+  },
+  "revision-corte-194117": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793731733.8214698
+  },
+  "espabilar-200847": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793732946.4421384
+  },
+  "prueba-2-semanas-155349": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793804040.5350714
+  },
+  "riesgo-monedas-162839": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793806120.2838018
+  },
+  "exploracion-170807": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793808490.7402103
+  },
+  "bloqueos-172333": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1793809426.6838624
+  },
+  "corte-red-104643": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794044829.0537546
+  },
+  "fix-degradado-1211": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794512488.2896652
+  },
+  "carry-analista-1112": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794515950.8697488
+  },
+  "ajustes-20261113b": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794573825.6488
+  },
+  "cartera-regimen-193005": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794594616.648282
+  },
+  "panel-cartera-194015": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794595218.849737
+  },
+  "momentum-v2-203341": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794684841.1520875
+  },
+  "ajuste-manual-204358": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794685483.6540427
+  },
+  "stop-ena-204533": {
+    "ok": true,
+    "mensaje": "ENA: stop movido de 0.16023 a 0.14239",
+    "ts": 1794685574.394581
+  },
+  "stop-uni-204533": {
+    "ok": true,
+    "mensaje": "UNI: stop movido de 6.9109 a 5.8867",
+    "ts": 1794685575.526789
+  },
+  "mejoras-1711": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794924572.3810055
+  },
+  "riesgo-ficha-1811": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1794999303.255457
+  },
+  "arreglos-estudio-1911": {
+    "ok": false,
+    "mensaje": "La configuraci\u00f3n nueva cambia \u00abpiloto_real\u00bb: eso no se aplica desde el panel. Sigo con la actual.",
+    "ts": 1795089020.4858513
+  },
+  "arreglos-estudio-1911b": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795089128.5008657
+  },
+  "liston-familias-1911": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795090104.7713244
+  },
+  "lab-liston-familias-1911": {
+    "ok": true,
+    "mensaje": "Laboratorio lanzado en segundo plano. El resultado queda en registro/ y en el panel.",
+    "ts": 1795090452.5860972
+  },
+  "papel-cache-1911": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795090813.9865222
+  },
+  "piramide-1911": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795093418.4926198
+  },
+  "ctx-cache-1911": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795094002.0795746
+  },
+  "diag-peso-1911": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795094528.322289
+  },
+  "auditoria-r01-r05-r08": {
+    "ok": false,
+    "mensaje": "La configuraci\u00f3n nueva cambia \u00abpiloto_real\u00bb: eso no se aplica desde el panel. Sigo con la actual.",
+    "ts": 1795100182.9595342
+  },
+  "auditoria-r01-r05-r08b": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795100250.92171
+  },
+  "mejoras-auditoria-21-11": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795248397.381462
+  },
+  "arreglos-reloj-21-11": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795249598.5138655
+  },
+  "mejoras-hypergrok-1795369920": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795369940.410687
+  },
+  "parte-del-mar-1795371672": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795371675.7546735
+  },
+  "apagar-retroceso1h-20261123": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795461079.3061182
+  },
+  "apagar-tres-4h-20261123": {
+    "ok": true,
+    "mensaje": "Configuraci\u00f3n v\u00e1lida. Me reinicio de forma ordenada para aplicarla (unos segundos).",
+    "ts": 1795464519.141539
+  }
+}

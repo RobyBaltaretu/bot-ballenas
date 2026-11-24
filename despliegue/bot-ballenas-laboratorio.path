@@ -1,0 +1,9 @@
+[Unit]
+Description=Lanza el laboratorio del bot cuando el propio bot o el panel lo piden (archivo de solicitud)
+
+[Path]
+PathExists=/opt/bot-ballenas/solicitudes/laboratorio
+Unit=bot-ballenas-laboratorio.service
+
+[Install]
+WantedBy=multi-user.target

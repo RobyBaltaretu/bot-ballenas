@@ -1,0 +1,139 @@
+{
+  "modo": "simulado",
+  "posiciones": {
+    "ETH": {
+      "trade_id": "op-20261028221150-e9b342",
+      "origen": "simulado",
+      "moneda": "ETH",
+      "lado": "L",
+      "estrategia": "ruptura_1h",
+      "version": "1",
+      "motivo": "prueba",
+      "estado": "abierta",
+      "tam": 0.107,
+      "tam_inicial": 0.107,
+      "entrada": 4000.4,
+      "precio_ref": 4000.0,
+      "sl": 3920.4,
+      "sl_pct": 2.0,
+      "salida": {
+        "parcial_activo": true,
+        "tp1_r": 1.0,
+        "parcial_pct": 50,
+        "tp_final_r": 3.0,
+        "trailing_r": 1.0,
+        "breakeven_tras_r": 1.0,
+        "mover_stop_min_r": 0.25,
+        "precio_trailing": "mid"
+      },
+      "duracion_min": 1800,
+      "abierta_ts": 1793225510.7332518,
+      "ordenes": {
+        "0x417e7743aaef4e4facd28a29e840836e": {
+          "rol": "entrada",
+          "oid": 2,
+          "estado": "completada",
+          "sz": 0.107,
+          "px": 4040.0,
+          "trigger": null,
+          "ts": 1793225510.742683
+        },
+        "0x092c437738f34b41821cc5e0c44957b9": {
+          "rol": "stop",
+          "oid": 3,
+          "estado": "abierta",
+          "sz": 0.107,
+          "px": 3528.4,
+          "trigger": 3920.4,
+          "ts": 1793225510.75776
+        },
+        "0x4b780b68b4644dd9a87dab8a0feeae98": {
+          "rol": "tp1",
+          "oid": 4,
+          "estado": "abierta",
+          "sz": 0.053,
+          "px": 4080.4,
+          "trigger": null,
+          "ts": 1793225510.7669122
+        },
+        "0x6bd5897da9b9473691231ad78dd4ce23": {
+          "rol": "tpf",
+          "oid": 5,
+          "estado": "abierta",
+          "sz": 0.054,
+          "px": 4240.4,
+          "trigger": null,
+          "ts": 1793225510.7778633
+        }
+      },
+      "sobrantes": [],
+      "id_mem": "4a5544a2ee",
+      "explorando": false,
+      "riesgo_plan_usd": 9.951000000000011,
+      "tam_plan": 0.107,
+      "parcial": true,
+      "tp1_hecho": false,
+      "exploracion_amplia": false,
+      "en_breakeven": false,
+      "huella": null,
+      "fills_vistos": [
+        "tid:papel-1"
+      ],
+      "r_dist": 80.008,
+      "mejor": 4000.4,
+      "r_usd": 8.560856,
+      "tramos_tam": [
+        [
+          1793225510733,
+          0.107
+        ]
+      ],
+      "sl_inicial": 3920.4,
+      "riesgo_usd": 9.58730272,
+      "riesgo_post_fill": {
+        "plan_usd": 9.951,
+        "real_usd": 9.5873,
+        "diferencia_usd": -0.3637,
+        "ratio": 0.9635
+      },
+      "stop_cloid": "0x092c437738f34b41821cc5e0c44957b9",
+      "stop_oid": 3,
+      "stop_verificado_ts": 1793225510.7601297,
+      "tam_tp1": 0.053,
+      "tp1": 4080.4,
+      "tpf": 4240.4
+    }
+  },
+  "enfriamiento": {},
+  "perdidas_seguidas": 0,
+  "pausa_hasta": 0,
+  "pausa_manual": false,
+  "shadow_abiertas": {},
+  "cloids_propios": {
+    "0x417e7743aaef4e4facd28a29e840836e": {
+      "trade_id": "op-20261028221150-e9b342",
+      "moneda": "ETH",
+      "rol": "entrada",
+      "ts": 1793225510.7426867
+    },
+    "0x092c437738f34b41821cc5e0c44957b9": {
+      "trade_id": "op-20261028221150-e9b342",
+      "moneda": "ETH",
+      "rol": "stop",
+      "ts": 1793225510.7577631
+    },
+    "0x4b780b68b4644dd9a87dab8a0feeae98": {
+      "trade_id": "op-20261028221150-e9b342",
+      "moneda": "ETH",
+      "rol": "tp1",
+      "ts": 1793225510.7669153
+    },
+    "0x6bd5897da9b9473691231ad78dd4ce23": {
+      "trade_id": "op-20261028221150-e9b342",
+      "moneda": "ETH",
+      "rol": "tpf",
+      "ts": 1793225510.7778661
+    }
+  },
+  "ops_hoy": 1
+}

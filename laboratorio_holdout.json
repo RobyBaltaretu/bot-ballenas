@@ -1,0 +1,74 @@
+{
+ "version": 2,
+ "experimentos": {
+  "ruptura_4h": {
+   "visto_hasta": 1795075200.0,
+   "consultas": 3
+  },
+  "retroceso_4h": {
+   "visto_hasta": 1792684800.0,
+   "consultas": 1
+  },
+  "reversion_4h": {
+   "visto_hasta": 1792684800.0,
+   "consultas": 1
+  },
+  "funding_4h": {
+   "visto_hasta": 1794686400.0,
+   "consultas": 2
+  },
+  "fuerza_4h": {
+   "visto_hasta": 1792684800.0,
+   "consultas": 1
+  },
+  "momentum_4h": {
+   "visto_hasta": 1794686400.0,
+   "consultas": 2
+  },
+  "ruptura_1h": {
+   "visto_hasta": 1794708000.0,
+   "consultas": 4
+  },
+  "retroceso_1h": {
+   "visto_hasta": 1794708000.0,
+   "consultas": 3
+  },
+  "reversion_1h": {
+   "visto_hasta": 1792695600.0,
+   "consultas": 1
+  },
+  "funding_1h": {
+   "visto_hasta": 1794708000.0,
+   "consultas": 2
+  },
+  "fuerza_1h": {
+   "visto_hasta": 1794708000.0,
+   "consultas": 2
+  },
+  "investigacion:1h": {
+   "visto_hasta": 1795483800.9485,
+   "consultas": 35
+  },
+  "investigacion:4h": {
+   "visto_hasta": 1795483800.9485,
+   "consultas": 35
+  },
+  "cerebro_cerebro_solo_hyperliquid_4h": {
+   "visto_hasta": 1794081600.0,
+   "consultas": 2
+  },
+  "cerebro_cerebro_con_todo_4h": {
+   "visto_hasta": 1795075200.0,
+   "consultas": 3
+  },
+  "cerebro_cerebro_solo_hyperliquid_1h": {
+   "visto_hasta": 1792753200.0,
+   "consultas": 1
+  },
+  "cerebro_cerebro_con_todo_1h": {
+   "visto_hasta": 1794708000.0,
+   "consultas": 2
+  }
+ },
+ "usos": {}
+}

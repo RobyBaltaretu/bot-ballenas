@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bot de ballenas</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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xJKx7ABYIyhOPL733t/aets95fxyuTBZmplYnj6rM5LObW02HXCHbv/tDzWxqzI2mc723PbMk1MnXx8+umf2yplUuq+ar86cvHrvg0dHr1x+4+SpuFaB12QboJAAgHAHpAAgCtuOB1ATaaV1rbKUn51y4o6jnXa10qoWTatKTvrIhz8xdelUu1l13BizKNJKO7v27e3t7w9M4Pu+CIFYVJTp27T9wFGA7lpteebsOyvVxcr0tcG7c0f+5OHxF2bmJv3H//iJfZuSp84Wi2fOj9z/vg0jgxOvvbb/M/ef/Ntv22Zq/NULNz94b26w+wf/9K8oYP229dtiWCzjKmBVChGFg7ASKtRJQAWI2o0DcLW0XCoWQWkn5vjNMoBuVmpbRg7d/shHJs6e8Nqe47oAwMx773r88P0PH7j3rkP3PbRxcJuYwElkY+mtlcWl/JWLlIjXlkrpuKV2o//OzV3bMq//zbF4Olu3yZMnpivnLpWvjb7/jz7dmB5XqXYQVEe/f1arLj+QA8888fo3v1EYHUOw1gRsrTCDMACHSMtJdAsImxYiRQogaQBQWifS3bFUJtndK2KErY6nYulsdam4XJi66/Gn73/ykbNvHPcadVIKAAvTM1fOTc9OzM1c/vm1M6dywweym28pTE8k+3q8mhl+8B5wU4n2XMIxuCFdLZSWziwtjY8XL46184XFS+eG7th58PcfvfKdn6CS898+5mAPOF07fvMe5ZXf+vq3iNhvNkWEjelAdgIURDR+k027A5AhUgAR2QTW+CDM1iitWETYktbayZQW5xcKhd6e7MZbjqjM8NaRA72DO9xksl6cWZwYLS8sbhl5f+/gnlql3KrX49m+rsHhe77yO7WF+tO3QQrLb789lunJTrw25tUq7K0E9ZXtRw7uefroxW/9OH/qog2gni9lssPxXP+ejx45/rW/bVYqfqtmjQ+CCBy2sbA9ibCIQVwd32DNA2FzNr5vfc+YINHVY00AEsSSG5x4zs0MnH7x5abooLJComKx5MC2PZt23FJbnL7twY8nu/oxbavLhXiub/j+O42vciM7CydOw8TJxYX8/Fx5YXy+ND6nMOBWY/P+O/Y+/b6xHx1funil79bNixenUl39fUN7djxy8OpLL117+WeowG81ha2wtdaAWAEhIhERYEQBgbCq4vqZOPQIKUVaswm8etWJJdki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">
+<meta name="panel-token" content="{{TOKEN}}">
+<meta name="panel-solo-lectura" content="{{SOLO_LECTURA}}">
+<style>
+:root {
+  --fondo: #0a1114; --fondo-2: #0d171b; --sup: #111d22; --sup-2: #15242a; --sup-3: #1a2c33;
+  --borde: #1f3139; --borde-2: #29404a;
+  --texto: #e7f1f0; --suave: #8ea4aa; --tenue: #5f767c;
+  --acento: #5eead4; --acento-2: #2dd4bf; --acento-f: rgba(94, 234, 212, .12);
+  --verde: #2fd788; --verde-f: rgba(47, 215, 136, .12);
+  --rojo: #f0627d; --rojo-f: rgba(240, 98, 125, .13);
+  --ambar: #f3bd55; --ambar-f: rgba(243, 189, 85, .13);
+  --azul: #6aa9ff; --azul-f: rgba(106, 169, 255, .13);
+  --violeta: #b49cff;
+  --radio: 12px; --radio-p: 8px;
+  --sombra: 0 10px 40px rgba(0, 0, 0, .45);
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Mono", Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--fondo); color: var(--texto); }
+body { font: 14px/1.45 Inter, "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; -webkit-font-smoothing: antialiased;
+       background: radial-gradient(1200px 500px at 85% -120px, rgba(45, 212, 191, .10), transparent 60%), var(--fondo);
+       min-height: 100vh; }
+a { color: var(--acento); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.num, td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.num { white-space: nowrap; }
+.mono { font-family: var(--mono); font-size: 12.5px; }
+.pos { color: var(--verde); } .neg { color: var(--rojo); } .suave { color: var(--suave); } .tenue { color: var(--tenue); }
+.ambar-t { color: var(--ambar); } .acento-t { color: var(--acento); }
+button, .boton { font: inherit; color: var(--texto); background: var(--sup-2); border: 1px solid var(--borde-2);
+  border-radius: var(--radio-p); padding: 7px 12px; cursor: pointer; transition: background .15s, border-color .15s; white-space: nowrap; }
+button:hover:not(:disabled) { background: var(--sup-3); border-color: #36525d; }
+button:disabled { opacity: .4; cursor: not-allowed; }
+button.primario { background: var(--acento); color: #042521; border-color: var(--acento); font-weight: 650; }
+button.primario:hover:not(:disabled) { background: #7cf2df; }
+button.peligro { color: var(--rojo); border-color: rgba(240, 98, 125, .45); background: var(--rojo-f); }
+button.fantasma { background: transparent; border-color: transparent; color: var(--suave); }
+button.fantasma:hover:not(:disabled) { background: var(--sup-2); color: var(--texto); }
+button.mini { padding: 3px 8px; font-size: 12px; }
+input, select { font: inherit; color: var(--texto); background: var(--fondo-2); border: 1px solid var(--borde-2);
+  border-radius: var(--radio-p); padding: 7px 10px; min-width: 0; }
+input:focus, select:focus, button:focus-visible { outline: 2px solid var(--acento); outline-offset: 1px; }
+input[type="checkbox"] { accent-color: var(--acento); }
+
+/* ------------------------------------------------ cabecera */
+.cab { position: sticky; top: 0; z-index: 20; background: rgba(10, 17, 20, .86); backdrop-filter: blur(12px);
+       border-bottom: 1px solid var(--borde); }
+.cab-in { max-width: 1440px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; gap: 14px; }
+.marca { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: .2px; font-size: 15px; }
+.marca .logo { width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--borde-2); object-fit: cover; }
+.pildora { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: 12px;
+  font-weight: 600; border: 1px solid var(--borde-2); background: var(--sup); white-space: nowrap; }
+.pildora .p { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 3px rgba(255,255,255,.04); }
+.pildora.verde { color: var(--verde); border-color: rgba(47,215,136,.35); background: var(--verde-f); }
+.pildora.rojo { color: var(--rojo); border-color: rgba(240,98,125,.35); background: var(--rojo-f); }
+.pildora.ambar { color: var(--ambar); border-color: rgba(243,189,85,.35); background: var(--ambar-f); }
+.pildora.azul { color: var(--azul); border-color: rgba(106,169,255,.35); background: var(--azul-f); }
+.pildora.acento { color: var(--acento); border-color: rgba(94,234,212,.35); background: var(--acento-f); }
+.pildora.violeta { color: var(--violeta); border-color: rgba(180,156,255,.35); background: rgba(180,156,255,.12); }
+.pildora.vivo .p { animation: latir 2s infinite; }
+@keyframes latir { 0%,100% { opacity: 1 } 50% { opacity: .35 } }
+.cab .der { margin-left: auto; display: flex; gap: 8px; align-items: center; }
+.cab .hora { font-size: 12px; color: var(--suave); }
+nav.tabs { max-width: 1440px; margin: 0 auto; padding: 0 20px; display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
+nav.tabs::-webkit-scrollbar { display: none; }
+nav.tabs a { position: relative; padding: 10px 12px 11px; color: var(--suave); font-weight: 550; white-space: nowrap; text-decoration: none; }
+nav.tabs a:hover { color: var(--texto); }
+nav.tabs a.activa { color: var(--texto); }
+nav.tabs a.activa::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: -1px; height: 2px; border-radius: 2px; background: var(--acento); }
+.cuenta { font-size: 10.5px; font-weight: 700; min-width: 17px; height: 17px; padding: 0 5px; border-radius: 999px; display: inline-grid;
+  place-items: center; margin-left: 4px; background: var(--rojo); color: #fff; }
+.cuenta.azul { background: var(--azul); }
+
+/* ------------------------------------------------ estructura */
+main { max-width: 1440px; margin: 0 auto; padding: 18px 20px 80px; }
+.banda { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 9px 14px; border-radius: var(--radio);
+  margin-bottom: 14px; border: 1px solid var(--borde); background: var(--sup); font-size: 13px; }
+.banda.simulado { border-color: rgba(106,169,255,.3); background: linear-gradient(90deg, var(--azul-f), transparent 70%); }
+.banda.shadow { border-color: rgba(180,156,255,.3); background: linear-gradient(90deg, rgba(180,156,255,.12), transparent 70%); }
+.banda.real { border-color: rgba(240,98,125,.45); background: linear-gradient(90deg, var(--rojo-f), transparent 70%); }
+.banda b { letter-spacing: .3px; }
+.aviso { display: none; margin-bottom: 14px; padding: 10px 14px; border-radius: var(--radio); background: var(--sup-2);
+  border: 1px solid var(--borde-2); }
+section.pestana { display: none; animation: aparecer .2s ease; }
+section.pestana.activa { display: block; }
+@keyframes aparecer { from { opacity: 0; transform: translateY(4px) } to { opacity: 1; transform: none } }
+.rej { display: grid; gap: 14px; }
+.rej.k4 { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.rej.d2 { grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
+.rej.d3 { grid-template-columns: 2fr 1fr; }
+.esp { margin-top: 14px; }
+.tarj { background: var(--sup); border: 1px solid var(--borde); border-radius: var(--radio); padding: 16px; min-width: 0; }
+.tarj.plana { padding: 0; overflow: hidden; }
+.tarj-cab { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+.tarj.plana .tarj-cab { padding: 14px 16px 0; }
+.tarj h2 { font-size: 14px; margin: 0; font-weight: 650; letter-spacing: .1px; }
+.tarj h3 { font-size: 12px; margin: 16px 0 8px; color: var(--suave); text-transform: uppercase; letter-spacing: .6px; font-weight: 650; }
+.tarj-cab .der { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.nota { color: var(--suave); font-size: 12.5px; margin: 10px 0 0; }
+.vacio { color: var(--tenue); padding: 18px 4px; text-align: center; font-size: 13px; }
+
+/* ------------------------------------------------ KPIs */
+.kpi { background: var(--sup); border: 1px solid var(--borde); border-radius: var(--radio); padding: 14px 16px; min-width: 0; }
+.kpi .e { color: var(--suave); font-size: 12px; display: flex; align-items: center; gap: 4px; }
+.kpi .v { font-size: 22px; font-weight: 650; margin-top: 4px; font-variant-numeric: tabular-nums; letter-spacing: -.3px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.kpi .s { color: var(--tenue); font-size: 12px; margin-top: 2px; }
+.medidor { height: 6px; background: var(--fondo-2); border-radius: 99px; margin-top: 10px; overflow: hidden; position: relative; }
+.medidor i { display: block; height: 100%; border-radius: 99px; background: var(--acento); transition: width .4s; }
+.medidor.ambar i { background: var(--ambar); } .medidor.rojo i { background: var(--rojo); } .medidor.verde i { background: var(--verde); }
+.heroe { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; gap: 0; padding: 0; overflow: hidden; }
+.heroe .izq { padding: 20px; border-right: 1px solid var(--borde); }
+.heroe .valor { font-size: 34px; font-weight: 700; letter-spacing: -.8px; font-variant-numeric: tabular-nums; margin: 4px 0 10px; }
+.heroe .linea { display: flex; gap: 8px; flex-wrap: wrap; }
+.heroe .der { padding: 12px 8px 4px; min-width: 0; }
+.chip { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 6px; font-size: 12px; font-weight: 600;
+  background: var(--sup-2); color: var(--suave); white-space: nowrap; }
+.chip.verde { background: var(--verde-f); color: var(--verde); } .chip.rojo { background: var(--rojo-f); color: var(--rojo); }
+.chip.ambar { background: var(--ambar-f); color: var(--ambar); } .chip.azul { background: var(--azul-f); color: var(--azul); }
+.chip.acento { background: var(--acento-f); color: var(--acento); } .chip.violeta { background: rgba(180,156,255,.12); color: var(--violeta); }
+.periodos { display: flex; gap: 2px; background: var(--fondo-2); border-radius: var(--radio-p); padding: 2px; border: 1px solid var(--borde); }
+.periodos button { border: 0; background: transparent; padding: 4px 9px; font-size: 12px; color: var(--suave); }
+.periodos button.act { background: var(--sup-3); color: var(--texto); }
+
+/* ------------------------------------------------ tablas */
+.tabla { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--tenue); font-weight: 550; font-size: 11.5px; text-transform: uppercase; letter-spacing: .5px;
+  padding: 8px 12px; border-bottom: 1px solid var(--borde); white-space: nowrap; position: sticky; top: 0; background: var(--sup); }
+td { padding: 9px 12px; border-bottom: 1px solid rgba(31, 49, 57, .6); vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+tbody tr { transition: background .12s; }
+tbody tr:hover { background: rgba(255, 255, 255, .025); }
+tr.clic { cursor: pointer; }
+td .sub { color: var(--tenue); font-size: 11.5px; }
+.lado { display: inline-flex; align-items: center; gap: 6px; font-weight: 650; }
+.lado::before { content: ""; width: 3px; height: 16px; border-radius: 2px; background: currentColor; }
+.lado.L { color: var(--verde); } .lado.S { color: var(--rojo); }
+.moneda { color: var(--texto); font-weight: 650; }
+.tabla.alta { max-height: 640px; overflow: auto; }
+.pag { display: flex; align-items: center; gap: 10px; justify-content: flex-end; padding: 10px 16px; border-top: 1px solid var(--borde); }
+
+/* escalera de R: stop - entrada - objetivo */
+.escalera { position: relative; height: 22px; min-width: 150px; }
+.escalera .pista { position: absolute; top: 9px; left: 0; right: 0; height: 4px; border-radius: 4px;
+  background: linear-gradient(90deg, rgba(240,98,125,.55), rgba(240,98,125,.15) 40%, rgba(47,215,136,.15) 60%, rgba(47,215,136,.55)); }
+.escalera .marca { position: absolute; top: 4px; width: 2px; height: 14px; background: var(--suave); border-radius: 2px; }
+.escalera .actual { position: absolute; top: 3px; width: 10px; height: 10px; margin-left: -5px; margin-top: 3px; border-radius: 50%;
+  background: var(--texto); box-shadow: 0 0 0 3px rgba(231,241,240,.18); }
+
+/* ------------------------------------------------ listas, alertas */
+.lista { list-style: none; margin: 0; padding: 0; }
+.lista li { padding: 9px 2px; border-bottom: 1px solid rgba(31,49,57,.6); display: flex; gap: 10px; align-items: flex-start; }
+.lista li:last-child { border-bottom: 0; }
+.punto { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex: none; background: var(--suave); }
+.punto.error { background: var(--rojo); } .punto.aviso { background: var(--ambar); } .punto.info { background: var(--azul); }
+.punto.verde { background: var(--verde); }
+.ev-mini { display: grid; grid-template-columns: 62px 1fr; gap: 8px; padding: 8px 2px; border-bottom: 1px solid rgba(31,49,57,.6); cursor: pointer; }
+.ev-mini:hover { background: rgba(255,255,255,.02); }
+.ev-mini:last-child { border-bottom: 0; }
+
+/* ------------------------------------------------ tarjetas de estrategia */
+.estr { cursor: pointer; transition: border-color .15s, transform .15s; display: flex; flex-direction: column; gap: 10px; }
+.estr:hover { border-color: var(--borde-2); transform: translateY(-1px); }
+.estr .cab-e { display: flex; align-items: center; gap: 8px; }
+.estr .nom { font-weight: 700; font-size: 15px; }
+.estr .mets { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.estr .mets > div { background: var(--fondo-2); border-radius: var(--radio-p); padding: 8px 10px; }
+.estr .mets .e { font-size: 11px; color: var(--tenue); } .estr .mets .v { font-weight: 650; font-variant-numeric: tabular-nums; }
+.progreso { display: flex; flex-direction: column; gap: 6px; }
+.progreso .fila-p { display: grid; grid-template-columns: 70px 1fr 70px; gap: 8px; align-items: center; font-size: 12px; color: var(--suave); }
+
+/* ------------------------------------------------ gráficos */
+svg.graf { width: 100%; height: auto; display: block; }
+svg.graf text { fill: var(--tenue); font-size: 11px; font-family: inherit; }
+.barras-h { display: flex; flex-direction: column; gap: 6px; }
+.barras-h .b { display: grid; grid-template-columns: 90px 1fr 80px; gap: 10px; align-items: center; font-size: 12.5px; }
+.barras-h .pista { position: relative; height: 14px; background: var(--fondo-2); border-radius: 4px; }
+.barras-h .pista i { position: absolute; top: 0; bottom: 0; border-radius: 4px; }
+.barras-h .pista .cero { position: absolute; top: -2px; bottom: -2px; width: 1px; background: var(--borde-2); }
+
+/* ------------------------------------------------ cajón de detalle */
+.velo { position: fixed; inset: 0; background: rgba(0, 0, 0, .55); opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 40; }
+.cajon { position: fixed; top: 0; right: 0; bottom: 0; width: min(760px, 100%); background: var(--fondo-2); border-left: 1px solid var(--borde);
+  transform: translateX(100%); transition: transform .25s ease; z-index: 41; overflow-y: auto; box-shadow: var(--sombra); }
+body.cajon-abierto .velo { opacity: 1; pointer-events: auto; }
+body.cajon-abierto .cajon { transform: none; }
+.cajon-cab { position: sticky; top: 0; background: rgba(13, 23, 27, .95); backdrop-filter: blur(8px); padding: 14px 20px;
+  border-bottom: 1px solid var(--borde); display: flex; align-items: center; gap: 10px; z-index: 2; }
+.cajon-cab h2 { margin: 0; font-size: 16px; }
+.cajon-cuerpo { padding: 16px 20px 40px; }
+.dl { display: grid; grid-template-columns: minmax(130px, 38%) 1fr; gap: 0; margin: 0; }
+.dl dt { color: var(--suave); padding: 7px 0; border-bottom: 1px solid rgba(31,49,57,.6); font-size: 13px; }
+.dl dd { margin: 0; padding: 7px 0; border-bottom: 1px solid rgba(31,49,57,.6); font-variant-numeric: tabular-nums; min-width: 0; overflow-wrap: anywhere; }
+.tl { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--borde); }
+.tl li { position: relative; padding: 6px 0 6px 14px; cursor: pointer; font-size: 13px; }
+.tl li::before { content: ""; position: absolute; left: -5px; top: 12px; width: 8px; height: 8px; border-radius: 50%; background: var(--borde-2); }
+.tl li pre { display: none; white-space: pre-wrap; word-break: break-word; font-family: var(--mono); font-size: 11.5px;
+  background: var(--sup); padding: 8px; border-radius: var(--radio-p); margin: 6px 0 0; color: var(--suave); }
+.tl li.abierto pre { display: block; }
+.mini-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.mini-kpis > div { background: var(--sup); border: 1px solid var(--borde); border-radius: var(--radio-p); padding: 9px 11px; min-width: 0; }
+.mini-kpis .e { font-size: 11px; color: var(--tenue); } .mini-kpis .v { font-weight: 650; font-size: 15px; font-variant-numeric: tabular-nums; }
+
+/* ------------------------------------------------ feed */
+.filtros { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.filtros input, .filtros select { flex: 1 1 130px; }
+.filtros .crece { flex: 3 1 200px; }
+tr.ev-nuevo td:first-child { box-shadow: inset 2px 0 0 var(--acento); }
+tr.obsoleto { opacity: .5; }
+.velas { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+.cuenta-atras { font-family: var(--mono); font-size: 22px; font-weight: 650; }
+
+/* ------------------------------------------------ observabilidad */
+.comps { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.comp { background: var(--fondo-2); border: 1px solid var(--borde); border-radius: var(--radio-p); padding: 10px 12px; }
+.comp .nom { display: flex; justify-content: space-between; gap: 8px; font-weight: 600; font-size: 13px; }
+.comp .det { color: var(--tenue); font-size: 12px; margin-top: 3px; }
+.est { font-size: 11px; font-weight: 700; padding: 1px 7px; border-radius: 5px; text-transform: uppercase; letter-spacing: .4px; white-space: nowrap; }
+.est.correcto { background: var(--verde-f); color: var(--verde); } .est.degradado, .est.desactualizado { background: var(--ambar-f); color: var(--ambar); }
+.est.fallido { background: var(--rojo-f); color: var(--rojo); }
+.est.sin_datos, .est.desconocido, .est.desactivado { background: var(--sup-2); color: var(--suave); }
+.logs { font-family: var(--mono); font-size: 12px; max-height: 520px; overflow: auto; background: var(--fondo-2); border-radius: var(--radio-p);
+  border: 1px solid var(--borde); }
+.log { display: grid; grid-template-columns: 130px 64px 110px 1fr; gap: 8px; padding: 5px 10px; border-bottom: 1px solid rgba(31,49,57,.5); }
+.log .nv.ERROR { color: var(--rojo); } .log .nv.WARNING { color: var(--ambar); } .log .nv.INFO { color: var(--azul); }
+.log pre { grid-column: 1 / -1; display: none; white-space: pre-wrap; margin: 4px 0 0; color: var(--suave); }
+.log.abierto pre { display: block; } .log.detalle { cursor: pointer; }
+
+/* ------------------------------------------------ configuración */
+.cfg-nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+.cfg-nav button.act { background: var(--acento-f); border-color: rgba(94,234,212,.4); color: var(--acento); }
+.campos { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 10px; }
+.campo { background: var(--fondo-2); border: 1px solid var(--borde); border-radius: var(--radio-p); padding: 12px; display: flex;
+  flex-direction: column; gap: 8px; transition: border-color .15s; }
+.campo.cambiado { border-color: rgba(94,234,212,.55); box-shadow: 0 0 0 1px rgba(94,234,212,.15) inset; }
+.campo.ancho { grid-column: 1 / -1; }
+.campo .et { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 13px; }
+.campo .ay { color: var(--tenue); font-size: 12px; }
+.campo .ctrl { display: flex; align-items: center; gap: 8px; }
+.campo .ctrl input[type="number"] { width: 140px; font-variant-numeric: tabular-nums; }
+.campo .unidad { color: var(--suave); font-size: 12px; }
+.campo .antes { color: var(--tenue); font-size: 11.5px; margin-left: auto; }
+.interruptor { position: relative; width: 40px; height: 22px; flex: none; }
+.interruptor input { opacity: 0; width: 0; height: 0; }
+.interruptor span { position: absolute; inset: 0; border-radius: 99px; background: var(--sup-3); border: 1px solid var(--borde-2); cursor: pointer; transition: .15s; }
+.interruptor span::after { content: ""; position: absolute; left: 3px; top: 3px; width: 14px; height: 14px; border-radius: 50%; background: var(--suave); transition: .15s; }
+.interruptor input:checked + span { background: var(--acento-f); border-color: var(--acento); }
+.interruptor input:checked + span::after { left: 21px; background: var(--acento); }
+.interruptor input:disabled + span { opacity: .5; cursor: not-allowed; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chips .chip { background: var(--sup-3); color: var(--texto); padding: 3px 4px 3px 9px; }
+.chips .chip button { padding: 0 6px; border: 0; background: transparent; color: var(--suave); font-size: 14px; line-height: 1; }
+.chips .chip button:hover { color: var(--rojo); }
+.barra-cambios { position: fixed; left: 50%; bottom: 18px; transform: translate(-50%, 140%); transition: transform .25s; z-index: 30;
+  background: var(--sup-2); border: 1px solid rgba(94,234,212,.5); border-radius: 14px; padding: 10px 12px 10px 18px; display: flex;
+  gap: 12px; align-items: center; box-shadow: var(--sombra); max-width: calc(100% - 32px); }
+.barra-cambios { visibility: hidden; }
+.barra-cambios.visible { transform: translate(-50%, 0); visibility: visible; }
+dialog { border: 1px solid var(--borde-2); border-radius: 14px; background: var(--sup); color: var(--texto); max-width: min(620px, calc(100% - 32px));
+  padding: 20px; box-shadow: var(--sombra); }
+dialog::backdrop { background: rgba(0, 0, 0, .6); }
+dialog h2 { margin: 0 0 10px; font-size: 17px; }
+.dif { list-style: none; padding: 0; margin: 10px 0; max-height: 50vh; overflow: auto; }
+.dif li { padding: 8px 10px; border-radius: var(--radio-p); background: var(--fondo-2); margin-bottom: 6px; font-size: 13px; }
+.dif li.riesgo { border: 1px solid rgba(243,189,85,.45); }
+.dif .flecha { color: var(--tenue); margin: 0 6px; }
+
+/* ------------------------------------------------ ayuda ⓘ */
+button.info { border: 0; background: transparent; color: var(--tenue); padding: 0 2px; font-size: 13px; line-height: 1; }
+button.info:hover { color: var(--acento); background: transparent; }
+.ayuda { position: fixed; z-index: 60; max-width: 340px; background: var(--sup-3); border: 1px solid var(--borde-2); border-radius: var(--radio);
+  padding: 12px 14px; box-shadow: var(--sombra); font-size: 13px; }
+.ayuda h4 { margin: 0 0 6px; font-size: 13px; } .ayuda p { margin: 0; color: var(--suave); }
+.ayuda .cerrar { float: right; padding: 0 6px; border: 0; background: transparent; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+details.glos summary { cursor: pointer; color: var(--suave); }
+.glosario dt { font-weight: 600; margin-top: 10px; } .glosario dd { margin: 2px 0 0; color: var(--suave); }
+
+@media (max-width: 980px) {
+  .heroe { grid-template-columns: 1fr; } .heroe .izq { border-right: 0; border-bottom: 1px solid var(--borde); }
+  .rej.d3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .cab-in { padding: 10px 14px; flex-wrap: wrap; } nav.tabs { padding: 0 8px; } main { padding: 14px 14px 90px; }
+  .rej.d2 { grid-template-columns: 1fr; } .rej.k4 { grid-template-columns: 1fr 1fr; }
+  .kpi .v { font-size: 18px; } .heroe .valor { font-size: 28px; }
+  .cab .hora { display: none; } .cab .der { width: 100%; justify-content: flex-start; overflow-x: auto; }
+  .campos { grid-template-columns: 1fr; } .log { grid-template-columns: 1fr; gap: 0; }
+  .estr .mets { grid-template-columns: 1fr 1fr 1fr; }
+}
+/* ------------------------------------------------ vista sencilla (portada estilo app) */
+body.sencillo nav.tabs, body.sencillo #banda, body.sencillo #b-pausa, body.sencillo #b-reanudar,
+body.sencillo #b-cerrar, body.sencillo #modo-pill { display: none !important; }
+body.sencillo section.pestana { display: none !important; }
+body.sencillo section#p-inicio { display: block !important; }
+#p-inicio { max-width: 560px; margin: 0 auto; padding: 8px 0 60px; }
+.in-saldo { text-align: center; padding: 28px 0 10px; }
+.in-etq { color: var(--suave); font-size: 13px; letter-spacing: .3px; }
+.in-cifra { font-size: 46px; font-weight: 700; letter-spacing: -1px; line-height: 1.1; margin: 6px 0 8px;
+  font-variant-numeric: tabular-nums; }
+.in-cifra small { font-size: 24px; color: var(--suave); font-weight: 600; }
+.in-cambio { display: inline-flex; gap: 6px; align-items: center; font-weight: 600; font-size: 14px; padding: 4px 12px;
+  border-radius: 999px; background: var(--sup); }
+.in-cambio.pos { background: var(--verde-f); } .in-cambio.neg { background: var(--rojo-f); }
+.in-ficticio { margin-top: 10px; font-size: 12px; color: var(--azul); }
+.in-graf { margin: 14px 0 4px; height: 150px; position: relative; }
+.in-graf svg { width: 100%; height: 100%; display: block; overflow: visible; }
+.in-rangos { display: flex; justify-content: center; gap: 6px; margin-bottom: 18px; }
+.in-rangos button { border-radius: 999px; padding: 5px 14px; font-size: 12.5px; background: transparent; border-color: transparent; color: var(--suave); }
+.in-rangos button.activo { background: var(--sup-2); color: var(--texto); border-color: var(--borde-2); }
+.in-acciones { display: flex; justify-content: center; gap: 26px; margin: 4px 0 22px; }
+.in-accion { display: flex; flex-direction: column; align-items: center; gap: 7px; background: none; border: 0; padding: 0;
+  color: var(--texto); font-size: 12.5px; cursor: pointer; }
+.in-accion:hover:not(:disabled) { background: none; }
+.in-accion .ic { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; background: var(--sup-2);
+  border: 1px solid var(--borde-2); font-size: 20px; transition: background .15s; }
+.in-accion:hover:not(:disabled) .ic { background: var(--sup-3); }
+.in-accion.peligro { background: none; border: 0; color: var(--rojo); }
+.in-accion.peligro .ic { color: var(--rojo); background: var(--rojo-f); border-color: rgba(240, 98, 125, .35); }
+.in-tarjeta { background: var(--sup); border: 1px solid var(--borde); border-radius: 18px; padding: 16px 18px; margin-bottom: 14px; }
+.in-tit { display: flex; justify-content: space-between; align-items: baseline; margin: 0 0 10px; font-size: 15px; font-weight: 650; }
+.in-tit .suave { font-weight: 400; font-size: 12.5px; }
+.in-estado { display: flex; gap: 12px; align-items: flex-start; }
+.in-luz { width: 12px; height: 12px; border-radius: 50%; margin-top: 5px; flex: none; box-shadow: 0 0 0 4px rgba(255,255,255,.05); }
+.in-luz.verde { background: var(--verde); box-shadow: 0 0 0 4px var(--verde-f); }
+.in-luz.ambar { background: var(--ambar); box-shadow: 0 0 0 4px var(--ambar-f); }
+.in-luz.rojo { background: var(--rojo); box-shadow: 0 0 0 4px var(--rojo-f); }
+.in-frase { font-size: 15px; line-height: 1.45; }
+.in-frase .suave { font-size: 13px; display: block; margin-top: 3px; }
+.in-fila { display: flex; align-items: center; gap: 12px; padding: 11px 0; border-top: 1px solid var(--borde); }
+.in-fila:first-of-type { border-top: 0; }
+.in-avatar { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 12px;
+  background: var(--sup-3); flex: none; letter-spacing: -.3px; }
+.in-avatar.sube { background: var(--verde-f); color: var(--verde); } .in-avatar.baja { background: var(--rojo-f); color: var(--rojo); }
+.in-medio { flex: 1; min-width: 0; }
+.in-medio b { font-weight: 600; display: block; }
+.in-medio .suave { font-size: 12.5px; display: block; line-height: 1.4; margin-top: 2px; }
+.in-der { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+.in-der .suave { display: block; font-weight: 400; font-size: 12px; }
+.in-barra { height: 6px; border-radius: 99px; background: var(--sup-3); overflow: hidden; margin: 8px 0 4px; }
+.in-barra i { display: block; height: 100%; border-radius: 99px; background: var(--acento); }
+.in-pasos { list-style: none; margin: 10px 0 0; padding: 0; }
+.in-pasos li { display: flex; gap: 10px; padding: 6px 0; font-size: 13.5px; align-items: flex-start; }
+.in-pasos .ck { width: 20px; height: 20px; border-radius: 50%; flex: none; display: grid; place-items: center; font-size: 11px;
+  border: 1.5px solid var(--borde-2); color: var(--tenue); }
+.in-pasos li.ok .ck { background: var(--verde); border-color: var(--verde); color: #04261a; }
+.in-pasos li.ok { color: var(--suave); }
+.in-vacio { color: var(--suave); font-size: 13.5px; padding: 6px 0; }
+.in-pie { text-align: center; margin-top: 18px; }
+@media (max-width: 600px) { #p-inicio { padding: 0 2px 50px; } .in-cifra { font-size: 38px; } .in-acciones { gap: 18px; } }
+body:not(.sencillo) #p-inicio { display: none !important; }
+</style>
+</head>
+<body>
+<header class="cab">
+  <div class="cab-in">
+    <div class="marca">
+      <img class="logo" alt="" src="data:image/png;base64,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">
+      Bot de ballenas
+    </div>
+    <span id="estado" class="pildora">—</span>
+    <span id="modo-pill" class="pildora azul" style="display:none"></span>
+    <div class="der">
+      <span id="actualizado" class="hora"></span>
+      <button id="b-modo" class="fantasma" onclick="ponerModo(!document.body.classList.contains('sencillo'))">Modo experto</button>
+      <button id="b-pausa" onclick="comando('/pausa')" title="El bot deja de abrir operaciones nuevas; las abiertas se siguen gestionando">Pausar entradas</button>
+      <button id="b-reanudar" onclick="comando('/reanudar')">Reanudar</button>
+      <button id="b-cerrar" class="peligro" onclick="pedirCierre()">Cerrar posiciones…</button>
+    </div>
+  </div>
+  <nav class="tabs" id="nav" aria-label="Secciones">
+    <a href="#resumen" data-p="resumen">Resumen <span id="badge-alertas" class="cuenta" style="display:none"></span></a>
+    <a href="#vivo" data-p="vivo">Señales en vivo <span id="badge-vivo" class="cuenta azul" style="display:none"></span></a>
+    <a href="#operaciones" data-p="operaciones">Operaciones</a>
+    <a href="#estrategias" data-p="estrategias">Estrategias</a>
+    <a href="#ballenas" data-p="ballenas">Ballenas</a>
+    <a href="#aprendizaje" data-p="aprendizaje">Aprendizaje</a>
+    <a href="#investigacion" data-p="investigacion">Investigación</a>
+    <a href="#observabilidad" data-p="observabilidad">Sistema <span id="badge-inc" class="cuenta" style="display:none"></span></a>
+    <a href="#configuracion" data-p="configuracion">Configuración</a>
+  </nav>
+</header>
+
+<main>
+  <div id="banda" class="banda simulado" role="status">—</div>
+  <div id="aviso" class="aviso" role="alert"></div>
+
+  <!-- ============================== INICIO (vista sencilla) -->
+  <section class="pestana" id="p-inicio" aria-label="Inicio">
+    <div class="in-saldo">
+      <div class="in-etq" id="in-etq">Valor de la cuenta</div>
+      <div class="in-cifra" id="in-cifra">—</div>
+      <span class="in-cambio" id="in-cambio">—</span>
+      <div class="in-ficticio" id="in-ficticio"></div>
+    </div>
+    <div class="in-graf" id="in-graf"></div>
+    <div class="in-rangos" id="in-rangos">
+      <button data-h="24">Hoy</button><button data-h="168" class="activo">Semana</button>
+      <button data-h="720">Mes</button><button data-h="0">Todo</button>
+    </div>
+    <div class="in-acciones">
+      <button class="in-accion" id="in-pausa" onclick="comando('/pausa')"><span class="ic">⏸</span>Pausar</button>
+      <button class="in-accion" id="in-reanudar" onclick="comando('/reanudar')"><span class="ic">▶</span>Reanudar</button>
+      <button class="in-accion peligro" id="in-cerrar" onclick="pedirCierre()"><span class="ic">✕</span>Cerrar todo</button>
+      <button class="in-accion" onclick="ponerModo(false)"><span class="ic">☰</span>Detalles</button>
+    </div>
+
+    <div class="in-tarjeta">
+      <div class="in-estado"><span class="in-luz" id="in-luz"></span><div class="in-frase" id="in-frase">—</div></div>
+    </div>
+
+    <div class="in-tarjeta">
+      <div class="in-tit">El cerebro <span class="suave" id="in-cerebro-ver"></span></div>
+      <div id="in-cerebro"></div>
+    </div>
+
+    <div class="in-tarjeta">
+      <div class="in-tit">Operaciones abiertas <span class="suave" id="in-n-abiertas"></span></div>
+      <div id="in-abiertas"></div>
+    </div>
+
+    <div class="in-tarjeta">
+      <div class="in-tit">Actividad reciente <span class="suave" id="in-resumen-act"></span></div>
+      <div id="in-actividad"><div class="in-vacio">Cargando…</div></div>
+    </div>
+
+    <div class="in-tarjeta">
+      <div class="in-tit">Camino a dinero real <span class="suave" id="in-camino-n"></span></div>
+      <div class="in-barra"><i id="in-camino-barra" style="width:0"></i></div>
+      <ul class="in-pasos" id="in-camino"></ul>
+    </div>
+    <div class="in-pie"><button class="fantasma" onclick="ponerModo(false)">Ver todos los detalles (modo experto) →</button></div>
+  </section>
+
+  <!-- ============================== RESUMEN -->
+  <section class="pestana" id="p-resumen">
+    <div class="tarj heroe">
+      <div class="izq">
+        <div class="suave" style="font-size:12.5px">Valor de la cuenta <button class="info" data-g="equity" aria-label="Ayuda: valor de la cuenta">ⓘ</button></div>
+        <div class="valor" id="h-valor">—</div>
+        <div class="linea" id="h-cambios"></div>
+        <div class="mini-kpis esp" id="h-mini"></div>
+      </div>
+      <div class="der">
+        <div class="tarj-cab" style="padding:4px 12px 0;margin:0">
+          <span class="suave" style="font-size:12.5px">Evolución</span>
+          <div class="der"><div class="periodos" id="g-periodos">
+            <button data-h="24">24 h</button><button data-h="168" class="act">7 d</button><button data-h="720">30 d</button><button data-h="0">Todo</button></div></div>
+        </div>
+        <div id="g-saldo"></div>
+      </div>
+    </div>
+    <div class="rej k4 esp" id="kpis"></div>
+    <div class="rej d3 esp">
+      <div class="tarj plana">
+        <div class="tarj-cab"><h2>Posiciones del bot</h2><button class="info" data-g="stop_mark" aria-label="Ayuda: stops y precio de marca">ⓘ</button>
+          <div class="der"><span class="suave" id="pos-total" style="font-size:12.5px"></span></div></div>
+        <div class="tabla" id="posiciones"></div>
+      </div>
+      <div class="tarj">
+        <div class="tarj-cab"><h2>Entradas</h2><button class="info" data-g="bloqueos" aria-label="Ayuda: entradas bloqueadas">ⓘ</button></div>
+        <div id="bloqueos"></div>
+        <h3>Próximas velas</h3><div id="r-velas"></div>
+      </div>
+    </div>
+    <div class="rej d2 esp">
+      <div class="tarj">
+        <div class="tarj-cab"><h2>Últimos movimientos</h2><div class="der"><a href="#vivo">Ver todo ›</a></div></div>
+        <div id="r-feed"></div>
+      </div>
+      <div class="tarj">
+        <div class="tarj-cab"><h2>Alertas</h2></div>
+        <div id="alertas"></div>
+      </div>
+    </div>
+    <div class="rej d2 esp">
+      <div class="tarj plana">
+        <div class="tarj-cab"><h2>Límites de riesgo</h2><button class="info" data-g="limite_diario" aria-label="Ayuda: límites">ⓘ</button></div>
+        <div class="tabla" id="limites" style="padding:0 4px 8px"></div>
+      </div>
+      <div class="tarj plana">
+        <div class="tarj-cab"><h2>Posiciones y órdenes externas</h2><button class="info" data-g="externa" aria-label="Ayuda: posición externa">ⓘ</button></div>
+        <div class="tabla" id="externas" style="padding:0 4px 8px"></div>
+      </div>
+    </div>
+    <div class="tarj plana esp" id="caja-shadow" style="display:none">
+      <div class="tarj-cab"><h2>Intenciones shadow abiertas</h2><button class="info" data-g="shadow" aria-label="Ayuda: shadow">ⓘ</button></div>
+      <div class="tabla" id="shadow"></div>
+    </div>
+  </section>
+
+  <!-- ============================== SEÑALES EN VIVO -->
+  <section class="pestana" id="p-vivo">
+    <div class="tarj">
+      <div class="tarj-cab">
+        <span id="v-conexion" class="pildora">Conectando…</span>
+        <span id="v-ultimo" class="suave" style="font-size:12.5px"></span>
+        <span id="v-bot" class="suave" style="font-size:12.5px"></span>
+        <span id="v-latencia" class="suave" style="font-size:12.5px"></span>
+        <div class="der"><button id="v-pausa" type="button">Pausar</button></div>
+      </div>
+      <div id="v-obsoleto" class="chip rojo" style="display:none;margin-bottom:8px;white-space:normal"></div>
+      <p class="nota" style="margin:0">Lo que el bot detecta, decide y hace, y lo que observa del mercado y de las ballenas, con su procedencia
+        y frescura. <b>No son predicciones.</b> Lo marcado como <span class="chip ambar">inferido</span> no es un dato confirmado.
+        La latencia es la observada; no hay una latencia garantizada. <button class="info" data-g="feed" aria-label="Ayuda: señales en vivo">ⓘ</button></p>
+    </div>
+    <div class="tarj esp"><div class="tarj-cab"><h2>Velas: las estrategias solo generan señal al cierre</h2></div><div id="v-velas" class="velas"></div></div>
+    <div class="tarj plana esp">
+      <div class="tarj-cab" style="padding-bottom:12px">
+        <div class="filtros" role="search" style="width:100%">
+          <select id="v-tipo" aria-label="Tipo de evento"><option value="">Todos los tipos</option></select>
+          <input type="search" id="v-moneda" placeholder="Moneda" aria-label="Moneda">
+          <input type="search" id="v-estrategia" placeholder="Estrategia" aria-label="Estrategia">
+          <select id="v-lado" aria-label="Lado"><option value="">Cualquier lado</option><option value="L">Largo</option><option value="S">Corto</option>
+            <option value="compra">Compra</option><option value="venta">Venta</option></select>
+          <input type="search" id="v-estado" placeholder="Estado" aria-label="Estado">
+          <input type="search" id="v-q" class="crece" placeholder="Buscar texto…" aria-label="Buscar">
+          <button id="v-limpiar" type="button">Limpiar</button>
+        </div>
+      </div>
+      <div class="tabla alta" id="v-eventos"></div>
+      <p class="nota" id="v-pie" style="padding:0 16px 12px"></p>
+    </div>
+    <div class="rej d2 esp">
+      <div class="tarj"><div class="tarj-cab"><h2>Cobertura de ballenas</h2></div><div id="v-cobertura"></div></div>
+      <div class="tarj"><div class="tarj-cab"><h2>Flujo agregado · última hora</h2><span class="chip ambar">inferido</span></div><div id="v-flujo"></div></div>
+    </div>
+  </section>
+
+  <!-- ============================== OPERACIONES -->
+  <section class="pestana" id="p-operaciones">
+    <div class="rej k4" id="ops-kpis"></div>
+    <div class="tarj plana esp">
+      <div class="tarj-cab" style="padding-bottom:12px">
+        <div class="filtros" style="width:100%">
+          <select id="f-estado" aria-label="Estado"><option value="">Todos los estados</option><option>cerrada</option><option>completada</option>
+            <option>parcial</option><option>enviada</option><option>cerrando</option><option>rechazada</option><option>aprobada</option>
+            <option>shadow</option><option>shadow_cerrada</option><option>error</option></select>
+          <select id="f-estrategia" aria-label="Estrategia"><option value="">Todas las estrategias</option></select>
+          <select id="f-moneda" aria-label="Moneda"><option value="">Todas las monedas</option></select>
+          <select id="f-lado" aria-label="Lado"><option value="">Largo y corto</option><option value="L">Largo</option><option value="S">Corto</option></select>
+          <select id="f-origen" aria-label="Origen"><option value="">Todo origen</option><option>real</option><option>simulado</option><option>shadow</option></select>
+          <label class="suave" style="display:flex;gap:6px;align-items:center;white-space:nowrap"><input type="checkbox" id="f-ejec" checked> solo ejecutadas</label>
+          <input type="search" id="f-q" class="crece" placeholder="Buscar (trade_id, motivo…)" aria-label="Buscar">
+          <a id="csv" href="#" class="boton" download>CSV</a>
+        </div>
+      </div>
+      <div class="tabla" id="ops"></div>
+      <div class="pag"><span id="pag-txt" class="suave" style="font-size:12.5px"></span><button id="pag-ant" class="mini">‹ Anterior</button><button id="pag-sig" class="mini">Siguiente ›</button></div>
+    </div>
+    <div class="rej d2 esp">
+      <div class="tarj"><div class="tarj-cab"><h2>Distribución de resultados (R neto)</h2><button class="info" data-g="r" aria-label="Ayuda: R">ⓘ</button></div><div id="ops-hist"></div></div>
+      <div class="tarj"><div class="tarj-cab"><h2>Resultado por estrategia</h2></div><div id="ops-estr"></div></div>
+    </div>
+    <p class="nota">Cada operación se reconstruye con el registro versionado (registro/ledger.jsonl): señal, decisión, órdenes, fills,
+      protección, funding y cierre. Pulsa una fila para ver su historia completa. <button class="info" data-g="pnl_neto" aria-label="Ayuda: resultado neto">ⓘ</button></p>
+  </section>
+
+  <!-- ============================== ESTRATEGIAS -->
+  <section class="pestana" id="p-estrategias">
+    <div class="tarj">
+      <div class="tarj-cab"><h2>Estrategias</h2><button class="info" data-g="etapa" aria-label="Ayuda: etapas">ⓘ</button>
+        <button class="info" data-g="huella" aria-label="Ayuda: huella">ⓘ</button>
+        <div class="der"><span class="suave" id="lab-meta" style="font-size:12.5px"></span></div></div>
+      <p class="nota" style="margin:0">Pulsa una estrategia para ver todo el laboratorio: fuera de muestra, holdout, comparación con el azar,
+        escenarios de costes, resultado por moneda, régimen y trimestre, y su evidencia en vivo. Nada de aquí activa el modo real.</p>
+    </div>
+    <div class="tarj esp" id="cerebro-est"></div>
+    <div class="tarj esp" id="probador"></div>
+    <div class="rej d2 esp" id="estrategias" style="grid-template-columns:repeat(auto-fill,minmax(330px,1fr))"></div>
+    <div class="tarj esp"><div class="tarj-cab"><h2>Datos propios acumulados</h2></div><div id="datos-acum"></div></div>
+  </section>
+
+  <!-- ============================== BALLENAS -->
+  <section class="pestana" id="p-ballenas">
+    <div class="rej k4" id="b-kpis"></div>
+    <div class="tarj plana esp">
+      <div class="tarj-cab"><h2>Ballenas seguidas</h2><button class="info" data-g="ballena_etiqueta" aria-label="Ayuda: etiquetas de ballenas">ⓘ</button>
+        <div class="der"><span class="suave" style="font-size:12.5px">Direcciones enmascaradas · pulsa una fila para ver su detalle</span></div></div>
+      <div class="tabla" id="ballenas"></div>
+    </div>
+    <div class="rej d2 esp">
+      <div class="tarj"><div class="tarj-cab"><h2>Flujo neto de ballenas por moneda · 1 h</h2><span class="chip ambar">inferido</span></div><div id="b-flujo"></div></div>
+      <div class="tarj"><div class="tarj-cab"><h2>Exposición observada agregada</h2></div><div id="b-expo"></div>
+        <p class="nota">Suma de las posiciones observadas en la última foto de cada ballena. Un trade público no revela la exposición neta completa de una cuenta.</p></div>
+    </div>
+    <div class="tarj esp"><div class="tarj-cab"><h2>Binance y Bybit · mismo mercado en otros exchanges</h2><span class="chip">solo datos</span><span id="ext-fuentes"></span></div>
+      <div class="tabla" id="externo"></div>
+      <p class="nota">Datos públicos leídos cada 5 minutos. El bot <b>no opera</b> en Binance ni en Bybit y no usa cuentas ni claves allí. Hoy sirven para informe e investigación (el laboratorio mide si anticipan algo a partir de 14 días archivados); no cambian ninguna decisión. Funding pasado a % por hora para compararlo con Hyperliquid.</p></div>
+  </section>
+
+  <!-- ============================== APRENDIZAJE -->
+  <section class="pestana" id="p-aprendizaje">
+    <div class="rej k4" id="a-kpis"></div>
+    <div class="rej d2 esp">
+      <div class="tarj"><div class="tarj-cab"><h2>¿Aporta el filtro de aprendizaje?</h2><button class="info" data-g="filtro_aprendizaje" aria-label="Ayuda: evaluación del filtro">ⓘ</button></div>
+        <div id="a-filtro-eval"></div></div>
+      <div class="tarj"><div class="tarj-cab"><h2>Qué habría pasado con lo descartado</h2></div><div id="a-filtros"></div></div>
+    </div>
+    <div class="tarj plana esp"><div class="tarj-cab"><h2>Por estrategia y fuente</h2></div><div class="tabla" id="a-estrategias"></div></div>
+    <div class="tarj plana esp"><div class="tarj-cab"><h2>Descartes analizados</h2><div class="der"><span class="suave" style="font-size:12.5px">Señales rechazadas seguidas en papel · pulsa para ver el caso</span></div></div>
+      <div class="tabla" id="a-descartes"></div></div>
+    <p class="nota" id="a-nota"></p>
+  </section>
+
+  <!-- ============================== INVESTIGACIÓN -->
+  <section class="pestana" id="p-investigacion">
+    <div class="rej k4" id="i-kpis"></div>
+    <p class="nota">Cada noche el bot inventa y prueba ideas nuevas con todo el rigor del laboratorio. Cuantas más prueba, más exige (la t
+      requerida sube). Las pocas que pasan se siguen en vivo SIN operar. <button class="info" data-g="investigacion" aria-label="Ayuda: investigación">ⓘ</button></p>
+    <div class="tarj plana esp"><div class="tarj-cab"><h2>Aspirantes en observación</h2><span class="chip">en vivo, sin operar</span></div><div class="tabla" id="i-aspirantes"></div></div>
+    <div class="rej d2 esp">
+      <div class="tarj plana"><div class="tarj-cab"><h2>Vigilancia de estrategias</h2><button class="info" data-g="vigilancia" aria-label="Ayuda: vigilancia">ⓘ</button></div><div class="tabla" id="i-vigilancia"></div></div>
+      <div class="tarj plana"><div class="tarj-cab"><h2>Pendientes de tu revisión</h2></div><div class="tabla" id="i-revision"></div></div>
+    </div>
+    <div class="tarj plana esp"><div class="tarj-cab"><h2>Cementerio reciente</h2></div><div class="tabla" id="i-cementerio"></div></div>
+  </section>
+
+  <!-- ============================== SISTEMA (observabilidad) -->
+  <section class="pestana" id="p-observabilidad">
+    <div class="tarj-cab">
+      <span class="suave">Salud técnica del bot. Aquí no hay saldo, posiciones ni operaciones.</span>
+      <div class="der"><label class="suave" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="o-pausa"> pausar</label>
+        <a class="boton" href="/api/diagnostico">Exportar diagnóstico</a></div>
+    </div>
+    <div class="rej k4" id="o-kpis"></div>
+    <div class="tarj esp"><div class="tarj-cab"><h2>Componentes</h2><button class="info" data-g="estado_componente" aria-label="Ayuda: estados">ⓘ</button></div><div class="comps" id="o-comp"></div></div>
+    <div class="tarj plana esp"><div class="tarj-cab"><h2>Incidentes</h2><button class="info" data-g="incidente" aria-label="Ayuda: incidentes">ⓘ</button></div><div class="tabla" id="o-inc"></div></div>
+    <div class="tarj esp"><div class="tarj-cab"><h2>Registros técnicos</h2><button class="info" data-g="traza" aria-label="Ayuda: traza">ⓘ</button></div>
+      <div class="filtros" style="margin-bottom:10px">
+        <select id="o-nivel" aria-label="Nivel"><option value="">Todos los niveles</option><option>INFO</option><option>WARNING</option><option>ERROR</option></select>
+        <select id="o-comp-f" aria-label="Componente"><option value="">Todos los componentes</option></select>
+        <input type="search" id="o-traza" placeholder="Traza (ciclo-…)" aria-label="Traza">
+        <input type="search" id="o-q" class="crece" placeholder="Buscar texto" aria-label="Texto">
+      </div>
+      <div class="logs" id="o-logs"></div></div>
+  </section>
+
+  <!-- ============================== CONFIGURACIÓN -->
+  <section class="pestana" id="p-configuracion">
+    <div class="tarj">
+      <div class="tarj-cab"><h2>Configuración del bot</h2><span id="c-ro" class="chip ambar" style="display:none">solo lectura</span>
+        <div class="der"><button class="fantasma" onclick="verHistorial()">Historial de cambios</button></div></div>
+      <p class="nota" style="margin:0" id="c-aviso"></p>
+      <p class="nota">Desde aquí <b>no</b> se puede cambiar el modo (simulado, shadow, real), los límites del piloto real ni la seguridad del panel.
+        Cada guardado se valida, deja una copia de la configuración anterior y se puede deshacer.</p>
+    </div>
+    <div class="esp cfg-nav" id="c-nav"></div>
+    <div class="tarj" id="c-seccion"></div>
+    <div class="rej d2 esp">
+      <div class="tarj plana"><div class="tarj-cab"><h2>Valores de riesgo que se aplican de verdad</h2></div><div class="tabla" id="c-efectiva"></div></div>
+      <div class="tarj"><details class="glos"><summary><b>Glosario</b> · qué significa cada término</summary><dl class="glosario" id="glosario"></dl></details></div>
+    </div>
+  </section>
+</main>
+
+<div class="barra-cambios" id="barra-cambios" role="region" aria-label="Cambios sin guardar">
+  <span><b id="bc-n">0</b> cambios sin guardar</span>
+  <button class="fantasma" onclick="descartarCambios()">Descartar</button>
+  <button class="primario" onclick="revisarCambios()">Revisar y guardar</button>
+</div>
+
+<div class="velo" onclick="cerrarCajon()"></div>
+<aside class="cajon" id="cajon" role="dialog" aria-modal="true" aria-labelledby="cajon-titulo" tabindex="-1">
+  <div class="cajon-cab"><h2 id="cajon-titulo">Detalle</h2><span id="cajon-etq"></span>
+    <button class="fantasma" style="margin-left:auto" onclick="cerrarCajon()" aria-label="Cerrar detalle">✕</button></div>
+  <div class="cajon-cuerpo" id="cajon-cuerpo"></div>
+</aside>
+<div id="ayuda" class="ayuda" role="dialog" aria-modal="false" aria-labelledby="ayuda-t" hidden>
+  <button class="cerrar" onclick="cerrarAyuda()" aria-label="Cerrar ayuda">✕</button>
+  <h4 id="ayuda-t"></h4><p id="ayuda-p"></p>
+</div>
+<dialog id="d-cierre" aria-labelledby="d-cierre-t">
+  <h2 id="d-cierre-t">Cerrar SOLO las posiciones del bot</h2>
+  <p id="d-cierre-alcance"></p>
+  <p class="suave">Las posiciones externas no se tocan. El bot quedará en pausa. Escribe <b>CERRAR-BOT</b> para confirmar.</p>
+  <label class="sr" for="d-cierre-txt">Confirmación</label><input id="d-cierre-txt" autocomplete="off" style="width:100%">
+  <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px"><button onclick="document.getElementById('d-cierre').close()">Cancelar</button>
+    <button class="peligro" onclick="confirmarCierre()">Cerrar posiciones del bot</button></div>
+</dialog>
+<dialog id="d-config" aria-labelledby="d-config-t">
+  <h2 id="d-config-t">Revisar cambios</h2>
+  <div id="d-config-cuerpo"></div>
+  <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px"><button onclick="document.getElementById('d-config').close()">Volver</button>
+    <button class="primario" id="d-config-ok" onclick="guardarCambios()">Guardar y aplicar</button></div>
+</dialog>
+
+<script>
+"use strict";
+const TOKEN = document.querySelector('meta[name="panel-token"]').content;
+const SOLO_LECTURA = document.querySelector('meta[name="panel-solo-lectura"]').content === "1";
+let D = null, GLOSARIO = {}, pagina = 1, ultimoOk = 0, alcanceCierre = [], horasGrafico = 168;
+const $ = id => document.getElementById(id);
+function esc(v) { return String(v ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c])); }
+function n(v, d = 2) { return v == null || isNaN(v) ? "—" : Number(v).toLocaleString("es-ES", {minimumFractionDigits: d, maximumFractionDigits: d}); }
+function usd(v, d = 2) { return v == null || isNaN(v) ? "—" : n(v, d) + " $"; }
+function usdK(v) { if (v == null) return "—"; const a = Math.abs(v); const s = v > 0 ? "+" : v < 0 ? "−" : "";
+  return s + (a >= 1e6 ? n(a / 1e6, 2) + " M" : a >= 1e3 ? n(a / 1e3, 0) + " k" : n(a, 0)) + " $"; }
+function pct(v, d = 2) { return v == null || isNaN(v) ? "—" : (v > 0 ? "+" : "") + n(v, d) + " %"; }
+function rr(v, d = 2) { return v == null || isNaN(v) ? "—" : (v > 0 ? "+" : "") + n(v, d) + " R"; }
+function signo(v) { return v == null ? "" : v > 0 ? "pos" : v < 0 ? "neg" : ""; }
+function hora(ts) { if (!ts) return "—"; const t = typeof ts === "string" ? Date.parse(ts) : ts * 1000;
+  return new Date(t).toLocaleString("es-ES", {day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit"}); }
+function horaS(ts) { if (!ts) return "—"; return new Date(ts * 1000).toLocaleTimeString("es-ES"); }
+function hace(seg) { if (seg == null) return "—"; seg = Math.max(0, seg); return seg < 90 ? `${Math.round(seg)} s` : seg < 5400 ? `${Math.round(seg / 60)} min` : seg < 172800 ? `${(seg / 3600).toFixed(1)} h` : `${(seg / 86400).toFixed(1)} d`; }
+function dur(seg) { if (seg == null) return "—"; const h = seg / 3600; return h < 1 ? `${Math.round(seg / 60)} min` : h < 48 ? `${n(h, 1)} h` : `${n(h / 24, 1)} d`; }
+function lado(l) { return l === "L" ? '<span class="lado L">Largo</span>' : l === "S" ? '<span class="lado S">Corto</span>' : esc(l || ""); }
+function ladoTxt(l) { return l === "L" ? "Largo" : l === "S" ? "Corto" : (l || ""); }
+function info(clave) { return `<button class="info" data-g="${esc(clave)}" aria-label="Ayuda: ${esc((GLOSARIO[clave] || {}).titulo || clave)}">ⓘ</button>`; }
+function tabla(cab, filas, vacio = "Nada que mostrar.") {
+  if (!filas.length) return `<div class="vacio">${esc(vacio)}</div>`;
+  return `<table><thead><tr>${cab.map(c => `<th${c.endsWith("#") ? ' class="num"' : ""}>${esc(c.replace(/#$/, ""))}</th>`).join("")}</tr></thead>
+    <tbody>${filas.join("")}</tbody></table>`;
+}
+function td(v, cls = "") { return `<td class="${cls}">${v}</td>`; }
+function kpi(etq, valor, sub = "", ayuda = "", cls = "", medidor = null) {
+  let m = "";
+  if (medidor) { const p = Math.max(0, Math.min(100, medidor.pct || 0));
+    m = `<div class="medidor ${p >= 90 ? "rojo" : p >= 65 ? "ambar" : ""}" role="progressbar" aria-valuenow="${Math.round(p)}" aria-valuemax="100"><i style="width:${p}%"></i></div>`; }
+  return `<div class="kpi"><div class="e">${esc(etq)} ${ayuda ? info(ayuda) : ""}</div><div class="v ${cls}">${valor}</div>${sub ? `<div class="s">${sub}</div>` : ""}${m}</div>`;
+}
+function mini(etq, v, cls = "") { return `<div><div class="e">${esc(etq)}</div><div class="v ${cls}">${v}</div></div>`; }
+const desc = v => v == null || v === "" ? '<span class="tenue">desconocido</span>' : v;
+
+/* ---------------------------------------------------------------- ayuda contextual (ⓘ) */
+let ayudaOrigen = null;
+document.addEventListener("click", e => {
+  const b = e.target.closest("button.info");
+  if (b) { e.stopPropagation(); abrirAyuda(b); return; }
+  const a = $("ayuda");
+  if (!a.hidden && !a.contains(e.target)) cerrarAyuda();
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") { if (!$("ayuda").hidden) cerrarAyuda(); else cerrarCajon(); } });
+function abrirAyuda(b) {
+  const g = GLOSARIO[b.dataset.g] || EST_INFO[b.dataset.g] || {titulo: "Ayuda", texto: "Sin descripción."};
+  $("ayuda-t").textContent = g.titulo; $("ayuda-p").textContent = g.texto;
+  const a = $("ayuda"); a.hidden = false;
+  const r = b.getBoundingClientRect();
+  a.style.left = Math.max(12, Math.min(r.left, innerWidth - a.offsetWidth - 12)) + "px";
+  a.style.top = (r.bottom + 6 + a.offsetHeight > innerHeight ? Math.max(12, r.top - a.offsetHeight - 6) : r.bottom + 6) + "px";
+  ayudaOrigen = b; a.querySelector(".cerrar").focus();
+}
+const EST_INFO = {
+  "est_ruptura": {titulo: "Ruptura", texto: "Entra cuando una vela cierra por encima del máximo (o por debajo del mínimo) de las últimas 20-40 velas, a favor de la tendencia de fondo y con la volatilidad despertando. Stop a 1,5-2,5 ATR, cobro parcial a 1,5 R y objetivo final a 4 R con stop dinámico. Máximo 30 velas."},
+  "est_retroceso": {titulo: "Retroceso", texto: "En una tendencia limpia, espera a que el precio vuelva a su media rápida y entra cuando la vela siguiente cierra otra vez a favor. Stop a 1,2-2 ATR, cobro parcial a 1 R, objetivo a 3 R. Máximo 24 velas."},
+  "est_reversion": {titulo: "Reversión a la media", texto: "Solo sin tendencia: si el precio se aleja 1,5-2,5 ATR de su media y el RSI marca exceso, entra en contra cuando la vela gira. Objetivos cortos (0,8 R y 1,8 R). Máximo 10 velas."},
+  "est_funding": {titulo: "Funding extremo", texto: "Si el funding medio de las últimas horas está en su 5-10 % más extremo y el precio empieza a girar, se pone en contra de la mayoría. Stop a 1,5-2,5 ATR, objetivo 3 R, máximo 18 velas."},
+  "est_fuerza": {titulo: "Fuerza relativa", texto: "Cartera: cada pocos días ordena las monedas por su avance (medido en ATR); compra la más fuerte (o las dos) y vende la más débil hasta el siguiente reparto. Sin objetivo; stop amplio de 2,5-3,5 ATR."},
+  "est_momentum": {titulo: "Momentum", texto: "Mira cada moneda en ventanas de 10-30 días; si el movimiento es claro (3-6 ATR) y limpio, va a favor hasta el siguiente reparto (4-7 días). Stop de 3-5 ATR, sin objetivo. Solo velas de 4 h."},
+  "est_ballenas": {titulo: "Ballenas (investigación)", texto: "Detecta cuando cuentas grandes y rentables aumentan con fuerza su posición en una moneda (50.000 $ de aumento o 100.000 $ de flujo en una hora). Hoy solo registra lo que haría; puede usarse como veto."},
+  "est_liquidaciones": {titulo: "Liquidaciones (investigación)", texto: "Detecta cascadas de cierres forzosos (el interés abierto cae un 3 % en una hora con un movimiento de 2 ATR) y busca el rebote. Necesita 14 días de mercado grabado; hoy solo registra."},
+};
+function cerrarAyuda() { $("ayuda").hidden = true; if (ayudaOrigen) { ayudaOrigen.focus(); ayudaOrigen = null; } }
+
+/* ---------------------------------------------------------------- cajón de detalle */
+let foco = null;
+function abrirCajon(titulo, etq = "") {
+  foco = document.activeElement;
+  $("cajon-titulo").innerHTML = titulo; $("cajon-etq").innerHTML = etq;
+  $("cajon-cuerpo").innerHTML = '<div class="vacio">Cargando…</div>';
+  document.body.classList.add("cajon-abierto"); $("cajon").scrollTop = 0; $("cajon").focus();
+}
+function cuerpoCajon(html) { $("cajon-cuerpo").innerHTML = html; }
+function cerrarCajon() { if (!document.body.classList.contains("cajon-abierto")) return;
+  document.body.classList.remove("cajon-abierto"); if (foco) { foco.focus(); foco = null; } }
+const dl = pares => `<dl class="dl">${pares.filter(p => p && p[1] !== undefined).map(([k, v, g]) => `<dt>${esc(k)} ${g ? info(g) : ""}</dt><dd>${v}</dd>`).join("")}</dl>`;
+
+/* ---------------------------------------------------------------- navegación */
+function irA(p) {
+  if (!$("p-" + p)) p = "resumen";
+  cerrarCajon();
+  document.querySelectorAll("section.pestana").forEach(s => s.classList.toggle("activa", s.id === "p-" + p));
+  document.querySelectorAll("nav.tabs a").forEach(a => { a.classList.toggle("activa", a.dataset.p === p);
+    if (a.dataset.p === p) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  if (p === "operaciones") cargarOps();
+  if (p === "vivo") { $("badge-vivo").style.display = "none"; $("badge-vivo").textContent = ""; }
+  if (p === "observabilidad") cargarObs();
+  if (p === "configuracion") cargarConfig();
+  if (p === "estrategias") cargarLab();
+  scrollTo({top: 0});
+}
+window.addEventListener("hashchange", () => irA(location.hash.slice(1) || "resumen"));
+function mostrarAviso(texto, tipo = "") { const a = $("aviso"); a.innerHTML = texto ? esc(texto) : ""; a.style.display = texto ? "block" : "none";
+  a.style.borderColor = tipo === "ok" ? "rgba(47,215,136,.5)" : tipo === "error" ? "rgba(240,98,125,.5)" : ""; }
+
+/* ---------------------------------------------------------------- datos principales */
+async function cargar() {
+  try {
+    const r = await fetch("/api/datos", {cache: "no-store"});
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    D = await r.json(); ultimoOk = Date.now(); pintar();
+  } catch (e) { estadoConexion(); }
+}
+function estadoConexion() {
+  const ch = $("estado");
+  if (Date.now() - ultimoOk > 30000) { ch.className = "pildora rojo"; ch.innerHTML = '<span class="p"></span>Sin conexión con el panel'; }
+}
+function pintar() {
+  const b = D.bot || {}, modo = b.modo || "?";
+  const ch = $("estado");
+  if (!b.ts) { ch.className = "pildora"; ch.textContent = "El bot aún no ha escrito datos"; }
+  else if (!D.bot_vivo) { ch.className = "pildora ambar"; ch.innerHTML = `<span class="p"></span>Datos de hace ${hace(D.edad_datos_seg)}`; }
+  else if (!b.operando) { ch.className = "pildora ambar vivo"; ch.innerHTML = '<span class="p"></span>En marcha · entradas bloqueadas'; }
+  else { ch.className = "pildora verde vivo"; ch.innerHTML = '<span class="p"></span>En marcha'; }
+  const mp = $("modo-pill"); mp.style.display = b.ts ? "" : "none";
+  mp.className = "pildora " + (modo === "real" ? "rojo" : modo === "shadow" ? "violeta" : "azul");
+  mp.textContent = modo === "real" ? "REAL" : modo === "shadow" ? "SHADOW" : "SIMULADO";
+  $("actualizado").textContent = b.ts ? "actualizado " + horaS(b.ts) : "";
+  const banda = $("banda");
+  banda.className = "banda " + (modo === "real" ? "real" : modo === "shadow" ? "shadow" : "simulado");
+  banda.innerHTML = `<b>${modo === "shadow" ? "SHADOW · órdenes deshabilitadas" : modo === "real" ? "REAL · dinero real" : "SIMULADO · dinero ficticio con precios reales"}</b>
+    <span class="suave">cuenta ${esc(b.cuenta || "—")} · red ${esc(b.red || "—")}</span> ${info("modo")}`
+    + (SOLO_LECTURA ? ' <span class="chip ambar">panel en solo lectura</span>' : "")
+    + (b.gestion && b.gestion.factor != null && b.gestion.factor < 1 ? ` <span class="chip ambar">tamaño × ${n(b.gestion.factor, 2)}</span>` : "");
+  $("b-cerrar").disabled = SOLO_LECTURA || modo === "shadow";
+  $("b-cerrar").title = modo === "shadow" ? "SHADOW: este modo no tiene órdenes" : "";
+  $("b-pausa").disabled = $("b-reanudar").disabled = SOLO_LECTURA;
+  for (const f of [pintarInicio, pintarResumen, pintarEstrategias, pintarInvestigacion, pintarVelasYCobertura, pintarBallenas, pintarConfigEfectiva])
+    try { f(b); } catch (e) { console.error(f.name, e); }
+  try { pintarAprendizaje(D.aprendizaje || {}); } catch (e) { console.error(e); }
+  const inc = (D.sistema_resumen || {}).incidentes_activos || 0;
+  $("badge-inc").style.display = inc ? "" : "none"; $("badge-inc").textContent = inc;
+}
+
+/* ---------------------------------------------------------------- resumen */
+function variacion(hist, horas) {
+  if (!hist.length) return null;
+  const lim = Date.now() / 1000 - horas * 3600; const ult = hist[hist.length - 1][1];
+  const base = hist.find(p => p[0] >= lim); if (!base || !base[1]) return null;
+  return {usd: ult - base[1], pct: (ult / base[1] - 1) * 100};
+}
+function pintarResumen(b) {
+  const L = b.limites || {}, E = b.exposicion || {}, hist = b.historial_saldo || [];
+  $("h-valor").textContent = usd(b.saldo);
+  const ch = [];
+  const ini = b.saldo_inicial;
+  if (b.saldo != null && ini) { const t = (b.saldo / ini - 1) * 100; ch.push(`<span class="chip ${t >= 0 ? "verde" : "rojo"}">${pct(t)} desde el inicio</span>`); }
+  const d = (L.dia || {}).valor_pct; if (d != null) ch.push(`<span class="chip ${d >= 0 ? "verde" : "rojo"}">${pct(d)} hoy</span>`);
+  const s = (L.semana || {}).valor_pct; if (s != null) ch.push(`<span class="chip ${s >= 0 ? "verde" : "rojo"}">${pct(s)} semana</span>`);
+  $("h-cambios").innerHTML = ch.join("") || '<span class="tenue">sin historial todavía</span>';
+  const pnl = (b.posiciones || []).reduce((a, p) => a + (p.pnl_no_realizado || 0), 0);
+  $("h-mini").innerHTML = mini("Disponible", usd(b.libre)) + mini("PnL abierto", usd(pnl), signo(pnl))
+    + mini("Máximo", usd(b.saldo_maximo)) + mini("Inicial", usd(b.saldo_inicial));
+  $("g-saldo").innerHTML = grafSaldo(hist, horasGrafico);
+  const lim = (x, l) => l ? Math.abs((x || 0) / l) * 100 : 0;
+  const oh = L.operaciones_hoy || {}, ra = L.riesgo_abierto || {}, eb = b.exposicion_beta || {};
+  $("kpis").innerHTML = [
+    kpi("Riesgo abierto", pct(E.riesgo_abierto_pct), `límite ${n((ra.limite_pct), 1)} %`, "riesgo_abierto", "", {pct: lim(E.riesgo_abierto_pct, ra.limite_pct)}),
+    kpi("Operaciones hoy", `${oh.valor ?? 0} <span class="tenue" style="font-size:15px">/ ${oh.limite ?? "—"}</span>`, "día UTC", "", "", {pct: lim(oh.valor, oh.limite)}),
+    kpi("Pérdida del día", pct((L.dia || {}).valor_pct), `bloqueo en ${pct((L.dia || {}).limite_pct, 0)}`, "limite_diario", signo((L.dia || {}).valor_pct),
+        {pct: (L.dia || {}).valor_pct < 0 ? lim((L.dia || {}).valor_pct, (L.dia || {}).limite_pct) : 0}),
+    kpi("Caída desde el máximo", pct((L.caida || {}).valor_pct), `bloqueo en ${pct((L.caida || {}).limite_pct, 0)}`, "", "",
+        {pct: lim((L.caida || {}).valor_pct, (L.caida || {}).limite_pct)}),
+    kpi("Exposición bruta / neta", `${n(E.bruta_pct, 0)} % <span class="tenue" style="font-size:15px">/ ${n(E.neta_pct, 0)} %</span>`, "bot + externas", "exposicion_bruta"),
+    kpi("Exposición a BTC (beta)", eb.pct == null ? "—" : n(eb.pct, 0) + " %", `límite ${eb.limite_pct ?? "—"} %` + ((eb.sin_beta || []).length ? ` · sin beta: ${esc(eb.sin_beta.join(", "))}` : ""), "", "",
+        {pct: lim(eb.pct, eb.limite_pct)}),
+  ].join("");
+  // bloqueos y velas
+  const bl = b.bloqueos || [];
+  $("bloqueos").innerHTML = (bl.length
+    ? `<ul class="lista">${bl.map(x => `<li><span class="punto aviso"></span><span>${esc(x)}</span></li>`).join("")}</ul>`
+    : '<div class="lista"><li style="display:flex;gap:10px"><span class="punto verde"></span><span>Entradas permitidas: el bot puede abrir operaciones si aparece una señal válida.</span></li></div>')
+    + (Object.keys(b.congelados || {}).length ? `<h3>Mercados congelados ${info("congelado")}</h3><ul class="lista">${Object.entries(b.congelados).map(([m, c]) =>
+      `<li><span class="punto error"></span><span><b>${esc(m)}</b> · ${esc(c.motivo)}</span></li>`).join("")}</ul>` : "")
+    + (b.gestion && (b.gestion.motivos || []).length ? `<h3>Tamaño reducido</h3><div class="suave" style="font-size:12.5px">${esc(b.gestion.motivos.join(" · "))}</div>` : "");
+  const ve = (b.motor || {}).velas || {};
+  $("r-velas").innerHTML = Object.keys(ve).length ? `<div class="mini-kpis">${Object.entries(ve).map(([iv, v]) =>
+    `<div><div class="e">Cierre de vela ${esc(iv)}</div><div class="v cuenta-atras" style="font-size:16px" data-cierre="${v.proximo_cierre_ts || ""}">—</div></div>`).join("")}</div>
+    <div class="nota">${((b.motor || {}).monedas || []).length ? `${b.motor.monedas.length} monedas vigiladas: ${esc(b.motor.monedas.slice(0, 14).join(", "))}${b.motor.monedas.length > 14 ? "…" : ""}` : ""}</div>`
+    : '<div class="vacio">El motor aún no ha evaluado ninguna vela.</div>';
+  // posiciones
+  const ps = b.posiciones || [];
+  $("pos-total").textContent = ps.length ? `${ps.length} abiertas · PnL ${usd(pnl)}` : "";
+  $("posiciones").innerHTML = tabla(["Mercado", "Tamaño#", "Entrada#", "Marca#", "PnL#", "Stop · objetivo", "Riesgo#", "Liquidación#", "Cierre por tiempo"],
+    ps.map(p => {
+      const valor = p.notional ?? (p.tam && p.precio_mark ? p.tam * p.precio_mark : null);
+      return `<tr class="clic" data-accion="abrirOp" data-arg="${esc(p.trade_id)}">
+      ${td(`${lado(p.lado)} <span class="moneda">${esc(p.moneda)}</span>${p.congelada ? ' <span class="chip rojo">congelada</span>' : ""}${p.riesgo_liquidacion ? ' <span class="chip rojo">liquidación cerca</span>' : ""}
+        <div class="sub">${esc(p.estrategia)}${p.explorando ? " · explorando" : ""}${!p.stop_verificado ? ' · <span class="neg">stop NO verificado</span>' : ""}</div>`)}
+      ${td(`${n(p.tam, 4)}<div class="sub">${usd(valor)}</div>`, "num")}${td(n(p.entrada, 4), "num")}
+      ${td(`${p.precio_mark == null ? '<span class="tenue">desconocida</span>' : n(p.precio_mark, 4)}<div class="sub">mid ${n(p.precio_mid, 4)}</div>`, "num")}
+      ${td(`${usd(p.pnl_no_realizado)}<div class="sub">${p.r_usd ? rr((p.pnl_no_realizado || 0) / p.r_usd) : ""}</div>`, "num " + signo(p.pnl_no_realizado))}
+      ${td(escalera(p))}
+      ${td(usd(p.riesgo_usd), "num")}
+      ${td(p.liquidacion ? `${n(p.liquidacion, 4)}<div class="sub">${n(p.distancia_liquidacion_pct, 1)} %${p.liquidacion_estimada ? " · estimada" : ""}</div>` : '<span class="ambar-t">desconocida</span>', "num")}
+      ${td(`${hora(p.limite_ts)}<div class="sub">${p.limite_ts ? "en " + hace(p.limite_ts - Date.now() / 1000) : ""}</div>`)}</tr>`; }),
+    "El bot no tiene posiciones abiertas.");
+  // alertas
+  const al = b.alertas || [];
+  const graves = al.filter(a => a.severidad === "error").length;
+  $("badge-alertas").style.display = graves ? "" : "none"; $("badge-alertas").textContent = graves;
+  $("alertas").innerHTML = al.length ? `<ul class="lista">${al.slice(0, 8).map(a => `<li><span class="punto ${esc(a.severidad)}"></span>
+    <span style="flex:1">${esc(a.mensaje)}<div class="sub tenue" style="font-size:11.5px">${hora(a.ts)}${a.trade_id ? ` · <a href="#" data-accion="abrirOp" data-arg="${esc(a.trade_id)}">ver operación</a>` : ""}</div></span></li>`).join("")}</ul>`
+    : '<div class="vacio">Sin alertas. Todo tranquilo.</div>';
+  // límites
+  const fl = (etq, v, l, cls) => `<tr>${td(esc(etq))}${td(v, "num " + (cls || ""))}${td(l, "num")}</tr>`;
+  $("limites").innerHTML = tabla(["Límite", "Ahora#", "Bloquea en#"], [
+    fl("Pérdida del día (UTC)", pct((L.dia || {}).valor_pct), pct((L.dia || {}).limite_pct, 0), signo((L.dia || {}).valor_pct)),
+    fl("Pérdida de la semana (UTC)", pct((L.semana || {}).valor_pct), pct((L.semana || {}).limite_pct, 0), signo((L.semana || {}).valor_pct)),
+    fl("Caída desde el máximo", pct((L.caida || {}).valor_pct), pct((L.caida || {}).limite_pct, 0)),
+    fl("Operaciones hoy", oh.valor ?? 0, oh.limite ?? "—"),
+    fl("Riesgo abierto", pct(E.riesgo_abierto_pct), n(ra.limite_pct, 1) + " %"),
+    fl("Margen de mantenimiento / cuenta", (b.margen || {}).fraccion_mantenimiento == null ? "—" : n(b.margen.fraccion_mantenimiento * 100, 1) + " %", "—"),
+  ]);
+  const ex = b.externas || [], oe = b.ordenes_externas || [];
+  $("externas").innerHTML = tabla(["Mercado", "Tamaño#", "Valor#", "PnL#"], ex.map(p => `<tr>${td(lado(p.lado) + ` <span class="moneda">${esc(p.moneda)}</span>`)}
+    ${td(n(p.tam, 4), "num")}${td(usd(p.notional), "num")}${td(usd(p.pnl), "num " + signo(p.pnl))}</tr>`), "No hay posiciones externas: la cuenta es solo del bot.")
+    + (oe.length ? `<h3 style="padding:0 12px">Órdenes externas</h3>` + tabla(["Mercado", "Tipo", "Lado", "Tamaño#", "Precio#"], oe.map(o => `<tr>${td(esc(o.moneda))}
+    ${td(esc(o.tipo))}${td(o.compra ? "compra" : "venta")}${td(n(o.sz, 4), "num")}${td(n(o.trigger_px || o.px, 4), "num")}</tr>`)) : "")
+    + ((b.posiciones_legado || []).length ? `<p class="nota" style="padding:0 12px">Posiciones de una versión anterior con propiedad incierta: ${b.posiciones_legado.map(esc).join(", ")}. No se tocan.</p>` : "");
+  const sh = b.shadow_abiertas || [];
+  $("caja-shadow").style.display = b.modo === "shadow" ? "" : "none";
+  $("shadow").innerHTML = tabla(["Operación", "Estrategia", "Tamaño teórico#", "Entrada modelada#", "Riesgo#", "Desde"], sh.map(s =>
+    `<tr class="clic" data-accion="abrirOp" data-arg="${esc(s.trade_id)}">${td(lado(s.lado) + " " + esc(s.moneda))}${td(esc(s.estrategia))}${td(n(s.tam, 4), "num")}
+    ${td(n(s.entrada, 4), "num")}${td(usd(s.riesgo_usd), "num")}${td(hora(s.ts))}</tr>`), "Sin intenciones abiertas.");
+}
+function escalera(p) {
+  const sl = p.sl, ent = p.entrada, tp = p.tpf || p.tp1, px = p.precio_mark || p.precio_mid;
+  if (!sl || !ent) return '<span class="tenue">—</span>';
+  const lo = Math.min(sl, tp || ent * 2 - sl, px || ent), hi = Math.max(sl, tp || ent * 2 - sl, px || ent);
+  const X = v => ((v - lo) / ((hi - lo) || 1) * 100).toFixed(1);
+  const larga = p.lado === "L";
+  const izq = larga ? "pos" : "neg";
+  return `<div class="escalera" title="stop ${n(sl, 4)} · entrada ${n(ent, 4)}${tp ? " · objetivo " + n(tp, 4) : " · sin objetivo"}">
+    <div class="pista" style="${larga ? "" : "transform:scaleX(-1)"}"></div>
+    <div class="marca" style="left:${X(sl)}%;background:var(--rojo)"></div><div class="marca" style="left:${X(ent)}%"></div>
+    ${tp ? `<div class="marca" style="left:${X(tp)}%;background:var(--verde)"></div>` : ""}
+    ${px ? `<div class="actual" style="left:${X(px)}%"></div>` : ""}</div>
+    <div class="sub">stop ${n(sl, 4)} ${p.en_breakeven ? "· equilibrio" : ""} · ${n(p.distancia_stop_pct, 2)} %</div>`;
+}
+function grafSaldo(puntos, horas) {
+  if (horas) { const lim = Date.now() / 1000 - horas * 3600; const f = puntos.filter(p => p[0] >= lim); if (f.length >= 2) puntos = f; }
+  if (puntos.length < 2) return '<div class="vacio" style="padding:60px 0">Aún no hay suficiente historial para dibujar la evolución.</div>';
+  const W = 900, H = 220, PL = 8, PR = 64, PT = 12, PB = 24, xs = puntos.map(p => p[0]), ys = puntos.map(p => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs); let y0 = Math.min(...ys), y1 = Math.max(...ys);
+  if (y1 - y0 < 1e-9) { y0 -= 1; y1 += 1; } const pad = (y1 - y0) * .08; y0 -= pad; y1 += pad;
+  const X = x => PL + (x - x0) / ((x1 - x0) || 1) * (W - PL - PR), Y = y => PT + (1 - (y - y0) / (y1 - y0)) * (H - PT - PB);
+  const sube = ys[ys.length - 1] >= ys[0], col = sube ? "#2fd788" : "#f0627d";
+  const d = puntos.map((p, i) => (i ? "L" : "M") + X(p[0]).toFixed(1) + " " + Y(p[1]).toFixed(1)).join(" ");
+  const area = d + ` L${X(x1).toFixed(1)} ${H - PB} L${X(x0).toFixed(1)} ${H - PB} Z`;
+  let ejes = "";
+  for (let i = 0; i <= 3; i++) { const v = y0 + (y1 - y0) * i / 3; const y = Y(v);
+    ejes += `<line x1="${PL}" x2="${W - PR}" y1="${y}" y2="${y}" stroke="#1f3139" stroke-dasharray="3 4"/><text x="${W - PR + 8}" y="${y + 4}">${n(v, 2)}</text>`; }
+  for (let i = 0; i <= 4; i++) { const t = x0 + (x1 - x0) * i / 4;
+    ejes += `<text x="${X(t)}" y="${H - 6}" text-anchor="${i === 0 ? "start" : i === 4 ? "end" : "middle"}">${new Date(t * 1000).toLocaleDateString("es-ES", {day: "2-digit", month: "2-digit"})} ${new Date(t * 1000).toLocaleTimeString("es-ES", {hour: "2-digit", minute: "2-digit"})}</text>`; }
+  return `<svg class="graf" viewBox="0 0 ${W} ${H}" role="img" aria-label="Valor de la cuenta entre ${n(Math.min(...ys))} y ${n(Math.max(...ys))} $">
+    <defs><linearGradient id="ga" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${col}" stop-opacity=".28"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs>
+    ${ejes}<path d="${area}" fill="url(#ga)"/><path d="${d}" fill="none" stroke="${col}" stroke-width="2"/>
+    <circle cx="${X(xs[xs.length - 1])}" cy="${Y(ys[ys.length - 1])}" r="3.5" fill="${col}"/></svg>`;
+}
+$("g-periodos").addEventListener("click", e => { const bt = e.target.closest("button"); if (!bt) return;
+  horasGrafico = +bt.dataset.h; for (const x of $("g-periodos").children) x.classList.toggle("act", x === bt);
+  if (D) $("g-saldo").innerHTML = grafSaldo((D.bot || {}).historial_saldo || [], horasGrafico); });
+
+/* ---------------------------------------------------------------- estrategias */
+let LAB = null;
+async function cargarLab() { try { LAB = await (await fetch("/api/laboratorio", {cache: "no-store"})).json(); } catch (e) { LAB = null; }
+  if (D) pintarEstrategias(D.bot || {}); }
+const ETAPAS = {investigacion: ["investigación", ""], laboratorio: ["laboratorio", "azul"], shadow: ["shadow", "violeta"], paper: ["paper", "azul"],
+                apta_revision: ["apta para revisión", "ambar"], real_habilitado: ["real habilitado", "rojo"]};
+const ESTADO_LAB = {supera: ["supera", "verde"], no_supera: ["no supera", "rojo"], no_evaluable: ["no evaluable", ""], exploratorio: ["exploratorio", "ambar"]};
+function barraEv(p, tipo, etq) {
+  const x = (p || {})[tipo] || {n: 0}, obj = (p || {}).objetivo || 30, pc = Math.min(100, x.n / obj * 100);
+  return `<div class="fila-p"><span>${esc(etq)}</span><div class="medidor" style="margin:0"><i style="width:${pc}%"></i></div>
+    <span class="num">${x.n}/${obj}${x.n ? ` <span class="${signo(x.r_medio)}">${n(x.r_medio, 2)}</span>` : ""}</span></div>`;
+}
+const VALIDOS_DEF = ["supera", "exploratorio"];
+function cerebroDecide(cb, iv) {
+  // El cerebro decide en un intervalo si tiene modelo para él y el laboratorio no lo ha suspendido.
+  if (!cb || !cb.decide || cb.error) return false;
+  const m = (cb.modelos || {})[iv];
+  return !!m && ((cb.estados_validos || VALIDOS_DEF).includes(m.estado_laboratorio) || cerebroExplora(cb, iv));
+}
+function cerebroExplora(cb, iv) {
+  // Simulado: decide aunque el modelo no haya aprobado (exploración para acumular evidencia en vivo).
+  const m = ((cb || {}).modelos || {})[iv];
+  return !!m && (cb.exploracion || []).includes(iv) && !(cb.estados_validos || VALIDOS_DEF).includes(m.estado_laboratorio);
+}
+function usaCerebro(cb, clave) {
+  const iv = (String(clave).match(/_(1h|4h)$/) || [])[1];
+  if (!iv || !cerebroDecide(cb, iv) || /^ballenas/.test(clave)) return null;
+  const ests = ((cb.modelos || {})[iv] || {}).estrategias;
+  return ests && ests.length && !ests.includes(clave) ? null : iv;
+}
+function pintarCerebro(cb) {
+  if (!cb) { $("cerebro-est").innerHTML = '<div class="vacio">El bot aún no ha informado del cerebro.</div>'; return; }
+  const ct = cb.contadores || {}, mods = Object.entries(cb.modelos || {});
+  $("cerebro-est").innerHTML = `<div class="tarj-cab"><h2>Cerebro · único que decide</h2>
+      <span class="chip ${cb.error ? "rojo" : "verde"}">${cb.error ? "sin modelo válido: no entra nadie" : esc(cb.version || "")}</span>
+      <span class="chip ${cb.decide ? "acento" : ""}">${cb.decide ? "decide" : "solo observa"}</span></div>
+    ${cb.error ? `<p class="nota">${esc(cb.error)}</p>` : ""}
+    <div class="rej k4">${kpi("Entra", ct.entra ?? 0, "candidatas aprobadas")}${kpi("No entra", ct.no_entra ?? 0, "resultado esperado bajo")}
+      ${kpi("Se abstiene", ct.abstiene ?? 0, "sin modelo o sin datos")}${kpi("Modelos", mods.map(([iv]) => iv).join(" · ") || "—", "intervalos con modelo")}</div>
+    ${mods.map(([iv, m]) => `<p class="nota"><b>${esc(iv)}</b>: <span class="chip ${cerebroExplora(cb, iv) ? "ambar" : cerebroDecide(cb, iv) ? "verde" : "ambar"}">${cerebroExplora(cb, iv) ? "decide en exploración (simulado)" : cerebroDecide(cb, iv) ? "decide" : "no decide: suspendido en el laboratorio"}</span> ${m.n} casos · laboratorio: ${esc(m.estado_laboratorio || "—")} · pesos: ${
+      esc(Object.entries(m.pesos || {}).map(([k, v]) => `${k} ${v > 0 ? "+" : ""}${n(v, 3)}`).join(", "))}</p>`).join("")}
+    ${(cb.ultimas || []).slice(-5).reverse().map(u => `<div class="sub">${hora(u.ts)} · ${esc(u.motivo)}</div>`).join("")}
+    <p class="nota">Las estrategias solo proponen; el cerebro decide con datos de Hyperliquid, Binance y Bybit. La protección (límites, stops, bloqueos) se aplica después, igual que siempre.</p>`;
+}
+function pintarProbador(pr) {
+  const el = $("probador"); if (!el) return;
+  if (!pr) { el.innerHTML = '<div class="vacio">El bot aún no ha informado del probador.</div>'; return; }
+  const f = x => !x || !x.n ? "—" : `${x.n} · ${x.r_medio > 0 ? "+" : ""}${n(x.r_medio, 2)} R · ${n(x.ganan_pct, 0)} % ganan`;
+  const filas = Object.entries(pr.estrategias || {});
+  const cb = pr.cerebro || {};
+  el.innerHTML = `<div class="tarj-cab"><h2>Probador en vivo</h2><span class="chip">${pr.desde ? "desde " + esc(hora(pr.desde)) : "sin datos aún"}</span></div>
+    <p class="nota">Resultado de TODAS las propuestas de cada estrategia en vivo: las operadas (simulado, incluida la exploración con riesgo reducido) y las descartadas, seguidas en sombra hasta su cierre con su stop y objetivo. Solo cuentan las ya cerradas.</p>
+    <div class="rej k4">${kpi("Cerebro: aceptadas", f(cb.aceptadas), "resultado de las que dejó pasar")}${kpi("Cerebro: rechazadas", f(cb.rechazadas), "lo que habría pasado con las que frenó")}</div>
+    ${filas.length ? `<div class="tabla"><table><tr><th>Estrategia</th><th class="num">Operadas</th><th class="num">En sombra</th><th class="num">Todas</th><th class="num">Exploración</th><th class="num">Abiertas</th></tr>
+      ${filas.map(([k, v]) => `<tr><td>${esc(k)}</td><td class="num">${f(v.operadas)}</td><td class="num">${f(v.sombra)}</td><td class="num">${f(v.todas)}</td><td class="num">${f(v.exploracion)}</td><td class="num">${v.abiertas}</td></tr>`).join("")}
+      </table></div>` : '<div class="vacio">Todavía no hay propuestas registradas con el cerebro.</div>'}
+    <p class="nota">Con menos de 30 cerradas por grupo, cualquier diferencia puede ser suerte.</p>`;
+}
+function pintarEstrategias(b) {
+  pintarCerebro(b.cerebro);
+  pintarProbador(b.probador);
+  const es = b.estrategias || [], filas = Object.fromEntries(((LAB || {}).filas || []).map(f => [f.clave, f]));
+  $("lab-meta").textContent = LAB && LAB.generado ? `laboratorio del ${hora(LAB.generado)}` : "";
+  const vg = b.vigilancia || {}, fe = b.factor_estrategia || {};
+  $("estrategias").innerHTML = es.length ? es.map(e => {
+    const f = filas[e.clave] || {}, et = ETAPAS[e.invalidada ? "investigacion" : e.etapa] || [e.etapa, ""];
+    const el = ESTADO_LAB[f.estado] || [e.laboratorio_superado ? "supera" : "sin evaluar", e.laboratorio_superado ? "verde" : ""];
+    const v = vg[e.clave];
+    return `<div class="tarj estr" tabindex="0" data-accion="abrirEstrategia" data-arg="${esc(e.clave)}" >
+      <div class="cab-e"><span class="nom">${esc(e.clave)}</span><button class="info" data-g="est_${esc(String(e.clave).replace(/_(1h|4h)$/, ""))}" aria-label="Qué hace esta estrategia">ⓘ</button><span class="chip">v${esc(e.version || "?")}</span>
+        <span style="margin-left:auto" class="chip ${e.activa ? "acento" : ""}">${e.activa ? "genera señales" : "apagada"}</span></div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip ${et[1]}">${esc(et[0])}</span><span class="chip ${el[1]}">laboratorio: ${esc(el[0])}</span>
+        ${v && v.estado !== "sin_datos" ? `<span class="chip ${v.estado === "degradada" ? "rojo" : v.estado === "ok" ? "verde" : "ambar"}">vigilancia: ${esc(v.estado)}</span>` : ""}
+        ${fe[e.clave] ? `<span class="chip ambar">tamaño × ${fe[e.clave]}</span>` : ""}
+        ${usaCerebro(b.cerebro, e.clave) ? `<span class="chip verde" title="Aunque no apruebe sola, sus propuestas pasan por el cerebro, que decide cuáles se operan">la usa el cerebro (${esc(usaCerebro(b.cerebro, e.clave))})</span>` : ""}</div>
+      <div class="mets">
+        <div><div class="e">R medio OOS</div><div class="v ${signo(f.oos_r)}">${f.oos_r == null ? "—" : rr(f.oos_r)}</div></div>
+        <div><div class="e">Operaciones</div><div class="v">${f.oos_n ?? "—"}</div></div>
+        <div><div class="e" title="Por debajo de 2, el resultado no se distingue del azar">t</div><div class="v">${f.oos_t == null ? "—" : n(f.oos_t, 2)}</div></div>
+      </div>
+      <div class="progreso">${barraEv(e.progreso, "paper", "simulado")}${barraEv(e.progreso, "shadow", "shadow")}</div>
+      ${f.motivo ? `<div class="sub tenue" style="font-size:12px">${esc(f.motivo)}</div>` : ""}
+    </div>`; }).join("") : '<div class="vacio">El bot aún no ha informado de sus estrategias.</div>';
+  const da = b.datos_acumulados || {};
+  const barraDias = (v, m, etq) => kpi(etq, `${v ?? 0}${m ? ` <span class="tenue" style="font-size:15px">/ ${m}</span>` : ""} días`, "", "", "", m ? {pct: (v || 0) / m * 100} : null);
+  $("datos-acum").innerHTML = `<div class="rej k4">${barraDias(da.dias_mercado, da.min_dias_mercado, "Mercado grabado (interés abierto y flujo)")}
+    ${barraDias(da.dias_libro, da.min_dias_libro, "Fotos del libro de órdenes")}${barraDias(da.dias_velas, null, "Velas propias archivadas")}</div>
+    <p class="nota">Con 14 días de mercado grabado se puede evaluar la estrategia de liquidaciones; con 14 de libro, el desequilibrio del libro.</p>`;
+}
+function tablaMetricas(filas) {
+  return tabla(["Conjunto", "Ops#", "Ganan#", "R medio#", "R total#", "Fact. benef.#", "Caída máx.#", "t#"], filas.filter(f => f[1]).map(([etq, m, cls]) =>
+    `<tr class="${cls || ""}">${td(esc(etq))}${td(m.n ?? "—", "num")}${td(m.ganan_pct == null ? "—" : n(m.ganan_pct, 0) + " %", "num")}
+    ${td(rr(m.r_medio, 3), "num " + signo(m.r_medio))}${td(rr(m.r_total, 1), "num " + signo(m.r_total))}${td(n(m.factor_beneficio, 2), "num")}
+    ${td(m.caida_max_r == null ? "—" : n(m.caida_max_r, 1) + " R", "num")}${td(n(m.t, 2), "num")}</tr>`));
+}
+function barrasH(obj, etiquetaN = true) {
+  const ent = Object.entries(obj || {}); if (!ent.length) return '<div class="vacio">Sin datos.</div>';
+  const vals = ent.map(([, v]) => v.r_medio ?? v); const m = Math.max(...vals.map(Math.abs), 1e-9);
+  return `<div class="barras-h">${ent.map(([k, v]) => { const r = v.r_medio ?? v, w = Math.abs(r) / m * 50;
+    return `<div class="b"><span class="moneda" style="font-weight:550">${esc(k)}</span><div class="pista"><span class="cero" style="left:50%"></span>
+      <i style="${r >= 0 ? `left:50%;width:${w}%;background:var(--verde)` : `left:${50 - w}%;width:${w}%;background:var(--rojo)`};opacity:.75"></i></div>
+      <span class="num ${signo(r)}">${rr(r)}${etiquetaN && v.n != null ? ` <span class="tenue">· ${v.n}</span>` : ""}</span></div>`; }).join("")}</div>`;
+}
+async function abrirEstrategia(clave) {
+  abrirCajon(esc(clave));
+  let d; try { const r = await fetch("/api/estrategia?clave=" + encodeURIComponent(clave), {cache: "no-store"}); d = await r.json(); if (!r.ok) throw 0; }
+  catch (e) { cuerpoCajon('<div class="vacio">No hay datos de esta estrategia.</div>'); return; }
+  const L = d.laboratorio || {}, est = d.estado || {}, ver = L.veredicto || {};
+  const el = ESTADO_LAB[L.estado_evaluacion] || ["sin evaluar", ""];
+  $("cajon-etq").innerHTML = `<span class="chip ${el[1]}">laboratorio: ${esc(el[0])}</span>`;
+  const bases = Object.entries(L.lineas_base || {}).map(([k, m]) => [`Línea base: ${k}`, m, "tenue"]);
+  const estres = Object.values(L.escenarios_estres || {}).map(m => [`Estrés: ${m.descripcion}`, m]);
+  const ap = d.aprendizaje || {};
+  cuerpoCajon(`
+    ${ver.motivo ? `<div class="aviso" style="display:block">${esc(ver.motivo)}</div>` : ""}
+    <div class="mini-kpis">${mini("Etapa", esc((ETAPAS[est.etapa] || [est.etapa || "—"])[0]))}${mini("Genera señales", est.activa ? "sí" : "no")}
+      ${mini("Intervalo", esc(L.intervalo || "—"))}${mini("Variantes probadas", L.variantes ?? "—")}
+      ${mini("Largos / cortos", L.exposicion ? `${n(L.exposicion.largos_pct, 0)} / ${n(L.exposicion.cortos_pct, 0)} %` : "—")}
+      ${mini("Trimestres positivos", L.estabilidad ? `${L.estabilidad.trimestres_positivos}/${L.estabilidad.trimestres_evaluables}` : "—")}</div>
+    <h3>Laboratorio · ${esc(hora(d.lab_generado))}</h3>
+    <div class="tabla">${tablaMetricas([["Entrenamiento", L.entrenamiento], ["Fuera de muestra", L.fuera_de_muestra || L.validacion],
+      ["Holdout final", L.holdout], ["Monedas con historia completa", L.validacion_veteranas], ["Con filtro de aprendizaje", L.validacion_con_aprendizaje], ...bases, ...estres])}</div>
+    <p class="nota">Solo cuenta lo de fuera de muestra y el holdout. Si la estrategia no supera a las líneas base (entradas al azar, siempre largo), no aporta nada.</p>
+    ${(ver.comprobaciones || []).length ? `<h3>Comprobaciones</h3><ul class="lista">${ver.comprobaciones.map(c => `<li><span class="punto ${c.cumple ? "verde" : "error"}"></span><span>${esc(c.regla)} <span class="tenue">${esc(typeof c.valor === "object" ? JSON.stringify(c.valor) : c.valor ?? "")}</span></span></li>`).join("")}</ul>` : ""}
+    <h3>Por moneda (fuera de muestra)</h3>${barrasH(L.por_mercado)}
+    <div class="rej d2" style="grid-template-columns:1fr 1fr;gap:16px">
+      <div><h3>Por régimen de BTC</h3>${barrasH(L.por_regimen)}</div>
+      <div><h3>Por lado</h3>${barrasH(Object.fromEntries(Object.entries(L.por_lado || {}).map(([k, v]) => [ladoTxt(k), v])))}</div></div>
+    <h3>Por trimestre</h3>${barrasH((L.estabilidad || {}).por_trimestre)}
+    <h3>Parámetros</h3>${dl(Object.entries(L.params || est.params || {}).map(([k, v]) => [k, esc(JSON.stringify(v))]))}
+    <h3>Evidencia en vivo (versión actual)</h3><div class="progreso">${barraEv(est.progreso, "paper", "simulado")}${barraEv(est.progreso, "shadow", "shadow")}</div>
+    ${d.vigilancia ? `<p class="nota">Vigilancia: ${esc(d.vigilancia.texto || d.vigilancia.estado)}${d.factor ? ` · tamaño × ${d.factor}` : ""}</p>` : ""}
+    <h3>Lo aprendido de sus señales</h3>${tabla(["Fuente", "Casos#", "Ganan#", "R medio#"], Object.entries(ap).filter(([, r]) => r.n).map(([k, r]) =>
+      `<tr>${td(esc(k))}${td(r.n, "num")}${td(r.ganan + " %", "num")}${td(rr(r.media, 3), "num " + signo(r.media))}</tr>`), "Aún sin casos cerrados.")}
+    <h3>Últimas operaciones</h3>${tabla(["Abierta", "Mercado", "Estado", "R#"], (d.operaciones || []).map(o =>
+      `<tr class="clic" data-accion="abrirOp" data-arg="${esc(o.trade_id)}">${td(hora(o.abierta_ts))}${td(lado(o.lado) + " " + esc(o.moneda))}${td(esc(o.estado))}
+      ${td(o.r_neto != null ? rr(o.r_neto) : o.r_modelado != null ? rr(o.r_modelado) + " <span class='tenue'>mod.</span>" : "—", "num " + signo(o.r_neto ?? o.r_modelado))}</tr>`), "Sin operaciones todavía.")}
+  `);
+}
+
+/* ---------------------------------------------------------------- investigación */
+function pintarInvestigacion(b) {
+  const iv = b.investigacion || {}, vg = b.vigilancia || {}, fe = b.factor_estrategia || {}, ui = iv.ultimo_informe || {};
+  $("i-kpis").innerHTML = kpi("Ideas probadas (total)", iv.probadas_total ?? 0) + kpi("t exigida ahora", iv.t_requerido ?? "—", "sube con cada idea probada")
+    + kpi("En el cementerio", iv.en_cementerio ?? 0) + kpi("Última ronda", ui.fecha ? esc(ui.fecha) : "aún ninguna", ui.fecha ? `${ui.probadas_hoy ?? 0} ideas · ${ui.minutos ?? "?"} min` : "");
+  $("i-aspirantes").innerHTML = tabla(["Idea", "Desde", "t laboratorio#", "Progreso en vivo", "R medio en vivo#"],
+    (iv.aspirantes || []).map(a => { const v = a.vivo || {}; return `<tr>${td(esc(a.descripcion))}${td(esc(a.fecha || "—"))}${td(a.t_lab ?? "—", "num")}
+      ${td(`<div class="medidor" style="margin:0;min-width:120px"><i style="width:${Math.min(100, (v.n || 0) / a.objetivo * 100)}%"></i></div><span class="sub">${v.n || 0} / ${a.objetivo}</span>`)}
+      ${td(v.r_medio == null ? "—" : rr(v.r_medio, 3), "num " + signo(v.r_medio))}</tr>`; }), "Ninguna idea ha superado todavía el laboratorio. Es lo normal.");
+  $("i-revision").innerHTML = tabla(["Idea", "Fecha", "Resultado"],
+    (iv.en_revision || []).map(a => `<tr>${td(esc(a.descripcion))}${td(esc(a.fecha || "—"))}${td(esc(a.motivo || "—"))}</tr>`), "Nada pendiente.");
+  const nombres = {sin_datos: ["sin datos", ""], ok: ["bien", "verde"], vigilar: ["vigilar", "ambar"], degradada: ["degradada", "rojo"]};
+  $("i-vigilancia").innerHTML = tabla(["Estrategia", "Estado", "Detalle", "Tamaño#"],
+    Object.entries(vg).map(([k, v]) => { const x = nombres[v.estado] || [v.estado, ""]; return `<tr class="clic" data-accion="abrirEstrategia" data-arg="${esc(k)}">${td(esc(k))}${td(`<span class="chip ${x[1]}">${esc(x[0])}</span>`)}
+      ${td(`<span class="sub">${esc(v.texto)}</span>`)}${td(fe[k] ? `× ${fe[k]}` : "normal", "num")}</tr>`; }), "Aún no hay operaciones cerradas en los últimos 60 días.");
+  $("i-cementerio").innerHTML = tabla(["Fecha", "Idea", "Por qué no"],
+    (iv.cementerio_reciente || []).map(c => `<tr>${td(esc(c.fecha || "—"))}${td(esc(c.descripcion))}${td(`<span class="sub">${esc(c.motivo)}</span>`)}</tr>`));
+}
+
+/* ---------------------------------------------------------------- señales en vivo */
+const CATEGORIAS = {
+  "Señales y decisiones": ["senal_detectada", "decision_aprobada", "decision_rechazada", "intencion_shadow", "resultado_shadow"],
+  "Órdenes": ["orden_enviada", "orden_abierta", "orden_parcial", "orden_completada", "orden_cancelada", "orden_rechazada",
+              "orden_desconocida", "orden_no_confirmada", "orden_cancelacion_solicitada", "orden_disparada"],
+  "Protección y operaciones": ["proteccion", "stop_movido", "entrada", "salida", "cierre", "alerta", "error"],
+  "Ballenas y mercado": ["ballena_fill", "ballena_cambio_inferido", "operacion_grande", "liquidacion_inferida"],
+  "Fuentes de datos": ["datos_obsoletos", "reconexion", "fuente_perdida", "fuente_recuperada"],
+};
+const NOMBRE_EV = {senal_detectada: "Señal", decision_aprobada: "Aprobada", decision_rechazada: "Rechazada",
+  intencion_shadow: "Intención shadow", resultado_shadow: "Resultado shadow (modelado)", orden_enviada: "Orden enviada",
+  orden_abierta: "Orden en libro", orden_parcial: "Orden parcial", orden_completada: "Orden ejecutada",
+  orden_cancelada: "Orden cancelada", orden_rechazada: "Orden rechazada", orden_desconocida: "Orden: estado desconocido",
+  orden_no_confirmada: "Orden no confirmada", orden_cancelacion_solicitada: "Cancelación pedida", orden_disparada: "Orden disparada",
+  proteccion: "Protección", stop_movido: "Stop movido", entrada: "Fill de entrada", salida: "Fill de salida", cierre: "Cierre",
+  alerta: "Alerta", error: "Error", ballena_fill: "Fill de ballena (observado)", ballena_cambio_inferido: "Cambio de ballena (inferido)",
+  operacion_grande: "Operación grande (pública)", liquidacion_inferida: "Posible liquidación (inferida)",
+  datos_obsoletos: "Datos obsoletos", reconexion: "Reconexión", fuente_perdida: "Fuente perdida", fuente_recuperada: "Fuente recuperada"};
+const V = {eventos: [], vistos: new Set(), cursor: null, es: null, sondeo: null, pausado: false, pendientes: 0, modo: "—",
+           ultimoEv: null, latencias: [], fallosSse: 0, conectado: false, botAntiguedad: null, porSeq: new Map()};
+(function prepararFiltros() {
+  const sel = $("v-tipo");
+  for (const [cat, tipos] of Object.entries(CATEGORIAS)) {
+    const g = document.createElement("optgroup"); g.label = cat;
+    g.innerHTML = `<option value="${tipos.join(",")}">Todo: ${esc(cat)}</option>` + tipos.map(t => `<option value="${t}">${esc(NOMBRE_EV[t] || t)}</option>`).join("");
+    sel.appendChild(g);
+  }
+  let t = null;
+  for (const id of ["v-tipo", "v-moneda", "v-estrategia", "v-lado", "v-estado", "v-q"])
+    $(id).addEventListener(id === "v-tipo" || id === "v-lado" ? "change" : "input", () => { clearTimeout(t); t = setTimeout(reiniciarVivo, 350); });
+  $("v-limpiar").addEventListener("click", () => { for (const id of ["v-tipo", "v-moneda", "v-estrategia", "v-lado", "v-estado", "v-q"]) $(id).value = ""; reiniciarVivo(); });
+  $("v-pausa").addEventListener("click", () => { V.pausado = !V.pausado; $("v-pausa").textContent = V.pausado ? "Reanudar" : "Pausar";
+    if (!V.pausado) { V.pendientes = 0; pintarEventos(); } pintarEstadoVivo(); });
+})();
+function paramsFiltro() {
+  const p = new URLSearchParams();
+  const m = {tipo: "v-tipo", moneda: "v-moneda", estrategia: "v-estrategia", lado: "v-lado", estado: "v-estado", q: "v-q"};
+  for (const [k, id] of Object.entries(m)) { const v = $(id).value.trim(); if (v) p.set(k, v); }
+  return p;
+}
+function cerrarConexiones() { if (V.es) { V.es.close(); V.es = null; } if (V.sondeo) { clearInterval(V.sondeo); V.sondeo = null; } }
+async function reiniciarVivo() {
+  cerrarConexiones();
+  V.eventos = []; V.vistos = new Set(); V.porSeq = new Map(); V.cursor = null; V.pendientes = 0; V.fallosSse = 0;
+  const p = paramsFiltro(); p.set("limite", "300");
+  try {
+    const r = await (await fetch("/api/feed?" + p, {cache: "no-store"})).json();
+    for (const ev of r.eventos) añadirEvento(ev, false);
+    V.cursor = r.ultimo_seq; V.botAntiguedad = r.bot_antiguedad_seg; V.conectado = true;
+  } catch (e) { V.conectado = false; V.cursor = V.cursor ?? 0; }
+  pintarEventos(); pintarEstadoVivo(); abrirStream();
+}
+function abrirStream() {
+  if (!window.EventSource || V.fallosSse >= 3) return activarSondeo();
+  const p = paramsFiltro(); p.set("desde", String(V.cursor || 0));
+  const es = new EventSource("/api/feed/stream?" + p);
+  V.es = es;
+  es.addEventListener("evento", m => {
+    const ev = JSON.parse(m.data);
+    if (añadirEvento(ev, true)) { V.cursor = Math.max(V.cursor || 0, ev.seq); if (V.pausado) V.pendientes++; else pintarEventos(); }
+    V.modo = "sse"; V.conectado = true; V.fallosSse = 0; pintarEstadoVivo();
+  });
+  es.addEventListener("estado", m => { const d = JSON.parse(m.data); V.botAntiguedad = d.bot_ts ? Date.now() / 1000 - d.bot_ts : null;
+    V.modo = "sse"; V.conectado = true; pintarEstadoVivo(); });
+  es.onopen = () => { V.modo = "sse"; V.conectado = true; pintarEstadoVivo(); };
+  es.onerror = () => { V.conectado = false; V.fallosSse++; pintarEstadoVivo();
+    if (V.fallosSse >= 3) { es.close(); V.es = null; activarSondeo(); } };
+}
+function activarSondeo() {
+  if (V.sondeo) return;
+  V.modo = "sondeo";
+  const paso = async () => {
+    const p = paramsFiltro(); p.set("desde", String(V.cursor || 0)); p.set("limite", "500");
+    try {
+      const r = await (await fetch("/api/feed?" + p, {cache: "no-store"})).json();
+      let k = 0;
+      for (const ev of r.eventos) if (añadirEvento(ev, true)) k++;
+      V.cursor = Math.max(V.cursor || 0, r.ultimo_seq); V.botAntiguedad = r.bot_antiguedad_seg; V.conectado = true;
+      if (k) { if (V.pausado) V.pendientes += k; else pintarEventos(); }
+    } catch (e) { V.conectado = false; }
+    pintarEstadoVivo();
+  };
+  paso(); V.sondeo = setInterval(paso, 3000);
+}
+function añadirEvento(ev, nuevo) {
+  if (V.vistos.has(ev.seq)) return false;          // sin duplicados al reconectar
+  V.vistos.add(ev.seq); V.porSeq.set(ev.seq, ev);
+  ev._nuevo = nuevo; ev._llegada = Date.now() / 1000;
+  V.eventos.push(ev);
+  if (V.eventos.length > 1 && V.eventos[V.eventos.length - 2].seq > ev.seq) V.eventos.sort((a, b) => a.seq - b.seq);
+  if (V.eventos.length > 1000) { for (const x of V.eventos.splice(0, V.eventos.length - 1000)) { V.vistos.delete(x.seq); V.porSeq.delete(x.seq); } }
+  V.ultimoEv = ev;
+  if (nuevo && ev.ts_exchange) { V.latencias.push(ev._llegada - ev.ts_exchange); if (V.latencias.length > 50) V.latencias.shift(); }
+  if (nuevo && location.hash !== "#vivo") { const b = $("badge-vivo"); b.style.display = ""; b.textContent = (+b.textContent || 0) + 1; }
+  return true;
+}
+function claseEv(ev) {
+  if (/inferid/.test(ev.tipo) || ev.estado === "inferido") return "ambar";
+  if (["decision_rechazada", "orden_rechazada", "orden_desconocida", "orden_no_confirmada", "error", "fuente_perdida", "datos_obsoletos"].includes(ev.tipo)) return "rojo";
+  if (["decision_aprobada", "orden_completada", "entrada", "fuente_recuperada"].includes(ev.tipo)) return "verde";
+  if (ev.tipo.startsWith("ballena") || ev.tipo === "operacion_grande") return "azul";
+  if (ev.tipo === "senal_detectada") return "acento";
+  return "";
+}
+function filaEvento(ev, obsoleto) {
+  const p = ev.precio_ref;
+  const precio = p ? `${n(p.valor, 4)} <span class="tenue">${esc(p.tipo || "?")}</span>` : desc(null);
+  const tam = ev.tam != null ? n(ev.tam, 4) : "";
+  const riesgo = ev.riesgo_usd != null ? `<div class="sub">riesgo ${usd(ev.riesgo_usd)}</div>` : "";
+  const det = ev.detalle ? esc(String(ev.detalle).slice(0, 160)) : "";
+  return `<tr class="clic${ev._nuevo ? " ev-nuevo" : ""}${obsoleto ? " obsoleto" : ""}" data-accion="abrirEvento" data-arg="${esc(ev.seq)}" data-num="1">
+    ${td(`${horaS(ev.ts_proceso)}<div class="sub">${ev._nuevo ? "nuevo" : "histórico"} · #${ev.seq}</div>`)}
+    ${td(`<span class="chip ${claseEv(ev)}">${esc(NOMBRE_EV[ev.tipo] || ev.tipo)}</span>`)}
+    ${td(`${ev.lado === "L" || ev.lado === "S" ? lado(ev.lado) : esc(ev.lado || "")} <span class="moneda">${esc(ev.moneda || "")}</span>${ev.estrategia ? `<div class="sub">${esc(ev.estrategia)}</div>` : ""}`)}
+    ${td(precio, "num")}${td((tam || '<span class="tenue">—</span>') + riesgo, "num")}${td(desc(esc(ev.estado || "")))}
+    ${td(`<span class="sub" style="font-size:12.5px;color:var(--suave)">${det}</span>`)}</tr>`;
+}
+function pintarEventos() {
+  const obsoleto = V.botAntiguedad != null && V.botAntiguedad > 120;
+  $("v-eventos").innerHTML = tabla(["Hora", "Evento", "Mercado", "Precio#", "Tamaño#", "Estado", "Detalle"],
+    V.eventos.slice().reverse().map(ev => filaEvento(ev, obsoleto)), "Sin eventos con estos filtros todavía.");
+  $("v-pie").textContent = V.eventos.length ? `Mostrando ${V.eventos.length} eventos (máx. 1000). Cursor #${V.cursor ?? "—"}. Pulsa uno para ver todos sus datos.` : "";
+}
+function abrirEvento(seq) {
+  const ev = V.porSeq.get(seq) || (RF.porSeq || new Map()).get(seq); if (!ev) return;
+  abrirCajon(esc(NOMBRE_EV[ev.tipo] || ev.tipo), `<span class="chip ${claseEv(ev)}">${esc(ev.estado || "")}</span>`);
+  const limpio = Object.fromEntries(Object.entries(ev).filter(([k]) => !k.startsWith("_")));
+  cuerpoCajon(dl([["Mercado", `${ev.lado ? esc(ladoTxt(ev.lado)) : ""} ${esc(ev.moneda || "—")}`], ["Estrategia", desc(esc(ev.estrategia || ""))],
+      ["Fuente", desc(esc(ev.fuente || ""))], ["Hora del exchange", ev.ts_exchange ? horaS(ev.ts_exchange) : desc(null)],
+      ["Recibido / procesado", `${horaS(ev.ts_recepcion)} · ${horaS(ev.ts_proceso)}`],
+      ["Precio de referencia", ev.precio_ref ? `${n(ev.precio_ref.valor, 4)} (${esc(ev.precio_ref.tipo)})` : desc(null)],
+      ["Tamaño / riesgo", `${ev.tam != null ? n(ev.tam, 4) : "—"} · ${usd(ev.riesgo_usd)}`], ["Frescura", ev.frescura_seg != null ? n(ev.frescura_seg, 1) + " s" : desc(null)],
+      ["Detalle", esc(ev.detalle || "—")]])
+    + (ev.trade_id ? `<p><button class="primario" data-accion="abrirOp" data-arg="${esc(ev.trade_id)}">Ver la operación completa</button></p>` : "")
+    + `<h3>Datos del evento</h3><pre class="mono" style="white-space:pre-wrap;background:var(--sup);padding:12px;border-radius:8px;color:var(--suave)">${esc(JSON.stringify(limpio, null, 2))}</pre>`);
+}
+function pintarEstadoVivo() {
+  const c = $("v-conexion");
+  if (!V.conectado) { c.className = "pildora rojo"; c.innerHTML = '<span class="p"></span>Desconectado · reintentando'; }
+  else if (V.pausado) { c.className = "pildora ambar"; c.innerHTML = `<span class="p"></span>En pausa · ${V.pendientes} nuevos`; }
+  else if (V.modo === "sse") { c.className = "pildora verde vivo"; c.innerHTML = '<span class="p"></span>En vivo'; }
+  else { c.className = "pildora azul"; c.innerHTML = '<span class="p"></span>Sondeo cada 3 s'; }
+  $("v-ultimo").textContent = V.ultimoEv ? `último evento hace ${hace(Date.now() / 1000 - V.ultimoEv.ts_proceso)}` : "aún sin eventos";
+  $("v-bot").textContent = V.botAntiguedad != null ? `· bot: datos de hace ${hace(V.botAntiguedad)}` : "· bot: sin datos";
+  const lat = V.latencias.slice().sort((a, b) => a - b);
+  $("v-latencia").textContent = lat.length ? `· latencia observada: mediana ${n(lat[lat.length >> 1], 1)} s` : "";
+  const ob = $("v-obsoleto"), obs = V.botAntiguedad == null || V.botAntiguedad > 120;
+  ob.style.display = obs ? "" : "none";
+  ob.textContent = V.botAntiguedad == null ? "El bot no ha escrito datos: lo que ves puede no estar al día." :
+    `DATOS OBSOLETOS: el bot no actualiza desde hace ${hace(V.botAntiguedad)}. Nada de lo mostrado es una señal activa.`;
+}
+/* resumen: últimos eventos relevantes (sondeo ligero) */
+const RF = {cursor: null, eventos: [], porSeq: new Map()};
+async function cargarResumenFeed() {
+  const p = new URLSearchParams({limite: "40", tipo: ["senal_detectada", "decision_aprobada", "decision_rechazada", "entrada", "salida", "cierre", "stop_movido",
+    "ballena_fill", "liquidacion_inferida", "alerta", "error"].join(",")});
+  try { const r = await (await fetch("/api/feed?" + p, {cache: "no-store"})).json();
+    RF.eventos = r.eventos.slice(-8).reverse(); RF.porSeq = new Map(r.eventos.map(e => [e.seq, e])); } catch (e) { return; }
+  $("r-feed").innerHTML = RF.eventos.length ? RF.eventos.map(ev => `<div class="ev-mini" data-accion="abrirEvento" data-arg="${esc(ev.seq)}" data-num="1">
+    <span class="tenue" style="font-size:12px">${new Date(ev.ts_proceso * 1000).toLocaleTimeString("es-ES", {hour: "2-digit", minute: "2-digit"})}</span>
+    <span><span class="chip ${claseEv(ev)}">${esc(NOMBRE_EV[ev.tipo] || ev.tipo)}</span> ${ev.lado === "L" || ev.lado === "S" ? lado(ev.lado) : ""} <span class="moneda">${esc(ev.moneda || "")}</span>
+      <span class="tenue" style="font-size:12px">${esc(ev.estrategia || "")}</span>
+      ${ev.detalle ? `<div class="sub" style="color:var(--suave);font-size:12px;margin-top:2px">${esc(String(ev.detalle).slice(0, 110))}</div>` : ""}</span></div>`).join("")
+    : '<div class="vacio">Todavía no hay movimientos. El bot evalúa las señales al cierre de cada vela.</div>';
+}
+function cuentaAtras(seg) { return `${String(Math.floor(seg / 3600)).padStart(2, "0")}:${String(Math.floor(seg % 3600 / 60)).padStart(2, "0")}:${String(Math.floor(seg % 60)).padStart(2, "0")}`; }
+function pintarVelasYCobertura(b) {
+  const ve = (b.motor || {}).velas || {};
+  $("v-velas").innerHTML = Object.keys(ve).length ? Object.entries(ve).map(([iv, v]) =>
+    `<div class="kpi"><div class="e">Velas de ${esc(iv)}</div><div class="v cuenta-atras" data-cierre="${v.proximo_cierre_ts || ""}">—</div>
+      <div class="s">hasta el cierre (+${v.margen_tras_cierre_s ?? 20} s de margen)</div>
+      <div class="s">última: ${hora(v.ultima_cerrada_cierra_ts)} · evaluada: ${v.evaluada_ts ? horaS(v.evaluada_ts) : "desconocido"}${v.monedas_evaluadas != null ? ` · ${v.monedas_evaluadas} monedas` : ""}</div></div>`).join("")
+    : '<div class="vacio">El motor aún no ha evaluado ninguna vela.</div>';
+  const cb = b.cobertura_ballenas || {};
+  $("v-cobertura").innerHTML = cb.elegidas == null ? '<div class="vacio">Sin datos.</div>' : `<div class="mini-kpis">
+      ${mini("Elegidas", cb.elegidas)}${mini("En tiempo real", `${cb.suscritas_tiempo_real} / ${cb.limite_tiempo_real}`)}${mini("Frescas", cb.frescas)}${mini("Fills recibidos", cb.fills_ws_recibidos ?? 0)}</div>
+    <p class="nota">${esc(cb.nota || "")} Hyperliquid admite como mucho 10 cuentas en tiempo real por IP.</p>`;
+  $("v-flujo").innerHTML = barrasUsd(cb.flujo_1h_usd || {}, "Sin cambios relevantes en la última hora.");
+  tickCuentas();
+}
+function barrasUsd(obj, vacio) {
+  const ent = Object.entries(obj); if (!ent.length) return `<div class="vacio">${esc(vacio)}</div>`;
+  const m = Math.max(...ent.map(([, v]) => Math.abs(v)), 1);
+  return `<div class="barras-h">${ent.map(([k, v]) => { const w = Math.abs(v) / m * 50;
+    return `<div class="b"><span class="moneda" style="font-weight:550">${esc(k)}</span><div class="pista"><span class="cero" style="left:50%"></span>
+      <i style="${v >= 0 ? `left:50%;width:${w}%;background:var(--verde)` : `left:${50 - w}%;width:${w}%;background:var(--rojo)`};opacity:.75"></i></div>
+      <span class="num ${signo(v)}">${usdK(v)}</span></div>`; }).join("")}</div>`;
+}
+function tickCuentas() {
+  for (const el of document.querySelectorAll(".cuenta-atras[data-cierre]")) {
+    if (!+el.dataset.cierre) continue;
+    el.textContent = cuentaAtras(Math.max(0, +el.dataset.cierre - Date.now() / 1000));
+  }
+}
+setInterval(() => { tickCuentas(); if (V.conectado || V.es || V.sondeo) pintarEstadoVivo(); }, 1000);
+
+/* ---------------------------------------------------------------- aprendizaje */
+function filaRes(etq, r, extra = "") { return `<tr${extra}>${td(esc(etq))}${td(r.n, "num")}${td(r.n ? r.ganan + " %" : "—", "num")}${td(r.n ? rr(r.media, 3) : "—", "num " + signo(r.media))}${td(r.n ? rr(r.total, 1) : "—", "num " + signo(r.total))}</tr>`; }
+function pintarAprendizaje(a) {
+  const t = a.por_tipo || {};
+  const k = (etq, r, sub) => kpi(etq, r && r.n ? rr(r.media, 3) : "—", r && r.n ? `${r.n} casos · ${r.ganan} % ganan · ${sub}` : sub, "", r && r.n ? signo(r.media) : "");
+  $("a-kpis").innerHTML = k("Operadas por el bot", t.real, "R medio") + k("Descartadas (papel)", t.sombra, "qué habría pasado")
+    + k("Shadow (modelado)", t.shadow, "R medio") + k("Laboratorio", t.backtest, "histórico");
+  $("a-nota").textContent = a.nota || "";
+  const ev = a.evaluacion_filtro || {};
+  const cls = {aporta: "verde", resta: "rojo", no_se_distingue: "ambar", sin_datos: ""}[ev.veredicto] || "";
+  $("a-filtro-eval").innerHTML = ev.aceptadas ? `<p><span class="chip ${cls}" style="font-size:13px;white-space:normal">${esc(ev.texto)}</span></p>`
+    + barrasH({"Habría aceptado": {r_medio: ev.aceptadas.r_medio ?? 0, n: ev.aceptadas.n}, "Habría rechazado": {r_medio: ev.rechazadas.r_medio ?? 0, n: ev.rechazadas.n}})
+    + (ev.ic90 ? `<p class="nota">Diferencia ${rr(ev.diferencia_r, 3)} · intervalo de confianza del 90 %: ${n(ev.ic90[0], 3)} a ${n(ev.ic90[1], 3)} R.</p>` : "")
+    : '<div class="vacio">Aún no hay señales juzgadas.</div>';
+  const pf = Object.entries(a.por_filtro || {}).sort((x, y) => y[1].n - x[1].n);
+  $("a-filtros").innerHTML = pf.length ? `<div class="tabla">${tabla(["Motivo del descarte", "Casos#", "Ganan#", "R medio#", "R total#"], pf.map(([kk, r]) => filaRes(kk, r)))}</div>
+    <p class="nota">Si lo descartado por un motivo acaba saliendo bien en papel, ese filtro quizá sobra.</p>` : '<div class="vacio">Sin descartes cerrados todavía.</div>';
+  const filas = [];
+  for (const [kk, v] of Object.entries(a.por_estrategia || {})) for (const [tt, r] of Object.entries(v)) filas.push(filaRes(`${kk} · ${tt}`, r));
+  $("a-estrategias").innerHTML = tabla(["Estrategia · fuente", "Casos#", "Ganan#", "R medio#", "R total#"], filas);
+  $("a-descartes").innerHTML = tabla(["Fecha", "Mercado", "Estrategia", "Motivo", "Resultado#"], (a.descartes || []).slice(0, 60).map(r =>
+    `<tr class="clic" data-accion="abrirCaso" data-arg="${esc(r.id)}">${td(hora(r.ts))}${td(lado(r.lado) + ` <span class="moneda">${esc(r.moneda)}</span>`)}${td(esc(r.modulo))}
+    ${td(`<span class="sub">${esc((r.motivos_descarte || []).join("; "))}</span>`)}
+    ${td(r.resultado_r == null ? '<span class="chip">abierta</span>' : rr(r.resultado_r), "num " + signo(r.resultado_r))}</tr>`), "Sin descartes todavía.");
+}
+async function abrirCaso(id) {
+  abrirCajon("Caso analizado");
+  let c; try { const r = await fetch("/api/caso?id=" + encodeURIComponent(id), {cache: "no-store"}); c = await r.json(); if (!r.ok) throw 0; }
+  catch (e) { cuerpoCajon('<div class="vacio">Caso no encontrado.</div>'); return; }
+  $("cajon-titulo").innerHTML = `${lado(c.lado)} ${esc(c.moneda || "")} · ${esc(c.modulo || "")}`;
+  $("cajon-etq").innerHTML = `<span class="chip">${esc(c.tipo)}</span>`;
+  const rasgos = Object.entries(c.rasgos || {});
+  cuerpoCajon(`<div class="mini-kpis">${mini("Resultado", c.resultado_r == null ? "abierto" : rr(c.resultado_r), signo(c.resultado_r))}
+      ${mini("Cierre", esc(c.cierre || "—"))}${mini("Entrada", n(c.entrada, 4))}${mini("Abierto", hora(c.ts))}</div>
+    ${(c.motivos_descarte || []).length ? `<h3>Por qué se descartó</h3><ul class="lista">${c.motivos_descarte.map(m => `<li><span class="punto aviso"></span><span>${esc(m)}</span></li>`).join("")}</ul>` : ""}
+    ${rasgos.length ? `<h3>Rasgos de la señal</h3>${dl(rasgos.map(([k, v]) => [k, esc(typeof v === "number" ? n(v, 4) : JSON.stringify(v))]))}` : ""}
+    ${c.trade_id ? `<p><button class="primario" data-accion="abrirOp" data-arg="${esc(c.trade_id)}">Ver la operación en el registro</button></p>` : ""}
+    <h3>Datos del caso</h3><pre class="mono" style="white-space:pre-wrap;background:var(--sup);padding:12px;border-radius:8px;color:var(--suave)">${esc(JSON.stringify(c, null, 2))}</pre>`);
+}
+
+/* ---------------------------------------------------------------- ballenas */
+function pintarBallenas(b) {
+  const bs = b.ballenas || [], cb = b.cobertura_ballenas || {}, cuentas = Object.fromEntries((cb.cuentas || []).map(c => [c.cuenta, c]));
+  const vet = bs.filter(x => x.vetada).length, pred = bs.filter(x => (x.etiqueta || "").startsWith("validada")).length;
+  $("b-kpis").innerHTML = kpi("Ballenas seguidas", bs.length, `${cb.frescas ?? 0} con datos frescos`) + kpi("En tiempo real", `${cb.suscritas_tiempo_real ?? 0} / ${cb.limite_tiempo_real ?? 10}`, "fills al instante")
+    + kpi("Validadas fuera de muestra", pred, "anticipan el precio según el laboratorio") + kpi("Vetadas", vet, "sus señales salieron negativas");
+  $("ballenas").innerHTML = tabla(["Cuenta", "Etiqueta", "Datos", "Señales#", "R medio#", "Laboratorio#", "Posiciones observadas", "Cambio 1 h"], bs.map((x, i) => {
+    const c = cuentas[x.direccion] || {}, pos = Object.entries(c.posicion_observada_usd || {});
+    const pt = x.puntuacion || {};
+    return `<tr class="clic" data-accion="abrirBallena" data-arg="${esc(i)}" data-num="1">${td(`<span class="mono">${esc(x.direccion)}</span>${x.tiempo_real ? ' <span class="chip acento">tiempo real</span>' : ""}<div class="sub">${esc(x.regla)}</div>`)}
+    ${td(x.vetada ? '<span class="chip rojo">vetada</span>' : `<span class="chip ${(x.etiqueta || "").startsWith("validada") ? "verde" : x.etiqueta === "inferencia" ? "ambar" : ""}">${esc(x.etiqueta)}</span>`)}
+    ${td(x.fresca ? `<span class="pos">frescos</span><div class="sub">${hace(c.frescura_seg)}</div>` : '<span class="neg">desactualizados</span>')}
+    ${td(x.casos, "num")}${td(x.r_medio == null ? "—" : rr(x.r_medio), "num " + signo(x.r_medio))}
+    ${td(pt.n ? `${pt.media > 0 ? "+" : ""}${n(pt.media, 2)} ATR<div class="sub">${pt.n} cargas · t ${n(pt.t, 2)}</div>` : "—", "num " + signo(pt.media))}
+    ${td(pos.length ? pos.slice(0, 3).map(([m, v]) => `<span class="chip ${v > 0 ? "verde" : "rojo"}">${esc(m)} ${usdK(v)}</span>`).join(" ") : '<span class="tenue">—</span>')}
+    ${td(esc((x.cambios_1h || []).slice(0, 3).map(c2 => `${c2.moneda} ${usdK(c2.neto_1h_usd)}`).join(" · ")) || '<span class="tenue">—</span>')}</tr>`; }),
+    "No se siguen ballenas (desactivado o sin datos).");
+  $("b-flujo").innerHTML = barrasUsd(cb.flujo_1h_usd || {}, "Sin cambios relevantes en la última hora.");
+  const agg = {};
+  for (const c of cb.cuentas || []) for (const [m, v] of Object.entries(c.posicion_observada_usd || {})) agg[m] = (agg[m] || 0) + v;
+  $("b-expo").innerHTML = barrasUsd(Object.fromEntries(Object.entries(agg).sort((a, c) => Math.abs(c[1]) - Math.abs(a[1])).slice(0, 12)), "Sin posiciones observadas.");
+  pintarExterno(b.contexto_externo || {});
+}
+function pintarExterno(cx) {
+  const usdM = v => v == null ? "—" : "$" + n(v / 1e6, v >= 1e9 ? 0 : 1) + " M";
+  const fh = v => v == null ? "—" : (v > 0 ? "+" : "") + n(v, 4) + " %/h";
+  $("ext-fuentes").innerHTML = Object.entries(cx.fuentes || {}).map(([k, v]) =>
+    ` <span class="chip ${v.estado === "correcto" ? "verde" : v.estado === "fallido" ? "rojo" : ""}" title="${esc(v.detalle || "")}">${esc(k)}: ${esc(v.estado === "correcto" ? "ok" : v.estado === "fallido" ? "no responde" : "sin datos")}</span>`).join("")
+    + (cx.dias_archivados != null ? ` <span class="tenue" style="font-size:12px">${cx.dias_archivados} días archivados</span>` : "");
+  if (cx.activo === false) { $("externo").innerHTML = '<div class="vacio">Desactivado en la configuración (contexto_externo.activo).</div>'; return; }
+  $("externo").innerHTML = tabla(["Mercado", "Precio vs Hyperliquid#", "Funding Hyperliquid#", "Funding Binance/Bybit#", "Diferencia funding#", "Interés abierto externo#", "Cambio OI 1 h#", "Cuota de volumen Hyperliquid#"],
+    (cx.monedas || []).slice(0, 40).map(x => { const fs = x.fuentes || {}, difs = Object.entries(fs).filter(([, v]) => v.dif_precio_pct != null);
+      return `<tr>${td(`<span class="moneda">${esc(x.m)}</span><div class="sub">${esc(Object.keys(fs).join(" · "))}</div>`)}
+      ${td(difs.length ? difs.map(([k, v]) => `${k[0].toUpperCase()} ${pct(v.dif_precio_pct, 3)}`).join("<br>") : "—", "num")}
+      ${td(fh(x.funding_hl_h_pct), "num " + signo(x.funding_hl_h_pct))}${td(fh(x.funding_externo_h_pct), "num " + signo(x.funding_externo_h_pct))}
+      ${td(fh(x.dif_funding_h_pct), "num " + signo(x.dif_funding_h_pct))}${td(usdM(x.oi_externo_usd), "num")}
+      ${td(x.oi_externo_cambio_1h_pct == null ? "—" : pct(x.oi_externo_cambio_1h_pct), "num " + signo(x.oi_externo_cambio_1h_pct))}
+      ${td(x.cuota_hl_volumen_pct == null ? "—" : n(x.cuota_hl_volumen_pct, 1) + " %", "num")}</tr>`; }),
+    cx.ts ? "Ninguna moneda vigilada se encuentra en Binance ni Bybit." : "Aún sin datos: la primera lectura llega a los pocos minutos de arrancar.");
+}
+async function abrirBallena(i) {
+  const b = (D.bot || {}), x = (b.ballenas || [])[i]; if (!x) return;
+  const c = ((b.cobertura_ballenas || {}).cuentas || []).find(k => k.cuenta === x.direccion) || {};
+  abrirCajon(`<span class="mono">${esc(x.direccion)}</span>`, x.vetada ? '<span class="chip rojo">vetada</span>' : `<span class="chip">${esc(x.etiqueta)}</span>`);
+  const pt = x.puntuacion || {}, pos = Object.entries(c.posicion_observada_usd || {});
+  let evs = [];
+  try { const r = await (await fetch("/api/feed?" + new URLSearchParams({q: x.direccion, limite: "40"}), {cache: "no-store"})).json(); evs = r.eventos.reverse(); } catch (e) { /* sin feed */ }
+  for (const e of evs) RF.porSeq.set(e.seq, e);
+  cuerpoCajon(`<div class="mini-kpis">${mini("Señales cerradas", x.casos)}${mini("R medio de sus señales", x.r_medio == null ? "—" : rr(x.r_medio), signo(x.r_medio))}
+      ${mini("Movimiento tras sus cargas", pt.n ? `${pt.media > 0 ? "+" : ""}${n(pt.media, 2)} ATR` : "—", signo(pt.media))}${mini("t laboratorio", pt.n ? n(pt.t, 2) : "—")}
+      ${mini("Datos", x.fresca ? "frescos" : "desactualizados", x.fresca ? "pos" : "neg")}${mini("Tiempo real", x.tiempo_real ? "sí" : "no")}</div>
+    ${dl([["Regla de alta", esc(x.regla)], ["Seguida desde", hora(x.alta_ts)], ["Última lectura", hora(x.actualizada_ts)], ["Fallos seguidos", c.fallos_seguidos ?? 0],
+      ["Laboratorio", pt.n ? `${pt.n} cargas analizadas · media ${n(pt.media, 3)} ATR · t ${n(pt.t, 2)}` : "sin puntuación"]])}
+    <h3>Posición observada (última foto)</h3>${barrasUsd(Object.fromEntries(pos), "No se observan posiciones abiertas.")}
+    <h3>Cambios de la última hora</h3>${barrasUsd(Object.fromEntries((x.cambios_1h || []).map(k => [k.moneda, k.neto_1h_usd])), "Sin cambios relevantes.")}
+    <h3>Actividad reciente en el feed</h3>${evs.length ? evs.map(ev => `<div class="ev-mini" data-accion="abrirEvento" data-arg="${esc(ev.seq)}" data-num="1"><span class="tenue" style="font-size:12px">${hora(ev.ts_proceso)}</span>
+      <span><span class="chip ${claseEv(ev)}">${esc(NOMBRE_EV[ev.tipo] || ev.tipo)}</span> <span class="moneda">${esc(ev.moneda || "")}</span> <span class="sub">${esc(String(ev.detalle || "").slice(0, 90))}</span></span></div>`).join("")
+      : '<div class="vacio">Sin eventos recientes de esta cuenta.</div>'}
+    <p class="nota">Los cambios de posición se INFIEREN comparando fotos; solo los fills por websocket son observados.</p>`);
+}
+
+/* ---------------------------------------------------------------- operaciones (ledger) */
+function paramsOps() {
+  const p = new URLSearchParams();
+  for (const k of ["estado", "estrategia", "moneda", "lado", "origen"]) { const v = $("f-" + k).value; if (v) p.set(k, v); }
+  if ($("f-q").value) p.set("q", $("f-q").value);
+  if ($("f-ejec").checked) p.set("solo_ejecutadas", "1");
+  return p;
+}
+async function cargarOps() {
+  const p = paramsOps(); p.set("pagina", pagina); p.set("por_pagina", 50);
+  const csv = paramsOps(); csv.set("formato", "csv"); $("csv").href = "/api/operaciones?" + csv;
+  try {
+    const r = await (await fetch("/api/operaciones?" + p, {cache: "no-store"})).json();
+    for (const k of ["estrategia", "moneda"]) {
+      const s = $("f-" + k), actual = s.value, vals = (r.valores || {})[k] || [];
+      s.innerHTML = s.options[0].outerHTML + vals.map(v => `<option${v === actual ? " selected" : ""}>${esc(v)}</option>`).join("");
+    }
+    const R = r.resumen || {};
+    $("ops-kpis").innerHTML = kpi("Operaciones cerradas", R.cerradas ?? 0, `${r.total} registros con estos filtros`) + kpi("Resultado neto", usd(R.pnl_neto), "tras comisiones y funding", "pnl_neto", signo(R.pnl_neto))
+      + kpi("R neto medio", R.r_neto_medio == null ? "—" : rr(R.r_neto_medio, 3), "por operación", "r", signo(R.r_neto_medio))
+      + kpi("Ganadoras", R.ganadoras_pct == null ? "—" : n(R.ganadoras_pct, 1) + " %", "el % de acierto solo no dice nada sin el R");
+    $("ops").innerHTML = tabla(["Abierta", "Mercado", "Estrategia", "Origen", "Estado", "Entrada#", "Salida#", "Neto#", "R neto#", "Duración#", "Causa"], r.filas.map(o =>
+      `<tr class="clic" tabindex="0" data-accion="abrirOp" data-arg="${esc(o.trade_id)}" >
+      ${td(hora(o.abierta_ts))}${td(lado(o.lado) + ` <span class="moneda">${esc(o.moneda)}</span>`)}${td(esc(o.estrategia) + (o.version ? ` <span class="tenue">v${esc(o.version)}</span>` : ""))}
+      ${td(`<span class="chip">${esc(o.origen)}</span>`)}${td(esc(o.estado) + (o.n_alertas ? ` <span class="chip ambar">${o.n_alertas}</span>` : ""))}
+      ${td(n(o.precio_medio_entrada, 4), "num")}${td(n(o.precio_medio_salida, 4), "num")}${td(usd(o.pnl_neto), "num " + signo(o.pnl_neto))}
+      ${td(o.r_neto != null ? rr(o.r_neto) : o.r_modelado != null ? rr(o.r_modelado) + ' <span class="tenue">mod.</span>' : "—", "num " + signo(o.r_neto ?? o.r_modelado))}
+      ${td(o.abierta_ts && o.cerrada_ts ? dur(o.cerrada_ts - o.abierta_ts) : "—", "num")}
+      ${td(`<span class="sub">${esc(o.causa_salida || (o.motivos_descarte || []).join("; "))}</span>`)}</tr>`), "No hay operaciones con esos filtros.");
+    $("pag-txt").textContent = `página ${r.pagina} de ${r.paginas}`;
+    $("pag-ant").disabled = r.pagina <= 1; $("pag-sig").disabled = r.pagina >= r.paginas;
+    pintarHistOps(r.filas);
+  } catch (e) { $("ops").innerHTML = '<div class="vacio">No se pudo leer el registro de operaciones.</div>'; }
+}
+function pintarHistOps(filas) {
+  const rs = filas.map(o => o.r_neto ?? o.r_modelado).filter(v => v != null);
+  if (!rs.length) { $("ops-hist").innerHTML = '<div class="vacio">Sin resultados cerrados en esta página.</div>'; $("ops-estr").innerHTML = '<div class="vacio">—</div>'; return; }
+  const cubos = [-3, -2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2, 3, 99], cuenta = new Array(cubos.length).fill(0);
+  for (const v of rs) { let i = cubos.findIndex(c => v < c); if (i < 0) i = cubos.length - 1; cuenta[i]++; }
+  const W = 520, H = 160, bw = W / cubos.length, mx = Math.max(...cuenta, 1);
+  const et = ["<−3", "−3", "−2", "−1,5", "−1", "−0,5", "0", "0,5", "1", "1,5", "2", "≥3"];
+  $("ops-hist").innerHTML = `<svg class="graf" viewBox="0 0 ${W} ${H + 22}">${cuenta.map((c, i) => { const h = c / mx * H;
+    return `<rect x="${i * bw + 3}" y="${H - h}" width="${bw - 6}" height="${h}" rx="3" fill="${cubos[i] <= 0 ? "#f0627d" : "#2fd788"}" opacity=".75"/>
+    ${c ? `<text x="${i * bw + bw / 2}" y="${H - h - 4}" text-anchor="middle">${c}</text>` : ""}<text x="${i * bw + bw / 2}" y="${H + 16}" text-anchor="middle">${et[i]}</text>`; }).join("")}</svg>
+    <p class="nota">${rs.length} resultados de esta página · media ${rr(rs.reduce((a, b) => a + b, 0) / rs.length, 3)}</p>`;
+  const por = {};
+  for (const o of filas) { const v = o.r_neto ?? o.r_modelado; if (v == null) continue; (por[o.estrategia] = por[o.estrategia] || []).push(v); }
+  $("ops-estr").innerHTML = barrasH(Object.fromEntries(Object.entries(por).map(([k, v]) => [k, {r_medio: v.reduce((a, b) => a + b, 0) / v.length, n: v.length}])));
+}
+for (const id of ["f-estado", "f-estrategia", "f-moneda", "f-lado", "f-origen", "f-ejec"]) $(id).addEventListener("change", () => { pagina = 1; cargarOps(); });
+let tq; $("f-q").addEventListener("input", () => { clearTimeout(tq); tq = setTimeout(() => { pagina = 1; cargarOps(); }, 300); });
+$("pag-ant").onclick = () => { pagina--; cargarOps(); }; $("pag-sig").onclick = () => { pagina++; cargarOps(); };
+
+async function abrirOp(id) {
+  abrirCajon("Operación");
+  const r = await fetch("/api/operacion?id=" + encodeURIComponent(id), {cache: "no-store"});
+  if (!r.ok) { cuerpoCajon('<div class="vacio">Operación no encontrada en el registro.</div>'); return; }
+  const o = await r.json(), dec = o.decision || {}, plan = dec.plan || {}, ap = plan.aprendizaje || {};
+  $("cajon-titulo").innerHTML = `${lado(o.lado)} <span class="moneda">${esc(o.moneda)}</span> <span class="tenue" style="font-weight:500">· ${esc(o.estrategia)} ${o.version ? "v" + esc(o.version) : ""}</span>`;
+  $("cajon-etq").innerHTML = `<span class="chip">${esc(o.origen)}</span> <span class="chip ${o.estado === "cerrada" ? "" : "acento"}">${esc(o.estado)}</span>`;
+  const ordenes = Object.values(o.ordenes || {});
+  const rN = o.r_neto ?? o.r_modelado;
+  cuerpoCajon(`
+    ${o.origen === "shadow" ? '<div class="aviso" style="display:block">Resultado MODELADO (shadow): precios reales con costes supuestos; no es una ejecución.</div>' : ""}
+    <div class="mini-kpis">${mini("Resultado neto", usd(o.pnl_neto), signo(o.pnl_neto))}${mini("R neto", rr(rN), signo(rN))}${mini("Riesgo inicial", usd(o.riesgo_inicial_usd))}
+      ${mini("Duración", o.abierta_ts && o.cerrada_ts ? dur((Date.parse(o.cerrada_ts) || o.cerrada_ts * 1000) / 1000 - (Date.parse(o.abierta_ts) || o.abierta_ts * 1000) / 1000) : "—")}</div>
+    <h3>Por qué entró</h3>${dl([["Motivo", esc(o.motivo || "—")], ["Precio de referencia", n(o.precio_referencia, 4)],
+      ["Decisión", dec.aprobada ? '<span class="pos">aprobada</span>' : `<span class="neg">rechazada</span> ${esc((dec.motivos || []).join("; "))}`],
+      ["Aprendizaje", ap.n != null ? `${ap.abrir ? "aceptaría" : "rechazaría"} · ${ap.n} casos parecidos · R esperado ${rr(ap.r_esperado, 3)}` : undefined],
+      ["Parámetros", `<span class="mono">${esc(JSON.stringify(o.parametros || {}))}</span>`],
+      ["Tamaño previsto", `${n(plan.tam, 4)} · apalancamiento ${esc(plan.apalancamiento ?? "—")} · riesgo ${usd(plan.riesgo_usd)}`],
+      ["Duración máxima", plan.duracion_min ? `${n(plan.duracion_min / 60, 1)} h` : "—"]])}
+    <h3>Ejecución y resultado</h3>${dl([["Entrada media", n(o.precio_medio_entrada, 4)], ["Salida media", n(o.precio_medio_salida, 4)],
+      ["Tamaño ejecutado", n(o.tam_entrada, 4)], ["Stop inicial / actual", `${n(o.stop_inicial, 4)} / ${n(o.stop_actual, 4)}`, "stop_mark"],
+      ["Deslizamiento de entrada", o.deslizamiento_entrada_pct == null ? "—" : n(o.deslizamiento_entrada_pct, 3) + " %", "deslizamiento"],
+      ["Resultado bruto", usd(o.pnl_bruto)], ["Comisiones", usd(o.comisiones) + (o.comisiones_estimadas ? ' <span class="tenue">(estimadas)</span>' : "")],
+      ["Funding", usd(o.funding_total), "funding"], ["Resultado neto", `<b class="${signo(o.pnl_neto)}">${usd(o.pnl_neto)}</b>`, "pnl_neto"],
+      ["R bruto / neto", `${n(o.r_bruto, 2)} / ${n(o.r_neto, 2)}`, "r"], ["Causa de salida", esc(o.causa_salida || "—")],
+      ["R modelado (shadow)", o.r_modelado == null ? undefined : n(o.r_modelado, 2)]])}
+    ${(o.alertas || []).length ? `<h3>Alertas</h3><ul class="lista">${o.alertas.map(a => `<li><span class="punto ${esc(a.severidad)}"></span><span>${esc(a.mensaje)} <span class="tenue">${hora(a.ts)}</span></span></li>`).join("")}</ul>` : ""}
+    <h3>Órdenes</h3><div class="tabla">${tabla(["Rol", "CLOID / oid", "Tamaño#", "Precio#", "Estado"], ordenes.map(x => `<tr>${td(esc(x.rol))}
+      ${td(`<span class="mono tenue">${esc((x.cloid || "").slice(0, 10))}…</span> ${esc(x.oid ?? "")}`)}${td(n(x.sz, 4), "num")}${td(n(x.trigger || x.px, 4), "num")}
+      ${td(`<span class="chip">${esc(x.estado)}</span>`)}</tr>`), "Sin órdenes.")}</div>
+    <h3>Fills</h3><div class="tabla">${tabla(["Hora", "Rol", "Precio#", "Tamaño#", "Comisión#"], [...(o.fills_entrada || []), ...(o.fills_salida || [])].map(f => `<tr>
+      ${td(hora(f.ts))}${td(esc(f.rol))}${td(n(f.px, 4), "num")}${td(n(f.sz, 4), "num")}${td(usd(f.comision), "num")}</tr>`), "Sin fills.")}</div>
+    ${(o.trailing || []).length ? `<h3>Movimientos del stop</h3><div class="tabla">${tabla(["Hora", "De#", "A#", "Motivo"], o.trailing.map(t => `<tr>${td(hora(t.ts))}${td(n(t.de, 4), "num")}${td(n(t.a, 4), "num")}${td(esc(t.motivo))}</tr>`))}</div>` : ""}
+    <h3>Cronología completa</h3><ul class="tl">${(o.eventos || []).map(e => `<li onclick="this.classList.toggle('abierto')" tabindex="0"
+      onkeydown="if(event.key==='Enter')this.classList.toggle('abierto')"><span class="tenue">${hora(e.ts)}</span> <b>${esc(e.tipo)}</b>
+      <span class="suave">${esc(e.rol || e.accion || e.causa || e.estado || "")}</span><pre>${esc(JSON.stringify(e, null, 1))}</pre></li>`).join("")}</ul>
+    <p class="nota mono">${esc(o.trade_id)}</p>`);
+}
+
+/* ---------------------------------------------------------------- observabilidad */
+async function cargarObs() {
+  if ($("o-pausa").checked) return;
+  const p = new URLSearchParams();
+  if ($("o-nivel").value) p.set("nivel", $("o-nivel").value);
+  if ($("o-comp-f").value) p.set("componente", $("o-comp-f").value);
+  if ($("o-traza").value) p.set("traza", $("o-traza").value);
+  if ($("o-q").value) p.set("q", $("o-q").value);
+  let o;
+  try { o = await (await fetch("/api/observabilidad?" + p, {cache: "no-store"})).json(); }
+  catch (e) { $("o-kpis").innerHTML = '<div class="vacio">Sin conexión con el panel.</div>'; return; }
+  const s = o.sistema || {}, pr = s.proceso || {}, c = s.contadores || {};
+  const est = s.estado_global || pr.estado || "sin_datos";
+  $("o-kpis").innerHTML = [
+    kpi("Estado general", `<span class="est ${esc(est)}" style="font-size:13px">${esc(est.replace("_", " "))}</span>`, `${esc(s.modo || "")} · config v${esc(s.version_config ?? "?")} · código ${esc(s.version_codigo || "?")}`
+      + ((s.obligatorios_sin_datos || []).length ? `<br>sin datos: ${esc(s.obligatorios_sin_datos.join(", "))}` : "")
+      + ((s.obligatorios_fallidos || []).length ? `<br>fallidos: ${esc(s.obligatorios_fallidos.join(", "))}` : "")),
+    kpi("Latido", o.latido_antiguedad_seg == null ? "—" : "hace " + hace(o.latido_antiguedad_seg), "último ciclo correcto " + hora(s.ultimo_ciclo_ok_ts), "latido"),
+    kpi("Ciclo (mediana / p95)", `${n(s.ciclo_mediana_seg, 1)} / ${n(s.ciclo_p95_seg, 1)} s`, `${s.ciclos ?? 0} ciclos · ${s.ciclos_fallidos ?? 0} fallidos`, "ciclo_p95"),
+    kpi("Proceso", `${hace(pr.activo_seg)}`, `en marcha · reinicios ${pr.reinicios ?? 0} · Python ${esc(pr.python || "?")}`),
+    kpi("Contadores", `${c.reintentos_429 ?? 0} · ${c.esperas_limite ?? 0} · ${c.reconexiones_ws ?? 0}`, `429 · esperas · reconexiones · ${c.errores_api ?? 0} errores API`, "contadores"),
+    kpi("Disco libre", s.disco ? `${n(s.disco.libre_gb, 1)} GB` : "—", s.disco ? `de ${n(s.disco.total_gb, 0)} GB` : ""),
+  ].join("");
+  $("o-comp").innerHTML = Object.entries(s.componentes || {}).map(([k, v]) => `<div class="comp"><div class="nom"><span>${esc(v.descripcion || k)}</span>
+    <span class="est ${esc(v.estado)}">${esc(v.estado.replace("_", " "))}</span></div><div class="det">${esc(v.detalle)}</div>
+    <div class="det">${v.ts ? "informó " + hora(v.ts) : "nunca ha informado"}${v.latencia_ms != null ? ` · ${v.latencia_ms} ms` : ""}</div></div>`).join("")
+    || '<div class="vacio">El bot aún no ha escrito su estado.</div>';
+  $("o-inc").innerHTML = tabla(["Componente", "Severidad", "Mensaje", "Veces#", "Desde", "Último", "Estado", ""], (o.incidentes || []).slice(0, 50).map(i => `<tr>
+    ${td(esc(i.componente))}${td(`<span class="chip ${i.severidad === "error" ? "rojo" : i.severidad === "aviso" ? "ambar" : ""}">${esc(i.severidad)}</span>`)}
+    ${td(`${esc(i.mensaje)}<div class="sub" style="white-space:normal">${esc(i.explicacion)} ${esc(i.recomendacion)}</div>`)}
+    ${td(i.repeticiones, "num")}${td(hora(i.primer_ts))}${td(hora(i.ultimo_ts))}${td(esc(i.estado))}
+    ${td(i.estado === "activo" && !SOLO_LECTURA ? `<button class="mini" data-accion="reconocer" data-arg="${esc(i.id)}">Reconocer</button>` : "")}</tr>`), "Sin incidentes.");
+  const sel = $("o-comp-f"), actual = sel.value;
+  sel.innerHTML = sel.options[0].outerHTML + (o.componentes_log || []).map(c2 => `<option${c2 === actual ? " selected" : ""}>${esc(c2)}</option>`).join("");
+  $("o-logs").innerHTML = (o.logs || []).map(e => `<div class="log ${esc(e.nivel)}${e.detalle ? " detalle" : ""}" ${e.detalle ? 'onclick="this.classList.toggle(\'abierto\')"' : ""}>
+    <span class="tenue">${hora(e.ts)}</span><span class="nv ${esc(e.nivel)}">${esc(e.nivel)}</span><span class="suave">${esc(e.componente)}</span>
+    <span>${esc(e.mensaje)}${e.traza ? ` <a href="#" data-accion="verTraza" data-arg="${esc(e.traza)}" class="tenue">${esc(e.traza)}</a>` : ""}</span>
+    ${e.detalle ? `<pre>${esc(e.detalle)}</pre>` : ""}</div>`).join("") || '<div class="vacio">Sin registros con esos filtros.</div>';
+}
+for (const id of ["o-nivel", "o-comp-f"]) $(id).addEventListener("change", cargarObs);
+let to; for (const id of ["o-traza", "o-q"]) $(id).addEventListener("input", () => { clearTimeout(to); to = setTimeout(cargarObs, 300); });
+
+/* ---------------------------------------------------------------- configuración (editor) */
+const C = {esq: null, seccion: "monedas", cambios: {}, puede: false};
+async function cargarConfig(forzar = false) {
+  if (C.esq && !forzar) { pintarEditor(); return; }
+  try { C.esq = await (await fetch("/api/config", {cache: "no-store"})).json(); } catch (e) { $("c-seccion").innerHTML = '<div class="vacio">No se pudo leer la configuración.</div>'; return; }
+  C.puede = !!C.esq.puede_editar && !SOLO_LECTURA;
+  $("c-ro").style.display = C.puede ? "none" : "";
+  $("c-aviso").textContent = C.esq.aviso || "";
+  if (!C.esq.secciones.some(s => s.id === C.seccion)) C.seccion = C.esq.secciones[0].id;
+  pintarEditor();
+}
+function campoPorRuta(r) { return C.esq.campos.find(c => c.ruta === r); }
+function valorActual(c) { return c.ruta in C.cambios ? C.cambios[c.ruta] : c.valor; }
+function igual(a, b) { return JSON.stringify(a) === JSON.stringify(b); }
+function pintarEditor() {
+  const E = C.esq; if (!E) return;
+  const cnt = s => E.campos.filter(c => c.seccion === s && c.ruta in C.cambios).length;
+  $("c-nav").innerHTML = E.secciones.map(s => `<button class="${s.id === C.seccion ? "act" : ""}" data-accion="irSeccion" data-arg="${esc(s.id)}">${esc(s.titulo)}${cnt(s.id) ? ` <span class="cuenta azul">${cnt(s.id)}</span>` : ""}</button>`).join("");
+  const sec = E.secciones.find(s => s.id === C.seccion) || E.secciones[0];
+  const campos = E.campos.filter(c => c.seccion === sec.id);
+  $("c-seccion").innerHTML = `<div class="tarj-cab"><h2>${esc(sec.titulo)}</h2></div><p class="nota" style="margin:-4px 0 14px">${esc(sec.texto)}</p>
+    <div class="campos">${campos.map(htmlCampo).join("") || '<div class="vacio">Sin campos.</div>'}</div>`;
+  for (const c of campos) conectarCampo(c);
+  $("bc-n").textContent = Object.keys(C.cambios).length;
+  $("barra-cambios").classList.toggle("visible", Object.keys(C.cambios).length > 0);
+}
+function idCampo(c) { return "cf-" + c.ruta.replace(/[^a-zA-Z0-9]/g, "_"); }
+function htmlCampo(c) {
+  const v = valorActual(c), dis = C.puede ? "" : "disabled", id = idCampo(c), cambiado = c.ruta in C.cambios;
+  const antes = cambiado ? `<span class="antes">antes: ${esc(fmtValor(c, c.valor))}</span>` : "";
+  let ctrl = "";
+  if (c.tipo === "bool") ctrl = `<label class="interruptor"><input type="checkbox" id="${id}" ${v ? "checked" : ""} ${dis}><span></span></label><span class="suave">${v ? "sí" : "no"}</span>`;
+  else if (c.tipo === "num" || c.tipo === "int") ctrl = `<input type="number" id="${id}" value="${esc(v ?? "")}" ${c.min != null ? `min="${c.min}"` : ""} ${c.max != null ? `max="${c.max}"` : ""} step="${c.paso || (c.tipo === "int" ? 1 : "any")}" ${dis}><span class="unidad">${esc(c.unidad || "")}</span>
+    ${c.unidad === "USD" && v != null ? `<span class="tenue" style="font-size:11.5px">= ${usdK(+v).replace("+", "")}</span>` : c.min != null || c.max != null ? `<span class="tenue" style="font-size:11.5px">${c.min ?? ""} – ${c.max ?? ""}</span>` : ""}`;
+  else if (c.tipo === "opcion") ctrl = `<select id="${id}" ${dis}>${c.opciones.map(o => `<option${o === v ? " selected" : ""}>${esc(o)}</option>`).join("")}</select>`;
+  else if (c.tipo === "multi") ctrl = c.opciones.map(o => `<label class="suave" style="display:flex;gap:6px;align-items:center"><input type="checkbox" data-m="${esc(o)}" class="${id}" ${(v || []).includes(o) ? "checked" : ""} ${dis}> ${esc(o)}</label>`).join("");
+  else if (c.tipo === "monedas") ctrl = `<div style="display:flex;flex-direction:column;gap:8px;width:100%"><div class="chips">${(v || []).map(m => `<span class="chip">${esc(m)}<button ${dis} data-accion="quitarMoneda" data-arg="${esc(c.ruta)}" data-arg2="${esc(m)}" aria-label="Quitar ${esc(m)}">×</button></span>`).join("") || '<span class="tenue">ninguna</span>'}</div>
+    <div style="display:flex;gap:6px"><input id="${id}" list="lista-mercados" placeholder="Añadir mercado (p. ej. SOL)" ${dis} style="flex:1"><button ${dis} data-accion="anadirMoneda" data-arg="${esc(c.ruta)}">Añadir</button></div></div>`;
+  else if (c.tipo === "direcciones") {
+    const cam = C.cambios[c.ruta] || {quitar: [], anadir: []};
+    ctrl = `<div style="display:flex;flex-direction:column;gap:8px;width:100%"><div class="chips">${(c.valor || []).filter(x => !cam.quitar.includes(x.i)).map(x => `<span class="chip"><span class="mono">${esc(x.direccion)}</span><button ${dis} data-accion="quitarDireccion" data-arg="${esc(x.i)}" data-num="1" aria-label="Quitar">×</button></span>`).join("")}
+      ${cam.anadir.map((a, i) => `<span class="chip acento"><span class="mono">${esc(a.slice(0, 6) + "…" + a.slice(-4))}</span><button ${dis} data-accion="deshacerDireccion" data-arg="${esc(i)}" data-num="1">×</button></span>`).join("")}
+      ${!(c.valor || []).length && !cam.anadir.length ? '<span class="tenue">ninguna</span>' : ""}</div>
+      <div style="display:flex;gap:6px"><input id="${id}" placeholder="0x… (dirección pública de Hyperliquid)" ${dis} style="flex:1" autocomplete="off"><button ${dis} onclick="anadirDireccion()">Añadir</button></div></div>`;
+  }
+  const ancho = c.tipo === "monedas" || c.tipo === "direcciones";
+  return `<div class="campo${cambiado ? " cambiado" : ""}${ancho ? " ancho" : ""}"><div class="et">${esc(c.etiqueta)}${c.riesgo ? ' <span class="chip" title="Afecta al riesgo">riesgo</span>' : ""}${antes}</div>
+    ${c.ayuda ? `<div class="ay">${esc(c.ayuda)}</div>` : ""}<div class="ctrl" style="flex-wrap:wrap">${ctrl}</div></div>`;
+}
+function fmtValor(c, v) {
+  if (c.tipo === "bool") return v ? "sí" : "no";
+  if (Array.isArray(v)) return v.map(x => typeof x === "object" ? x.direccion : x).join(", ") || "ninguna";
+  if (v == null) return "—";
+  return String(v) + (c.unidad ? " " + c.unidad : "");
+}
+function marcar(c, valor) {
+  if (igual(valor, c.valor)) delete C.cambios[c.ruta]; else C.cambios[c.ruta] = valor;
+  pintarEditor();
+}
+function conectarCampo(c) {
+  const id = idCampo(c);
+  if (c.tipo === "bool") $(id).addEventListener("change", e => marcar(c, e.target.checked));
+  else if (c.tipo === "num" || c.tipo === "int") $(id).addEventListener("change", e => { const t = e.target.value.trim(); if (t === "") return; marcar(c, Number(t)); });
+  else if (c.tipo === "opcion") $(id).addEventListener("change", e => marcar(c, e.target.value));
+  else if (c.tipo === "multi") for (const el of document.querySelectorAll("." + id)) el.addEventListener("change", () =>
+    marcar(c, [...document.querySelectorAll("." + id)].filter(x => x.checked).map(x => x.dataset.m)));
+  else if (c.tipo === "monedas") $(id).addEventListener("keydown", e => { if (e.key === "Enter") anadirMoneda(c.ruta); });
+  else if (c.tipo === "direcciones") $(id).addEventListener("keydown", e => { if (e.key === "Enter") anadirDireccion(); });
+}
+function anadirMoneda(ruta) {
+  const c = campoPorRuta(ruta), el = $(idCampo(c)), m = el.value.trim(); if (!m) return;
+  if (!/^[A-Za-z0-9][A-Za-z0-9:_\-]{0,23}$/.test(m)) { mostrarAviso("Nombre de mercado no válido.", "error"); return; }
+  const conocidas = C.esq.monedas_conocidas || [];
+  const exacta = conocidas.find(x => x.toLowerCase() === m.toLowerCase());
+  if (conocidas.length && !exacta) mostrarAviso(`Aviso: «${m}» no aparece entre los mercados que el bot conoce de Hyperliquid; si no existe, se ignorará.`);
+  const v = (valorActual(c) || []).slice(); const nombre = exacta || m.toUpperCase();
+  if (!v.includes(nombre)) v.push(nombre);
+  marcar(c, v);
+}
+function quitarMoneda(ruta, m) { const c = campoPorRuta(ruta); marcar(c, (valorActual(c) || []).filter(x => x !== m)); }
+function camDir() { const c = campoPorRuta("ballenas_manuales"); return {c, cam: C.cambios["ballenas_manuales"] ? JSON.parse(JSON.stringify(C.cambios["ballenas_manuales"])) : {quitar: [], anadir: []}}; }
+function fijarDir(c, cam) { if (!cam.quitar.length && !cam.anadir.length) delete C.cambios[c.ruta]; else C.cambios[c.ruta] = cam; pintarEditor(); }
+function anadirDireccion() {
+  const {c, cam} = camDir(), el = $(idCampo(c)), d = el.value.trim();
+  if (!/^0x[0-9a-fA-F]{40}$/.test(d)) { mostrarAviso("Dirección no válida: debe ser 0x seguido de 40 caracteres hexadecimales.", "error"); return; }
+  if (!cam.anadir.map(x => x.toLowerCase()).includes(d.toLowerCase())) cam.anadir.push(d);
+  fijarDir(c, cam);
+}
+function quitarDireccion(i) { const {c, cam} = camDir(); if (!cam.quitar.includes(i)) cam.quitar.push(i); fijarDir(c, cam); }
+function deshacerDireccion(i) { const {c, cam} = camDir(); cam.anadir.splice(i, 1); fijarDir(c, cam); }
+function descartarCambios() { C.cambios = {}; pintarEditor(); }
+async function revisarCambios() {
+  const r = await post("/api/config", {cambios: C.cambios});
+  if (!r.ok) { mostrarAviso("No se puede guardar: " + (r.error || "error"), "error"); return; }
+  const lst = r.cambios || [];
+  $("d-config-cuerpo").innerHTML = `${r.sube_riesgo ? '<div class="aviso" style="display:block;border-color:rgba(243,189,85,.5)">⚠ Alguno de estos cambios <b>aumenta el riesgo</b>. Revísalo con calma.</div>' : ""}
+    <ul class="dif">${lst.map(x => `<li class="${x.sube_riesgo ? "riesgo" : ""}"><b>${esc(x.etiqueta)}</b> <span class="tenue">(${esc(x.ruta)})</span><br>
+      <span class="suave">${esc(Array.isArray(x.antes) ? x.antes.join(", ") || "—" : JSON.stringify(x.antes))}</span><span class="flecha">→</span><b>${esc(Array.isArray(x.despues) ? x.despues.join(", ") || "—" : JSON.stringify(x.despues))}</b>
+      ${x.sube_riesgo ? ' <span class="chip ambar">sube el riesgo</span>' : ""}</li>`).join("")}</ul>
+    <p class="nota">Al guardar se hace una copia de la configuración actual, el bot la valida otra vez y se reinicia de forma ordenada (unos segundos;
+      las posiciones conservan sus stops). Cambiar algo que decide invalida las aprobaciones y la evidencia acumulada con la configuración anterior.</p>`;
+  $("d-config-ok").disabled = false;
+  $("d-config").showModal();
+}
+async function guardarCambios() {
+  $("d-config-ok").disabled = true;
+  const r = await post("/api/config", {cambios: C.cambios, confirmar: true});
+  $("d-config").close();
+  if (!r.ok) { mostrarAviso("No se guardó: " + (r.error || "error"), "error"); return; }
+  C.cambios = {}; C.esq = null;
+  mostrarAviso("Guardado. Esperando a que el bot valide y aplique la configuración…");
+  await esperarResultado(r.id, 45);
+  cargarConfig(true);
+}
+async function verHistorial() {
+  abrirCajon("Historial de cambios de configuración");
+  let h; try { h = (await (await fetch("/api/config/historial", {cache: "no-store"})).json()).cambios; } catch (e) { cuerpoCajon('<div class="vacio">No disponible.</div>'); return; }
+  cuerpoCajon(h.length ? h.map(f => `<div class="tarj" style="margin-bottom:10px"><div class="tarj-cab" style="margin-bottom:6px"><b>${hora(f.ts)}</b><span class="chip">${esc(f.origen)}</span>
+      <div class="der">${f.copia_disponible && C.puede ? `<button class="mini" data-accion="restaurarCopia" data-arg="${esc(f.copia_anterior)}">Volver a lo de antes</button>` : ""}</div></div>
+      <div class="sub tenue" style="margin-bottom:6px">${esc(f.motivo)}</div>
+      <ul class="dif" style="margin:0">${(f.cambios || []).map(x => `<li><b>${esc(x.etiqueta)}</b>: <span class="suave">${esc(JSON.stringify(x.antes))}</span><span class="flecha">→</span>${esc(JSON.stringify(x.despues))}</li>`).join("")}</ul></div>`).join("")
+    : '<div class="vacio">Todavía no se ha cambiado nada desde el panel.</div>');
+}
+async function restaurarCopia(nombre) {
+  if (!confirmar2(`¿Restaurar la configuración que había antes de este cambio (${nombre})? El bot se reiniciará para aplicarla.`)) return;
+  const r = await post("/api/config/restaurar", {copia: nombre});
+  cerrarCajon();
+  if (!r.ok) { mostrarAviso("No se restauró: " + (r.error || "error"), "error"); return; }
+  C.esq = null; mostrarAviso("Copia restaurada. Esperando a que el bot la aplique…");
+  await esperarResultado(r.id, 45); cargarConfig(true);
+}
+function confirmar2(t) { return window.confirm(t); }
+function pintarConfigEfectiva(b) {
+  const ef = b.efectiva || {};
+  $("c-efectiva").innerHTML = tabla(["Clave", "Valor", "Fuente"], Object.entries(ef.riesgo || {}).map(([k, v]) =>
+    `<tr>${td(esc(k))}${td(`<span class="mono">${esc(JSON.stringify(v))}</span>`, "num")}${td(`<span class="sub">${esc((ef.fuente || {})[k] || "")}</span>`)}</tr>`));
+  const dlm = document.getElementById("lista-mercados");
+  const lista = b.mercados_disponibles || (b.motor || {}).monedas || [];
+  if (dlm && dlm.childElementCount !== lista.length) dlm.innerHTML = lista.map(m => `<option value="${esc(m)}">`).join("");
+}
+
+/* ---------------------------------------------------------------- comandos */
+async function post(ruta, cuerpo) {
+  try {
+    const r = await fetch(ruta, {method: "POST", headers: {"Content-Type": "application/json", "X-Panel-Token": TOKEN}, body: JSON.stringify(cuerpo)});
+    let j = {}; try { j = await r.json(); } catch (e) { /* vacío */ }
+    return {ok: r.ok && j.ok !== false, ...j};
+  } catch (e) { return {ok: false, error: "sin conexión con el panel"}; }
+}
+async function esperarResultado(id, intentos = 20) {
+  for (let i = 0; i < intentos; i++) {
+    await new Promise(z => setTimeout(z, 2000));
+    try { const res = await (await fetch("/api/resultado?id=" + id, {cache: "no-store"})).json();
+      if (!res.pendiente) { mostrarAviso((res.ok ? "✓ " : "✗ ") + res.mensaje, res.ok ? "ok" : "error"); setTimeout(() => mostrarAviso(""), 10000); cargar(); return res; } }
+    catch (e) { /* el bot puede estar reiniciándose */ }
+  }
+  mostrarAviso("El bot no ha confirmado todavía (¿está en marcha?).");
+}
+async function comando(cmd, extra = {}) {
+  const r = await post("/api/comando", {cmd, ...extra});
+  if (!r.ok) { mostrarAviso("No se envió: " + (r.error || "error"), "error"); return; }
+  mostrarAviso("Enviado al bot. Esperando su confirmación…");
+  await esperarResultado(r.id);
+}
+function pedirCierre() {
+  alcanceCierre = ((D || {}).bot || {}).posiciones?.map(p => p.moneda).sort() || [];
+  $("d-cierre-alcance").textContent = alcanceCierre.length ? "Se cerrarán: " + alcanceCierre.join(", ") : "El bot no tiene posiciones abiertas.";
+  $("d-cierre-txt").value = ""; $("d-cierre").showModal();
+}
+function confirmarCierre() {
+  const txt = $("d-cierre-txt").value.trim();
+  $("d-cierre").close();
+  if (txt !== "CERRAR-BOT") { mostrarAviso("Cancelado: la confirmación no coincide."); return; }
+  comando("/cerrarbot", {confirmacion: txt, alcance: alcanceCierre});
+}
+async function reconocer(id) { const r = await post("/api/incidente", {id}); if (r.ok) cargarObs(); else mostrarAviso(r.error || "No se pudo.", "error"); }
+window.addEventListener("beforeunload", e => { if (Object.keys(C.cambios).length) { e.preventDefault(); e.returnValue = ""; } });
+
+
+/* ---------------------------------------------------------------- acciones (sin manejadores inline: los datos van
+   en atributos data-* escapados para HTML y nunca se interpretan como código) */
+const ACCIONES_PERMITIDAS = ["abrirOp", "abrirEstrategia", "abrirEvento", "abrirCaso", "abrirBallena", "reconocer",
+  "quitarMoneda", "anadirMoneda", "quitarDireccion", "deshacerDireccion", "restaurarCopia", "verTraza", "irSeccion"];
+function verTraza(v) { $("o-traza").value = v; cargarObs(); }
+function irSeccion(v) { C.seccion = v; pintarEditor(); }
+function ejecutarAccion(el, ev) {
+  const nombre = el.dataset.accion;
+  if (!ACCIONES_PERMITIDAS.includes(nombre) || typeof window[nombre] !== "function") return;
+  ev.preventDefault();
+  const arg = el.dataset.num ? Number(el.dataset.arg) : el.dataset.arg;
+  if (el.dataset.arg2 !== undefined) window[nombre](arg, el.dataset.arg2); else window[nombre](arg);
+}
+document.addEventListener("click", ev => { const el = ev.target.closest("[data-accion]"); if (el) ejecutarAccion(el, ev); });
+document.addEventListener("keydown", ev => { if (ev.key !== "Enter") return;
+  const el = ev.target.closest("[data-accion]"); if (el && el.tagName !== "BUTTON" && el.tagName !== "A") ejecutarAccion(el, ev); });
+
+/* ---------------------------------------------------------------- vista sencilla (portada) */
+const INI = {horas: 168, act: null, actTs: 0};
+function leerModo() { try { return localStorage.getItem("panel-modo") !== "experto"; } catch (e) { return true; } }
+function ponerModo(sencillo) {
+  document.body.classList.toggle("sencillo", sencillo);
+  try { localStorage.setItem("panel-modo", sencillo ? "sencillo" : "experto"); } catch (e) { /* sin almacenamiento */ }
+  $("b-modo").textContent = sencillo ? "Modo experto" : "Vista sencilla";
+  $("b-modo").title = sencillo ? "Ver todas las pestañas con el detalle técnico" : "Volver a la portada sencilla";
+  if (!sencillo) irA(location.hash.slice(1) || "resumen"); else { pintarInicio(); cargarActividad(); }
+  scrollTo({top: 0});
+}
+const moneda$ = v => v == null || isNaN(v) ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + n(Math.abs(v), 2) + " $";
+function cantidadTxt(moneda, tam, precio, lado) {
+  // «Compró 7.666 kPEPE (= 7,67 millones de PEPE) a 0,005060 $ · coste 38,79 $». En Hyperliquid, kPEPE = 1.000 PEPE.
+  if (!tam) return "";
+  const m = String(moneda || ""), k = /^k[A-Z0-9]+$/.test(m);
+  const dec = precio && precio < 0.1 ? 6 : precio && precio < 10 ? 4 : 2;
+  const und = Math.abs(tam) >= 100 ? 0 : Math.abs(tam) >= 1 ? 2 : 4;
+  const real = k ? Math.abs(tam) * 1000 : null;
+  const realTxt = real == null ? "" : ` (= ${real >= 1e6 ? n(real / 1e6, 2) + " millones" : n(real, 0)} de ${m.slice(1)})`;
+  const cant = und === 0 ? Math.abs(tam).toLocaleString("es-ES", {useGrouping: "always", maximumFractionDigits: 0}) : n(Math.abs(tam), und);
+  return `${lado === "S" ? "Vendió" : "Compró"} ${cant} ${m}${realTxt}` +
+    (precio ? ` a ${n(precio, dec)} $ · coste ${n(Math.abs(tam) * precio, 2)} $` : "");
+}
+function haceTxt(ts) { return ts ? "hace " + hace(Date.now() / 1000 - ts) : ""; }
+function nombreLado(lado, m) { return lado === "L" ? `Apuesta a que ${m} sube` : `Apuesta a que ${m} baja`; }
+function simplificaBloqueo(t) {
+  t = String(t || "");
+  if (/pausa manual/.test(t)) return "lo has pausado tú";
+  if (/obsolet|no disponibles|no es reciente/.test(t)) return "está esperando datos de mercado frescos";
+  if (/pérdida|perdida|caída|drawdown/i.test(t)) return "ha llegado a un límite de pérdidas y se protege";
+  if (/conciliaci/.test(t)) return "está comprobando que la cuenta cuadra";
+  if (/máximo de operaciones|operaciones hoy/i.test(t)) return "ya ha hecho todas las operaciones permitidas hoy";
+  return t.length > 90 ? t.slice(0, 90) + "…" : t;
+}
+function serieRango() {
+  const h = (D && D.bot && D.bot.historial_saldo) || [];
+  if (!INI.horas) return h;
+  const desde = Date.now() / 1000 - INI.horas * 3600;
+  const s = h.filter(p => p[0] >= desde);
+  return s.length >= 2 ? s : h.slice(-2);
+}
+function pintarGraficoInicio(serie, sube) {
+  const g = $("in-graf");
+  if (serie.length < 2) { g.innerHTML = '<div class="in-vacio" style="text-align:center;padding-top:60px">Aún no hay historial suficiente</div>'; return; }
+  const W = 560, H = 150, t0 = serie[0][0], t1 = serie[serie.length - 1][0];
+  let lo = Math.min(...serie.map(p => p[1])), hi = Math.max(...serie.map(p => p[1]));
+  const minimo = Math.max(0.5, hi * 0.01);            // movimientos de céntimos no deben parecer un desplome
+  if (hi - lo < minimo) { const c = (hi + lo) / 2; lo = c - minimo / 2; hi = c + minimo / 2; }
+  const X = t => (t - t0) / Math.max(1, t1 - t0) * W, Y = v => 8 + (hi - v) / (hi - lo) * (H - 16);
+  const pts = serie.map(p => `${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`);
+  const col = sube ? "var(--verde)" : "var(--rojo)";
+  g.innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img" aria-label="Evolución del valor de la cuenta">
+    <defs><linearGradient id="in-grad" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="${sube ? "#2fd788" : "#f0627d"}" stop-opacity=".28"/>
+    <stop offset="1" stop-color="${sube ? "#2fd788" : "#f0627d"}" stop-opacity="0"/></linearGradient></defs>
+    <path d="M0,${H} L${pts.join(" L")} L${W},${H} Z" fill="url(#in-grad)"/>
+    <polyline points="${pts.join(" ")}" fill="none" stroke="${col}" stroke-width="2.2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+    <line id="in-cursor" y1="0" y2="${H}" stroke="var(--borde-2)" stroke-width="1" vector-effect="non-scaling-stroke" style="display:none"/>
+  </svg>`;
+  const svg = g.querySelector("svg");
+  svg.onpointermove = ev => {
+    const r = svg.getBoundingClientRect(), t = t0 + (ev.clientX - r.left) / r.width * (t1 - t0);
+    let p = serie[0]; for (const q of serie) { if (Math.abs(q[0] - t) < Math.abs(p[0] - t)) p = q; }
+    const c = $("in-cursor"); c.style.display = ""; c.setAttribute("x1", X(p[0])); c.setAttribute("x2", X(p[0]));
+    $("in-etq").textContent = new Date(p[0] * 1000).toLocaleString("es-ES", {weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit"});
+    pintarCifra(p[1]);
+  };
+  svg.onpointerleave = () => { $("in-cursor").style.display = "none"; $("in-etq").textContent = "Valor de la cuenta"; pintarCifra(D.bot.saldo); };
+}
+function pintarCifra(v) {
+  if (v == null) { $("in-cifra").textContent = "—"; return; }
+  const [e, d] = n(v, 2).split(",");
+  $("in-cifra").innerHTML = `${esc(e)}<small>,${esc(d)} $</small>`;
+}
+function pintarInicio() {
+  if (!D || !document.body.classList.contains("sencillo")) return;
+  const b = D.bot || {}, modo = b.modo;
+  pintarCifra(b.saldo);
+  const serie = serieRango(), ref = serie.length ? serie[0][1] : null;
+  const cambio = b.saldo != null && ref ? b.saldo - ref : null;
+  const etqR = {24: "hoy", 168: "esta semana", 720: "este mes", 0: "desde el inicio"}[INI.horas];
+  const ch = $("in-cambio");
+  ch.className = "in-cambio " + (cambio > 0.005 ? "pos" : cambio < -0.005 ? "neg" : "");
+  ch.innerHTML = cambio == null ? "—" : `${cambio >= 0 ? "▲" : "▼"} ${moneda$(cambio)} · ${pct(cambio / ref * 100)} <span class="suave">${etqR}</span>`;
+  $("in-ficticio").textContent = modo === "real" ? "Dinero real" : modo === "shadow" ? "Modo observación: no se envía ninguna orden"
+    : "Dinero ficticio · precios reales del mercado";
+  pintarGraficoInicio(serie, cambio == null || cambio >= 0);
+  const pausado = (b.bloqueos || []).some(x => /pausa manual/.test(x));
+  $("in-pausa").style.display = pausado ? "none" : ""; $("in-reanudar").style.display = pausado ? "" : "none";
+  $("in-pausa").disabled = $("in-reanudar").disabled = SOLO_LECTURA;
+  $("in-cerrar").disabled = SOLO_LECTURA || modo === "shadow" || !(b.posiciones || []).length;
+
+  // ¿Qué está haciendo el bot?
+  const nMon = ((b.motor || {}).monedas || []).length, cb = b.cerebro || {};
+  const ops = b.ops_hoy || 0;
+  let luz = "verde", frase;
+  if (!b.ts) { luz = "ambar"; frase = "El bot aún no ha arrancado."; }
+  else if (!D.bot_vivo) { luz = "rojo"; frase = `El bot no responde desde hace ${hace(D.edad_datos_seg)}. <span class="suave">Comprueba que el ordenador está encendido y el bot abierto.</span>`; }
+  else if ((b.bloqueos || []).length) { luz = "ambar"; frase = `En marcha, pero ahora no abre operaciones nuevas: ${esc(simplificaBloqueo(b.bloqueos[0]))}.`
+      + ` <span class="suave">Las operaciones abiertas siguen protegidas.</span>`; }
+  else if (cb.decide && !Object.keys(cb.modelos || {}).length) { luz = "ambar";
+    frase = `Vigilando ${nMon} monedas. <span class="suave">No abrirá operaciones nuevas hasta que el laboratorio entrene al «cerebro» que decide.</span>`; }
+  else frase = `Vigilando ${nMon} monedas y buscando oportunidades. <span class="suave">Hoy ha abierto ${ops} ${ops === 1 ? "operación" : "operaciones"}.</span>`;
+  $("in-luz").className = "in-luz " + luz; $("in-frase").innerHTML = frase;
+
+  // El cerebro, en lenguaje claro
+  const ivs = Object.keys(cb.modelos || {}).sort().reverse();
+  const NOMBRE_IV = {"4h": "velas de 4 horas", "1h": "velas de 1 hora"};
+  const EXAMEN = {supera: "aprobado", exploratorio: "prometedor, pendiente de la prueba final", no_supera: "suspendido", no_evaluable: "sin datos suficientes"};
+  $("in-cerebro-ver").textContent = cb.version ? "modelo del " + String(cb.version).replace(/^cerebro-(lab-)?(\d{4})(\d{2})(\d{2}).*$/, "$4/$3/$2") : "";
+  $("in-cerebro").innerHTML = (!cb.decide ? '<div class="in-vacio">Está desactivado: no decide.</div>'
+    : cb.error || !ivs.length ? `<div class="in-vacio">${esc(cb.error || "Sin modelo todavía")}: hasta que el laboratorio lo entrene no se abre ninguna operación.</div>`
+    : ivs.map(iv => { const m = cb.modelos[iv], ok = cerebroDecide(cb, iv);
+        return `<div class="in-fila"><span class="in-avatar ${ok ? "sube" : ""}">${esc(iv)}</span>
+          <div class="in-medio"><b>${cerebroExplora(cb, iv) ? "Explora" : ok ? "Decide" : "No decide"} en ${esc(NOMBRE_IV[iv] || iv)}</b>
+          <span class="suave">Examen del laboratorio: ${esc(EXAMEN[m.estado_laboratorio] || m.estado_laboratorio || "—")}${cerebroExplora(cb, iv)
+            ? ". Opera en simulado para acumular evidencia en vivo; en real no se usaría" : ok ? "" : ". Mientras tanto no entra ninguna operación de este tipo"}</span></div></div>`; }).join(""))
+    + (() => { const v4 = (((b.motor || {}).velas || {})["4h"]) || {}, h = (v4.historial || []).slice(-6);
+        if (!v4.evaluada_ts) return "";
+        const hh = ts => new Date(ts * 1000).toLocaleTimeString("es-ES", {hour: "2-digit", minute: "2-digit"});
+        return `<div class="in-vacio">Último cierre de 4 h (${esc(hh(v4.vela_evaluada_abre_ts + 14400))}): ${v4.monedas_evaluadas || 0} monedas revisadas · `
+          + `<b>${v4.propuestas || 0} propuestas</b>${(v4.propuestas_detalle || []).length ? " (" + esc(v4.propuestas_detalle.join(", ")) + ")" : ""}.`
+          + (h.length > 1 ? ` Últimos cierres: ${h.map(x => `${hh(x.ts)} → ${x.propuestas}`).join(" · ")}.` : "")
+          + (v4.proximo_cierre_ts ? ` Próximo: ${esc(hh(v4.proximo_cierre_ts))}.` : "") + `</div>`; })()
+    + (() => { const pr = b.probador || {}, c = pr.cerebro || {}, ex = Object.values(pr.estrategias || {}).reduce((a, v) => a + ((v.exploracion || {}).n || 0), 0);
+        const nexp = (b.posiciones || []).filter(p => p.exploracion_amplia).length;
+        return `<div class="in-vacio">Exploración (simulado, riesgo 0,25 %): ${nexp} abiertas · ${ex} cerradas.`
+          + ((c.aceptadas || {}).n || (c.rechazadas || {}).n ? ` Acierto del filtro: aceptadas ${(c.aceptadas || {}).n || 0} (${n((c.aceptadas || {}).r_medio, 2)} R) frente a rechazadas ${(c.rechazadas || {}).n || 0} (${n((c.rechazadas || {}).r_medio, 2)} R).` : "")
+          + `</div>`; })()
+    + `<div class="in-vacio">Hoy: ${(cb.contadores || {}).entra || 0} propuestas aceptadas · ${(cb.contadores || {}).no_entra || 0} descartadas por poco prometedoras. Las estrategias solo proponen; el cerebro elige y después se aplican los límites de riesgo.</div>`;
+
+  // Operaciones abiertas
+  const pos = (b.posiciones || []).map(p => ({...p, prueba: false}))
+    .concat((b.shadow_abiertas || []).map(p => ({...p, prueba: true})));
+  $("in-n-abiertas").textContent = pos.length ? `${pos.length}` : "";
+  $("in-abiertas").innerHTML = pos.length ? pos.map(p => {
+    const dist = p.sl && p.entrada ? Math.abs(p.entrada - p.sl) / p.entrada * 100 : null;
+    const obj = p.tpf && p.entrada ? Math.abs(p.tpf - p.entrada) / p.entrada * 100 : null;
+    const pnl = p.pnl_no_realizado;
+    return `<div class="in-fila"><span class="in-avatar ${p.lado === "L" ? "sube" : "baja"}">${esc(String(p.moneda).replace(/^k/, "").slice(0, 4))}</span>
+      <div class="in-medio"><b>${esc(nombreLado(p.lado, p.moneda))}${p.prueba ? " · prueba" : ""}${p.exploracion_amplia ? " · exploración" : ""}</b>
+        <span class="suave">${esc(cantidadTxt(p.moneda, p.tam, p.entrada, p.lado))}${p.apalancamiento ? ` · garantía ${n(p.margen, 2)} $ (${n(p.apalancamiento, 0)}×)` : ""}</span>
+        <span class="suave">${p.riesgo_usd != null ? `Pérdida máxima ${n(p.riesgo_usd, 2)} $` : ""}${dist != null ? ` (si cae un ${n(dist, 1)} % se cierra sola)` : ""}${obj != null ? ` · objetivo +${n(obj, 1)} %` : ""}</span></div>
+      <div class="in-der ${pnl > 0 ? "pos" : pnl < 0 ? "neg" : ""}">${pnl != null ? moneda$(pnl) : "—"}<span class="suave">${esc(haceTxt(p.abierta_ts))}</span></div></div>`;
+  }).join("") : '<div class="in-vacio">Ahora mismo no hay ninguna operación abierta.</div>';
+
+  // Camino a dinero real
+  const ests = b.estrategias || [];
+  const mejor = ests.slice().sort((x, y) => ((y.progreso || {}).requisitos_apta || {}).cumplidos - ((x.progreso || {}).requisitos_apta || {}).cumplidos)[0] || {};
+  const pr = mejor.progreso || {}, falt = ((pr.requisitos_apta || {}).faltan) || ["sin datos"];
+  const nPrueba = Math.max(...ests.map(e => ((e.progreso || {}).shadow || {}).n + ((e.progreso || {}).paper || {}).n || 0), 0);
+  const cerebroOk = Object.values(cb.modelos || {}).some(m => m.estado_laboratorio === "supera");
+  const pasos = [
+    [ests.some(e => e.laboratorio_superado) || cerebroOk, "Una estrategia o el cerebro supera el laboratorio", "pruebas con años de datos históricos"],
+    [nPrueba >= 30, `30 operaciones de prueba`, `${Math.min(nPrueba, 30)} de 30 hechas`],
+    [!falt.some(f => /días de observación/.test(f)), "14 días de observación en vivo", ""],
+    [!falt.some(f => /R neto medio|resultado neto/.test(f)), "Resultado de las pruebas positivo", "tras comisiones"],
+    [ests.some(e => e.etapa === "real_habilitado"), "Tu aprobación final", "nada pasa a real sin ti"],
+  ];
+  const hechos = pasos.filter(p => p[0]).length;
+  $("in-camino-n").textContent = `${hechos} de ${pasos.length}`;
+  $("in-camino-barra").style.width = (hechos / pasos.length * 100) + "%";
+  $("in-camino").innerHTML = pasos.map(([ok, t, s]) => `<li class="${ok ? "ok" : ""}"><span class="ck">${ok ? "✓" : ""}</span>
+    <span>${esc(t)}${s ? ` <span class="tenue">· ${esc(s)}</span>` : ""}</span></li>`).join("");
+}
+async function cargarActividad() {
+  if (!document.body.classList.contains("sencillo")) return;
+  let r; try { r = await (await fetch("/api/operaciones?solo_ejecutadas=1&por_pagina=6", {cache: "no-store"})).json(); }
+  catch (e) { $("in-actividad").innerHTML = '<div class="in-vacio">No se pudo leer la actividad.</div>'; return; }
+  const filas = r.filas || [], res = r.resumen || {};
+  $("in-resumen-act").textContent = res.cerradas ? `${res.cerradas} cerradas · ${n(res.ganadoras_pct, 0)} % ganadoras` : "";
+  $("in-actividad").innerHTML = filas.length ? filas.map(o => {
+    const cerrada = o.estado === "cerrada", ts = cerrada ? o.cerrada_ts : o.abierta_ts, v = cerrada ? o.pnl_neto : null;
+    return `<div class="in-fila"><span class="in-avatar ${o.lado === "L" ? "sube" : "baja"}">${esc(String(o.moneda).replace(/^k/, "").slice(0, 4))}</span>
+      <div class="in-medio"><b>${cerrada ? "Cerrada" : "Abierta"} · ${esc(nombreLado(o.lado, o.moneda).replace("Apuesta", "apuesta"))}</b>
+        <span class="suave">${esc(cantidadTxt(o.moneda, o.tam, o.precio_medio_entrada, o.lado))}${o.comisiones != null ? ` · comisiones ${n(o.comisiones, 2)} $` : ""}</span>
+        <span class="suave">${esc(haceTxt(ts))}${cerrada && o.causa_salida ? " · " + esc(o.causa_salida) : ""}</span></div>
+      <div class="in-der ${v > 0 ? "pos" : v < 0 ? "neg" : ""}">${v != null ? moneda$(v) : '<span class="suave">en curso</span>'}</div></div>`;
+  }).join("") : '<div class="in-vacio">Todavía no hay operaciones.</div>';
+}
+document.addEventListener("click", ev => {
+  const bt = ev.target.closest("#in-rangos button"); if (!bt) return;
+  INI.horas = +bt.dataset.h;
+  document.querySelectorAll("#in-rangos button").forEach(x => x.classList.toggle("activo", x === bt));
+  pintarInicio();
+});
+
+/* ---------------------------------------------------------------- arranque */
+(async () => {
+  const dlm = document.createElement("datalist"); dlm.id = "lista-mercados"; document.body.appendChild(dlm);
+  try {
+    GLOSARIO = await (await fetch("/api/glosario")).json();
+    $("glosario").innerHTML = Object.values(GLOSARIO).map(g => `<dt>${esc(g.titulo)}</dt><dd>${esc(g.texto)}</dd>`).join("");
+  } catch (e) { /* sin glosario */ }
+  irA(location.hash.slice(1) || "resumen");
+  ponerModo(leerModo());
+  await cargar();
+  reiniciarVivo(); cargarResumenFeed(); cargarLab();
+  setInterval(() => { cargar(); estadoConexion(); }, 10000);
+  setInterval(cargarResumenFeed, 15000);
+  setInterval(cargarActividad, 30000);
+  setInterval(() => { if (location.hash === "#observabilidad") cargarObs(); }, 10000);
+})();
+</script>
+</body>
+</html>

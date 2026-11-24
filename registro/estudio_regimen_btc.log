@@ -1,0 +1,73 @@
+Eligiendo las monedas más líquidas...
+  BTC, ETH, HYPE, ZEC, SOL, XMR, XRP, NEAR, PUMP, kPEPE, LIT, UNI, DOGE, ENA, GRAM, SUI, LINK, AVAX, WLD, BNB, AAVE, ARB, TAO, VVV, XPL, ADA, ZRO, ONDO, INIT, FARTCOIN, AERO, TRUMP, CRV, JUP, PAXG, CASHCAT, LTC, INJ, TIA, ETHFI, WIF, kBONK
+Descargando velas de 1 h y 4 h y funding (la primera vez tarda unos minutos)...
+  Historia ampliada con datos públicos de binance y bybit (6 años en 4 h, 4 en 1 h; Hyperliquid manda donde tiene datos)
+  [1/42] BTC · +8148 velas 4 h y +30064 de 1 h de binance
+  [2/42] ETH · +8148 velas 4 h y +30064 de 1 h de binance
+  [3/42] HYPE · +0 velas 4 h y +7765 de 1 h de binance
+  [4/42] ZEC · +9709 velas 4 h y +30064 de 1 h de binance
+  [5/42] SOL · +8148 velas 4 h y +30064 de 1 h de binance
+  [6/42] XMR · +10338 velas 4 h y +30064 de 1 h de binance
+  [7/42] XRP · +8149 velas 4 h y +30064 de 1 h de binance
+  [8/42] NEAR · +8149 velas 4 h y +30064 de 1 h de binance
+  [9/42] PUMP · +0 velas 4 h y +6785 de 1 h de binance
+  [10/42] kPEPE · +2726 velas 4 h y +25903 de 1 h de binance
+  [11/42] LIT · +0 velas 4 h y +2790 de 1 h de binance
+  [12/42] UNI · +8149 velas 4 h y +30064 de 1 h de binance
+  [13/42] DOGE · +8150 velas 4 h y +30066 de 1 h de binance
+  [14/42] ENA · +729 velas 4 h y +17915 de 1 h de binance
+  [15/42] GRAM · +0 velas 4 h y +1 de 1 h de binance
+  [16/42] SUI · +2739 velas 4 h y +25953 de 1 h de binance
+  [17/42] LINK · +8150 velas 4 h y +30066 de 1 h de binance
+  [18/42] AVAX · +8149 velas 4 h y +30065 de 1 h de binance
+  [19/42] WLD · +2247 velas 4 h y +23987 de 1 h de binance
+  [20/42] BNB · +8149 velas 4 h y +30065 de 1 h de binance
+  [21/42] AAVE · +8149 velas 4 h y +30064 de 1 h de binance
+  [22/42] ARB · +2986 velas 4 h y +26938 de 1 h de binance
+  [23/42] TAO · +676 velas 4 h y +17699 de 1 h de binance
+  [24/42] VVV · +0 velas 4 h y +10671 de 1 h de binance
+  [25/42] XPL · +0 velas 4 h y +5751 de 1 h de binance
+  [26/42] ADA · +8149 velas 4 h y +30064 de 1 h de binance
+  [27/42] ZRO · +255 velas 4 h y +16017 de 1 h de binance
+  [28/42] ONDO · +1167 velas 4 h y +19667 de 1 h de binance
+  [29/42] INIT · +0 velas 4 h y +8826 de 1 h de binance
+  [30/42] FARTCOIN · +0 velas 4 h y +11621 de 1 h de binance
+  [31/42] AERO · +1051 velas 4 h y +12011 de 1 h de binance
+  [32/42] TRUMP · +0 velas 4 h y +10930 de 1 h de binance
+  [33/42] CRV · +8150 velas 4 h y +30066 de 1 h de binance
+  [34/42] JUP · +1100 velas 4 h y +19398 de 1 h de binance
+  [35/42] PAXG · +0 velas 4 h y +9302 de 1 h de binance
+  [36/42] CASHCAT · +0 velas 4 h y +0 de 1 h de bybit
+  [37/42] LTC · +8150 velas 4 h y +30066 de 1 h de binance
+  [38/42] INJ · +4297 velas 4 h y +30066 de 1 h de binance
+  [39/42] TIA · +1652 velas 4 h y +21605 de 1 h de binance
+  [40/42] ETHFI · +820 velas 4 h y +18274 de 1 h de binance
+  [41/42] WIF · +1179 velas 4 h y +19714 de 1 h de binance
+  [42/42] kBONK · +1521 velas 4 h y +21082 de 1 h de binance
+  Velas añadidas desde el archivo propio del bot: 4h: 0, 1h: 0
+  Historia externa aceptada en 42 de 42 monedas.
+  Monedas veteranas (historia completa): AAVE, ADA, AVAX, BNB, BTC, CRV, DOGE, ETH, LINK, LTC, NEAR, SOL, UNI, XMR, XRP, ZEC
+Datos listos en 143.3 min. Empiezo las comparaciones.
+  1h {"n": 20, "tipo": "ruptura"}: sin filtro -0.024 R (15956), con filtro -0.015 R (12446)
+  1h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"}: sin filtro +0.026 R (6668), con filtro +0.066 R (4463)
+  1h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0}: sin filtro -0.003 R (14633), con filtro +0.008 R (10585)
+  1h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"}: sin filtro +0.024 R (7956), con filtro +0.041 R (6500)
+  1h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"}: sin filtro -0.139 R (11226), con filtro -0.102 R (2376)
+  1h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"}: sin filtro +0.019 R (10837), con filtro +0.042 R (8791)
+  1h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"}: sin filtro -0.173 R (12478), con filtro -0.088 R (3451)
+  1h {"n": 20, "ratio": 0.8, "tipo": "compresion"}: sin filtro +0.009 R (4116), con filtro +0.034 R (2806)
+  1h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"}: sin filtro +0.119 R (4100), con filtro +0.191 R (3251)
+  1h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"}: sin filtro -0.185 R (4347), con filtro -0.047 R (1146)
+  4h {"n": 20, "tipo": "ruptura"}: sin filtro +0.073 R (4147), con filtro +0.097 R (3168)
+  4h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"}: sin filtro +0.072 R (1655), con filtro +0.080 R (1056)
+  4h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0}: sin filtro -0.013 R (3866), con filtro -0.003 R (2709)
+  4h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"}: sin filtro -0.022 R (2155), con filtro -0.019 R (1736)
+  4h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"}: sin filtro -0.065 R (2958), con filtro -0.023 R (735)
+  4h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"}: sin filtro +0.106 R (2825), con filtro +0.128 R (2319)
+  4h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"}: sin filtro -0.103 R (3308), con filtro -0.092 R (934)
+  4h {"n": 20, "ratio": 0.8, "tipo": "compresion"}: sin filtro +0.048 R (1306), con filtro +0.037 R (905)
+  4h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"}: sin filtro +0.207 R (1147), con filtro +0.281 R (866)
+  4h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"}: sin filtro -0.206 R (1203), con filtro +0.037 R (381)
+
+Hecho en 1.1 min: 20 pares. El filtro mejora el R medio en 19 de 20 pares (+0.044 R de diferencia media; prueba de signos p = 0.000). Es una pista, no una estrategia: cualquier combinación elegida tendrá que pasar el examen normal de la investigación.
+Resultado: registro/estudio_regimen_btc.json

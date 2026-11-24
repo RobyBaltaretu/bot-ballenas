@@ -1,0 +1,65 @@
+{
+ "ts": 1795216033.3851094,
+ "dia": "2026-11-21",
+ "hallazgos": [
+  "Últimos 7 días: 7 cerradas, +35.46 $ netos. La peor fue SKY (ruptura_4h): +0.00 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "No hay ventaja clara; con menos de 30 operaciones los resultados son inconclusos y el desempeño en vivo es mixto.",
+  "hallazgos": [
+   {
+    "texto": "R neto de kPEPE (corto) 1.35107",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "R neto de ENA (corto) 1.97333",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "R neto de ruptura_4h en vivo 0.973 (n=6)",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "R medio de fuerza_1h en vivo -1.098 (n=2)",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "R medio de retroceso_4h en vivo -1.021 (n=2)",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo 0.973 con n=6, pero el laboratorio no supera los criterios y la evidencia total es insuficiente (<30 ops)"
+   },
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo 0.946 con n=2, pero número de operaciones muy bajo para concluir"
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio negativo -1.098 con n=2 (Rebajada de «retirar»: el laboratorio no da t ≤ −2 ni hay 5 operaciones negativas en vivo.)"
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo -1.021 con n=2"
+   },
+   {
+    "clave": "ruptura_1h",
+    "recomendacion": "retirar",
+    "motivo": "Recomendación previa del marcador y R medio negativo -0.539 con n=2"
+   }
+  ],
+  "correcciones": [],
+  "ideas": []
+ }
+}

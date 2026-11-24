@@ -1,0 +1,87 @@
+{
+ "ts": 1795519165.04514,
+ "estado": "activo",
+ "motivo": null,
+ "simulado": true,
+ "intervalo_s": 600,
+ "cuenta": {
+  "inicial_usd": 200.0,
+  "equity_usd": 200.0,
+  "libre_usd": 200.0,
+  "rendimiento_usd": 0.0
+ },
+ "posiciones": [],
+ "radar": [
+  {
+   "coin": "BTC",
+   "funding_anual_pct": 5.18,
+   "positivas_pct": 79.2,
+   "base_pct": 1.2966,
+   "horas_amortizacion": 524.5
+  },
+  {
+   "coin": "ETH",
+   "funding_anual_pct": -3.78,
+   "positivas_pct": 31.2,
+   "base_pct": 0.9541,
+   "horas_amortizacion": null
+  },
+  {
+   "coin": "HYPE",
+   "funding_anual_pct": 7.77,
+   "positivas_pct": 83.3,
+   "base_pct": 2.8021,
+   "horas_amortizacion": 349.7
+  },
+  {
+   "coin": "SOL",
+   "funding_anual_pct": 0.42,
+   "positivas_pct": 72.9,
+   "base_pct": 2.0592,
+   "horas_amortizacion": 6416.3
+  },
+  {
+   "coin": "ZEC",
+   "funding_anual_pct": 5.82,
+   "positivas_pct": 81.2,
+   "base_pct": 3.2025,
+   "horas_amortizacion": 466.6
+  }
+ ],
+ "oportunidades": [],
+ "descartadas": {
+  "BTC": "funding 5.2 %/año < 20.0 %",
+  "ETH": "funding -3.8 %/año < 20.0 %",
+  "HYPE": "funding 7.8 %/año < 20.0 %",
+  "SOL": "funding 0.4 %/año < 20.0 %",
+  "ZEC": "funding 5.8 %/año < 20.0 %"
+ },
+ "congeladas": {},
+ "cerradas": [],
+ "resumen": {
+  "n_cerradas": 0,
+  "pnl_neto_usd": 0,
+  "funding_cobrado_usd": 0,
+  "comisiones_usd": 0
+ },
+ "criterios": {
+  "funding_min_anual_pct": 20.0,
+  "horas_amortizacion_max": 72,
+  "positivas_min_pct": 70.0,
+  "base_max_pct": 0.5,
+  "capital_max_pct": 50.0,
+  "max_posiciones": 3,
+  "apalancamiento_perp": 2,
+  "horas_max": 336
+ },
+ "coste_ida_vuelta_pct": 0.31,
+ "monedas_verificadas": [
+  "BTC",
+  "ETH",
+  "HYPE",
+  "SOL",
+  "ZEC"
+ ],
+ "ultima_apertura": null,
+ "ultimos_cierres": []
+}

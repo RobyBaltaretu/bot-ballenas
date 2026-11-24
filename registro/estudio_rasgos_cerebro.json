@@ -1,0 +1,127 @@
+{
+ "estudio": "rasgos_cerebro_vivo_vs_entrenamiento",
+ "criterio": "|Δmedia| > 0.5 desv. o dispersión fuera de 0,5×–2×",
+ "intervalos": {
+  "1h": {
+   "decisiones": 0,
+   "entrenamiento_n": 9651,
+   "estado_modelo": "no_supera",
+   "rasgos": {
+    "tendencia": {
+     "n": 0
+    },
+    "impulso6": {
+     "n": 0
+    },
+    "volatilidad": {
+     "n": 0
+    },
+    "funding8h": {
+     "n": 0
+    },
+    "dif_funding8h": {
+     "n": 0
+    },
+    "flujo1": {
+     "n": 0
+    },
+    "flujo6": {
+     "n": 0
+    },
+    "base_pct": {
+     "n": 0
+    }
+   },
+   "desplazados": [],
+   "con_datos_externos_ausentes": 0,
+   "aprobadas_pct": null,
+   "veredicto": "sin muestra suficiente para concluir"
+  },
+  "4h": {
+   "decisiones": 105,
+   "entrenamiento_n": 4697,
+   "estado_modelo": "no_supera",
+   "rasgos": {
+    "tendencia": {
+     "n": 105,
+     "media_viva": 2.31454,
+     "media_entrenamiento": 2.2057,
+     "desplazamiento_en_desv": 0.06,
+     "dispersion_viva_sobre_entrenamiento": 0.99,
+     "fuera_de_3_desv_pct": 1.0
+    },
+    "impulso6": {
+     "n": 105,
+     "media_viva": 1.52922,
+     "media_entrenamiento": 1.39682,
+     "desplazamiento_en_desv": 0.07,
+     "dispersion_viva_sobre_entrenamiento": 1.17,
+     "fuera_de_3_desv_pct": 1.0
+    },
+    "volatilidad": {
+     "n": 105,
+     "media_viva": 1.12634,
+     "media_entrenamiento": 1.13172,
+     "desplazamiento_en_desv": -0.02,
+     "dispersion_viva_sobre_entrenamiento": 0.84,
+     "fuera_de_3_desv_pct": 1.9
+    },
+    "funding8h": {
+     "n": 104,
+     "media_viva": 0.00557,
+     "media_entrenamiento": -0.00061,
+     "desplazamiento_en_desv": 1.55,
+     "dispersion_viva_sobre_entrenamiento": 10.14,
+     "fuera_de_3_desv_pct": 6.7
+    },
+    "dif_funding8h": {
+     "n": 101,
+     "media_viva": -0.00012,
+     "media_entrenamiento": -0.00021,
+     "desplazamiento_en_desv": 0.05,
+     "dispersion_viva_sobre_entrenamiento": 4.76,
+     "fuera_de_3_desv_pct": 4.0
+    },
+    "flujo1": {
+     "n": 100,
+     "media_viva": 0.02771,
+     "media_entrenamiento": 0.03001,
+     "desplazamiento_en_desv": -0.04,
+     "dispersion_viva_sobre_entrenamiento": 1.19,
+     "fuera_de_3_desv_pct": 1.0
+    },
+    "flujo6": {
+     "n": 100,
+     "media_viva": 0.0156,
+     "media_entrenamiento": 0.00944,
+     "desplazamiento_en_desv": 0.2,
+     "dispersion_viva_sobre_entrenamiento": 1.01,
+     "fuera_de_3_desv_pct": 0.0
+    },
+    "base_pct": {
+     "n": 100,
+     "media_viva": 0.01893,
+     "media_entrenamiento": -0.01107,
+     "desplazamiento_en_desv": 0.39,
+     "dispersion_viva_sobre_entrenamiento": 2.19,
+     "fuera_de_3_desv_pct": 1.0
+    }
+   },
+   "desplazados": [
+    "funding8h",
+    "dif_funding8h",
+    "base_pct"
+   ],
+   "prediccion": {
+    "media": 0.0362,
+    "p10": -0.1599,
+    "p50": 0.0193,
+    "p90": 0.2328,
+    "pct_sobre_umbral": 39.0
+   },
+   "con_datos_externos_ausentes": 6,
+   "aprobadas_pct": 7.6,
+   "veredicto": "rasgos desplazados: funding8h, dif_funding8h, base_pct"
+  }
+ }
+}

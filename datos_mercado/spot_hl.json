@@ -1,0 +1,86 @@
+{
+ "generado": "2026-11-24T08:48:46Z",
+ "criterios": {
+  "base_max_pct": 0.5,
+  "vol_min_usd": 1000000,
+  "spread_max_pct": 0.05,
+  "prof_min_usd": 20000,
+  "ventana_prof_pct": 0.25
+ },
+ "monedas_aptas": [
+  "BTC",
+  "ETH",
+  "HYPE",
+  "SOL",
+  "ZEC"
+ ],
+ "aptas": {
+  "BTC": {
+   "par": "@142",
+   "token": "UBTC",
+   "sz_decimals": 5,
+   "mid": 60391.0,
+   "vol_24h_usd": 71533799.68,
+   "perp_mark": 60433.5,
+   "base_pct": -0.0703,
+   "horquilla_pct": 0.0083,
+   "profundidad_usd": 346914.38
+  },
+  "ETH": {
+   "par": "@151",
+   "token": "UETH",
+   "sz_decimals": 4,
+   "mid": 1698.35,
+   "vol_24h_usd": 23710093.25,
+   "perp_mark": 1699.55,
+   "base_pct": -0.0706,
+   "horquilla_pct": 0.0118,
+   "profundidad_usd": 381698.48
+  },
+  "HYPE": {
+   "par": "@107",
+   "token": "HYPE",
+   "sz_decimals": 2,
+   "mid": 64.093,
+   "vol_24h_usd": 109126206.03,
+   "perp_mark": 64.118,
+   "base_pct": -0.039,
+   "horquilla_pct": 0.0062,
+   "profundidad_usd": 167010.12
+  },
+  "SOL": {
+   "par": "@156",
+   "token": "USOL",
+   "sz_decimals": 3,
+   "mid": 71.468,
+   "vol_24h_usd": 17163121.57,
+   "perp_mark": 71.516,
+   "base_pct": -0.0671,
+   "horquilla_pct": 0.007,
+   "profundidad_usd": 51974.13
+  },
+  "ZEC": {
+   "par": "@272",
+   "token": "UZEC",
+   "sz_decimals": 4,
+   "mid": 758.61,
+   "vol_24h_usd": 16702965.95,
+   "perp_mark": 760.0,
+   "base_pct": -0.1829,
+   "horquilla_pct": 0.0013,
+   "profundidad_usd": 97256.37
+  }
+ },
+ "excluidas": {
+  "AVAX": "volumen 7,701 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "AZTEC": "base -22.08 % (máx. 0.5 %); volumen 320 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "BERA": "base -98.78 % (máx. 0.5 %); volumen 0 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "ENA": "volumen 458,835 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "MON": "volumen 28,936 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "PUMP": "profundidad 12,817 $ < 20,000 $",
+  "PURR": "volumen 939,336 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "STABLE": "volumen 2,743 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "TRUMP": "base -99.92 % (máx. 0.5 %); volumen 123 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $",
+  "XPL": "volumen 254,472 $ < 1,000,000 $; horquilla None % (máx. 0.05 %); profundidad 0 $ < 20,000 $"
+ }
+}

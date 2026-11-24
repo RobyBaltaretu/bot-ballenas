@@ -1,0 +1,49 @@
+{
+ "ts": 1795388872.3568957,
+ "dia": "2026-11-23",
+ "hallazgos": [
+  "Últimos 7 días: 8 cerradas, +33.52 $ netos. La peor fue STRK (ruptura_4h): -1.94 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "El bot muestra resultados mixtos: algunas estrategias en vivo con R positivo (ruptura_4h) y otras con R negativo; el mercado bajista explica gran parte de los beneficios del bot.",
+  "hallazgos": [
+   {
+    "texto": "ruptura_4h en vivo tiene R medio 0.973 con 6 operaciones",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "fuerza_1h en vivo tiene R medio -1.098 con 2 operaciones",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "contra_mercado indica que todas las 18 operaciones fueron cortas y habrían dado +21.57 $ frente a +10.59 $ del bot",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "mantener",
+    "motivo": "R medio positivo (0.973) y n>=5, no cumple condición de retiro"
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio negativo pero solo 2 ops, insuficiente para conclusión"
+   },
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "mantener",
+    "motivo": "R medio positivo (0.946) en vivo con 2 ops y supera criterio de mantener"
+   }
+  ],
+  "correcciones": [
+   "Se verifica que el stop de PAXG está por encima de la entrada (sl 3628.1 < entrada 3745.2) y en_breakeven es true, por lo que es correcto según regla"
+  ],
+  "ideas": []
+ }
+}

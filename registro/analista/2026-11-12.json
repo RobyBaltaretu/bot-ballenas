@@ -1,0 +1,75 @@
+{
+ "ts": 1794441933.8251245,
+ "dia": "2026-11-12",
+ "hallazgos": [
+  "Últimos 7 días: 7 cerradas, +8.08 $ netos. La peor fue ZEC (ruptura_1h): -0.69 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "Con menos de 30 operaciones totales (28), no hay evidencia concluyente de ventaja sostenida.",
+  "hallazgos": [
+   {
+    "texto": "Ruptura 4h en vivo r medio 0.756, pnl USD 7.35",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "Momentum 4h en vivo r medio 0.946, pnl USD 4.06",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "Ruptura 1h en vivo r medio -0.712, pnl USD -3.34",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "AAVE (momentum_4h) cerrada con pnl neto 3.23865578 y r_neto 1.05727859",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "kPEPE posición abierta con pnl no realizado 0.030970000000004112",
+    "verificacion": "verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "ruptura_1h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio negativo y historial de stops."
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio negativo y sin operaciones exitosas."
+   },
+   {
+    "clave": "funding_1h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio negativo y sin evidencia de ventaja."
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio negativo y bajo desempeño."
+   },
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio bajo y alta caída OOS."
+   },
+   {
+    "clave": "funding_4h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio negativo y alta caída OOS."
+   },
+   {
+    "clave": "reversion_4h",
+    "recomendacion": "retirar",
+    "motivo": "Según análisis actual, r medio negativo y alta caída OOS."
+   }
+  ],
+  "correcciones": [],
+  "ideas": []
+ }
+}

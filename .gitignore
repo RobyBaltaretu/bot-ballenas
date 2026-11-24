@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.lock
+*.lock.info
+*.tmp
+*.zip
+datos_backtest/
+logs/
+bot.log*
+panel_latido.json

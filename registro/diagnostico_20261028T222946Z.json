@@ -1,0 +1,175 @@
+{
+  "generado": "2026-10-28T22:29:46+00:00",
+  "version_config": 2,
+  "archivos": {
+    "config.json": {
+      "existe": true,
+      "bytes": 4301,
+      "sha256": "a3e19526031bd036",
+      "modificado": "2026-10-23T14:22:49+00:00",
+      "json_valido": true
+    },
+    "estado.json": {
+      "existe": true,
+      "bytes": 90713,
+      "sha256": "bc071c589dc353cb",
+      "modificado": "2026-10-28T22:29:40+00:00",
+      "json_valido": true
+    },
+    "papel.json": {
+      "existe": true,
+      "bytes": 63683,
+      "sha256": "fd36afe2736a8ae0",
+      "modificado": "2026-10-28T07:01:24+00:00",
+      "json_valido": true
+    },
+    "promociones.json": {
+      "existe": true,
+      "bytes": 35827,
+      "sha256": "1897596bdc451a38",
+      "modificado": "2026-10-28T07:01:24+00:00",
+      "json_valido": true
+    },
+    "cerebro_modelo.json": {
+      "existe": true,
+      "bytes": 2860,
+      "sha256": "8f10c1b9314d10ed",
+      "modificado": "2026-10-25T06:03:02+00:00",
+      "json_valido": true
+    },
+    "estrategia_elegida.json": {
+      "existe": true,
+      "bytes": 251981,
+      "sha256": "429fc00df5303d3f",
+      "modificado": "2026-10-25T06:03:02+00:00",
+      "json_valido": true
+    },
+    "laboratorio_variantes.json": {
+      "existe": true,
+      "bytes": 21899,
+      "sha256": "3f51b70f8b0a8df8",
+      "modificado": "2026-10-28T02:10:35+00:00",
+      "json_valido": true
+    },
+    "laboratorio_holdout.json": {
+      "existe": true,
+      "bytes": 1481,
+      "sha256": "ffd88be1776355d1",
+      "modificado": "2026-10-28T02:10:35+00:00",
+      "json_valido": true
+    },
+    "panel_datos.json": {
+      "existe": true,
+      "bytes": 190974,
+      "sha256": "1ed98a3f9d7410fb",
+      "modificado": "2026-10-28T22:29:41+00:00",
+      "json_valido": true
+    },
+    "estado_sistema.json": {
+      "existe": true,
+      "bytes": 3430,
+      "sha256": "537e7c0fcbd55e5f",
+      "modificado": "2026-10-28T22:29:41+00:00",
+      "json_valido": true
+    },
+    "incidentes.json": {
+      "existe": true,
+      "bytes": 28673,
+      "sha256": "e30cd08ab9274c3f",
+      "modificado": "2026-10-28T22:29:41+00:00",
+      "json_valido": true
+    },
+    "aprendizaje.json": {
+      "existe": true,
+      "bytes": 70577,
+      "sha256": "7a0d3cb814b7b63c",
+      "modificado": "2026-10-28T22:29:40+00:00",
+      "json_valido": true
+    }
+  },
+  "faltan": [],
+  "desconocido": [],
+  "corruptos": [],
+  "huella_codigo": "4533e9fbe9436baf",
+  "version_huella": 3,
+  "modelo_cerebro": {
+    "4h": "321639153884ae1fc106",
+    "1h": "e5d68266920e18d39979"
+  },
+  "version_rasgos": 1,
+  "modo": "simulado",
+  "hash_config": "e4f2d03f65988650",
+  "limites_efectivos": {
+    "riesgo_por_operacion_pct": 2.0,
+    "margen_max_por_operacion_pct": 35,
+    "apalancamiento_max": 3,
+    "max_posiciones_abiertas": 4,
+    "max_operaciones_dia": 12,
+    "perdida_max_total_pct": 50,
+    "pausa_tras_perdidas_seguidas": 4,
+    "duracion_max_global_h": 336,
+    "spread_max_pct": 0.05,
+    "correlacion_max": 0.8,
+    "sl_min_pct": 0.25,
+    "sl_max_pct": 12,
+    "max_mismo_lado": 3,
+    "riesgo_abierto_max_pct": 4.0,
+    "minutos_pausa_tras_racha": 120
+  },
+  "piloto_real_config": {
+    "capital_max_usd": 232,
+    "riesgo_por_operacion_pct": 0.5,
+    "riesgo_abierto_max_pct": 1.5,
+    "max_posiciones_abiertas": 1,
+    "perdida_max_usd": 10,
+    "mercados": [
+      "BTC",
+      "ETH"
+    ]
+  },
+  "nota_capital": "capital configurado ≠ saldo reconciliado: este diagnóstico NO lee la cuenta; el saldo real/simulado vigente está en el panel con su hora de lectura",
+  "promociones": {
+    "corrupto": null,
+    "etapas": {
+      "ruptura_1h": "investigacion",
+      "retroceso_1h": "investigacion",
+      "reversion_1h": "investigacion",
+      "funding_1h": "investigacion",
+      "fuerza_1h": "investigacion",
+      "ruptura_4h": "investigacion",
+      "retroceso_4h": "investigacion",
+      "reversion_4h": "investigacion",
+      "funding_4h": "investigacion",
+      "fuerza_4h": "investigacion",
+      "momentum_4h": "investigacion",
+      "ballenas_1h": "investigacion"
+    },
+    "pendientes_revision": []
+  },
+  "fuentes_opcionales": {
+    "coinglass": {
+      "estado": {
+        "estado": "desactivado",
+        "motivo": "coinglass.activo = false (por defecto)"
+      },
+      "metricas": {
+        "peticiones": 0,
+        "errores": 0,
+        "limite_api": 0,
+        "timeouts": 0,
+        "ultima_latencia_s": null,
+        "limite_minuto": null,
+        "usado_minuto": null
+      },
+      "uso_permitido": "research_only",
+      "endpoints": [
+        "/api/futures/aggregated-taker-buy-sell-volume/history",
+        "/api/futures/funding-rate/history",
+        "/api/futures/liquidation/aggregated-history",
+        "/api/futures/open-interest/aggregated-history",
+        "/api/hyperliquid/whale-alert",
+        "/api/hyperliquid/whale-position"
+      ]
+    }
+  }
+}

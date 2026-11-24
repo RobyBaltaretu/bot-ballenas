@@ -1,0 +1,64 @@
+{
+ "ts": 1794351872.1614707,
+ "dia": "2026-11-11",
+ "hallazgos": [
+  "Últimos 7 días: 12 cerradas, -4.62 $ netos. La peor fue ENA (retroceso_4h): -4.34 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "El bot lleva menos de 30 operaciones en total, por lo que no hay evidencia concluyente de ventaja. Algunas estrategias muestran resultados negativos y ninguna supera los criterios de laboratorio.",
+  "hallazgos": [
+   {
+    "texto": "Operación abierta de XRP tiene en_breakeven true y el stop está por debajo de la entrada, lo cual es correcto para un corto.",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "Operación abierta de XRP tiene stop 1.1426, que está por debajo de la entrada 1.1868, cumpliendo la regla de stop para corto en breakeven.",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Operación cerrada de SOL (lado L) obtuvo r_neto 0.8339, la única con rendimiento positivo entre las cerradas recientes.",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Todas las estrategias evaluadas en el laboratorio aparecen con estado \"no_supera\".",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "mantener",
+    "motivo": "Solo una operación en vivo con r medio positivo (0.834) y desempeño aceptable."
+   },
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "vigilar",
+    "motivo": "Rendimiento medio positivo (0.431) pero pocas operaciones y sin superar laboratorio."
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo (-1.114) y sin evidencia de ventaja."
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo (-1.021) y sin superar criterios de laboratorio."
+   },
+   {
+    "clave": "ruptura_1h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo (-0.712) y ninguna operación supera el laboratorio."
+   }
+  ],
+  "correcciones": [
+   "No se detectan errores de stop‑loss respecto a sl_inicial en las posiciones abiertas; el stop de XRP está correctamente ajustado por estar en breakeven.",
+   "Los datos de \"lab_generado\" y los periodos de veredicto coinciden; no hay inconsistencias temporales que requieran corrección."
+  ],
+  "ideas": []
+ }
+}

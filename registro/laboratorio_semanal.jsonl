@@ -1,0 +1,10 @@
+{"ts": "20261023T103135Z", "duracion_min": 55.0, "codigo": 0, "log": "laboratorio_semanal_20261023T103135Z.log", "cambios": ["ℹ️ fuerza_4h: no_evaluable → no_supera"], "superan": []}
+{"ts": "20261023T120629Z", "duracion_min": 40.0, "codigo": 0, "log": "laboratorio_semanal_20261023T120629Z.log", "cambios": [], "superan": []}
+{"ts": "20261023T125752Z", "duracion_min": 80.8, "codigo": 0, "log": "laboratorio_semanal_20261023T125752Z.log", "cambios": ["ℹ️ funding_1h: no_evaluable → no_supera", "ℹ️ funding_4h: no_evaluable → no_supera"], "superan": []}
+{"ts": "20261023T143628Z", "duracion_min": 80.2, "codigo": 0, "log": "laboratorio_semanal_20261023T143628Z.log", "cambios": ["ℹ️ funding_4h: no_supera → no_evaluable"], "superan": []}
+{"ts": "20261025T030000Z", "duracion_min": 183.1, "codigo": 0, "log": "laboratorio_semanal_20261025T030000Z.log", "cambios": [], "superan": []}
+{"ts": "20261101T030000Z", "duracion_min": 259.9, "codigo": 0, "log": "laboratorio_semanal_20261101T030000Z.log", "cambios": ["ℹ️ funding_4h: no_evaluable → no_supera"], "superan": []}
+{"ts": "20261108T030000Z", "duracion_min": 282.7, "codigo": 0, "log": "laboratorio_semanal_20261108T030000Z.log", "cambios": [], "superan": []}
+{"ts": "20261115T030001Z", "duracion_min": 379.4, "codigo": 0, "log": "laboratorio_semanal_20261115T030001Z.log", "cambios": [], "superan": []}
+{"ts": "20261119T121412Z", "duracion_min": 115.7, "codigo": 0, "log": "laboratorio_semanal_20261119T121412Z.log", "cambios": ["ℹ️ fuerza_1h: no_supera → sin evaluar", "ℹ️ funding_1h: no_supera → sin evaluar", "ℹ️ retroceso_1h: no_supera → sin evaluar", "ℹ️ reversion_1h: no_supera → sin evaluar", "ℹ️ ruptura_1h: no_supera → sin evaluar"], "superan": []}
+{"ts": "20261122T030001Z", "duracion_min": 316.9, "codigo": 0, "log": "laboratorio_semanal_20261122T030001Z.log", "cambios": [], "superan": []}

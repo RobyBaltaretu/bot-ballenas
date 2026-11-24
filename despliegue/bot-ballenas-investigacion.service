@@ -1,0 +1,20 @@
+[Unit]
+Description=Departamento de investigación del bot (prueba ideas nuevas; nunca opera ni activa nada)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=botballenas
+WorkingDirectory=/opt/bot-ballenas
+# La solicitud del bot (archivo) se consume al empezar: así no se relanza en bucle.
+ExecStartPre=-/bin/rm -f /opt/bot-ballenas/solicitudes/investigacion
+ExecStart=/opt/bot-ballenas/.venv/bin/python -u investigacion.py --ideas 60 --minutos 90 --presupuesto 300
+# Prioridad baja: usa los núcleos libres sin quitarle recursos al bot (va en su propio servicio, así un
+# reinicio del bot no lo corta y su memoria no cuenta contra la del bot)
+Nice=15
+CPUQuota=300%
+MemoryMax=6G
+TimeoutStartSec=3h
+NoNewPrivileges=true
+PrivateTmp=true

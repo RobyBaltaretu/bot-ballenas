@@ -1,0 +1,55 @@
+{
+ "ts": 1794092551.6766865,
+ "dia": "2026-11-08",
+ "hallazgos": [
+  "Últimos 7 días: 11 cerradas, -6.60 $ netos. La peor fue ENA (retroceso_4h): -4.34 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Todavía no hay laboratorio de estas semanas (se ejecuta los domingos)."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "No hay ventaja clara; los resultados son negativos y el número de operaciones por estrategia es insuficiente para concluir.",
+  "hallazgos": [
+   {
+    "texto": "Saldo actual es 220.1108 frente a 232 inicial, pérdida de ~11.9",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "PnL neto cerrado total es -20.7692 USD",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "PnL no realizado de AAVE es +0.5586",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "PnL no realizado de FARTCOIN es -1.0821",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "PnL no realizado de XRP es +0.9401",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Operación cerrada kPEPE (L) tuvo pnl_neto -1.8115",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Operación cerrada CRV (S) tuvo pnl_neto +1.4910",
+    "verificacion": "verificado"
+   },
+   {
+    "texto": "Semana 1 total USD -7.82, en negativo",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "Laboratorio muestra que ruptura_4h no supera (estado no_supera)",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [],
+  "correcciones": [],
+  "ideas": []
+ }
+}

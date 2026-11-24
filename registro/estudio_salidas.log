@@ -1,0 +1,131 @@
+Eligiendo las monedas más líquidas...
+  BTC, ETH, HYPE, ZEC, SOL, NEAR, XRP, PUMP, XMR, LIT, WLD, kPEPE, UNI, ENA, ZRO, BNB, XPL, SUI, RUNE, AAVE, VVV, LINK, PAXG, WLFI, CASHCAT, AVAX, TRUMP, DOGE, TAO, FARTCOIN, ARB, PONS, CRV, ADA, MON, AERO, ONDO, GRASS, LTC, DOT, WIF, kBONK
+Descargando velas de 1 h y 4 h y funding (la primera vez tarda unos minutos)...
+  Historia ampliada con datos públicos de binance y bybit (6 años en 4 h, 4 en 1 h; Hyperliquid manda donde tiene datos)
+  [1/42] BTC · +8149 velas 4 h y +30064 de 1 h de binance
+  [2/42] ETH · +8149 velas 4 h y +30064 de 1 h de binance
+  [3/42] HYPE · +0 velas 4 h y +7558 de 1 h de binance
+  [4/42] ZEC · +9761 velas 4 h y +30064 de 1 h de binance
+  [5/42] SOL · +8149 velas 4 h y +30064 de 1 h de binance
+  [6/42] NEAR · +8149 velas 4 h y +30064 de 1 h de binance
+  [7/42] XRP · +8149 velas 4 h y +30064 de 1 h de binance
+  [8/42] PUMP · +0 velas 4 h y +6577 de 1 h de binance
+  [9/42] XMR · +10390 velas 4 h y +30064 de 1 h de binance
+  [10/42] LIT · +0 velas 4 h y +2583 de 1 h de binance
+  [11/42] WLD · +2195 velas 4 h y +23780 de 1 h de binance
+  [12/42] kPEPE · +2674 velas 4 h y +25696 de 1 h de binance
+  [13/42] UNI · +8150 velas 4 h y +30065 de 1 h de binance
+  [14/42] ENA · +677 velas 4 h y +17708 de 1 h de binance
+  [15/42] ZRO · +204 velas 4 h y +15811 de 1 h de binance
+  [16/42] BNB · +8149 velas 4 h y +30064 de 1 h de binance
+  [17/42] XPL · +0 velas 4 h y +5543 de 1 h de binance
+  [18/42] SUI · +2686 velas 4 h y +25744 de 1 h de binance
+  [19/42] RUNE · +8150 velas 4 h y +30065 de 1 h de binance
+  [20/42] AAVE · +8149 velas 4 h y +30064 de 1 h de binance
+  [21/42] VVV · +0 velas 4 h y +10464 de 1 h de binance
+  [22/42] LINK · +8149 velas 4 h y +30064 de 1 h de binance
+  [23/42] PAXG · +0 velas 4 h y +9094 de 1 h de binance
+  [24/42] WLFI · +0 velas 4 h y +5520 de 1 h de binance
+  [25/42] CASHCAT · +0 velas 4 h y +0 de 1 h de bybit
+  [26/42] AVAX · +8149 velas 4 h y +30064 de 1 h de binance
+  [27/42] TRUMP · +0 velas 4 h y +10725 de 1 h de binance
+  [28/42] DOGE · +8149 velas 4 h y +30064 de 1 h de binance
+  [29/42] TAO · +623 velas 4 h y +17490 de 1 h de binance
+  [30/42] FARTCOIN · +0 velas 4 h y +11416 de 1 h de binance
+  [31/42] ARB · +2933 velas 4 h y +26729 de 1 h de binance
+  [32/42] PONS · +0 velas 4 h y +0 de 1 h de binance
+  [33/42] CRV · +8149 velas 4 h y +30064 de 1 h de binance
+  [34/42] ADA · +8150 velas 4 h y +30066 de 1 h de binance
+  [35/42] MON · +0 velas 4 h y +4369 de 1 h de binance
+  [36/42] AERO · +1051 velas 4 h y +11802 de 1 h de binance
+  [37/42] ONDO · +1115 velas 4 h y +19459 de 1 h de binance
+  [38/42] GRASS · +0 velas 4 h y +12426 de 1 h de binance
+  [39/42] LTC · +8149 velas 4 h y +30064 de 1 h de binance
+  [40/42] DOT · +8150 velas 4 h y +30065 de 1 h de binance
+  [41/42] WIF · +1127 velas 4 h y +19506 de 1 h de binance
+  [42/42] kBONK · +1470 velas 4 h y +20876 de 1 h de binance
+  Velas añadidas desde el archivo propio del bot: 4h: 0, 1h: 0
+  Historia externa aceptada en 42 de 42 monedas.
+  Monedas veteranas (historia completa): AAVE, ADA, AVAX, BNB, BTC, CRV, DOGE, DOT, ETH, LINK, LTC, NEAR, RUNE, SOL, UNI, XMR, XRP, ZEC
+  1h {"n": 20, "tipo": "ruptura"} · corta: señal -0.122 R, aleatoria -0.123 R (25041 ops)
+  1h {"n": 20, "tipo": "ruptura"} · larga: señal -0.138 R, aleatoria -0.124 R (17657 ops)
+  1h {"n": 20, "tipo": "ruptura"} · media: señal -0.142 R, aleatoria -0.135 R (20351 ops)
+  1h {"n": 20, "tipo": "ruptura"} · sin_objetivo: señal -0.019 R, aleatoria -0.139 R (15152 ops)
+  1h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · corta: señal -0.089 R, aleatoria -0.118 R (6496 ops)
+  1h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · larga: señal -0.100 R, aleatoria -0.176 R (6283 ops)
+  1h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · media: señal -0.110 R, aleatoria -0.132 R (6359 ops)
+  1h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · sin_objetivo: señal +0.032 R, aleatoria -0.140 R (6272 ops)
+  1h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · corta: señal -0.105 R, aleatoria -0.129 R (20491 ops)
+  1h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · larga: señal -0.120 R, aleatoria -0.172 R (15251 ops)
+  1h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · media: señal -0.121 R, aleatoria -0.141 R (17112 ops)
+  1h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · sin_objetivo: señal +0.001 R, aleatoria -0.133 R (13897 ops)
+  1h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · corta: señal -0.078 R, aleatoria -0.103 R (10911 ops)
+  1h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · larga: señal -0.076 R, aleatoria -0.076 R (8553 ops)
+  1h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · media: señal -0.090 R, aleatoria -0.109 R (9429 ops)
+  1h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · sin_objetivo: señal +0.032 R, aleatoria -0.085 R (7557 ops)
+  1h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · corta: señal -0.150 R, aleatoria -0.098 R (12199 ops)
+  1h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · larga: señal -0.182 R, aleatoria -0.073 R (10900 ops)
+  1h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · media: señal -0.173 R, aleatoria -0.095 R (11823 ops)
+  1h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · sin_objetivo: señal -0.135 R, aleatoria -0.042 R (10694 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · corta: señal -0.106 R, aleatoria -0.119 R (15036 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · larga: señal -0.129 R, aleatoria -0.108 R (12044 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · media: señal -0.123 R, aleatoria -0.114 R (13191 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · sin_objetivo: señal +0.020 R, aleatoria -0.102 R (10320 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · corta: señal -0.145 R, aleatoria -0.109 R (15525 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · larga: señal -0.202 R, aleatoria -0.089 R (12601 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · media: señal -0.180 R, aleatoria -0.109 R (13947 ops)
+  1h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · sin_objetivo: señal -0.180 R, aleatoria -0.038 R (11882 ops)
+  1h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · corta: señal -0.125 R, aleatoria -0.160 R (4738 ops)
+  1h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · larga: señal -0.124 R, aleatoria -0.187 R (4004 ops)
+  1h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · media: señal -0.129 R, aleatoria -0.201 R (4146 ops)
+  1h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · sin_objetivo: señal +0.017 R, aleatoria -0.149 R (3965 ops)
+  1h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · corta: señal -0.078 R, aleatoria -0.126 R (4439 ops)
+  1h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · larga: señal -0.090 R, aleatoria -0.123 R (4189 ops)
+  1h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · media: señal -0.100 R, aleatoria -0.112 R (4331 ops)
+  1h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · sin_objetivo: señal +0.113 R, aleatoria -0.066 R (3898 ops)
+  1h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · corta: señal -0.190 R, aleatoria -0.127 R (4453 ops)
+  1h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · larga: señal -0.208 R, aleatoria -0.107 R (4195 ops)
+  1h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · media: señal -0.206 R, aleatoria -0.142 R (4331 ops)
+  1h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · sin_objetivo: señal -0.172 R, aleatoria -0.011 R (4126 ops)
+  4h {"n": 20, "tipo": "ruptura"} · corta: señal -0.086 R, aleatoria -0.081 R (6366 ops)
+  4h {"n": 20, "tipo": "ruptura"} · larga: señal -0.118 R, aleatoria -0.078 R (4724 ops)
+  4h {"n": 20, "tipo": "ruptura"} · media: señal -0.107 R, aleatoria -0.093 R (5319 ops)
+  4h {"n": 20, "tipo": "ruptura"} · sin_objetivo: señal +0.078 R, aleatoria -0.070 R (3928 ops)
+  4h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · corta: señal -0.053 R, aleatoria -0.064 R (1613 ops)
+  4h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · larga: señal -0.108 R, aleatoria -0.092 R (1568 ops)
+  4h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · media: señal -0.104 R, aleatoria -0.086 R (1581 ops)
+  4h {"lenta": 100, "rapida": 20, "tipo": "cruce_medias"} · sin_objetivo: señal +0.082 R, aleatoria +0.064 R (1555 ops)
+  4h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · corta: señal -0.061 R, aleatoria -0.083 R (5401 ops)
+  4h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · larga: señal -0.057 R, aleatoria -0.117 R (4041 ops)
+  4h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · media: señal -0.084 R, aleatoria -0.095 R (4479 ops)
+  4h {"lookback": 48, "tipo": "momentum", "umbral_atr": 2.0} · sin_objetivo: señal -0.004 R, aleatoria -0.051 R (3651 ops)
+  4h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · corta: señal -0.052 R, aleatoria -0.079 R (2943 ops)
+  4h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · larga: señal -0.116 R, aleatoria -0.112 R (2380 ops)
+  4h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · media: señal -0.078 R, aleatoria -0.066 R (2589 ops)
+  4h {"modo": "seguir", "n": 14, "nivel": 30, "tipo": "rsi"} · sin_objetivo: señal -0.018 R, aleatoria -0.018 R (2067 ops)
+  4h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · corta: señal -0.133 R, aleatoria -0.072 R (3294 ops)
+  4h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · larga: señal -0.120 R, aleatoria -0.072 R (2936 ops)
+  4h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · media: señal -0.129 R, aleatoria -0.123 R (3199 ops)
+  4h {"modo": "revertir", "n": 14, "nivel": 30, "tipo": "rsi"} · sin_objetivo: señal -0.076 R, aleatoria -0.053 R (2823 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · corta: señal -0.056 R, aleatoria -0.101 R (3938 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · larga: señal -0.079 R, aleatoria -0.015 R (3213 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · media: señal -0.083 R, aleatoria -0.051 R (3508 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "seguir", "tipo": "banda"} · sin_objetivo: señal +0.123 R, aleatoria +0.014 R (2675 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · corta: señal -0.166 R, aleatoria -0.088 R (4075 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · larga: señal -0.167 R, aleatoria -0.057 R (3310 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · media: señal -0.170 R, aleatoria -0.065 R (3666 ops)
+  4h {"ema": 20, "k": 2.0, "modo": "revertir", "tipo": "banda"} · sin_objetivo: señal -0.092 R, aleatoria +0.061 R (3112 ops)
+  4h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · corta: señal -0.107 R, aleatoria -0.142 R (1474 ops)
+  4h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · larga: señal -0.173 R, aleatoria -0.085 R (1289 ops)
+  4h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · media: señal -0.125 R, aleatoria -0.118 R (1340 ops)
+  4h {"n": 20, "ratio": 0.8, "tipo": "compresion"} · sin_objetivo: señal +0.025 R, aleatoria +0.028 R (1271 ops)
+  4h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · corta: señal -0.090 R, aleatoria -0.106 R (1267 ops)
+  4h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · larga: señal -0.047 R, aleatoria -0.058 R (1191 ops)
+  4h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · media: señal -0.058 R, aleatoria -0.069 R (1227 ops)
+  4h {"k": 2.0, "modo": "seguir", "tipo": "vela_grande"} · sin_objetivo: señal +0.221 R, aleatoria +0.135 R (1110 ops)
+  4h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · corta: señal -0.139 R, aleatoria -0.121 R (1267 ops)
+  4h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · larga: señal -0.225 R, aleatoria -0.062 R (1186 ops)
+  4h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · media: señal -0.205 R, aleatoria -0.029 R (1228 ops)
+  4h {"k": 2.0, "modo": "revertir", "tipo": "vela_grande"} · sin_objetivo: señal -0.218 R, aleatoria +0.042 R (1152 ops)
+
+Hecho en 152.8 min: 80 combinaciones. Resultado: registro/estudio_salidas.json

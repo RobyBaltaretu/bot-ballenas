@@ -1,0 +1,14 @@
+{
+ "ts": 1794780399.1166482,
+ "dia": "2026-11-15",
+ "hallazgos": [
+  "Últimos 7 días: 6 cerradas, +7.98 $ netos. La peor fue ETHFI (fuerza_1h): -1.12 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "error",
+  "modelo": "openai/gpt-oss-120b",
+  "error": "RuntimeError: Groq respondió 413"
+ }
+}

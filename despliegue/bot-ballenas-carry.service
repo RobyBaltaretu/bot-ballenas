@@ -1,0 +1,17 @@
+[Unit]
+Description=Carry de funding SIMULADO del bot de ballenas (dinero ficticio, solo lectura de la API publica)
+After=network-online.target
+
+[Service]
+Type=simple
+User=botballenas
+WorkingDirectory=/opt/bot-ballenas
+ExecStart=/opt/bot-ballenas/.venv/bin/python -u -m carry.motor
+Restart=always
+RestartSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

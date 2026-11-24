@@ -1,0 +1,67 @@
+{
+ "ts": 1795129555.3076198,
+ "dia": "2026-11-20",
+ "hallazgos": [
+  "Últimos 7 días: 6 cerradas, +34.80 $ netos. La peor fue SKY (ruptura_4h): +0.00 $.",
+  "ruptura_1h: -0.71 R de media en 5 operaciones durante la prueba (aún poco para concluir).",
+  "Estrategias que superan el laboratorio de estas semanas: 0."
+ ],
+ "ia": {
+  "estado": "ok",
+  "modelo": "openai/gpt-oss-120b",
+  "resumen": "No hay ventaja clara; con menos de 30 operaciones en vivo los resultados no son concluyentes y el beneficio se explica por la caída del mercado, no por selección de dirección.",
+  "hallazgos": [
+   {
+    "texto": "Solo 6 operaciones de ruptura_4h con R medio 0.973",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "5 operaciones de ruptura_1h con R medio -0.712",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "2 operaciones de momentum_4h con R medio 0.946",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "2 operaciones de fuerza_1h con R medio -1.098",
+    "verificacion": "no_verificado"
+   },
+   {
+    "texto": "2 operaciones de retroceso_4h con R medio -1.021",
+    "verificacion": "no_verificado"
+   }
+  ],
+  "estrategias": [
+   {
+    "clave": "ruptura_4h",
+    "recomendacion": "mantener",
+    "motivo": "R medio positivo (0.973) y n>=5, aunque no supera el laboratorio."
+   },
+   {
+    "clave": "ruptura_1h",
+    "recomendacion": "retirar",
+    "motivo": "R medio negativo (-0.712) con n=5, indica desempeño pobre."
+   },
+   {
+    "clave": "momentum_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio positivo (0.946) pero n=2 insuficiente para conclusión."
+   },
+   {
+    "clave": "fuerza_1h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio negativo (-1.098) y n=2, datos insuficientes."
+   },
+   {
+    "clave": "retroceso_4h",
+    "recomendacion": "vigilar",
+    "motivo": "R medio negativo (-1.021) y n=2, datos insuficientes."
+   }
+  ],
+  "correcciones": [
+   "El stop de PAXG está por encima de la entrada (3745.2) aunque sl_inicial era 3825.3; como en_breakeven es true, es correcto y no se marca como error."
+  ],
+  "ideas": []
+ }
+}

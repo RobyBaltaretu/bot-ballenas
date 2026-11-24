@@ -1,0 +1,248 @@
+{
+  "modo": "simulado",
+  "saldo_simulado_usd": 232,
+  "red": "mainnet",
+  "piloto_real": {
+    "capital_max_usd": 232,
+    "riesgo_por_operacion_pct": 3.0,
+    "riesgo_abierto_max_pct": 9.0,
+    "max_posiciones_abiertas": 6,
+    "perdida_max_usd": 116,
+    "apalancamiento_max": 5,
+    "mercados": [
+      "*"
+    ]
+  },
+  "shadow": {
+    "saldo_teorico_usd": 232
+  },
+  "gestion_capital": {
+    "reducir_en_caida": [
+      [
+        5,
+        0.75
+      ],
+      [
+        10,
+        0.5
+      ],
+      [
+        20,
+        0.3
+      ]
+    ],
+    "modo_defensa": {
+      "ultimas_operaciones": 8,
+      "r_medio_minimo": -0.25,
+      "factor": 0.5
+    },
+    "perdida_diaria_pct": 4,
+    "factor_tras_perdida_diaria": 0.4,
+    "perdida_semanal_pct": 8,
+    "factor_tras_perdida_semanal": 0.5,
+    "objetivo_diario_pct": 3,
+    "factor_tras_objetivo": 0.5,
+    "horas_sin_operar_para_relajar": 24,
+    "factor_relajado": 0.5
+  },
+  "ordenes": {
+    "entrada_limite": true,
+    "espera_limite_seg": 20,
+    "reserva_a_mercado": true,
+    "deslizamiento_max": 0.005,
+    "persecucion_max_pct": 0.5
+  },
+  "salida": {
+    "parcial_activo": true,
+    "tp1_r": 1.0,
+    "parcial_pct": 50,
+    "tp_final_r": 3.0,
+    "trailing_r": 1.0,
+    "breakeven_tras_r": 1.0,
+    "mover_stop_min_r": 0.25
+  },
+  "filtros_entrada": {
+    "funding_max_en_contra_pct": 0.005,
+    "regimen_btc": {
+      "activo": true,
+      "media": 200
+    }
+  },
+  "estrategias": {
+    "ruptura_1h": {
+      "activa": false
+    },
+    "retroceso_1h": {
+      "activa": false
+    },
+    "reversion_1h": {
+      "activa": false
+    },
+    "funding_1h": {
+      "activa": false
+    },
+    "fuerza_1h": {
+      "activa": false
+    },
+    "ballenas_1h": {
+      "activa": true
+    },
+    "retroceso_4h": {
+      "activa": false
+    },
+    "funding_4h": {
+      "activa": false
+    },
+    "reversion_4h": {
+      "activa": false
+    }
+  },
+  "cartera_funding": {
+    "activa": true,
+    "riesgo_por_operacion_pct": 1.0,
+    "max_por_lado": 2
+  },
+  "aprendizaje": {
+    "activo": true,
+    "min_casos_parecidos": 8,
+    "vecinos": 20,
+    "distancia_max": 3.0,
+    "r_minimo_para_entrar": 0.05,
+    "peso_sombras": 0.7,
+    "peso_backtest": 0.5,
+    "vida_media_dias": 21,
+    "factor_tamano_sin_datos": 1.0,
+    "min_casos_ballena": 10,
+    "r_minimo_ballena": -0.2,
+    "vida_media_backtest_dias": 365,
+    "r_minimo_relajado": -0.1,
+    "explorar_en_simulado": true,
+    "factor_exploracion": 0.5
+  },
+  "panel": {
+    "host": "127.0.0.1",
+    "puerto": 8080,
+    "tunel_sin_clave": true
+  },
+  "tiempo_real": {
+    "websocket": true,
+    "max_ballenas_ws": 15
+  },
+  "universo": {
+    "volumen_min_24h_usd": 3000000,
+    "max_monedas": 40,
+    "excluir": [],
+    "incluir_siempre": [
+      "BTC",
+      "ETH",
+      "DOGE",
+      "kPEPE",
+      "FARTCOIN",
+      "TRUMP",
+      "PUMP",
+      "WIF",
+      "kBONK"
+    ]
+  },
+  "motor": {
+    "intervalos": [
+      "1h",
+      "4h"
+    ],
+    "persecucion_max_r": 0.3,
+    "dias_funding_vivo": 90
+  },
+  "ballenas": {
+    "modo_senal": "simulado",
+    "ventana_min": 60,
+    "aumento_min_usd": 50000,
+    "flujo_min_usd": 100000,
+    "contra_max_fraccion": 0.5,
+    "veto_usd": 150000,
+    "sl_atr": 1.5,
+    "barras_max": 8,
+    "salida": {
+      "tp1_r": 1.0,
+      "tp_final_r": 2.5,
+      "trailing_r": 1.0
+    },
+    "usar_como_veto": true
+  },
+  "laboratorio": {
+    "dias_funding": 850,
+    "dias_ballenas": 180,
+    "max_casos_memoria": 4000,
+    "ballenas_candidatas": 60,
+    "dex_acciones": [],
+    "volumen_min_acciones": 1000000,
+    "max_acciones": 20
+  },
+  "seleccion_automatica": true,
+  "ballenas_manuales": [],
+  "filtros_ballenas": {
+    "numero_ballenas": 15,
+    "valor_cuenta_min_usd": 100000,
+    "pnl_historico_min_usd": 500000,
+    "roi_mensual_max": 1.0,
+    "rotacion_mensual_max": 60,
+    "candidatas_a_analizar": 60,
+    "ordenes_dia_max": 300,
+    "fraccion_min_en_monedas": 0.3,
+    "dias_max_sin_operar": 7
+  },
+  "refrescar_ballenas_horas": 12,
+  "segundos_entre_ciclos": 15,
+  "enfriamiento_min": 60,
+  "mercado": {
+    "grabar_operaciones": true,
+    "operacion_grande_usd": 50000,
+    "operacion_enorme_usd": 250000,
+    "dias_guardar": 120,
+    "liquidaciones": {
+      "activo": true,
+      "ventana_min": 60,
+      "caida_oi_pct": 3.0,
+      "movimiento_atr": 2.0,
+      "sl_atr": 1.5,
+      "barras_max": 6,
+      "espera_horas": 4,
+      "salida": {
+        "tp1_r": 1.0,
+        "tp_final_r": 2.0,
+        "trailing_r": 0.8
+      }
+    }
+  },
+  "riesgo": {
+    "riesgo_por_operacion_pct": 3.0,
+    "margen_max_por_operacion_pct": 35,
+    "apalancamiento_max": 5,
+    "max_posiciones_abiertas": 6,
+    "max_operaciones_dia": 12,
+    "perdida_max_total_pct": 50,
+    "pausa_tras_perdidas_seguidas": 4,
+    "duracion_max_global_h": 336,
+    "spread_max_pct": 0.15,
+    "correlacion_max": 0.8,
+    "sl_min_pct": 0.25,
+    "sl_max_pct": 12,
+    "max_mismo_lado": 4,
+    "riesgo_abierto_max_pct": 9.0,
+    "minutos_pausa_tras_racha": 120
+  },
+  "exploracion_amplia": {
+    "activa": true,
+    "riesgo_por_operacion_pct": 0.5,
+    "max_abiertas": 4
+  },
+  "piramide": {
+    "activa": true,
+    "fraccion": 0.5,
+    "riesgo_max_frac_original": 1.0
+  },
+  "comisiones": {
+    "maker_pct": 0.015,
+    "taker_pct": 0.045
+  },
+  "version_config": 2
+}

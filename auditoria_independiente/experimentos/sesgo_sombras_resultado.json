@@ -1,0 +1,6774 @@
+{
+ "sombras_cerradas_desde_reset": 665,
+ "resimuladas": 651,
+ "r_sombra": {
+  "n": 651,
+  "media": 0.056,
+  "t": 1.35,
+  "ic95": [
+   -0.022,
+   0.136
+  ]
+ },
+ "r_ohlc": {
+  "n": 651,
+  "media": -0.068,
+  "t": -1.7,
+  "ic95": [
+   -0.144,
+   0.008
+  ]
+ },
+ "diferencia_sombra_menos_ohlc": {
+  "n": 651,
+  "media": 0.123,
+  "t": 7.73,
+  "ic95": [
+   0.093,
+   0.157
+  ]
+ },
+ "por_estrategia": {
+  "ballenas_1h": {
+   "sombra": {
+    "n": 109,
+    "media": 0.108,
+    "t": 1.22,
+    "ic95": [
+     -0.061,
+     0.281
+    ]
+   },
+   "ohlc": {
+    "n": 109,
+    "media": -0.047,
+    "t": -0.56,
+    "ic95": [
+     -0.21,
+     0.12
+    ]
+   }
+  },
+  "fuerza_1h": {
+   "sombra": {
+    "n": 4,
+    "media": 0.147,
+    "t": 0.22,
+    "ic95": [
+     -1.015,
+     1.308
+    ]
+   },
+   "ohlc": {
+    "n": 4,
+    "media": 0.139,
+    "t": 0.21,
+    "ic95": [
+     -1.033,
+     1.312
+    ]
+   }
+  },
+  "fuerza_4h": {
+   "sombra": {
+    "n": 1
+   },
+   "ohlc": {
+    "n": 1
+   }
+  },
+  "funding_1h": {
+   "sombra": {
+    "n": 87,
+    "media": 0.179,
+    "t": 1.81,
+    "ic95": [
+     -0.01,
+     0.379
+    ]
+   },
+   "ohlc": {
+    "n": 87,
+    "media": 0.084,
+    "t": 0.92,
+    "ic95": [
+     -0.086,
+     0.265
+    ]
+   }
+  },
+  "funding_4h": {
+   "sombra": {
+    "n": 9,
+    "media": -0.489,
+    "t": -1.7,
+    "ic95": [
+     -0.924,
+     0.109
+    ]
+   },
+   "ohlc": {
+    "n": 9,
+    "media": -0.498,
+    "t": -1.73,
+    "ic95": [
+     -0.937,
+     0.1
+    ]
+   }
+  },
+  "liquidaciones_1h": {
+   "sombra": {
+    "n": 134,
+    "media": 0.02,
+    "t": 0.25,
+    "ic95": [
+     -0.136,
+     0.173
+    ]
+   },
+   "ohlc": {
+    "n": 134,
+    "media": -0.073,
+    "t": -0.93,
+    "ic95": [
+     -0.232,
+     0.079
+    ]
+   }
+  },
+  "momentum_4h": {
+   "sombra": {
+    "n": 57,
+    "media": 1.136,
+    "t": 8.0,
+    "ic95": [
+     0.872,
+     1.427
+    ]
+   },
+   "ohlc": {
+    "n": 57,
+    "media": 1.076,
+    "t": 8.08,
+    "ic95": [
+     0.826,
+     1.347
+    ]
+   }
+  },
+  "retroceso_1h": {
+   "sombra": {
+    "n": 27,
+    "media": 0.376,
+    "t": 1.5,
+    "ic95": [
+     -0.093,
+     0.851
+    ]
+   },
+   "ohlc": {
+    "n": 27,
+    "media": -0.042,
+    "t": -0.21,
+    "ic95": [
+     -0.407,
+     0.339
+    ]
+   }
+  },
+  "reversion_1h": {
+   "sombra": {
+    "n": 10,
+    "media": -0.566,
+    "t": -2.12,
+    "ic95": [
+     -1.022,
+     0.0
+    ]
+   },
+   "ohlc": {
+    "n": 10,
+    "media": -0.628,
+    "t": -2.37,
+    "ic95": [
+     -1.05,
+     -0.078
+    ]
+   }
+  },
+  "reversion_4h": {
+   "sombra": {
+    "n": 7,
+    "media": -0.877,
+    "t": -9.78,
+    "ic95": [
+     -1.009,
+     -0.699
+    ]
+   },
+   "ohlc": {
+    "n": 7,
+    "media": -0.914,
+    "t": -12.61,
+    "ic95": [
+     -1.02,
+     -0.769
+    ]
+   }
+  },
+  "ruptura_1h": {
+   "sombra": {
+    "n": 177,
+    "media": -0.327,
+    "t": -4.45,
+    "ic95": [
+     -0.475,
+     -0.174
+    ]
+   },
+   "ohlc": {
+    "n": 177,
+    "media": -0.481,
+    "t": -7.05,
+    "ic95": [
+     -0.612,
+     -0.339
+    ]
+   }
+  },
+  "ruptura_4h": {
+   "sombra": {
+    "n": 29,
+    "media": 0.028,
+    "t": 0.15,
+    "ic95": [
+     -0.32,
+     0.383
+    ]
+   },
+   "ohlc": {
+    "n": 29,
+    "media": 0.044,
+    "t": 0.24,
+    "ic95": [
+     -0.315,
+     0.405
+    ]
+   }
+  }
+ },
+ "cierres_distintos": 96,
+ "filas": [
+  {
+   "moneda": "ENA",
+   "lado": "S",
+   "estrategia": "fuerza_1h",
+   "r_sombra": 1.417,
+   "r_ohlc": 1.434,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.15 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.488,
+   "r_ohlc": -0.36,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.052,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.031,
+   "r_ohlc": -0.204,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.03,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.06 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.031,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.16 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.049,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.54 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": -1.005,
+   "r_ohlc": -1.012,
+   "motivo": "stop 12.11% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.032,
+   "motivo": "correlada 0.94 con SOL ya abierta",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": -0.267,
+   "r_ohlc": -0.269,
+   "motivo": "correlada 0.82 con SOL ya abierta",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.73,
+   "r_ohlc": 0.469,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.247,
+   "r_ohlc": -0.4,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.072,
+   "r_ohlc": 1.092,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.639,
+   "r_ohlc": 1.705,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.959,
+   "r_ohlc": 1.968,
+   "motivo": "volatilidad extrema: la última vela midió 6.1 ATR",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.084,
+   "r_ohlc": -1.196,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -1.008,
+   "r_ohlc": -1.019,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.04 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.027,
+   "r_ohlc": -1.063,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.022,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (12.83 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.706,
+   "r_ohlc": 0.432,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.736,
+   "r_ohlc": 0.478,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.058,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.033,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (13.60 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.043,
+   "r_ohlc": -1.85,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "reversion_1h",
+   "r_sombra": 1.292,
+   "r_ohlc": 1.284,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (13.46 USD) arr",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.025,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.13 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.932,
+   "r_ohlc": 0.471,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.018,
+   "r_ohlc": -1.922,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.028,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.174,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.049,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.048,
+   "r_ohlc": -1.322,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.045,
+   "r_ohlc": 0.465,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.617,
+   "r_ohlc": 0.446,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.034,
+   "r_ohlc": 0.96,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.622,
+   "r_ohlc": -1.059,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.674,
+   "r_ohlc": 0.46,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.044,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.721,
+   "r_ohlc": -1.135,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.006,
+   "r_ohlc": -0.016,
+   "motivo": "volatilidad extrema: la última vela midió 4.3 ATR",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.004,
+   "r_ohlc": -0.01,
+   "motivo": "volatilidad extrema: la última vela midió 4.3 ATR",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.022,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.38 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.23,
+   "r_ohlc": -0.192,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.031,
+   "motivo": "horquilla 0.065% demasiado ancha",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.025,
+   "motivo": "volatilidad extrema: la última vela midió 4.4 ATR",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.005,
+   "motivo": "horquilla 0.051% demasiado ancha",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "funding 0.0298%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.03,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.051,
+   "r_ohlc": -1.119,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.035,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.925,
+   "r_ohlc": 0.929,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": 0.483,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.028,
+   "r_ohlc": -1.064,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.023,
+   "r_ohlc": -1.053,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.498,
+   "r_ohlc": 0.489,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.005,
+   "r_ohlc": -1.012,
+   "motivo": "stop 12.02% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.023,
+   "motivo": "horquilla 0.092% demasiado ancha",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.029,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.73 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.866,
+   "r_ohlc": 0.777,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.006,
+   "r_ohlc": -1.015,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.025,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.27 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.072,
+   "r_ohlc": -0.025,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.004,
+   "r_ohlc": -1.01,
+   "motivo": "stop 15.42% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -0.382,
+   "r_ohlc": -0.28,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.09 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.034,
+   "r_ohlc": -1.078,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.974,
+   "r_ohlc": 0.908,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.034,
+   "r_ohlc": 0.99,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.495,
+   "r_ohlc": 1.489,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.051,
+   "r_ohlc": 0.916,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.661,
+   "r_ohlc": 0.603,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.643,
+   "r_ohlc": 0.622,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.288,
+   "r_ohlc": 0.402,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.35 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "CRV",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.552,
+   "r_ohlc": -0.491,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.017,
+   "r_ohlc": 0.118,
+   "motivo": "funding 0.0154%/h en contra",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.552,
+   "r_ohlc": 0.675,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.94 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.111,
+   "r_ohlc": 0.243,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.486,
+   "r_ohlc": 0.58,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (11.20 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.069,
+   "r_ohlc": -0.196,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.13 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.07,
+   "r_ohlc": 0.962,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.29,
+   "r_ohlc": 0.355,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.056,
+   "r_ohlc": -0.008,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.036,
+   "r_ohlc": -0.212,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.05 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.298,
+   "r_ohlc": -0.312,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.78,
+   "r_ohlc": 0.734,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.565,
+   "r_ohlc": -0.689,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TRX",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.027,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.29 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.829,
+   "r_ohlc": 0.886,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.23 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.153,
+   "r_ohlc": 0.02,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.237,
+   "r_ohlc": 1.094,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.373,
+   "r_ohlc": -0.447,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.191,
+   "r_ohlc": -0.259,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.945,
+   "r_ohlc": 0.777,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.158,
+   "r_ohlc": 0.249,
+   "motivo": "funding 0.0080%/h en contra",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.14,
+   "r_ohlc": 1.114,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TRX",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.264,
+   "r_ohlc": 1.28,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.537,
+   "r_ohlc": -0.603,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.613,
+   "r_ohlc": -0.663,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.055,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.485,
+   "r_ohlc": -0.63,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.165,
+   "r_ohlc": 0.059,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.075,
+   "r_ohlc": -0.274,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.286,
+   "r_ohlc": -0.277,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.49 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.01,
+   "r_ohlc": -0.099,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "L",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.005,
+   "r_ohlc": -1.012,
+   "motivo": "horquilla 0.108% demasiado ancha",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.354,
+   "r_ohlc": 0.307,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "S",
+   "estrategia": "fuerza_1h",
+   "r_sombra": 1.199,
+   "r_ohlc": 1.189,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.07 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "fuerza_1h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.019,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (13.07 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.481,
+   "r_ohlc": 1.461,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.034,
+   "r_ohlc": -0.048,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.003,
+   "r_ohlc": -0.008,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.741,
+   "r_ohlc": -0.516,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.10 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.039,
+   "r_ohlc": -1.09,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.027,
+   "r_ohlc": -1.08,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.263,
+   "r_ohlc": 0.112,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.366,
+   "r_ohlc": -0.26,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.031,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (11.74 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.368,
+   "r_ohlc": -0.253,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.003,
+   "r_ohlc": -0.008,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.21 USD) arr",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.365,
+   "r_ohlc": -0.016,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.44 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "funding 0.0054%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.22 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.919,
+   "r_ohlc": 1.019,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.036,
+   "r_ohlc": -1.083,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.26 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.748,
+   "r_ohlc": -0.007,
+   "motivo": "horquilla 0.070% demasiado ancha",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.037,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.31 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.023,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.27 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.055,
+   "r_ohlc": -1.127,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.979,
+   "r_ohlc": 1.124,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.075,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.086,
+   "r_ohlc": -1.199,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.041,
+   "r_ohlc": -1.097,
+   "motivo": "entradas bloqueadas: pausa por racha de pérdidas",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "entradas bloqueadas: pausa por racha de pérdidas",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.023,
+   "r_ohlc": 1.0,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.378,
+   "r_ohlc": -1.047,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.006,
+   "motivo": "riesgo abierto total 4.2% > 4.0%",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.029,
+   "motivo": "riesgo abierto total 4.4% > 4.0%",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.263,
+   "r_ohlc": -0.016,
+   "motivo": "riesgo abierto total 4.4% > 4.0%",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.916,
+   "r_ohlc": 0.964,
+   "motivo": "riesgo abierto total 4.4% > 4.0%",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.003,
+   "r_ohlc": -0.008,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.889,
+   "r_ohlc": 0.888,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.005,
+   "r_ohlc": -1.012,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.032,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.075,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.018,
+   "r_ohlc": -1.042,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.043,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.023,
+   "r_ohlc": -1.053,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.029,
+   "motivo": "volatilidad extrema: la última vela midió 4.2 ATR",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.033,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.045,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.034,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.038,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.032,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "L",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.007,
+   "r_ohlc": -0.018,
+   "motivo": "entradas bloqueadas: datos de precios obsoletos o no disponi",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 1.858,
+   "r_ohlc": 1.877,
+   "motivo": "funding 0.0145%/h en contra",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.023,
+   "r_ohlc": -1.053,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.927,
+   "r_ohlc": 0.487,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.13,
+   "r_ohlc": 0.056,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.301,
+   "r_ohlc": -0.285,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.097,
+   "r_ohlc": 2.075,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.56 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 3.904,
+   "r_ohlc": 3.816,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.47 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.503,
+   "r_ohlc": 1.511,
+   "motivo": "stop 12.77% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.524,
+   "r_ohlc": 1.527,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.05 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.561,
+   "r_ohlc": 1.573,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.362,
+   "r_ohlc": -0.005,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.08 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.885,
+   "r_ohlc": 0.907,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.555,
+   "r_ohlc": 1.555,
+   "motivo": "stop 13.14% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.249,
+   "r_ohlc": 2.227,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.06 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PONS",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.046,
+   "r_ohlc": 2.073,
+   "motivo": "stop 16.26% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.776,
+   "r_ohlc": 1.759,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.10 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.154,
+   "r_ohlc": 1.122,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.14 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "CRV",
+   "lado": "S",
+   "estrategia": "fuerza_4h",
+   "r_sombra": 4.032,
+   "r_ohlc": 3.916,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.04 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "MON",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.747,
+   "r_ohlc": 0.803,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "USELESS",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.504,
+   "r_ohlc": 0.5,
+   "motivo": "stop 15.79% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WIF",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.298,
+   "r_ohlc": 1.296,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.11 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 0.644,
+   "r_ohlc": 0.713,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.074,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLFI",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.025,
+   "motivo": "funding 0.0076%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.073,
+   "r_ohlc": -1.17,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.056,
+   "r_ohlc": -1.13,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -0.108,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.031,
+   "r_ohlc": -1.071,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.271,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.044,
+   "r_ohlc": -1.124,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -1.047,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.387,
+   "r_ohlc": -0.377,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.456,
+   "r_ohlc": -1.052,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.029,
+   "r_ohlc": -1.067,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.063,
+   "r_ohlc": -1.146,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.023,
+   "r_ohlc": -0.463,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.036,
+   "r_ohlc": -1.084,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.642,
+   "r_ohlc": 0.711,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.774,
+   "r_ohlc": 0.732,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.207,
+   "r_ohlc": -0.271,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.15,
+   "r_ohlc": -0.132,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.036,
+   "r_ohlc": 0.02,
+   "motivo": "funding 0.0051%/h en contra",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.031,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "STRK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.579,
+   "r_ohlc": -0.621,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.437,
+   "r_ohlc": -1.027,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETHFI",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.023,
+   "motivo": "horquilla 0.207% demasiado ancha",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "CASHCAT",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 1.586,
+   "r_ohlc": 1.683,
+   "motivo": "stop 18.30% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.858,
+   "r_ohlc": 0.994,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.147,
+   "r_ohlc": 1.193,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.492,
+   "r_ohlc": 0.462,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.014,
+   "r_ohlc": -0.141,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.301,
+   "r_ohlc": -0.299,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.099,
+   "r_ohlc": -0.036,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -0.415,
+   "r_ohlc": -0.542,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.88,
+   "r_ohlc": 0.799,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BCH",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.516,
+   "r_ohlc": 0.435,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.451,
+   "r_ohlc": -0.397,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -0.682,
+   "r_ohlc": -0.753,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.01,
+   "r_ohlc": -1.022,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.496,
+   "r_ohlc": -1.06,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.961,
+   "r_ohlc": 0.441,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 0.778,
+   "r_ohlc": -1.051,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "L",
+   "estrategia": "fuerza_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.047,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.57 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.02,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BCH",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.026,
+   "r_ohlc": -1.061,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.983,
+   "r_ohlc": 1.965,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.03,
+   "r_ohlc": -1.07,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.96,
+   "r_ohlc": 0.821,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.687,
+   "r_ohlc": 1.624,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.414,
+   "r_ohlc": 1.328,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.67,
+   "r_ohlc": 1.43,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.466,
+   "r_ohlc": 1.431,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.632,
+   "r_ohlc": 0.749,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.818,
+   "r_ohlc": 1.466,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.846,
+   "r_ohlc": 1.454,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.46,
+   "r_ohlc": 1.42,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.624,
+   "r_ohlc": 0.455,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.664,
+   "r_ohlc": 0.368,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.054,
+   "r_ohlc": -1.127,
+   "motivo": "volatilidad extrema: la última vela midió 7.0 ATR",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.313,
+   "r_ohlc": -0.015,
+   "motivo": "volatilidad extrema: la última vela midió 9.1 ATR",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.038,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "volatilidad extrema: la última vela midió 4.2 ATR",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.052,
+   "r_ohlc": -1.122,
+   "motivo": "volatilidad extrema: la última vela midió 6.1 ATR",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.05,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -1.048,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.046,
+   "motivo": "volatilidad extrema: la última vela midió 5.0 ATR",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.825,
+   "r_ohlc": 0.631,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.647,
+   "r_ohlc": 0.465,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.074,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.057,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "MON",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": 0.653,
+   "r_ohlc": 0.539,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.691,
+   "r_ohlc": 0.436,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.489,
+   "r_ohlc": 0.446,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.038,
+   "r_ohlc": -1.089,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.663,
+   "r_ohlc": 0.547,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.036,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.071,
+   "r_ohlc": 0.101,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.231,
+   "r_ohlc": 1.272,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.056,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.629,
+   "r_ohlc": 0.672,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.62,
+   "r_ohlc": 0.471,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.029,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.037,
+   "r_ohlc": -1.087,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.219,
+   "r_ohlc": -0.011,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.991,
+   "r_ohlc": 1.325,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "WLFI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.058,
+   "r_ohlc": 1.029,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.247,
+   "r_ohlc": 0.197,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.225,
+   "r_ohlc": -0.334,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.078,
+   "r_ohlc": -0.324,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.036,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.031,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.035,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "MON",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.614,
+   "r_ohlc": -0.724,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.618,
+   "r_ohlc": 0.491,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.031,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.068,
+   "r_ohlc": -0.349,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.719,
+   "r_ohlc": -0.006,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.071,
+   "r_ohlc": -1.166,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.531,
+   "r_ohlc": 0.732,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "INIT",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.226,
+   "r_ohlc": 1.324,
+   "motivo": "stop 20.14% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.762,
+   "r_ohlc": 0.625,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.1,
+   "r_ohlc": 0.759,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.137,
+   "r_ohlc": 1.179,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.006,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.039,
+   "r_ohlc": -1.09,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.358,
+   "motivo": "funding 0.0072%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.459,
+   "r_ohlc": 1.344,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.125,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.904,
+   "r_ohlc": 0.842,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.132,
+   "r_ohlc": 0.995,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.282,
+   "r_ohlc": 0.443,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.921,
+   "r_ohlc": 0.841,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.745,
+   "r_ohlc": -1.077,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.181,
+   "r_ohlc": 1.097,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.659,
+   "r_ohlc": 0.464,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.834,
+   "r_ohlc": -1.067,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -0.448,
+   "r_ohlc": -1.039,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.033,
+   "r_ohlc": 0.386,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.027,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 1.867,
+   "r_ohlc": 1.81,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.863,
+   "r_ohlc": 0.671,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.027,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.031,
+   "r_ohlc": -1.072,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.05,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "CASHCAT",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -0.141,
+   "r_ohlc": 0.044,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.031,
+   "motivo": "funding 0.0149%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.024,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.488,
+   "r_ohlc": 0.39,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.769,
+   "r_ohlc": 0.598,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.475,
+   "r_ohlc": 0.295,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.593,
+   "r_ohlc": 0.392,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.16,
+   "r_ohlc": 0.012,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "INIT",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.002,
+   "r_ohlc": -1.004,
+   "motivo": "stop 32.17% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BCH",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 0.496,
+   "r_ohlc": 0.478,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "L",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.007,
+   "r_ohlc": -1.016,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.11 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.193,
+   "r_ohlc": 0.274,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.414,
+   "r_ohlc": 1.424,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.186,
+   "r_ohlc": -0.23,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.006,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.498,
+   "r_ohlc": 0.489,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.028,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.245,
+   "r_ohlc": 0.083,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "INIT",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.754,
+   "r_ohlc": 0.751,
+   "motivo": "stop 40.37% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.989,
+   "r_ohlc": 1.978,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.72,
+   "r_ohlc": 0.644,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.863,
+   "r_ohlc": 0.709,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.636,
+   "r_ohlc": 0.608,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.62,
+   "r_ohlc": 0.587,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.082,
+   "r_ohlc": -0.227,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.006,
+   "r_ohlc": -1.014,
+   "motivo": "funding 0.0062%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.954,
+   "r_ohlc": 0.898,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.679,
+   "r_ohlc": 0.577,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.32 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.302,
+   "r_ohlc": 2.279,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.02 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.793,
+   "r_ohlc": 0.734,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.06 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": -0.826,
+   "r_ohlc": -1.012,
+   "motivo": "stop 12.05% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.815,
+   "r_ohlc": 1.718,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.983,
+   "r_ohlc": 0.664,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.553,
+   "r_ohlc": 1.485,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.17,
+   "r_ohlc": 0.693,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.012,
+   "r_ohlc": 1.711,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "WIF",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.959,
+   "r_ohlc": 1.9,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.472,
+   "r_ohlc": 1.411,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.128,
+   "r_ohlc": 2.037,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.121,
+   "r_ohlc": 1.991,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 2.02,
+   "r_ohlc": 1.883,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.967,
+   "r_ohlc": 0.494,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.846,
+   "r_ohlc": 1.79,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 4.156,
+   "r_ohlc": 4.011,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.867,
+   "r_ohlc": 1.792,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 3.973,
+   "r_ohlc": 2.777,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.685,
+   "r_ohlc": 1.615,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.508,
+   "r_ohlc": 1.402,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "INIT",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.432,
+   "r_ohlc": -0.49,
+   "motivo": "stop 31.65% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 1.115,
+   "r_ohlc": 1.335,
+   "motivo": "ya hay una posición en esa moneda",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.034,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.025,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.25,
+   "r_ohlc": -0.189,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.22,
+   "r_ohlc": -0.422,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.049,
+   "r_ohlc": -1.115,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.748,
+   "r_ohlc": 0.739,
+   "motivo": "funding 0.0806%/h en contra",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.055,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 0.968,
+   "r_ohlc": 0.849,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.644,
+   "r_ohlc": 0.692,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.059,
+   "r_ohlc": -1.138,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.05,
+   "r_ohlc": -1.115,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "INIT",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.474,
+   "r_ohlc": -0.568,
+   "motivo": "stop 17.75% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.054,
+   "r_ohlc": -1.299,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.045,
+   "r_ohlc": -1.525,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.765,
+   "r_ohlc": 0.469,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.23,
+   "r_ohlc": 0.902,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.052,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.032,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": 1.215,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.663,
+   "r_ohlc": -1.105,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.716,
+   "r_ohlc": -1.082,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.211,
+   "r_ohlc": 1.334,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PONS",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.008,
+   "r_ohlc": -1.017,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -1.008,
+   "r_ohlc": -1.019,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.07 USD) arr",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -0.437,
+   "r_ohlc": -0.718,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.025,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.028,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.574,
+   "r_ohlc": 0.472,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.649,
+   "r_ohlc": 0.603,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "INIT",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.124,
+   "r_ohlc": 0.123,
+   "motivo": "stop 55.16% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.0,
+   "r_ohlc": -0.149,
+   "motivo": "el modelo de 1h no supera el laboratorio (no_supera): no ent",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.05,
+   "r_ohlc": -1.116,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.564,
+   "r_ohlc": 0.491,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.0,
+   "r_ohlc": -0.264,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.598,
+   "r_ohlc": 0.411,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.043,
+   "r_ohlc": -0.288,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.177,
+   "r_ohlc": -0.109,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.642,
+   "r_ohlc": 0.614,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.004,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.10 USD) arr",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.284,
+   "r_ohlc": 0.259,
+   "motivo": "funding 0.0080%/h en contra",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "USELESS",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.723,
+   "r_ohlc": 0.738,
+   "motivo": "stop 17.12% fuera de límites (0.25–12%)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HBAR",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.949,
+   "r_ohlc": 1.009,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.057,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.035,
+   "r_ohlc": -1.082,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.041,
+   "r_ohlc": -1.096,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.073,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.036,
+   "r_ohlc": -1.083,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.047,
+   "r_ohlc": -1.108,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.036,
+   "r_ohlc": -1.083,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.609,
+   "r_ohlc": 0.642,
+   "motivo": "funding 0.0160%/h en contra",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 1.087,
+   "r_ohlc": 1.064,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.047,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.043,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": 0.486,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.059,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.736,
+   "r_ohlc": 1.721,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": 0.484,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.946,
+   "r_ohlc": 0.988,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ASTER",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 0.001,
+   "r_ohlc": -0.004,
+   "motivo": "volatilidad extrema: la última vela midió 5.7 ATR",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.492,
+   "r_ohlc": 0.488,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.026,
+   "r_ohlc": -1.059,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.031,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ASTER",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.624,
+   "r_ohlc": 0.487,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.496,
+   "r_ohlc": 0.48,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.764,
+   "r_ohlc": 0.777,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.04,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.058,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.073,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.663,
+   "r_ohlc": 0.662,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.057,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": 0.482,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": 0.484,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "INJ",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.005,
+   "r_ohlc": -1.011,
+   "motivo": "stop 13.22% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -0.059,
+   "r_ohlc": -0.023,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.18 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "DOT",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -0.132,
+   "r_ohlc": -0.094,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.006,
+   "r_ohlc": -1.015,
+   "motivo": "máximo de posiciones en la misma dirección (4)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.484,
+   "r_ohlc": 0.475,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -1.006,
+   "r_ohlc": -1.014,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.582,
+   "r_ohlc": 0.582,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ASTER",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.421,
+   "r_ohlc": 0.483,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -0.424,
+   "r_ohlc": -0.381,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -0.335,
+   "r_ohlc": -0.305,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.09,
+   "r_ohlc": 1.103,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": 1.481,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.004,
+   "r_ohlc": -1.01,
+   "motivo": "stop 14.85% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.78,
+   "r_ohlc": 0.48,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.454,
+   "r_ohlc": -0.448,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.471,
+   "r_ohlc": 0.557,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.028,
+   "r_ohlc": 1.024,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.452,
+   "r_ohlc": 1.482,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -0.254,
+   "r_ohlc": -0.363,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.056,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.903,
+   "r_ohlc": 0.485,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.059,
+   "r_ohlc": 0.994,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.624,
+   "r_ohlc": 0.459,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.028,
+   "r_ohlc": 0.907,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.774,
+   "r_ohlc": 0.795,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.031,
+   "r_ohlc": -1.074,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.364,
+   "r_ohlc": 0.407,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -1.004,
+   "r_ohlc": -1.009,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.021,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -1.008,
+   "r_ohlc": -1.018,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_4h",
+   "r_sombra": -1.006,
+   "r_ohlc": -1.013,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "S",
+   "estrategia": "funding_4h",
+   "r_sombra": 1.642,
+   "r_ohlc": 1.64,
+   "motivo": "tamaño mínimo excede riesgo: la orden mínima (10.03 USD) arr",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.042,
+   "r_ohlc": -1.099,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.776,
+   "r_ohlc": 0.865,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.965,
+   "r_ohlc": 0.795,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.495,
+   "r_ohlc": 0.898,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": 1.288,
+   "r_ohlc": 1.31,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.605,
+   "r_ohlc": 1.468,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.586,
+   "r_ohlc": 0.787,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.559,
+   "r_ohlc": 0.438,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.255,
+   "r_ohlc": 0.323,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.54,
+   "r_ohlc": 0.574,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.004,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.005,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.251,
+   "r_ohlc": 0.412,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.278,
+   "r_ohlc": 0.308,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "L",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.006,
+   "r_ohlc": -1.013,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.52,
+   "r_ohlc": 0.652,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.314,
+   "r_ohlc": 0.31,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.586,
+   "r_ohlc": 0.625,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 1.351,
+   "r_ohlc": 1.367,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.002,
+   "r_ohlc": -0.004,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.821,
+   "r_ohlc": 0.849,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.779,
+   "r_ohlc": 0.981,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.27,
+   "r_ohlc": 0.308,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.002,
+   "r_ohlc": 0.257,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "WIF",
+   "lado": "S",
+   "estrategia": "momentum_4h",
+   "r_sombra": 0.599,
+   "r_ohlc": 0.777,
+   "motivo": "cerebro en exploración (simulado, modelo sin aprobar): resul",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "MON",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.026,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.034,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "CRV",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.959,
+   "r_ohlc": 1.803,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "STRK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.246,
+   "r_ohlc": 1.065,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SKY",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.057,
+   "r_ohlc": 0.916,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.028,
+   "r_ohlc": -1.064,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SKY",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.008,
+   "r_ohlc": -1.018,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.026,
+   "r_ohlc": -1.059,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 2.738,
+   "r_ohlc": 2.727,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -0.078,
+   "r_ohlc": 0.049,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.147,
+   "r_ohlc": 1.155,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.499,
+   "r_ohlc": 0.375,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 2.742,
+   "r_ohlc": 2.735,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 2.236,
+   "r_ohlc": 2.197,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.426,
+   "r_ohlc": 1.451,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 2.739,
+   "r_ohlc": 1.738,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -0.124,
+   "r_ohlc": -0.489,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.028,
+   "r_ohlc": -1.064,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -1.046,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.026,
+   "r_ohlc": -1.06,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.021,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "USELESS",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 2.745,
+   "r_ohlc": 2.74,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.039,
+   "r_ohlc": -1.09,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.038,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -1.047,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "MON",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.41,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.032,
+   "r_ohlc": -1.073,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.023,
+   "r_ohlc": -1.053,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.033,
+   "r_ohlc": -1.076,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -1.045,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.045,
+   "r_ohlc": -1.104,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.039,
+   "r_ohlc": -1.091,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.636,
+   "r_ohlc": 0.651,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.899,
+   "r_ohlc": 0.887,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.003,
+   "r_ohlc": -0.007,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "AERO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.003,
+   "r_ohlc": -0.008,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.038,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XLM",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.747,
+   "r_ohlc": 0.734,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.026,
+   "r_ohlc": -1.06,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SKY",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.032,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.034,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.055,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.387,
+   "r_ohlc": -0.565,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.028,
+   "r_ohlc": -1.065,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.032,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.018,
+   "r_ohlc": -1.041,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.051,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.031,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XLM",
+   "lado": "L",
+   "estrategia": "reversion_1h",
+   "r_sombra": -1.025,
+   "r_ohlc": -1.059,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.018,
+   "r_ohlc": -1.042,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.051,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.018,
+   "r_ohlc": -1.041,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.044,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "L",
+   "estrategia": "reversion_4h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.021,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.025,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.904,
+   "r_ohlc": 0.489,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.02,
+   "r_ohlc": -1.046,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.051,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.029,
+   "r_ohlc": -1.068,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 1.486,
+   "r_ohlc": 0.479,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.797,
+   "r_ohlc": 0.479,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.669,
+   "r_ohlc": 0.486,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "L",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": 0.815,
+   "r_ohlc": 0.486,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.034,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "CRV",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.014,
+   "r_ohlc": -1.034,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.034,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HBAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "STRK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.029,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "DOT",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.038,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.605,
+   "r_ohlc": 0.479,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.011,
+   "r_ohlc": -1.027,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.916,
+   "r_ohlc": 0.92,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.036,
+   "r_ohlc": 1.054,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.244,
+   "r_ohlc": 1.307,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.78,
+   "r_ohlc": 0.668,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.005,
+   "r_ohlc": -1.011,
+   "motivo": "stop 13.33% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.85,
+   "r_ohlc": 0.756,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.055,
+   "r_ohlc": 1.004,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.793,
+   "r_ohlc": 0.765,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.813,
+   "r_ohlc": 0.704,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XMR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.771,
+   "r_ohlc": 0.869,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.498,
+   "r_ohlc": 0.488,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.81,
+   "r_ohlc": 0.775,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.69,
+   "r_ohlc": 0.722,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.708,
+   "r_ohlc": 0.488,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ONDO",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.806,
+   "r_ohlc": 0.828,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": -0.129,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "WIF",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.498,
+   "r_ohlc": 0.488,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "VVV",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 1.922,
+   "r_ohlc": 1.99,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "LTC",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.349,
+   "r_ohlc": -0.302,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.026,
+   "r_ohlc": 0.132,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 0.898,
+   "r_ohlc": 0.741,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "TAO",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.236,
+   "r_ohlc": 0.222,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -0.75,
+   "r_ohlc": -0.628,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "GRAM",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.031,
+   "r_ohlc": -1.073,
+   "motivo": "funding 0.0074%/h en contra",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "S",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.033,
+   "r_ohlc": -1.077,
+   "motivo": "correlada 0.92 con BNB ya abierta",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.495,
+   "r_ohlc": 0.475,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.627,
+   "r_ohlc": 0.666,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.496,
+   "r_ohlc": 0.481,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.496,
+   "r_ohlc": 0.477,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.496,
+   "r_ohlc": 0.479,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.788,
+   "r_ohlc": 0.642,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.876,
+   "r_ohlc": 1.067,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.057,
+   "r_ohlc": 0.223,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "ACE",
+   "lado": "S",
+   "estrategia": "ruptura_4h",
+   "r_sombra": -1.002,
+   "r_ohlc": -1.006,
+   "motivo": "stop 27.94% fuera de límites (0.25–12%)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.985,
+   "r_ohlc": 0.478,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.035,
+   "r_ohlc": -1.081,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.986,
+   "r_ohlc": 0.479,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.031,
+   "r_ohlc": -1.072,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.979,
+   "r_ohlc": 0.469,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ETH",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.979,
+   "r_ohlc": 0.468,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.978,
+   "r_ohlc": 0.659,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 0.751,
+   "r_ohlc": 0.729,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.986,
+   "r_ohlc": 0.478,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.986,
+   "r_ohlc": 1.972,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "BNB",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.975,
+   "r_ohlc": 0.462,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "LINK",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.977,
+   "r_ohlc": 1.954,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "DOT",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.983,
+   "r_ohlc": 1.967,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "objetivo final"
+  },
+  {
+   "moneda": "BTC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": -1.045,
+   "r_ohlc": -1.105,
+   "motivo": "correlada 0.96 con BNB ya abierta",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 1.987,
+   "r_ohlc": 0.48,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.732,
+   "r_ohlc": 0.472,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "objetivo final",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SOL",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.005,
+   "r_ohlc": -1.058,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.888,
+   "r_ohlc": -0.015,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "PUMP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.873,
+   "r_ohlc": -1.037,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ACE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.663,
+   "r_ohlc": 0.662,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "LIT",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.748,
+   "r_ohlc": 0.739,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.005,
+   "r_ohlc": -1.053,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "FARTCOIN",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.747,
+   "r_ohlc": -0.01,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "CRV",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.004,
+   "r_ohlc": -1.048,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ENA",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.909,
+   "r_ohlc": -1.043,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": 1.049,
+   "r_ohlc": 0.892,
+   "motivo": "volatilidad extrema: la última vela midió 4.1 ATR",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop dinámico"
+  },
+  {
+   "moneda": "DOT",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.005,
+   "r_ohlc": -0.014,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "ZRO",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.004,
+   "r_ohlc": -1.041,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "WLD",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.747,
+   "r_ohlc": -0.011,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "AVAX",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.005,
+   "r_ohlc": -1.062,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "DOGE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.746,
+   "r_ohlc": -0.015,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "WIF",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.892,
+   "r_ohlc": -0.013,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop dinámico",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "kBONK",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": 0.746,
+   "r_ohlc": -1.057,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "S",
+   "estrategia": "liquidaciones_1h",
+   "r_sombra": -1.037,
+   "r_ohlc": -1.087,
+   "motivo": "solo investigación: hipótesis sin validar (no opera)",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "HYPE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.043,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.013,
+   "r_ohlc": -1.03,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "XRP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.022,
+   "r_ohlc": -1.051,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.016,
+   "r_ohlc": -1.038,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "UNI",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.018,
+   "r_ohlc": -1.042,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ADA",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.055,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.04,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "CHIP",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.012,
+   "r_ohlc": -1.027,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.06,
+   "r_ohlc": -1.14,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ZEC",
+   "lado": "S",
+   "estrategia": "ballenas_1h",
+   "r_sombra": 1.187,
+   "r_ohlc": 1.378,
+   "motivo": "correlada 0.85 con BNB ya abierta",
+   "cierre_sombra": "tiempo máximo",
+   "cierre_ohlc": "tiempo máximo"
+  },
+  {
+   "moneda": "XPL",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.024,
+   "r_ohlc": -1.056,
+   "motivo": "contra el régimen de BTC (bajista frente a su media de 200 v",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "ARB",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "PAXG",
+   "lado": "L",
+   "estrategia": "retroceso_1h",
+   "r_sombra": -1.079,
+   "r_ohlc": -1.184,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "AAVE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.044,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "kPEPE",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.497,
+   "r_ohlc": 0.487,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "NEAR",
+   "lado": "S",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.015,
+   "r_ohlc": -1.036,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "CHIP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": 0.498,
+   "r_ohlc": 0.489,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop sin pérdidas",
+   "cierre_ohlc": "stop sin pérdidas"
+  },
+  {
+   "moneda": "JUP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.017,
+   "r_ohlc": -1.039,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "SUI",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.021,
+   "r_ohlc": -1.048,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "MON",
+   "lado": "L",
+   "estrategia": "ruptura_1h",
+   "r_sombra": -1.009,
+   "r_ohlc": -1.021,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  },
+  {
+   "moneda": "TRUMP",
+   "lado": "L",
+   "estrategia": "funding_1h",
+   "r_sombra": -1.019,
+   "r_ohlc": -1.045,
+   "motivo": "estrategia apagada: se sigue en sombra para seguir aprendien",
+   "cierre_sombra": "stop-loss",
+   "cierre_ohlc": "stop-loss"
+  }
+ ]
+}

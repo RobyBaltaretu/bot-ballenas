@@ -1,0 +1,176 @@
+{"total_lineas": 46287, "archivos": 175, "funciones": 2782}
+analista_ia.py	739	42	1	Analista del bot. Corre en el proceso del panel, aparte del bucle de operaciones: si falla, el bot ni se enter
+aprendizaje.py	338	21	1	Memoria y aprendizaje del bot.
+archivo.py	207	13	1	Archivo propio de datos de mercado (para que el laboratorio tenga más historia con el tiempo).
+ballenas.py	133	10	1	Flujo de las ballenas: cuánto están AUMENTANDO o REDUCIENDO sus posiciones en cada moneda.
+bot.py	2389	94	2	Bot de trading para Hyperliquid — motor de señales propio, flujo de ballenas (investigación) y aprendizaje.
+calendario_macro.py	104	8	0	Calendario de citas macro de EE. UU. que mueven las cripto: decisiones de la Reserva Federal (FOMC) y el IPC (
+carry/__init__.py	13	0	0	Carry de funding con dos patas (perpetuo corto + contado largo), PREPARADO Y SIN CONECTAR.
+carry/ejecucion.py	109	5	2	Fase 2 del carry: abrir y cerrar las DOS patas con atomicidad razonable. Todo simulado y con adaptadores.
+carry/logica.py	147	8	0	Fase 1 del carry: la lógica pura. Sin red, sin órdenes, sin estado; todo son funciones de datos.
+carry/motor.py	340	20	1	Fase 3 del carry: el motor SIMULADO que lo une todo. Dinero ficticio con precios, libros y funding REALES (sol
+carry/papel_perp.py	112	8	1	Fase 3 del carry: pata CORTA del perpetuo, SIMULADA. Dinero ficticio; no habla con ningún exchange ni firma na
+carry/papel_spot.py	109	7	2	Fase 2 del carry: cuenta de CONTADO SIMULADA. Dinero ficticio; no habla con ningún exchange ni firma nada.
+carry/terreno.py	158	8	1	Fase 0 del carry: verificar el terreno. SOLO LECTURA de la API pública de Hyperliquid (sin firmar, sin cuenta)
+cartera_funding.py	122	8	0	Cartera del factor de funding (estudio B de la auditoría del 13/11/2026). SOLO SIMULADO.
+cerebro.py	144	10	1	«Cerebro»: un único modelo que decide qué posibles entradas merecen operarse, con TODOS los datos
+cerebro_vivo.py	177	10	1	El cerebro en vivo: ÚNICO que decide si una candidata se opera (en simulado y shadow; en real, además, sigue
+coinglass.py	135	6	1	CoinGlass API v4: fuente OPCIONAL de SOLO LECTURA para investigación y observación (research_only).
+compat.py	71	4	0	Detalles para que el bot funcione igual en Windows, macOS y Linux.
+comprobar.py	186	9	0	Comprobaciones de despliegue (Windows y Linux). No conecta con Hyperliquid, no opera y no muestra secretos.
+config_panel.py	431	15	1	Editar la configuración desde el panel, con seguridad.
+configuracion.py	619	15	1	Configuración del bot: una sola fuente de verdad por parámetro, migración desde versiones anteriores,
+contabilidad.py	87	4	0	Resultado de cada operación a partir de datos del exchange (no del saldo, que mezcla depósitos y transferencia
+contexto_externo.py	305	17	3	Contexto de mercado de Binance y Bybit en VIVO (solo datos públicos, solo lectura).
+copias/antes_auditoria_20261028/aprendizaje.py	335	22	1	Memoria y aprendizaje del bot.
+copias/antes_auditoria_20261028/archivo.py	207	13	1	Archivo propio de datos de mercado (para que el laboratorio tenga más historia con el tiempo).
+copias/antes_auditoria_20261028/ballenas.py	133	10	1	Flujo de las ballenas: cuánto están AUMENTANDO o REDUCIENDO sus posiciones en cada moneda.
+copias/antes_auditoria_20261028/bot.py	1890	79	2	Bot de trading para Hyperliquid — motor de señales propio, flujo de ballenas (investigación) y aprendizaje.
+copias/antes_auditoria_20261028/cerebro.py	139	10	1	«Cerebro»: un único modelo que decide qué posibles entradas merecen operarse, con TODOS los datos
+copias/antes_auditoria_20261028/cerebro_vivo.py	126	6	1	El cerebro en vivo: ÚNICO que decide si una candidata se opera (en simulado y shadow; en real, además, sigue
+copias/antes_auditoria_20261028/compat.py	50	3	0	Detalles para que el bot funcione igual en Windows, macOS y Linux.
+copias/antes_auditoria_20261028/comprobar.py	186	9	0	Comprobaciones de despliegue (Windows y Linux). No conecta con Hyperliquid, no opera y no muestra secretos.
+copias/antes_auditoria_20261028/config_panel.py	432	15	1	Editar la configuración desde el panel, con seguridad.
+copias/antes_auditoria_20261028/configuracion.py	554	15	1	Configuración del bot: una sola fuente de verdad por parámetro, migración desde versiones anteriores,
+copias/antes_auditoria_20261028/contabilidad.py	87	4	0	Resultado de cada operación a partir de datos del exchange (no del saldo, que mezcla depósitos y transferencia
+copias/antes_auditoria_20261028/contexto_externo.py	286	16	3	Contexto de mercado de Binance y Bybit en VIVO (solo datos públicos, solo lectura).
+copias/antes_auditoria_20261028/datos.py	157	9	1	Descarga de datos públicos de Hyperliquid con caché en disco y respeto al límite de peticiones.
+copias/antes_auditoria_20261028/ejecucion.py	438	33	3	Ciclo de vida de las órdenes. ÚNICO punto por el que el bot envía, cancela o consulta órdenes.
+copias/antes_auditoria_20261028/estrategia.py	257	20	1	Piezas comunes: las usan igual el bot (dinero real), la memoria (operaciones en papel)
+copias/antes_auditoria_20261028/estudios.py	120	7	0	Estudios comparativos del laboratorio (solo informe: no cambian nada ni activan estrategias).
+copias/antes_auditoria_20261028/feed.py	386	16	2	Feed de «Señales en vivo»: flujo PERSISTENTE (append-only) de eventos auditables para el panel.
+copias/antes_auditoria_20261028/gestor.py	1051	39	1	Gestión de las operaciones DEL BOT: propiedad, conciliación con el exchange, apertura, protección (stop y
+copias/antes_auditoria_20261028/historia_externa.py	390	25	6	Historia ampliada para el laboratorio con DATOS PÚBLICOS de Binance y Bybit (futuros perpetuos en USDT).
+copias/antes_auditoria_20261028/informe.py	123	4	0	Informe de lo que ha aprendido el bot.   Uso:  python informe.py
+copias/antes_auditoria_20261028/instancia.py	113	9	3	Una sola instancia del bot por carpeta y por cuenta.
+copias/antes_auditoria_20261028/investigacion.py	510	18	0	Departamento de investigación: busca estrategias nuevas por su cuenta, con un examen muy duro.
+copias/antes_auditoria_20261028/laboratorio.py	1643	56	1	Laboratorio de estrategias: prueba con la historia real de Hyperliquid qué forma de entrar y salir
+copias/antes_auditoria_20261028/laboratorio_semanal.py	129	4	0	Laboratorio semanal: pasa el laboratorio, lo compara con la ejecución anterior y avisa por Telegram SOLO si al
+copias/antes_auditoria_20261028/ledger.py	325	14	2	Registro (ledger) de operaciones: archivo JSONL, una línea por evento, solo se añade (nunca se reescribe).
+copias/antes_auditoria_20261028/limitador.py	66	5	1	Límite de peticiones a Hyperliquid: 1200 de "peso" por minuto y por IP. Si se supera, responde 429
+copias/antes_auditoria_20261028/mercado.py	305	17	1	Lo que pasa en TODO el mercado (no solo en las 15 ballenas que sigue el bot), grabado en vivo.
+copias/antes_auditoria_20261028/mercado_unificado.py	85	5	2	Vista de mercado UNIFICADA: Hyperliquid + Binance + Bybit en un solo registro por moneda y vela.
+copias/antes_auditoria_20261028/motor.py	446	18	1	Motor de señales EN VIVO: une el universo de monedas líquidas, los módulos de senales.py
+copias/antes_auditoria_20261028/notificaciones.py	124	7	1	Avisos y control del bot por Telegram.
+copias/antes_auditoria_20261028/observabilidad.py	279	15	3	Observabilidad del SISTEMA (no del trading): salud de cada componente, latido, incidentes agrupados, métricas
+copias/antes_auditoria_20261028/panel.py	922	49	3	Panel web del bot.   Uso:  python panel.py   ->  abre http://localhost:8080
+copias/antes_auditoria_20261028/papel.py	506	41	2	Modo SIMULADO (paper): una cuenta ficticia propia que se comporta como Hyperliquid pero sin dinero.
+copias/antes_auditoria_20261028/promocion.py	427	21	3	Promoción de estrategias por etapas. NADA pasa a dinero real de forma automática.
+copias/antes_auditoria_20261028/riesgo.py	348	23	0	Riesgo, tamaño y límites. Lo usan IGUAL el bot (real/simulado/shadow) y el laboratorio (cartera), para que
+copias/antes_auditoria_20261028/seleccion.py	174	4	0	Selección de ballenas por COMPORTAMIENTO y de las monedas a operar.
+copias/antes_auditoria_20261028/senales.py	401	28	2	Motor de señales propio: decide CUÁNDO entrar mirando el precio, no a otros traders.
+copias/antes_auditoria_20261028/validacion.py	538	41	2	Herramientas de validación del laboratorio (funciones puras, sin red, probadas en tests/).
+copias/antes_auditoria_20261028/vigilancia.py	118	3	0	Vigilancia de degradación: ¿alguna estrategia en uso está rindiendo claramente peor de lo que debería?
+datos.py	181	10	1	Descarga de datos públicos de Hyperliquid con caché en disco y respeto al límite de peticiones.
+despliegue/avisos.py	33	1	0	Envía un aviso por Telegram con la configuración del bot (.env). Lo usan las tareas programadas del servidor.
+diagnostico.py	113	3	0	Exporta un DIAGNÓSTICO redactado del bot (para revisar o compartir sin exponer nada):
+ejecucion.py	481	35	3	Ciclo de vida de las órdenes. ÚNICO punto por el que el bot envía, cancela o consulta órdenes.
+estrategia.py	267	18	1	Piezas comunes: las usan igual el bot (dinero real), la memoria (operaciones en papel)
+estudios.py	120	7	0	Estudios comparativos del laboratorio (solo informe: no cambian nada ni activan estrategias).
+estudios_ext/__init__.py	8	0	0	Estudios externos del bot (13/11/2026). SOLO INVESTIGACIÓN: leen cachés locales de datos públicos y escriben i
+estudios_ext/carry2026.py	158	9	0	ESTUDIO C — El carry de funding «realista» del laboratorio, medido por PERIODOS y solo con datos recientes. SO
+estudios_ext/datos.py	104	11	0	Lectura de las cachés locales de Binance (velas de 4 h, funding de 8 h) y paso a velas diarias UTC.
+estudios_ext/factor_funding.py	167	7	0	ESTUDIO B — Factor de funding entre monedas (solo perpetuos). SOLO INVESTIGACIÓN. Reglas fijadas de antemano.
+estudios_ext/metricas.py	140	12	0	Métricas de una cartera diaria (solo estadística, sin datos de mercado) más Sharpe deflactado y PBO por CSCV.
+estudios_ext/paridad.py	192	10	0	PARIDAD simulado ↔ laboratorio. SOLO LECTURA del ledger y de las velas archivadas por el bot; no opera ni modi
+estudios_ext/rasgos.py	90	3	0	RASGOS DEL CEREBRO: ¿lo que ve el cerebro en vivo se parece a lo que vio al entrenar? SOLO LECTURA.
+estudios_ext/tendencia.py	269	12	1	ESTUDIO A — Tendencia lenta (conjunto de canales de Donchian). SOLO INVESTIGACIÓN. Reglas fijadas de antemano.
+feed.py	387	16	2	Feed de «Señales en vivo»: flujo PERSISTENTE (append-only) de eventos auditables para el panel.
+gestor.py	1555	51	1	Gestión de las operaciones DEL BOT: propiedad, conciliación con el exchange, apertura, protección (stop y
+historia_externa.py	390	25	6	Historia ampliada para el laboratorio con DATOS PÚBLICOS de Binance y Bybit (futuros perpetuos en USDT).
+informe.py	123	4	0	Informe de lo que ha aprendido el bot.   Uso:  python informe.py
+instancia.py	113	9	3	Una sola instancia del bot por carpeta y por cuenta.
+investigacion.py	807	28	0	Departamento de investigación: busca estrategias nuevas por su cuenta, con un examen muy duro.
+laboratorio.py	1766	60	1	Laboratorio de estrategias: prueba con la historia real de Hyperliquid qué forma de entrar y salir
+laboratorio_semanal.py	129	4	0	Laboratorio semanal: pasa el laboratorio, lo compara con la ejecución anterior y avisa por Telegram SOLO si al
+ledger.py	403	18	2	Registro (ledger) de operaciones: archivo JSONL, una línea por evento, solo se añade (nunca se reescribe).
+limitador.py	102	8	1	Límite de peticiones a Hyperliquid: 1200 de "peso" por minuto y por IP. Si se supera, responde 429
+manifiesto_datos.py	110	6	0	Manifiesto de los datos con que trabajó el laboratorio: cobertura, huecos e historia que cambia.
+mercado.py	303	17	1	Lo que pasa en TODO el mercado (no solo en las 15 ballenas que sigue el bot), grabado en vivo.
+mercado_unificado.py	88	5	2	Vista de mercado UNIFICADA: Hyperliquid + Binance + Bybit en un solo registro por moneda y vela.
+mesa.py	79	3	0	MESA (18/11/2026, idea de un vídeo de un panel de «equipo de agentes»): responde a «¿por qué no entra nada?».
+motor.py	504	20	1	Motor de señales EN VIVO: une el universo de monedas líquidas, los módulos de senales.py
+notificaciones.py	184	11	2	Avisos y control del bot por Telegram.
+observabilidad.py	279	15	3	Observabilidad del SISTEMA (no del trading): salud de cada componente, latido, incidentes agrupados, métricas
+panel.py	1388	71	3	Panel web del bot.   Uso:  python panel.py   ->  abre http://localhost:8080
+papel.py	652	45	2	Modo SIMULADO (paper): una cuenta ficticia propia que se comporta como Hyperliquid pero sin dinero.
+preregistro.py	133	7	0	Hipótesis PRERREGISTRADAS (17/11/2026, pedido por Roberto): acelerar el veredicto sin hacer trampas.
+promocion.py	551	26	3	Promoción de estrategias por etapas. NADA pasa a dinero real de forma automática.
+revision_proceso.py	220	8	0	Nota de PROCESO de cada operación, separada de su resultado.
+riesgo.py	550	34	0	Riesgo, tamaño y límites. Lo usan IGUAL el bot (real/simulado/shadow) y el laboratorio (cartera), para que
+seleccion.py	174	4	0	Selección de ballenas por COMPORTAMIENTO y de las monedas a operar.
+senales.py	418	29	2	Motor de señales propio: decide CUÁNDO entrar mirando el precio, no a otros traders.
+sombras.py	176	8	0	Sombras: lo que el bot dejó pasar.
+taller.py	329	11	0	TALLER (18/11/2026): revisión completa del sistema en un solo paso, en lenguaje llano.
+tests/__init__.py	1	0	0	
+tests/comunes.py	98	11	2	Utilidades de prueba: mercado falso, configuración válida y carpetas temporales. NUNCA hay red ni claves.
+tests/test_ajuste_manual.py	150	19	4	Ajuste manual de stop y objetivo desde el panel (14/11/2026, pedido por Roberto): solo simulado, solo del bot,
+tests/test_archivo.py	51	7	1	
+tests/test_arreglos_estudio.py	195	18	7	Arreglos del estudio del 19/11/2026: funding con su hora real, stop disparado sin llenar del todo, entradas lí
+tests/test_auditoria_arreglos.py	102	10	3	Arreglos de la auditoría del 19/11/2026: límite conjunto de desplome (R-05) y cierre en el ledger de operacion
+tests/test_bot.py	654	64	8	Arranque seguro, barrera shadow, aislamiento de las ballenas, datos obsoletos y apagado.
+tests/test_calendario_macro.py	58	5	1	
+tests/test_capital_piloto.py	65	5	1	A-11: un cambio de capital nunca eleva límites; los topes del piloto son absolutos y auditables; un saldo de
+tests/test_carry.py	361	49	7	Carry de funding (fases 0-2): terreno, lógica y simulación de las dos patas. Todo con datos sintéticos y adapt
+tests/test_carry_motor.py	149	16	3	Carry fase 3: el motor simulado de dos patas, con una API falsa (sin red) y carpeta temporal.
+tests/test_carry_realista.py	58	5	1	Carry realista: cobra el funding, paga la base y las 4 comisiones; descarta contado que no cuadra.
+tests/test_cartera_regimen.py	297	27	6	Cambios del 13/11/2026: estrategias de 1 h retiradas, filtro de régimen de BTC, recorte ±3 del cerebro y carte
+tests/test_cerebro.py	96	8	3	Cerebro (un modelo con todos los datos) y vista de mercado unificada. Sin red.
+tests/test_cerebro_laboratorio.py	51	1	1	El cerebro en el laboratorio: «solo Hyperliquid» usa solo historia de HL, hay línea base y cartera con límites
+tests/test_cerebro_vivo.py	174	19	4	El cerebro en vivo: decide con el modelo del laboratorio, con los mismos rasgos, y se abstiene ante cualquier 
+tests/test_coinglass.py	93	11	3	CoinGlass: solo lectura, desactivado por defecto, estados explícitos y la clave nunca aparece. Sin red.
+tests/test_comprobar.py	18	2	1	
+tests/test_config_panel.py	134	12	2	
+tests/test_configuracion.py	136	21	5	
+tests/test_contabilidad_ledger.py	103	11	3	
+tests/test_contexto_externo.py	119	11	3	Contexto de Binance/Bybit en vivo: solo lectura, nunca frena ni rompe el bot. Sin red: lectores falsos.
+tests/test_csv_panel.py	24	3	1	Exportación CSV del panel: ningún texto se abre en Excel como fórmula (17/11/2026).
+tests/test_diagnostico.py	40	2	1	El diagnóstico exportado marca lo que falta o está roto y nunca contiene secretos.
+tests/test_ejecucion.py	166	25	7	
+tests/test_esceptico.py	90	12	2	Escéptico en sombra (analista_ia): opina sobre cada apertura y se mide; nunca decide. Groq siempre simulado.
+tests/test_estudios_ext.py	322	36	7	Paquete estudios_ext (13/11/2026): estudios de investigación con datos sintéticos. Ninguna prueba sale a la re
+tests/test_feed.py	164	14	3	Regresión del feed «Señales en vivo» (bloque E): persistente, incremental, sin pérdidas, sin reordenar ni
+tests/test_gestor.py	255	27	9	Propiedad de posiciones, protección y conciliación, con la cuenta simulada (sin red).
+tests/test_gestor_conciliacion.py	181	16	4	Conciliación de objetivos, stop dinámico y cierres parciales (P0 del suplemento): con la cuenta simulada, sin 
+tests/test_historia_externa.py	200	23	5	Historia ampliada (Binance/Bybit) para el laboratorio. Sin red: las fuentes son falsas o con 'get' inyectado.
+tests/test_holdout_acumulativo.py	116	9	4	Holdout acumulativo: lo no mirado se sella hasta reunir suficientes operaciones (no se gasta cada semana).
+tests/test_integridad_modelo.py	205	20	2	A-01: la aprobación para real queda ligada a la identidad EXACTA del modelo del cerebro, al lector de fuentes
+tests/test_investigacion.py	149	14	5	
+tests/test_lab_paralelo.py	35	2	1	La simulación repartida entre núcleos da EXACTAMENTE lo mismo que en serie.
+tests/test_laboratorio_semanal.py	34	2	2	
+tests/test_laboratorio_validez.py	136	16	5	Regresión del laboratorio (bloque C): sin falsos positivos por línea base vacía, muestra insuficiente, holdout
+tests/test_limitador.py	60	6	2	Presupuesto de peso de Hyperliquid: pesos documentados, peso extra por elementos devueltos, reintentos que
+tests/test_lookahead.py	122	12	1	Prueba de «mirar el futuro» (lookahead), al estilo del lookahead-analysis de Freqtrade (17/11/2026).
+tests/test_manifiesto_datos.py	45	3	1	
+tests/test_mejoras_auditoria.py	203	18	7	Mejoras de la auditoría hechas el 21/11/2026: vía de decisión separada (R-07), bloque del cerebro en el resume
+tests/test_mercado_ws.py	29	3	3	Suscripción de operaciones del mercado: si la conexión está cerrada, el fallo sube al bot, que reconecta.
+tests/test_mesa.py	69	8	2	Mesa (18/11/2026): «¿por qué no entra nada?» cuenta los motivos reales y no se inventa ninguno.
+tests/test_meseta.py	63	8	1	Meseta de parámetros (17/11/2026): un resultado que solo existe en un punto de la rejilla es sobreajuste.
+tests/test_momentum.py	85	11	2	
+tests/test_motor_velas.py	92	9	2	Una vela solo se da por estudiada cuando de verdad se leyó: fallo transitorio, respuesta vacía o vela aún sin
+tests/test_ordenes_seguras.py	236	23	6	Regresión del ciclo de órdenes (bloque A): carrera al cancelar la entrada límite, respuestas ambiguas, stops
+tests/test_panel_observabilidad.py	229	23	2	
+tests/test_panel_proxy.py	57	5	1	El panel detrás de un túnel o proxy: sin PANEL_PASSWORD solo se admite este equipo SIN cabeceras de reenvío.
+tests/test_panel_velas.py	51	6	1	/api/velas: el gráfico de precio de una operación solo lee las velas que el bot ya archiva (sin pedir nada al
+tests/test_panel_web.py	172	15	2	Panel nuevo (panel_web/): se sirve desde el mismo origen sin compilar, con CSP estricta, sin salir de su carpe
+tests/test_preregistro.py	128	16	2	Hipótesis prerregistradas (17/11/2026): solo datos posteriores, muestra fija, veredicto único e inmutable.
+tests/test_probabilidades.py	69	8	2	Ficha «qué cabe esperar» de una estrategia (18/11/2026): reparto de salidas, IC y lectura honesta.
+tests/test_reinicio_simulado.py	69	7	1	Puesta a cero de la cuenta SIMULADA: solo en simulado, con archivo de lo anterior, sin tocar el ledger, y nunc
+tests/test_revision_proceso.py	79	8	1	
+tests/test_riesgo.py	142	20	6	
+tests/test_riesgo_desconocido.py	55	9	2	Un riesgo desconocido no cuenta como 0 (18/11/2026; defecto #55 de day-trader-skill trasladado al bot).
+tests/test_riesgo_stop.py	144	14	2	A-02: el tamaño respeta el presupuesto de pérdida en TRES escenarios de stop (base, severo y límite de la orde
+tests/test_ruido_avisos.py	55	7	1	Control de ruido de los avisos de Telegram (17/11/2026): menos repeticiones, nunca callar lo importante.
+tests/test_salud_global.py	40	5	1	G8: un componente obligatorio sin datos nunca deja el sistema como 'correcto'.
+tests/test_secretos.py	60	6	1	G10: direcciones, claves, tokens y credenciales no aparecen en el panel, sus exportaciones, el feed ni los log
+tests/test_simsalida_intrabar.py	74	10	1	SimSalida con OHLC: el orden dentro de la vela es desconocido. La base cuenta el peor orden plausible, marca l
+tests/test_simulacion_riesgo.py	185	19	5	Regresión del bloque D: la simulación descuenta costes adversos y representa fills y comisiones según el tipo 
+tests/test_sombras.py	80	7	1	
+tests/test_taller.py	159	16	1	Taller (18/11/2026): la revisión del sistema dice la verdad, no inventa «ok» y solo ofrece arreglos seguros.
+tests/test_tramos_techos.py	45	3	1	
+tests/test_validacion_cartera.py	95	9	3	A-03 / A-04 / A-12: la cartera aplica (y declara) los límites; el veredicto compara de forma EMPAREJADA por dí
+tests/test_validacion_promocion.py	253	31	4	
+tests/test_veredicto_analista.py	470	63	13	Veredicto de la prueba de dos semanas y analista (Groq siempre simulado: ninguna prueba llega a la red).
+validacion.py	790	52	3	Herramientas de validación del laboratorio (funciones puras, sin red, probadas en tests/).
+veredicto.py	168	10	0	Veredicto de la prueba de dos semanas (04/11/2026 a 18/11/2026): ¿el bot va adelante o no vale?
+vigilancia.py	117	3	0	Vigilancia de degradación: ¿alguna estrategia en uso está rindiendo claramente peor de lo que debería?

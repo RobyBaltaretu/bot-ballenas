@@ -1,0 +1,55 @@
+.............................................Cambio de modo simulado -> shadow: archivo el estado anterior y empiezo de cero (la memoria de aprendizaje se conserva).
+........El panel no daba señales: lo arranco de nuevo.
+El panel no daba señales: lo arranco de nuevo.
+.......El ciclo lleva 20 min sin terminar: salgo para que el lanzador me reinicie.
+.🛑 ruptura_1h: rendimiento claramente negativo. Le he RETIRADO la autorización para dinero real (claramente negativa: -0.61 R de media en 35 operaciones (cota superior -0.49 R al 95.0 %)). Volver a darla es decisión tuya.
+📉 ruptura_1h rinde claramente mal (claramente negativa: -0.61 R de media en 35 operaciones (cota superior -0.49 R al 95.0 %)): opera a la mitad de tamaño.
+..............Cambio de modo simulado -> shadow: archivo el estado anterior y empiezo de cero (la memoria de aprendizaje se conserva).
+.........El panel no daba señales: lo arranco de nuevo.
+El panel no daba señales: lo arranco de nuevo.
+   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+..   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)'))).
+.....El ciclo lleva 20 min sin terminar: salgo para que el lanzador me reinicie.
+..🛑 ruptura_1h: rendimiento claramente negativo. Le he RETIRADO la autorización para dinero real (claramente negativa: -0.61 R de media en 35 operaciones (cota superior -0.49 R al 95.0 %)). Volver a darla es decisión tuya.
+📉 ruptura_1h rinde claramente mal (claramente negativa: -0.61 R de media en 35 operaciones (cota superior -0.49 R al 95.0 %)): opera a la mitad de tamaño.
+.............................................Archivo: no pude guardar el libro: [Errno 2] No such file or directory: '/tmp/bot-prueba-e8_olo6u/datos_archivo/libro_2026-11-24.jsonl'
+..........................Archivo: no pude guardar el libro: [Errno 2] No such file or directory: '/tmp/bot-prueba-2q7innk7/datos_archivo/libro_2026-11-24.jsonl'
+..............
+================ CEREBRO (4h): 556 candidatas de todas las estrategias ================
+  todas las candidatas     244 ops |   55% ganan | media +0.150 R | FB  1.50 | t  2.44 | caída   5.1 R |  72.6 ops/mes
+  cerebro con todo         132 ops |   56% ganan | media +0.185 R | FB  1.63 | t  2.17 | caída   3.8 R |  39.6 ops/mes  · no_supera
+      cartera con límites del bot: 132 ops · +25.27 % · caída 4.11 % · descartadas {}
+  todas solo historia hl   227 ops |   55% ganan | media +0.134 R | FB  1.44 | t  2.11 | caída   7.3 R |  67.5 ops/mes
+  cerebro solo hyperliqu   119 ops |   57% ganan | media +0.169 R | FB  1.55 | t  1.85 | caída   5.1 R |  37.9 ops/mes  · no_supera
+      cartera con límites del bot: 119 ops · +20.23 % · caída 5.32 % · descartadas {}
+  modelo para el bot: cerebro con todo (no_supera)
+  pesos (R por desviación típica): tendencia -0.022, impulso6 +0.106, volatilidad +0.067, funding8h +0.000, dif_funding8h +0.000, flujo1 +0.000, flujo6 +0.000, base_pct +0.000
+  0 de 556 candidatas tienen datos de Binance/Bybit. Solo evidencia: no activa nada.
+...................No pude calcular las monedas líquidas (not enough values to unpack (expected 2, got 0)); uso las de siempre.
+No pude calcular las monedas líquidas (not enough values to unpack (expected 2, got 0)); uso las de siempre.
+........   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+......................................................................................................   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+................................................................................./usr/local/lib/python3.13/multiprocessing/popen_fork.py:73: DeprecationWarning: This process (pid=2729) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+..Laboratorio semanal terminado: sin cambios (no se envía aviso).
+......................................................................................................   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+.   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+............................................<scratchpad>/copia/tests/test_panel_web.py:161: ResourceWarning: unclosed file <_io.TextIOWrapper name='<scratchpad>/copia/panel_web/assets/js/vistas/inicio.js' mode='r' encoding='utf-8'>
+  self.assertNotIn("/stopmanual", open(os.path.join(WEB, "assets", "js", "vistas", "inicio.js"), encoding="utf-8").read(),
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+........   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+.   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+..........   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+.   reintento por error de red: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')))
+..........................Puesta a cero NO aplicada: la cuenta simulada tiene posiciones u órdenes abiertas. Ciérralas antes; la petición se mantiene.
+.Puesta a cero ignorada: solo existe para el modo simulado (modo actual: real).
+Puesta a cero ignorada: solo existe para el modo simulado (modo actual: shadow).
+.Cuenta SIMULADA puesta a cero: saldo inicial 232 USD, sin posiciones ni pérdidas acumuladas. Copia de lo anterior en /tmp/bot-prueba-2i7wh5k8/archivo_reinicios/20261124T120901Z. El ledger conserva toda la historia.
+..................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 764 tests in 64.656s
+
+OK
+exit=0

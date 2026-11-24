@@ -1,16 +1,16 @@
 {
-  "ts": 1795519283.2591608,
+  "ts": 1795520424.9347856,
   "modo": "simulado",
   "origen": "simulado",
   "red": "mainnet",
   "cuenta": "simulado",
   "conciliacion_ok": true,
-  "conciliacion_ts": 1795519278.113351,
-  "saldo": 264.4618457011857,
-  "libre": 218.46449570118574,
-  "saldo_ts": 1795519278.113351,
+  "conciliacion_ts": 1795520419.9400194,
+  "saldo": 264.27814470118574,
+  "libre": 218.28079470118576,
+  "saldo_ts": 1795520419.9400194,
   "margen_usado": 45.99735,
-  "margen_mantenimiento": 3.37237175,
+  "margen_mantenimiento": 3.3917817,
   "saldo_inicial": 232.0,
   "saldo_inicio_dia": 264.4503737803895,
   "saldo_maximo": 270.0767099283813,
@@ -24,10 +24,10 @@
       "lado": "S",
       "estado": "abierta",
       "entrada": 586.17,
-      "precio_mid": 545.37,
-      "precio_mark": 545.575,
+      "precio_mid": 546.77,
+      "precio_mark": 546.77,
       "tam": 0.043,
-      "pnl_no_realizado": 1.7593449999999984,
+      "pnl_no_realizado": 1.6914049999999965,
       "sl": 609.94,
       "sl_inicial": 609.94,
       "tp1": null,
@@ -35,24 +35,24 @@
       "tp1_hecho": false,
       "en_breakeven": false,
       "stop_verificado": true,
-      "stop_verificado_ts": 1795519278.1134226,
+      "stop_verificado_ts": 1795520419.9400833,
       "abierta_ts": 1795061043.6073895,
       "limite_ts": 1796256243.6073895,
       "duracion_estrategia_min": 19920,
       "r_usd": 1.0221531267413144,
       "riesgo_usd": 1.0826027440000041,
-      "notional": 23.445964999999998,
+      "notional": 23.513905,
       "margen": 25.205309999999997,
       "apalancamiento": 1,
       "liquidacion": 1116.5142857142855,
       "liquidacion_estimada": true,
       "referencia_stop": "mark",
       "referencia_trailing": "mid",
-      "precio_mark_ts": 1795519239.4209569,
-      "precio_mid_ts": 1795519277.3637056,
-      "divergencia_mark_mid_pct": 0.03758915965308707,
-      "distancia_liquidacion_pct": 104.64909237305329,
-      "distancia_stop_pct": 11.797644686798332,
+      "precio_mark_ts": 1795520403.3909125,
+      "precio_mid_ts": 1795520419.242249,
+      "divergencia_mark_mid_pct": 0.0,
+      "distancia_liquidacion_pct": 104.2018189941448,
+      "distancia_stop_pct": 11.553303948643867,
       "riesgo_liquidacion": null,
       "estrategia": "fuerza_4h",
       "version": "2",
@@ -73,10 +73,10 @@
       "lado": "S",
       "estado": "abierta",
       "entrada": 26.525,
-      "precio_mid": 25.4705,
-      "precio_mark": 25.476,
+      "precio_mid": 25.7185,
+      "precio_mark": 25.709,
       "tam": 0.39,
-      "pnl_no_realizado": 0.4147649999999991,
+      "pnl_no_realizado": 0.31414499999999945,
       "sl": 29.708,
       "sl_inicial": 29.708,
       "tp1": null,
@@ -84,24 +84,24 @@
       "tp1_hecho": false,
       "en_breakeven": false,
       "stop_verificado": true,
-      "stop_verificado_ts": 1795519278.1134236,
+      "stop_verificado_ts": 1795520419.940084,
       "abierta_ts": 1795392067.888689,
       "limite_ts": 1796000463.6659937,
       "duracion_estrategia_min": 10139.929621744155,
       "r_usd": 1.2413699999999999,
       "riesgo_usd": 1.2661974,
-      "notional": 9.929985,
+      "notional": 10.030605,
       "margen": 10.34475,
       "apalancamiento": 1,
       "liquidacion": 45.471428571428575,
       "liquidacion_estimada": true,
       "referencia_stop": "mark",
       "referencia_trailing": "mid",
-      "precio_mark_ts": 1795519239.4209569,
-      "precio_mid_ts": 1795519277.3637056,
-      "divergencia_mark_mid_pct": 0.021593608291937103,
-      "distancia_liquidacion_pct": 78.4873157930153,
-      "distancia_stop_pct": 16.611712984769976,
+      "precio_mark_ts": 1795520403.3909125,
+      "precio_mid_ts": 1795520419.242249,
+      "divergencia_mark_mid_pct": 0.03693839065263984,
+      "distancia_liquidacion_pct": 76.8696898806977,
+      "distancia_stop_pct": 15.554864055389158,
       "riesgo_liquidacion": null,
       "estrategia": "cartera_funding_4h",
       "version": "1",
@@ -122,10 +122,10 @@
       "lado": "L",
       "estado": "abierta",
       "entrada": 0.00207,
-      "precio_mid": 0.00216,
-      "precio_mark": 0.002161,
+      "precio_mid": 0.002157,
+      "precio_mark": 0.002157,
       "tam": 5047.0,
-      "pnl_no_realizado": 0.4542300000000012,
+      "pnl_no_realizado": 0.4390890000000014,
       "sl": 0.001822,
       "sl_inicial": 0.001822,
       "tp1": null,
@@ -133,24 +133,24 @@
       "tp1_hecho": false,
       "en_breakeven": false,
       "stop_verificado": true,
-      "stop_verificado_ts": 1795519278.1134238,
+      "stop_verificado_ts": 1795520419.9400842,
       "abierta_ts": 1795392089.0622842,
       "limite_ts": 1796000484.8395889,
       "duracion_estrategia_min": 10139.929621744155,
       "r_usd": 1.2536747999999998,
       "riesgo_usd": 1.2767294959999989,
-      "notional": 10.90152,
+      "notional": 10.886379,
       "margen": 10.447289999999999,
       "apalancamiento": 1,
       "liquidacion": null,
       "liquidacion_estimada": true,
       "referencia_stop": "mark",
       "referencia_trailing": "mid",
-      "precio_mark_ts": 1795519239.4209569,
-      "precio_mid_ts": 1795519277.3637056,
-      "divergencia_mark_mid_pct": 0.04629629629630244,
+      "precio_mark_ts": 1795520403.3909125,
+      "precio_mid_ts": 1795520419.242249,
+      "divergencia_mark_mid_pct": 0.0,
       "distancia_liquidacion_pct": null,
-      "distancia_stop_pct": 15.687181860249888,
+      "distancia_stop_pct": 15.530829856281873,
       "riesgo_liquidacion": null,
       "estrategia": "cartera_funding_4h",
       "version": "1",
@@ -172,25 +172,25 @@
   "sin_stop": {},
   "congelados": {},
   "exposicion": {
-    "bruta_usd": 44.277469999999994,
-    "neta_usd": -22.474429999999998,
-    "bruta_pct": 16.74247938586533,
-    "neta_pct": -8.498174827605853,
+    "bruta_usd": 44.430889,
+    "neta_usd": -22.658131,
+    "bruta_pct": 16.812169258353606,
+    "neta_pct": -8.573592426880065,
     "riesgo_abierto_usd": 3.625529640000003,
-    "riesgo_abierto_pct": 1.3709083933780275,
+    "riesgo_abierto_pct": 1.3718613183467443,
     "riesgo_desconocido": []
   },
   "limites": {
     "dia": {
-      "valor_pct": 0.004338024042938038,
+      "valor_pct": -0.06512718312389199,
       "limite_pct": -6
     },
     "semana": {
-      "valor_pct": -0.23908889669448374,
+      "valor_pct": -0.30838501418166686,
       "limite_pct": -12
     },
     "caida": {
-      "valor_pct": -2.0789886801733215,
+      "valor_pct": -2.147006762905712,
       "limite_pct": -25
     },
     "operaciones_hoy": {
@@ -198,7 +198,7 @@
       "limite": 12
     },
     "riesgo_abierto": {
-      "valor_pct": 1.3709083933780275,
+      "valor_pct": 1.3718613183467443,
       "limite_pct": 9.0
     }
   },
@@ -206,22 +206,6 @@
   "shadow_abiertas": [],
   "intentos_shadow": 0,
   "historial_saldo": [
-    [
-      1794577673,
-      232.5814
-    ],
-    [
-      1794577987,
-      233.5503
-    ],
-    [
-      1794578305,
-      233.9694
-    ],
-    [
-      1794578624,
-      234.2621
-    ],
     [
       1794578941,
       234.6723
@@ -12205,6 +12189,22 @@
     [
       1795519022,
       264.4913
+    ],
+    [
+      1795519326,
+      264.4827
+    ],
+    [
+      1795519630,
+      264.3494
+    ],
+    [
+      1795519932,
+      264.3381
+    ],
+    [
+      1795520232,
+      264.3556
     ]
   ],
   "estrategias": [
@@ -12907,7 +12907,7 @@
       "direccion": "0x67fc\u2026e51d",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.885842,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 29,
       "r_medio": 0.294,
@@ -12932,7 +12932,7 @@
       "direccion": "0xf818\u2026c268",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858464,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 2,
       "r_medio": 0.685,
@@ -12956,7 +12956,7 @@
       "direccion": "0x37b8\u20261fd5",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858473,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 3,
       "r_medio": 0.432,
@@ -12979,7 +12979,7 @@
       "direccion": "0xbe19\u20268bd1",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.885848,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 6,
       "r_medio": 0.719,
@@ -13006,7 +13006,7 @@
       "direccion": "0xc2ba\u20260b69",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858488,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 13,
       "r_medio": 0.325,
@@ -13089,7 +13089,7 @@
       "direccion": "0xe912\u20260550",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858497,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 94,
       "r_medio": -0.092,
@@ -13111,7 +13111,7 @@
       "direccion": "0xbbcb\u20266f30",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858507,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 78,
       "r_medio": 0.182,
@@ -13135,7 +13135,7 @@
       "direccion": "0xf54a\u2026de92",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858511,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 14,
       "r_medio": 0.118,
@@ -13154,7 +13154,7 @@
       "direccion": "0x71df\u2026a23d",
       "regla": "predictiva seg\u00fan el laboratorio",
       "alta_ts": 1795464686.8858519,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 6,
       "r_medio": -0.337,
@@ -13181,7 +13181,7 @@
       "direccion": "0xb695\u2026a92d",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.8858523,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 0,
       "r_medio": null,
@@ -13206,7 +13206,7 @@
       "direccion": "0xceec\u2026a7ce",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.8858533,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 0,
       "r_medio": null,
@@ -13223,7 +13223,7 @@
       "direccion": "0x77ee\u20262902",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.8858562,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 64,
       "r_medio": 0.014,
@@ -13263,7 +13263,7 @@
       "direccion": "0xacb6\u2026efbd",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.885855,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 3,
       "r_medio": 0.188,
@@ -13295,7 +13295,7 @@
       "direccion": "0x60a8\u202685f6",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.8858542,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 8,
       "r_medio": -0.483,
@@ -13333,7 +13333,7 @@
       "direccion": "0x28bb\u2026fca6",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.8858593,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 6,
       "r_medio": -0.06,
@@ -13350,7 +13350,7 @@
       "direccion": "0x7a6d\u2026f79c",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795464686.8858597,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 0,
       "r_medio": null,
@@ -13389,7 +13389,7 @@
       "direccion": "0x7277\u20260b98",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795508292.801904,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 193,
       "r_medio": -0.1,
@@ -13431,7 +13431,7 @@
       "direccion": "0x03ef\u20269054",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795508292.8019044,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 0,
       "r_medio": null,
@@ -13448,7 +13448,7 @@
       "direccion": "0x5bc4\u20263b0c",
       "regla": "ranking de Hyperliquid (filtros de selecci\u00f3n)",
       "alta_ts": 1795508292.8019047,
-      "actualizada_ts": 1795519278.1320412,
+      "actualizada_ts": 1795520419.9581134,
       "fresca": true,
       "casos": 0,
       "r_medio": null,
@@ -14453,288 +14453,288 @@
   "mercado": {
     "monedas": [
       {
-        "moneda": "CRV",
-        "oi_usd": 5535399,
-        "oi_cambio_1h": -7.78,
-        "precio_cambio_1h": -1.1,
-        "flujo_grandes_1h": 92909
-      },
-      {
         "moneda": "JUP",
-        "oi_usd": 6588795,
-        "oi_cambio_1h": 4.48,
-        "precio_cambio_1h": -2.46,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "TAO",
-        "oi_usd": 17616774,
-        "oi_cambio_1h": -2.92,
-        "precio_cambio_1h": -2.08,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "SKY",
-        "oi_usd": 2457799,
-        "oi_cambio_1h": -2.09,
-        "precio_cambio_1h": -2.41,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "HYPE",
-        "oi_usd": 1135292531,
-        "oi_cambio_1h": -1.76,
-        "precio_cambio_1h": -1.11,
-        "flujo_grandes_1h": -888666
-      },
-      {
-        "moneda": "FARTCOIN",
-        "oi_usd": 10072264,
-        "oi_cambio_1h": -1.6,
+        "oi_usd": 6549893,
+        "oi_cambio_1h": -2.84,
         "precio_cambio_1h": -1.41,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "ETH",
-        "oi_usd": 1035247677,
-        "oi_cambio_1h": -1.44,
-        "precio_cambio_1h": -0.21,
-        "flujo_grandes_1h": -11683994
-      },
-      {
-        "moneda": "WLD",
-        "oi_usd": 18928612,
-        "oi_cambio_1h": -1.3,
-        "precio_cambio_1h": -1.04,
+        "moneda": "TAO",
+        "oi_usd": 17604330,
+        "oi_cambio_1h": -2.51,
+        "precio_cambio_1h": -1.62,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "NEAR",
-        "oi_usd": 99373900,
-        "oi_cambio_1h": -1.23,
-        "precio_cambio_1h": -1.78,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "kBONK",
-        "oi_usd": 2608871,
-        "oi_cambio_1h": -1.1,
-        "precio_cambio_1h": -1.1,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "LINK",
-        "oi_usd": 28843283,
-        "oi_cambio_1h": -1.08,
-        "precio_cambio_1h": -0.64,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "ZRO",
-        "oi_usd": 29070461,
-        "oi_cambio_1h": -1.05,
-        "precio_cambio_1h": -1.14,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "ENA",
-        "oi_usd": 28044019,
-        "oi_cambio_1h": -1.04,
-        "precio_cambio_1h": -1.17,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "LIT",
-        "oi_usd": 69254304,
-        "oi_cambio_1h": -0.97,
-        "precio_cambio_1h": -0.45,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "ONDO",
-        "oi_usd": 9005404,
-        "oi_cambio_1h": -0.93,
-        "precio_cambio_1h": -1.16,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "XPL",
-        "oi_usd": 20673850,
-        "oi_cambio_1h": -0.91,
-        "precio_cambio_1h": -0.9,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "kPEPE",
-        "oi_usd": 14658894,
-        "oi_cambio_1h": -0.88,
-        "precio_cambio_1h": -0.57,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "BTC",
-        "oi_usd": 2234860560,
-        "oi_cambio_1h": -0.87,
-        "precio_cambio_1h": -0.54,
-        "flujo_grandes_1h": -42208390
-      },
-      {
-        "moneda": "AAVE",
-        "oi_usd": 37029213,
-        "oi_cambio_1h": -0.87,
-        "precio_cambio_1h": -0.74,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "UNI",
-        "oi_usd": 21123440,
-        "oi_cambio_1h": -0.85,
-        "precio_cambio_1h": -0.61,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "INJ",
-        "oi_usd": 4694599,
-        "oi_cambio_1h": -0.84,
-        "precio_cambio_1h": -1.31,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "WIF",
-        "oi_usd": 2074017,
-        "oi_cambio_1h": -0.83,
-        "precio_cambio_1h": -0.98,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "SUI",
-        "oi_usd": 15311625,
-        "oi_cambio_1h": -0.79,
-        "precio_cambio_1h": -0.71,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "CHIP",
-        "oi_usd": 3351010,
-        "oi_cambio_1h": -0.75,
-        "precio_cambio_1h": -0.82,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "LTC",
-        "oi_usd": 13013477,
-        "oi_cambio_1h": -0.7,
-        "precio_cambio_1h": -0.62,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "SOL",
-        "oi_usd": 299524708,
-        "oi_cambio_1h": 0.67,
-        "precio_cambio_1h": -0.94,
-        "flujo_grandes_1h": 89240
-      },
-      {
-        "moneda": "XRP",
-        "oi_usd": 64284209,
-        "oi_cambio_1h": -0.66,
-        "precio_cambio_1h": -0.69,
+        "moneda": "MON",
+        "oi_usd": 27000294,
+        "oi_cambio_1h": 2.44,
+        "precio_cambio_1h": 0.74,
         "flujo_grandes_1h": 0
       },
       {
         "moneda": "VVV",
-        "oi_usd": 59069701,
-        "oi_cambio_1h": 0.63,
-        "precio_cambio_1h": 0.68,
+        "oi_usd": 59701212,
+        "oi_cambio_1h": 1.99,
+        "precio_cambio_1h": 1.92,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "DOGE",
-        "oi_usd": 24217045,
-        "oi_cambio_1h": -0.62,
-        "precio_cambio_1h": -0.49,
+        "moneda": "SKY",
+        "oi_usd": 2440447,
+        "oi_cambio_1h": -1.96,
+        "precio_cambio_1h": -2.7,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "PUMP",
-        "oi_usd": 39082114,
-        "oi_cambio_1h": -0.59,
-        "precio_cambio_1h": -1.46,
+        "moneda": "ZRO",
+        "oi_usd": 29659803,
+        "oi_cambio_1h": 1.61,
+        "precio_cambio_1h": -1.6,
+        "flujo_grandes_1h": -71048
+      },
+      {
+        "moneda": "ETH",
+        "oi_usd": 1032918908,
+        "oi_cambio_1h": -1.39,
+        "precio_cambio_1h": 0.35,
+        "flujo_grandes_1h": -11951865
+      },
+      {
+        "moneda": "NEAR",
+        "oi_usd": 99063330,
+        "oi_cambio_1h": -1.15,
+        "precio_cambio_1h": -0.61,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "ADA",
-        "oi_usd": 20347791,
-        "oi_cambio_1h": -0.58,
-        "precio_cambio_1h": -0.75,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "ARB",
-        "oi_usd": 6840090,
-        "oi_cambio_1h": 0.47,
-        "precio_cambio_1h": -0.14,
-        "flujo_grandes_1h": 0
-      },
-      {
-        "moneda": "AVAX",
-        "oi_usd": 11889616,
-        "oi_cambio_1h": -0.46,
-        "precio_cambio_1h": -0.39,
+        "moneda": "CRV",
+        "oi_usd": 5523296,
+        "oi_cambio_1h": -1.15,
+        "precio_cambio_1h": -0.37,
         "flujo_grandes_1h": 0
       },
       {
         "moneda": "TRUMP",
-        "oi_usd": 8749974,
-        "oi_cambio_1h": -0.41,
-        "precio_cambio_1h": -0.13,
+        "oi_usd": 8742578,
+        "oi_cambio_1h": -1.11,
+        "precio_cambio_1h": 0.3,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "TRX",
-        "oi_usd": 8985267,
-        "oi_cambio_1h": 0.34,
-        "precio_cambio_1h": -0.08,
+        "moneda": "SOL",
+        "oi_usd": 300887068,
+        "oi_cambio_1h": 1.04,
+        "precio_cambio_1h": -0.31,
+        "flujo_grandes_1h": 376611
+      },
+      {
+        "moneda": "FARTCOIN",
+        "oi_usd": 10079975,
+        "oi_cambio_1h": -0.94,
+        "precio_cambio_1h": -0.51,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "XPL",
+        "oi_usd": 20638760,
+        "oi_cambio_1h": -0.77,
+        "precio_cambio_1h": -0.73,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "PUMP",
+        "oi_usd": 38802392,
+        "oi_cambio_1h": -0.72,
+        "precio_cambio_1h": -1.02,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "BTC",
+        "oi_usd": 2232755723,
+        "oi_cambio_1h": -0.66,
+        "precio_cambio_1h": 0.1,
+        "flujo_grandes_1h": -38282661
+      },
+      {
+        "moneda": "UNI",
+        "oi_usd": 20994671,
+        "oi_cambio_1h": -0.65,
+        "precio_cambio_1h": -0.58,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "LINK",
+        "oi_usd": 28846548,
+        "oi_cambio_1h": -0.6,
+        "precio_cambio_1h": 0.01,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "WIF",
+        "oi_usd": 2069498,
+        "oi_cambio_1h": -0.6,
+        "precio_cambio_1h": -0.69,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "INJ",
+        "oi_usd": 4684858,
+        "oi_cambio_1h": -0.58,
+        "precio_cambio_1h": -1.14,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "WLD",
+        "oi_usd": 18962869,
+        "oi_cambio_1h": -0.55,
+        "precio_cambio_1h": -0.41,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "kBONK",
+        "oi_usd": 2603206,
+        "oi_cambio_1h": -0.54,
+        "precio_cambio_1h": -0.51,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "ARB",
+        "oi_usd": 6832840,
+        "oi_cambio_1h": 0.52,
+        "precio_cambio_1h": -0.11,
         "flujo_grandes_1h": 0
       },
       {
         "moneda": "ZEC",
-        "oi_usd": 206425547,
-        "oi_cambio_1h": -0.22,
-        "precio_cambio_1h": -1.3,
-        "flujo_grandes_1h": -307739
+        "oi_usd": 205246080,
+        "oi_cambio_1h": -0.49,
+        "precio_cambio_1h": -0.72,
+        "flujo_grandes_1h": 188462
       },
       {
-        "moneda": "MON",
-        "oi_usd": 26215785,
-        "oi_cambio_1h": 0.21,
-        "precio_cambio_1h": 0.18,
+        "moneda": "SUI",
+        "oi_usd": 15300265,
+        "oi_cambio_1h": -0.43,
+        "precio_cambio_1h": -0.17,
         "flujo_grandes_1h": 0
       },
       {
-        "moneda": "PAXG",
-        "oi_usd": 18761181,
-        "oi_cambio_1h": 0.18,
-        "precio_cambio_1h": 0.11,
+        "moneda": "HYPE",
+        "oi_usd": 1136585323,
+        "oi_cambio_1h": -0.42,
+        "precio_cambio_1h": -0.2,
+        "flujo_grandes_1h": 500838
+      },
+      {
+        "moneda": "LIT",
+        "oi_usd": 69870288,
+        "oi_cambio_1h": 0.38,
+        "precio_cambio_1h": 1.06,
         "flujo_grandes_1h": 0
       },
       {
         "moneda": "BNB",
-        "oi_usd": 20892892,
-        "oi_cambio_1h": -0.14,
-        "precio_cambio_1h": -0.23,
+        "oi_usd": 20932956,
+        "oi_cambio_1h": 0.33,
+        "precio_cambio_1h": 0.17,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "LTC",
+        "oi_usd": 13016944,
+        "oi_cambio_1h": -0.31,
+        "precio_cambio_1h": -0.29,
         "flujo_grandes_1h": 0
       },
       {
         "moneda": "XMR",
-        "oi_usd": 66576222,
-        "oi_cambio_1h": -0.11,
-        "precio_cambio_1h": 0.09,
+        "oi_usd": 66613441,
+        "oi_cambio_1h": -0.28,
+        "precio_cambio_1h": -0.25,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "ENA",
+        "oi_usd": 28079374,
+        "oi_cambio_1h": -0.27,
+        "precio_cambio_1h": -0.55,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "ONDO",
+        "oi_usd": 9073154,
+        "oi_cambio_1h": 0.23,
+        "precio_cambio_1h": -0.24,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "AVAX",
+        "oi_usd": 11896589,
+        "oi_cambio_1h": 0.14,
+        "precio_cambio_1h": 0.26,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "XRP",
+        "oi_usd": 64346008,
+        "oi_cambio_1h": -0.12,
+        "precio_cambio_1h": -0.02,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "kPEPE",
+        "oi_usd": 14621649,
+        "oi_cambio_1h": -0.12,
+        "precio_cambio_1h": 0.26,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "AAVE",
+        "oi_usd": 37099594,
+        "oi_cambio_1h": -0.09,
+        "precio_cambio_1h": -0.02,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "ADA",
+        "oi_usd": 20370481,
+        "oi_cambio_1h": 0.06,
+        "precio_cambio_1h": 0.06,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "PAXG",
+        "oi_usd": 18735161,
+        "oi_cambio_1h": -0.04,
+        "precio_cambio_1h": 0.14,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "DOGE",
+        "oi_usd": 24239821,
+        "oi_cambio_1h": -0.02,
+        "precio_cambio_1h": 0.01,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "CHIP",
+        "oi_usd": 3356426,
+        "oi_cambio_1h": 0.02,
+        "precio_cambio_1h": -0.04,
+        "flujo_grandes_1h": 0
+      },
+      {
+        "moneda": "TRX",
+        "oi_usd": 8979928,
+        "oi_cambio_1h": 0.01,
+        "precio_cambio_1h": -0.16,
         "flujo_grandes_1h": 0
       }
     ],
     "dias_grabados": 34,
-    "operaciones_recibidas": 1116223,
+    "operaciones_recibidas": 1139000,
     "suscripciones": 40
   },
   "probador": {
@@ -15022,21 +15022,21 @@
           "ganan_pct": 14.3
         },
         "sombra": {
-          "n": 181,
-          "r_medio": -0.313,
-          "ganan_pct": 35.4
+          "n": 182,
+          "r_medio": -0.317,
+          "ganan_pct": 35.2
         },
         "todas": {
-          "n": 188,
-          "r_medio": -0.326,
-          "ganan_pct": 34.6
+          "n": 189,
+          "r_medio": -0.33,
+          "ganan_pct": 34.4
         },
         "exploracion": {
           "n": 41,
           "r_medio": -0.469,
           "ganan_pct": 29.3
         },
-        "abiertas": 15
+        "abiertas": 14
       },
       "ruptura_4h": {
         "operadas": {
@@ -15268,7 +15268,7 @@
     "dias_libro": 34,
     "min_dias_libro": 14,
     "dias_velas": 45,
-    "fotos_libro_sesion": 7413,
+    "fotos_libro_sesion": 7573,
     "velas_guardadas_sesion": 801,
     "errores_archivo": 0
   },
@@ -15282,99 +15282,99 @@
       {
         "cuenta": "0x67fc\u2026e51d",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "BTC": -970011,
-          "VVV": -10980,
-          "BNB": 10318,
-          "GRAM": 8107,
-          "ETH": -5201
+          "BTC": -973576,
+          "VVV": -11086,
+          "BNB": 10344,
+          "GRAM": 8119,
+          "ETH": -5221
         }
       },
       {
         "cuenta": "0xf818\u2026c268",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "XMR": -744465,
-          "ZEC": -366802,
-          "NEAR": -289245,
-          "UNI": -68159
+          "XMR": -745290,
+          "ZEC": -366088,
+          "NEAR": -290315,
+          "UNI": -67926
         }
       },
       {
         "cuenta": "0x37b8\u20261fd5",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "ETH": 16818141,
-          "HYPE": -13516952,
-          "BTC": -2979075
+          "ETH": 16882144,
+          "HYPE": -13531017,
+          "BTC": -2990025
         }
       },
       {
         "cuenta": "0xbe19\u20268bd1",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "HYPE": -4184783,
-          "LIT": -1841479,
-          "WLD": -1818928,
-          "WLFI": -512193,
-          "MEGA": -328512,
-          "CHIP": -51591
+          "HYPE": -4189137,
+          "LIT": -1861649,
+          "WLD": -1824069,
+          "WLFI": -515949,
+          "MEGA": -329329,
+          "CHIP": -51751
         }
       },
       {
         "cuenta": "0xc2ba\u20260b69",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "LIT": 316183,
-          "HYPE": -263557,
-          "ETH": -232641,
-          "ONDO": -228095,
-          "DASH": -175589,
-          "PUMP": -171882
+          "LIT": 319646,
+          "HYPE": -263831,
+          "ETH": -233527,
+          "ONDO": -229615,
+          "DASH": -175248,
+          "PUMP": -171597
         }
       },
       {
         "cuenta": "0xe912\u20260550",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "HYPE": -2484857,
-          "NEAR": -145847
+          "HYPE": -2487443,
+          "NEAR": -146387
         }
       },
       {
         "cuenta": "0xbbcb\u20266f30",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "HYPE": -980080,
-          "ZEC": -259425,
+          "HYPE": -981100,
+          "ZEC": -258919,
           "ETH": 103,
           "BTC": 101
         }
@@ -15382,8 +15382,8 @@
       {
         "cuenta": "0xf54a\u2026de92",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {}
@@ -15391,83 +15391,83 @@
       {
         "cuenta": "0x71df\u2026a23d",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "BTC": -1757654,
-          "ZEC": -805704,
-          "ETH": -114362,
-          "XMR": -62406,
-          "GRIFFAIN": -37099,
-          "STBL": -989
+          "BTC": -1764115,
+          "ZEC": -804133,
+          "ETH": -114797,
+          "XMR": -62475,
+          "GRIFFAIN": -37245,
+          "STBL": -979
         }
       },
       {
         "cuenta": "0xb695\u2026a92d",
         "tiempo_real": true,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "BTC": -46300665,
-          "HYPE": -1871863,
-          "NEAR": -1848946,
-          "VVV": -423648,
-          "XPL": -355393,
-          "GRAM": -161007
+          "BTC": -46470850,
+          "HYPE": -1873811,
+          "NEAR": -1855786,
+          "VVV": -427772,
+          "XPL": -355220,
+          "GRAM": -161254
         }
       },
       {
         "cuenta": "0xceec\u2026a7ce",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "HYPE": -20177002
+          "HYPE": -20197998
         }
       },
       {
         "cuenta": "0x77ee\u20262902",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "BTC": -9428149,
-          "ETH": -9140566,
-          "NEAR": 6327598,
-          "ADA": -2929701,
-          "PUMP": -971950,
-          "WLD": -908754
+          "BTC": -9462804,
+          "ETH": -9175351,
+          "NEAR": 6351006,
+          "ADA": -2938368,
+          "PUMP": -970344,
+          "WLD": -911323
         }
       },
       {
         "cuenta": "0xacb6\u2026efbd",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "BTC": -1370374,
-          "PAXG": -751561,
-          "ETH": -252262,
-          "SOL": -209894,
-          "STRK": -156906,
-          "XRP": -92527
+          "BTC": -1375412,
+          "PAXG": -751893,
+          "ETH": -253222,
+          "SOL": -210640,
+          "STRK": -156596,
+          "XRP": -92790
         }
       },
       {
         "cuenta": "0x60a8\u202685f6",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {}
@@ -15484,26 +15484,26 @@
       {
         "cuenta": "0x28bb\u2026fca6",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "ETH": -8502617
+          "ETH": -8534974
         }
       },
       {
         "cuenta": "0x7a6d\u2026f79c",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "PAXG": -2303902,
-          "ZRO": -133192,
-          "XMR": 127055,
-          "ZEC": 113283
+          "PAXG": -2304920,
+          "ZRO": -132407,
+          "XMR": 127196,
+          "ZEC": 113062
         }
       },
       {
@@ -15518,14 +15518,14 @@
       {
         "cuenta": "0x7277\u20260b98",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "PUMP": -151426,
-          "LIT": -99953,
-          "SOL": -43391
+          "PUMP": -151176,
+          "LIT": -101048,
+          "SOL": -43546
         }
       },
       {
@@ -15540,28 +15540,28 @@
       {
         "cuenta": "0x03ef\u20269054",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "HYPE": -8405528
+          "HYPE": -8414274
         }
       },
       {
         "cuenta": "0x5bc4\u20263b0c",
         "tiempo_real": false,
-        "leida_ts": 1795519278.1320412,
-        "frescura_seg": 5.1,
+        "leida_ts": 1795520419.9581134,
+        "frescura_seg": 5.0,
         "fresca": true,
         "fallos_seguidos": 0,
         "posicion_observada_usd": {
-          "ZEC": -1802159,
-          "VVV": -322668,
-          "HBAR": -264152,
-          "GRASS": -240213,
-          "STRK": -187324,
-          "TAO": -98735
+          "ZEC": -1798646,
+          "VVV": -325810,
+          "HBAR": -263749,
+          "GRASS": -240290,
+          "STRK": -186953,
+          "TAO": -98744
         }
       }
     ],
@@ -15569,8 +15569,8 @@
     "nota": "posici\u00f3n observada = \u00faltima foto; flujo = cambios INFERIDOS entre fotos (no fills)."
   },
   "feed": {
-    "ultimo_seq": 63567,
-    "escritos": 746,
+    "ultimo_seq": 63574,
+    "escritos": 753,
     "activo": true,
     "fuentes": {
       "precios (API REST)": true,
@@ -15579,15 +15579,15 @@
   },
   "riesgo_liquidacion": {},
   "margen": {
-    "equity": 264.4618457011857,
-    "mantenimiento": 3.37237175,
+    "equity": 264.27814470118574,
+    "mantenimiento": 3.3917817,
     "margen_usado": 45.99735,
-    "fraccion_mantenimiento": 0.012751827172114757,
-    "ts": 1795519278.113351
+    "fraccion_mantenimiento": 0.012834136185703221,
+    "ts": 1795520419.9400194
   },
   "exposicion_beta": {
-    "usd": -23.26,
-    "pct": -8.8,
+    "usd": -23.47,
+    "pct": -8.9,
     "sin_beta": [],
     "limite_pct": 200,
     "nota": "lado \u00d7 tama\u00f1o \u00d7 beta frente a BTC (30 d\u00edas de velas de 1 h); incluye externas. No es una medida completa del riesgo: las betas cambian y no captan saltos."
@@ -15809,1211 +15809,1211 @@
   },
   "contexto_externo": {
     "activo": true,
-    "ts": 1795519066.0559263,
+    "ts": 1795520275.5171864,
     "fuentes": {
       "binance": {
         "estado": "correcto",
         "detalle": "40 monedas",
-        "ts": 1795519066.0559263
+        "ts": 1795520275.5171864
       },
       "bybit": {
         "estado": "correcto",
         "detalle": "39 monedas",
-        "ts": 1795519066.0559263
+        "ts": 1795520275.5171864
       }
     },
     "monedas": [
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "BTC",
         "fuentes": {
           "binance": {
-            "precio": 59580.05473913,
-            "funding_h_pct": 0.00046338,
-            "vol24h_usd": 20886859857.29,
-            "oi_usd": 5800727117.853629,
-            "dif_precio_pct": 0.0782,
+            "precio": 59854.3,
+            "funding_h_pct": 0.00053388,
+            "vol24h_usd": 20986317228.72,
+            "oi_usd": 5830829096.3978,
+            "dif_precio_pct": 0.0331,
             "simbolo": "BTCUSDT"
           },
           "bybit": {
-            "precio": 59563.37,
-            "funding_h_pct": 0.00020525,
-            "vol24h_usd": 8098890510.5625,
-            "oi_usd": 4123922397.28,
-            "dif_precio_pct": 0.0502,
+            "precio": 59855.97,
+            "funding_h_pct": 0.00023888,
+            "vol24h_usd": 8130675020.6839,
+            "oi_usd": 4159346403.47,
+            "dif_precio_pct": 0.0359,
             "simbolo": "BTCUSDT"
           }
         },
-        "precio_hl": 59533.5,
+        "precio_hl": 59834.5,
         "funding_hl_h_pct": -0.00115256,
-        "funding_externo_h_pct": 0.00033431,
-        "dif_funding_h_pct": -0.00148687,
-        "oi_externo_usd": 9924649515,
-        "oi_externo_cambio_1h_pct": -0.16,
-        "vol24h_externo_usd": 28985750368,
-        "cuota_hl_volumen_pct": 14.02
+        "funding_externo_h_pct": 0.00038638,
+        "dif_funding_h_pct": -0.00153893,
+        "oi_externo_usd": 9990175500,
+        "oi_externo_cambio_1h_pct": 0.656,
+        "vol24h_externo_usd": 29116992249,
+        "cuota_hl_volumen_pct": 13.97
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ETH",
         "fuentes": {
           "binance": {
-            "precio": 1680.05,
-            "funding_h_pct": 0.00020863,
-            "vol24h_usd": 11487533901.73,
-            "oi_usd": 3974402288.8221,
-            "dif_precio_pct": 0.0596,
+            "precio": 1688.37,
+            "funding_h_pct": 0.000165,
+            "vol24h_usd": 11523357037.76,
+            "oi_usd": 3996372629.1198897,
+            "dif_precio_pct": 0.0427,
             "simbolo": "ETHUSDT"
           },
           "bybit": {
-            "precio": 1679.95,
-            "funding_h_pct": -0.00050437,
-            "vol24h_usd": 2960660992.576,
-            "oi_usd": 1242231198.93,
-            "dif_precio_pct": 0.0536,
+            "precio": 1688.99,
+            "funding_h_pct": -0.0003405,
+            "vol24h_usd": 2967080652.2709,
+            "oi_usd": 1246520273.4,
+            "dif_precio_pct": 0.0794,
             "simbolo": "ETHUSDT"
           }
         },
-        "precio_hl": 1679.05,
+        "precio_hl": 1687.65,
         "funding_hl_h_pct": -0.00132687,
-        "funding_externo_h_pct": -0.00014787,
-        "dif_funding_h_pct": -0.00117899,
-        "oi_externo_usd": 5216633488,
-        "oi_externo_cambio_1h_pct": 0.215,
-        "vol24h_externo_usd": 14448194894,
-        "cuota_hl_volumen_pct": 10.14
+        "funding_externo_h_pct": -8.775e-05,
+        "dif_funding_h_pct": -0.00123912,
+        "oi_externo_usd": 5242892903,
+        "oi_externo_cambio_1h_pct": 0.858,
+        "vol24h_externo_usd": 14490437690,
+        "cuota_hl_volumen_pct": 10.11
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "SOL",
         "fuentes": {
           "binance": {
-            "precio": 70.01,
-            "funding_h_pct": 0.00090125,
-            "vol24h_usd": 2421094592.9789,
-            "oi_usd": 557206480.8559,
-            "dif_precio_pct": 0.0565,
+            "precio": 70.27157531,
+            "funding_h_pct": 0.0009,
+            "vol24h_usd": 2427281878.2838,
+            "oi_usd": 560383229.5732104,
+            "dif_precio_pct": 0.0314,
             "simbolo": "SOLUSDT"
           },
           "bybit": {
-            "precio": 69.981,
-            "funding_h_pct": -0.00133,
-            "vol24h_usd": 767816715.136,
-            "oi_usd": 403014028.78,
-            "dif_precio_pct": 0.015,
+            "precio": 70.28,
+            "funding_h_pct": -0.00137125,
+            "vol24h_usd": 768424942.563,
+            "oi_usd": 405209938.22,
+            "dif_precio_pct": 0.0434,
             "simbolo": "SOLUSDT"
           }
         },
-        "precio_hl": 69.9705,
+        "precio_hl": 70.2495,
         "funding_hl_h_pct": -0.001824,
-        "funding_externo_h_pct": -0.00021437,
-        "dif_funding_h_pct": -0.00160963,
-        "oi_externo_usd": 960220510,
-        "oi_externo_cambio_1h_pct": -0.571,
-        "vol24h_externo_usd": 3188911308,
-        "cuota_hl_volumen_pct": 10.05
+        "funding_externo_h_pct": -0.00023562,
+        "dif_funding_h_pct": -0.00158838,
+        "oi_externo_usd": 965593168,
+        "oi_externo_cambio_1h_pct": 0.192,
+        "vol24h_externo_usd": 3195706821,
+        "cuota_hl_volumen_pct": 10.03
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ZEC",
         "fuentes": {
           "binance": {
-            "precio": 734.25232877,
-            "funding_h_pct": 0.000694,
-            "vol24h_usd": 1911478011.87,
-            "oi_usd": 335763428.62854314,
-            "dif_precio_pct": 0.1005,
+            "precio": 732.66629872,
+            "funding_h_pct": 0.00084812,
+            "vol24h_usd": 1914201846.03,
+            "oi_usd": 336051939.868625,
+            "dif_precio_pct": 0.1273,
             "simbolo": "ZECUSDT"
           },
           "bybit": {
-            "precio": 734.09,
+            "precio": 732.3,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 415209473.7804,
-            "oi_usd": 115101942.53,
-            "dif_precio_pct": 0.0784,
+            "vol24h_usd": 416510152.4326,
+            "oi_usd": 115356941.55,
+            "dif_precio_pct": 0.0772,
             "simbolo": "ZECUSDT"
           }
         },
-        "precio_hl": 733.515,
+        "precio_hl": 731.735,
         "funding_hl_h_pct": -5.6420000000000005e-05,
-        "funding_externo_h_pct": 0.000972,
-        "dif_funding_h_pct": -0.00102842,
-        "oi_externo_usd": 450865371,
-        "oi_externo_cambio_1h_pct": -1.089,
-        "vol24h_externo_usd": 2326687486,
-        "cuota_hl_volumen_pct": 15.07
+        "funding_externo_h_pct": 0.00104906,
+        "dif_funding_h_pct": -0.00110548,
+        "oi_externo_usd": 451408881,
+        "oi_externo_cambio_1h_pct": -0.229,
+        "vol24h_externo_usd": 2330711998,
+        "cuota_hl_volumen_pct": 15.05
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "XRP",
         "fuentes": {
           "binance": {
-            "precio": 0.92573595,
-            "funding_h_pct": -0.00073012,
-            "vol24h_usd": 986975777.9921,
-            "oi_usd": 253148666.11304834,
-            "dif_precio_pct": 0.0277,
+            "precio": 0.92833217,
+            "funding_h_pct": -0.00059487,
+            "vol24h_usd": 989548775.0806,
+            "oi_usd": 254615229.8981047,
+            "dif_precio_pct": 0.0406,
             "simbolo": "XRPUSDT"
           },
           "bybit": {
-            "precio": 0.9253,
-            "funding_h_pct": -0.00121,
-            "vol24h_usd": 415789031.5046,
-            "oi_usd": 186862640.5,
-            "dif_precio_pct": -0.0194,
+            "precio": 0.9282,
+            "funding_h_pct": -0.00137488,
+            "vol24h_usd": 417043293.3569,
+            "oi_usd": 187598625.54,
+            "dif_precio_pct": 0.0264,
             "simbolo": "XRPUSDT"
           }
         },
-        "precio_hl": 0.92548,
+        "precio_hl": 0.927955,
         "funding_hl_h_pct": -0.00064083,
-        "funding_externo_h_pct": -0.00097006,
-        "dif_funding_h_pct": 0.00032923,
-        "oi_externo_usd": 440011307,
-        "oi_externo_cambio_1h_pct": -0.575,
-        "vol24h_externo_usd": 1402764809,
-        "cuota_hl_volumen_pct": 6.64
+        "funding_externo_h_pct": -0.00098488,
+        "dif_funding_h_pct": 0.00034405,
+        "oi_externo_usd": 442213855,
+        "oi_externo_cambio_1h_pct": 0.279,
+        "vol24h_externo_usd": 1406592068,
+        "cuota_hl_volumen_pct": 6.63
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "HYPE",
         "fuentes": {
           "binance": {
-            "precio": 62.26,
+            "precio": 62.672,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 722783030.34213,
-            "oi_usd": 258411350.296,
-            "dif_precio_pct": 0.1423,
+            "vol24h_usd": 722537973.8918,
+            "oi_usd": 260368466.90608,
+            "dif_precio_pct": 0.103,
             "simbolo": "HYPEUSDT"
           },
           "bybit": {
-            "precio": 62.296,
-            "funding_h_pct": -0.00047,
-            "vol24h_usd": 243734111.8996,
-            "oi_usd": 178727389.71,
-            "dif_precio_pct": 0.2003,
+            "precio": 62.671,
+            "funding_h_pct": -0.00046312,
+            "vol24h_usd": 243159937.0866,
+            "oi_usd": 179485311.91,
+            "dif_precio_pct": 0.1014,
             "simbolo": "HYPEUSDT"
           }
         },
-        "precio_hl": 62.1715,
+        "precio_hl": 62.6075,
         "funding_hl_h_pct": 0.00027441,
-        "funding_externo_h_pct": 0.00039,
-        "dif_funding_h_pct": -0.00011559,
-        "oi_externo_usd": 437138740,
-        "oi_externo_cambio_1h_pct": -1.178,
-        "vol24h_externo_usd": 966517142,
-        "cuota_hl_volumen_pct": 44.51
+        "funding_externo_h_pct": 0.00039344,
+        "dif_funding_h_pct": -0.00011903,
+        "oi_externo_usd": 439853779,
+        "oi_externo_cambio_1h_pct": 0.066,
+        "vol24h_externo_usd": 965697911,
+        "cuota_hl_volumen_pct": 44.53
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "NEAR",
         "fuentes": {
           "binance": {
-            "precio": 2.898,
+            "precio": 2.903,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 460765412.692,
-            "oi_usd": 151540662.67200002,
-            "dif_precio_pct": 0.0777,
+            "vol24h_usd": 463996389.149,
+            "oi_usd": 152093093.488,
+            "dif_precio_pct": 0.0448,
             "simbolo": "NEARUSDT"
           },
           "bybit": {
-            "precio": 2.897,
+            "precio": 2.904,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 154567703.0875,
-            "oi_usd": 91508373.05,
-            "dif_precio_pct": 0.0432,
+            "vol24h_usd": 155711912.3095,
+            "oi_usd": 91850283.49,
+            "dif_precio_pct": 0.0793,
             "simbolo": "NEARUSDT"
           }
         },
-        "precio_hl": 2.89575,
+        "precio_hl": 2.9017,
         "funding_hl_h_pct": -0.00305034,
         "funding_externo_h_pct": 0.00125,
         "dif_funding_h_pct": -0.00430034,
-        "oi_externo_usd": 243049036,
-        "oi_externo_cambio_1h_pct": -1.38,
-        "vol24h_externo_usd": 615333116,
-        "cuota_hl_volumen_pct": 12.69
+        "oi_externo_usd": 243943377,
+        "oi_externo_cambio_1h_pct": -0.365,
+        "vol24h_externo_usd": 619708301,
+        "cuota_hl_volumen_pct": 12.61
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "DOGE",
         "fuentes": {
           "binance": {
-            "precio": 0.05532683,
-            "funding_h_pct": -0.00011938,
-            "vol24h_usd": 404231551.32247,
-            "oi_usd": 125645663.29959878,
-            "dif_precio_pct": 0.0087,
+            "precio": 0.05552,
+            "funding_h_pct": -0.00026125,
+            "vol24h_usd": 405251863.08594,
+            "oi_usd": 126336072.0224,
+            "dif_precio_pct": 0.0252,
             "simbolo": "DOGEUSDT"
           },
           "bybit": {
-            "precio": 0.0553,
-            "funding_h_pct": -0.00115938,
-            "vol24h_usd": 118980414.6968,
-            "oi_usd": 83827280.08,
-            "dif_precio_pct": -0.0398,
+            "precio": 0.05552,
+            "funding_h_pct": -0.00100138,
+            "vol24h_usd": 119123358.298,
+            "oi_usd": 84594178.17,
+            "dif_precio_pct": 0.0252,
             "simbolo": "DOGEUSDT"
           }
         },
-        "precio_hl": 0.055322,
+        "precio_hl": 0.055506,
         "funding_hl_h_pct": -0.00091337,
-        "funding_externo_h_pct": -0.00063937,
-        "dif_funding_h_pct": -0.000274,
-        "oi_externo_usd": 209472943,
-        "oi_externo_cambio_1h_pct": 0.437,
-        "vol24h_externo_usd": 523211966,
-        "cuota_hl_volumen_pct": 2.19
+        "funding_externo_h_pct": -0.00063131,
+        "dif_funding_h_pct": -0.00028206,
+        "oi_externo_usd": 210930250,
+        "oi_externo_cambio_1h_pct": 1.281,
+        "vol24h_externo_usd": 524375221,
+        "cuota_hl_volumen_pct": 2.18
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "BNB",
         "fuentes": {
           "binance": {
-            "precio": 545.47,
+            "precio": 547.40408959,
             "funding_h_pct": 0.0,
-            "vol24h_usd": 410335560.484,
-            "oi_usd": 283370824.97620004,
-            "dif_precio_pct": 0.123,
+            "vol24h_usd": 411708989.645,
+            "oi_usd": 284517244.24405205,
+            "dif_precio_pct": 0.0922,
             "simbolo": "BNBUSDT"
           },
           "bybit": {
-            "precio": 544.88,
-            "funding_h_pct": 0.00073162,
-            "vol24h_usd": 29497820.5965,
-            "oi_usd": 67622681.12,
-            "dif_precio_pct": 0.0147,
+            "precio": 547.03,
+            "funding_h_pct": 0.00083125,
+            "vol24h_usd": 29586327.1096,
+            "oi_usd": 67881313.74,
+            "dif_precio_pct": 0.0238,
             "simbolo": "BNBUSDT"
           }
         },
-        "precio_hl": 544.8,
+        "precio_hl": 546.9,
         "funding_hl_h_pct": 0.00099614,
-        "funding_externo_h_pct": 0.00036581,
-        "dif_funding_h_pct": 0.00063033,
-        "oi_externo_usd": 350993506,
-        "oi_externo_cambio_1h_pct": -0.156,
-        "vol24h_externo_usd": 439833381,
-        "cuota_hl_volumen_pct": 2.33
+        "funding_externo_h_pct": 0.00041563,
+        "dif_funding_h_pct": 0.00058051,
+        "oi_externo_usd": 352398558,
+        "oi_externo_cambio_1h_pct": 0.505,
+        "vol24h_externo_usd": 441295317,
+        "cuota_hl_volumen_pct": 2.32
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "kPEPE",
         "fuentes": {
           "binance": {
-            "precio": 0.0034655,
-            "funding_h_pct": -0.001877,
-            "vol24h_usd": 326607015.1963142,
-            "oi_usd": 67101946.1294835,
-            "dif_precio_pct": 0.0722,
+            "precio": 0.003464,
+            "funding_h_pct": -0.00193738,
+            "vol24h_usd": 326858187.2110456,
+            "oi_usd": 67119365.197704,
+            "dif_precio_pct": 0.1156,
             "simbolo": "1000PEPEUSDT"
           },
           "bybit": {
-            "precio": 0.003465,
+            "precio": 0.0034625,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 94405990.4456,
-            "oi_usd": 37399048.53,
-            "dif_precio_pct": 0.0578,
+            "vol24h_usd": 94313925.3311,
+            "oi_usd": 37505274.05,
+            "dif_precio_pct": 0.0723,
             "simbolo": "1000PEPEUSDT"
           }
         },
-        "precio_hl": 0.003463,
+        "precio_hl": 0.00346,
         "funding_hl_h_pct": -0.0024322099999999998,
-        "funding_externo_h_pct": -0.0003135,
-        "dif_funding_h_pct": -0.00211871,
-        "oi_externo_usd": 104500995,
-        "oi_externo_cambio_1h_pct": 0.085,
-        "vol24h_externo_usd": 421013006,
+        "funding_externo_h_pct": -0.00034369,
+        "dif_funding_h_pct": -0.00208852,
+        "oi_externo_usd": 104624639,
+        "oi_externo_cambio_1h_pct": 0.799,
+        "vol24h_externo_usd": 421172113,
         "cuota_hl_volumen_pct": 3.31
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ENA",
         "fuentes": {
           "binance": {
-            "precio": 0.09804541,
-            "funding_h_pct": 0.000346,
-            "vol24h_usd": 209125014.08799,
-            "oi_usd": 50104337.84521278,
-            "dif_precio_pct": 0.0188,
+            "precio": 0.09831,
+            "funding_h_pct": 0.00040925,
+            "vol24h_usd": 209850594.53149,
+            "oi_usd": 50616526.69641,
+            "dif_precio_pct": 0.0407,
             "simbolo": "ENAUSDT"
           },
           "bybit": {
-            "precio": 0.09807,
-            "funding_h_pct": 0.00102625,
-            "vol24h_usd": 74602713.1734,
-            "oi_usd": 33384484.14,
-            "dif_precio_pct": 0.0439,
+            "precio": 0.09828,
+            "funding_h_pct": 0.00125,
+            "vol24h_usd": 74650168.4887,
+            "oi_usd": 33453798.19,
+            "dif_precio_pct": 0.0102,
             "simbolo": "ENAUSDT"
           }
         },
-        "precio_hl": 0.098027,
+        "precio_hl": 0.09827,
         "funding_hl_h_pct": -0.0019194099999999999,
-        "funding_externo_h_pct": 0.00068612,
-        "dif_funding_h_pct": -0.00260553,
-        "oi_externo_usd": 83488822,
-        "oi_externo_cambio_1h_pct": -1.555,
-        "vol24h_externo_usd": 283727727,
-        "cuota_hl_volumen_pct": 5.75
+        "funding_externo_h_pct": 0.00082963,
+        "dif_funding_h_pct": -0.00274903,
+        "oi_externo_usd": 84070325,
+        "oi_externo_cambio_1h_pct": -0.94,
+        "vol24h_externo_usd": 284500763,
+        "cuota_hl_volumen_pct": 5.73
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "SUI",
         "fuentes": {
           "binance": {
-            "precio": 0.65432327,
-            "funding_h_pct": -0.00055362,
-            "vol24h_usd": 208967187.29212,
-            "oi_usd": 61558363.28722314,
-            "dif_precio_pct": 0.0464,
+            "precio": 0.6556,
+            "funding_h_pct": -0.0003735,
+            "vol24h_usd": 209112919.52953,
+            "oi_usd": 61789577.06987999,
+            "dif_precio_pct": 0.0519,
             "simbolo": "SUIUSDT"
           },
           "bybit": {
-            "precio": 0.654,
-            "funding_h_pct": -0.00142512,
-            "vol24h_usd": 66561010.178,
-            "oi_usd": 50030751.48,
-            "dif_precio_pct": -0.0031,
+            "precio": 0.6555,
+            "funding_h_pct": -0.00125875,
+            "vol24h_usd": 66505119.181,
+            "oi_usd": 49986371.73,
+            "dif_precio_pct": 0.0366,
             "simbolo": "SUIUSDT"
           }
         },
-        "precio_hl": 0.65402,
+        "precio_hl": 0.65526,
         "funding_hl_h_pct": -0.00140135,
-        "funding_externo_h_pct": -0.00098938,
-        "dif_funding_h_pct": -0.00041197,
-        "oi_externo_usd": 111589115,
-        "oi_externo_cambio_1h_pct": -0.504,
-        "vol24h_externo_usd": 275528197,
+        "funding_externo_h_pct": -0.00081612,
+        "dif_funding_h_pct": -0.00058523,
+        "oi_externo_usd": 111775949,
+        "oi_externo_cambio_1h_pct": 0.066,
+        "vol24h_externo_usd": 275618039,
         "cuota_hl_volumen_pct": 3.98
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ADA",
         "fuentes": {
           "binance": {
-            "precio": 0.14541407,
-            "funding_h_pct": -0.00109488,
-            "vol24h_usd": 197475932.4311,
-            "oi_usd": 56705232.45919302,
-            "dif_precio_pct": -0.0247,
+            "precio": 0.1459,
+            "funding_h_pct": -0.00107512,
+            "vol24h_usd": 198164039.6578,
+            "oi_usd": 56965066.8785,
+            "dif_precio_pct": -0.0103,
             "simbolo": "ADAUSDT"
           },
           "bybit": {
-            "precio": 0.1454,
-            "funding_h_pct": 0.00052575,
-            "vol24h_usd": 62021633.2107,
-            "oi_usd": 38256715.55,
-            "dif_precio_pct": -0.0344,
+            "precio": 0.1459,
+            "funding_h_pct": 0.00078075,
+            "vol24h_usd": 61922540.1625,
+            "oi_usd": 38387790.0,
+            "dif_precio_pct": -0.0103,
             "simbolo": "ADAUSDT"
           }
         },
-        "precio_hl": 0.14545,
+        "precio_hl": 0.145915,
         "funding_hl_h_pct": -0.00037993,
-        "funding_externo_h_pct": -0.00028456,
-        "dif_funding_h_pct": -9.537e-05,
-        "oi_externo_usd": 94961948,
-        "oi_externo_cambio_1h_pct": -0.441,
-        "vol24h_externo_usd": 259497566,
-        "cuota_hl_volumen_pct": 3.67
+        "funding_externo_h_pct": -0.00014719,
+        "dif_funding_h_pct": -0.00023274,
+        "oi_externo_usd": 95352857,
+        "oi_externo_cambio_1h_pct": 0.227,
+        "vol24h_externo_usd": 260086580,
+        "cuota_hl_volumen_pct": 3.66
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "UNI",
         "fuentes": {
           "binance": {
-            "precio": 4.7317083,
-            "funding_h_pct": -6.163e-05,
-            "vol24h_usd": 187460286.801,
-            "oi_usd": 78460311.6645645,
-            "dif_precio_pct": 0.0393,
+            "precio": 4.714,
+            "funding_h_pct": 0.00013362,
+            "vol24h_usd": 189739617.542,
+            "oi_usd": 78358479.142,
+            "dif_precio_pct": 0.1423,
             "simbolo": "UNIUSDT"
           },
           "bybit": {
-            "precio": 4.729,
-            "funding_h_pct": -0.00018875,
-            "vol24h_usd": 42370391.4408,
-            "oi_usd": 24814849.14,
-            "dif_precio_pct": -0.018,
+            "precio": 4.719,
+            "funding_h_pct": 0.00010613,
+            "vol24h_usd": 42919455.7733,
+            "oi_usd": 25139102.1,
+            "dif_precio_pct": 0.2486,
             "simbolo": "UNIUSDT"
           }
         },
-        "precio_hl": 4.72985,
+        "precio_hl": 4.7073,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": -0.00012519,
-        "dif_funding_h_pct": 0.00137519,
-        "oi_externo_usd": 103275161,
-        "oi_externo_cambio_1h_pct": -0.311,
-        "vol24h_externo_usd": 229830678,
-        "cuota_hl_volumen_pct": 6.82
+        "funding_externo_h_pct": 0.00011988,
+        "dif_funding_h_pct": 0.00113013,
+        "oi_externo_usd": 103497581,
+        "oi_externo_cambio_1h_pct": 0.177,
+        "vol24h_externo_usd": 232659073,
+        "cuota_hl_volumen_pct": 6.74
       },
       {
-        "t": 1795519066,
-        "m": "LINK",
-        "fuentes": {
-          "binance": {
-            "precio": 8.9115613,
-            "funding_h_pct": -0.00139237,
-            "vol24h_usd": 146562964.972,
-            "oi_usd": 61410165.10175098,
-            "dif_precio_pct": 0.0529,
-            "simbolo": "LINKUSDT"
-          },
-          "bybit": {
-            "precio": 8.909,
-            "funding_h_pct": -0.00141913,
-            "vol24h_usd": 32656341.8546,
-            "oi_usd": 40602954.59,
-            "dif_precio_pct": 0.0241,
-            "simbolo": "LINKUSDT"
-          }
-        },
-        "precio_hl": 8.90685,
-        "funding_hl_h_pct": -0.00163345,
-        "funding_externo_h_pct": -0.00140575,
-        "dif_funding_h_pct": -0.0002277,
-        "oi_externo_usd": 102013120,
-        "oi_externo_cambio_1h_pct": -0.721,
-        "vol24h_externo_usd": 179219307,
-        "cuota_hl_volumen_pct": 3.54
-      },
-      {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "WLD",
         "fuentes": {
           "binance": {
-            "precio": 0.23371047,
-            "funding_h_pct": -0.00574137,
-            "vol24h_usd": 136386215.8461,
-            "oi_usd": 50696531.47662327,
-            "dif_precio_pct": 0.043,
+            "precio": 0.2346,
+            "funding_h_pct": -0.00600037,
+            "vol24h_usd": 136757366.2259,
+            "oi_usd": 50820612.3246,
+            "dif_precio_pct": 0.0213,
             "simbolo": "WLDUSDT"
           },
           "bybit": {
-            "precio": 0.2335,
-            "funding_h_pct": -0.00604525,
-            "vol24h_usd": 41780252.6931,
-            "oi_usd": 30403659.81,
-            "dif_precio_pct": -0.0471,
+            "precio": 0.2346,
+            "funding_h_pct": -0.00639825,
+            "vol24h_usd": 41930090.8318,
+            "oi_usd": 30484316.06,
+            "dif_precio_pct": 0.0213,
             "simbolo": "WLDUSDT"
           }
         },
-        "precio_hl": 0.23361,
+        "precio_hl": 0.23455,
         "funding_hl_h_pct": -0.006543609999999999,
-        "funding_externo_h_pct": -0.00589331,
-        "dif_funding_h_pct": -0.0006503,
-        "oi_externo_usd": 81100191,
-        "oi_externo_cambio_1h_pct": -1.578,
-        "vol24h_externo_usd": 178166469,
-        "cuota_hl_volumen_pct": 4.3
+        "funding_externo_h_pct": -0.00619931,
+        "dif_funding_h_pct": -0.0003443,
+        "oi_externo_usd": 81304928,
+        "oi_externo_cambio_1h_pct": -1.27,
+        "vol24h_externo_usd": 178687457,
+        "cuota_hl_volumen_pct": 4.29
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
+        "m": "LINK",
+        "fuentes": {
+          "binance": {
+            "precio": 8.937,
+            "funding_h_pct": -0.0013315,
+            "vol24h_usd": 145913767.204,
+            "oi_usd": 61567070.12631,
+            "dif_precio_pct": 0.0151,
+            "simbolo": "LINKUSDT"
+          },
+          "bybit": {
+            "precio": 8.937,
+            "funding_h_pct": -0.0011705,
+            "vol24h_usd": 32607380.5391,
+            "oi_usd": 40723442.39,
+            "dif_precio_pct": 0.0151,
+            "simbolo": "LINKUSDT"
+          }
+        },
+        "precio_hl": 8.93565,
+        "funding_hl_h_pct": -0.00163345,
+        "funding_externo_h_pct": -0.001251,
+        "dif_funding_h_pct": -0.00038245,
+        "oi_externo_usd": 102290513,
+        "oi_externo_cambio_1h_pct": -0.188,
+        "vol24h_externo_usd": 178521148,
+        "cuota_hl_volumen_pct": 3.55
+      },
+      {
+        "t": 1795520276,
         "m": "AAVE",
         "fuentes": {
           "binance": {
-            "precio": 94.40152217,
-            "funding_h_pct": 0.00062288,
-            "vol24h_usd": 122385407.05,
-            "oi_usd": 39641360.9540407,
-            "dif_precio_pct": 0.0217,
+            "precio": 94.67,
+            "funding_h_pct": 0.00074025,
+            "vol24h_usd": 122070732.464,
+            "oi_usd": 39672504.87,
+            "dif_precio_pct": 0.0502,
             "simbolo": "AAVEUSDT"
           },
           "bybit": {
-            "precio": 94.45,
-            "funding_h_pct": 0.00110775,
-            "vol24h_usd": 42512656.9842,
-            "oi_usd": 30802522.31,
-            "dif_precio_pct": 0.0731,
+            "precio": 94.66,
+            "funding_h_pct": 0.00125,
+            "vol24h_usd": 42489997.3013,
+            "oi_usd": 30906799.54,
+            "dif_precio_pct": 0.0396,
             "simbolo": "AAVEUSDT"
           }
         },
-        "precio_hl": 94.381,
+        "precio_hl": 94.6225,
         "funding_hl_h_pct": 0.0009498699999999999,
-        "funding_externo_h_pct": 0.00086531,
-        "dif_funding_h_pct": 8.456e-05,
-        "oi_externo_usd": 70443883,
-        "oi_externo_cambio_1h_pct": -0.785,
-        "vol24h_externo_usd": 164898064,
-        "cuota_hl_volumen_pct": 7.2
+        "funding_externo_h_pct": 0.00099512,
+        "dif_funding_h_pct": -4.526e-05,
+        "oi_externo_usd": 70579304,
+        "oi_externo_cambio_1h_pct": -0.426,
+        "vol24h_externo_usd": 164560730,
+        "cuota_hl_volumen_pct": 7.21
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "INJ",
         "fuentes": {
           "binance": {
-            "precio": 6.01909122,
-            "funding_h_pct": -0.0020615,
-            "vol24h_usd": 113405972.0329,
-            "oi_usd": 21491867.62895538,
-            "dif_precio_pct": 0.0763,
+            "precio": 6.028,
+            "funding_h_pct": -0.00195387,
+            "vol24h_usd": 113223566.0681,
+            "oi_usd": 21529419.1376,
+            "dif_precio_pct": -0.0008,
             "simbolo": "INJUSDT"
           },
           "bybit": {
-            "precio": 6.0025,
-            "funding_h_pct": -0.001418,
-            "vol24h_usd": 27531259.0722,
-            "oi_usd": 11750835.54,
-            "dif_precio_pct": -0.1995,
+            "precio": 6.026,
+            "funding_h_pct": -0.0010755,
+            "vol24h_usd": 27720664.8564,
+            "oi_usd": 11769724.08,
+            "dif_precio_pct": -0.034,
             "simbolo": "INJUSDT"
           }
         },
-        "precio_hl": 6.0145,
+        "precio_hl": 6.02805,
         "funding_hl_h_pct": -0.00255566,
-        "funding_externo_h_pct": -0.00173975,
-        "dif_funding_h_pct": -0.00081591,
-        "oi_externo_usd": 33242703,
-        "oi_externo_cambio_1h_pct": -0.311,
-        "vol24h_externo_usd": 140937231,
+        "funding_externo_h_pct": -0.00151469,
+        "dif_funding_h_pct": -0.00104097,
+        "oi_externo_usd": 33299143,
+        "oi_externo_cambio_1h_pct": -0.744,
+        "vol24h_externo_usd": 140944231,
         "cuota_hl_volumen_pct": 3.45
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "AVAX",
         "fuentes": {
           "binance": {
-            "precio": 6.677,
-            "funding_h_pct": -0.00104175,
-            "vol24h_usd": 111878053.469,
-            "oi_usd": 53716611.89399999,
-            "dif_precio_pct": 0.0494,
+            "precio": 6.703,
+            "funding_h_pct": -0.00119675,
+            "vol24h_usd": 111930080.254,
+            "oi_usd": 54029182.94400001,
+            "dif_precio_pct": 0.0209,
             "simbolo": "AVAXUSDT"
           },
           "bybit": {
-            "precio": 6.675,
-            "funding_h_pct": -0.00367975,
-            "vol24h_usd": 27327417.4294,
-            "oi_usd": 37531917.66,
-            "dif_precio_pct": 0.0195,
+            "precio": 6.701,
+            "funding_h_pct": -0.00337388,
+            "vol24h_usd": 27305647.0301,
+            "oi_usd": 37703239.49,
+            "dif_precio_pct": -0.009,
             "simbolo": "AVAXUSDT"
           }
         },
-        "precio_hl": 6.6737,
+        "precio_hl": 6.7016,
         "funding_hl_h_pct": -0.00198452,
-        "funding_externo_h_pct": -0.00236075,
-        "dif_funding_h_pct": 0.00037623,
-        "oi_externo_usd": 91248530,
-        "oi_externo_cambio_1h_pct": -0.289,
-        "vol24h_externo_usd": 139205471,
+        "funding_externo_h_pct": -0.00228531,
+        "dif_funding_h_pct": 0.00030079,
+        "oi_externo_usd": 91732422,
+        "oi_externo_cambio_1h_pct": 0.603,
+        "vol24h_externo_usd": 139235727,
         "cuota_hl_volumen_pct": 3.9
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "TAO",
         "fuentes": {
           "binance": {
-            "precio": 182.76749659,
-            "funding_h_pct": 0.001112,
-            "vol24h_usd": 101328517.32,
-            "oi_usd": 37200256.83050807,
-            "dif_precio_pct": 0.0808,
+            "precio": 182.45,
+            "funding_h_pct": 0.001235,
+            "vol24h_usd": 102315778.74,
+            "oi_usd": 37500952.34835,
+            "dif_precio_pct": 0.0192,
             "simbolo": "TAOUSDT"
           },
           "bybit": {
-            "precio": 182.67,
+            "precio": 182.44,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 26300058.9765,
-            "oi_usd": 23668582.59,
-            "dif_precio_pct": 0.0274,
+            "vol24h_usd": 26349314.821,
+            "oi_usd": 23672249.7,
+            "dif_precio_pct": 0.0137,
             "simbolo": "TAOUSDT"
           }
         },
-        "precio_hl": 182.62,
+        "precio_hl": 182.415,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": 0.001181,
-        "dif_funding_h_pct": 6.9e-05,
-        "oi_externo_usd": 60868839,
-        "oi_externo_cambio_1h_pct": -1.704,
-        "vol24h_externo_usd": 127628576,
-        "cuota_hl_volumen_pct": 4.55
+        "funding_externo_h_pct": 0.0012425,
+        "dif_funding_h_pct": 7.5e-06,
+        "oi_externo_usd": 61173202,
+        "oi_externo_cambio_1h_pct": -0.998,
+        "vol24h_externo_usd": 128665094,
+        "cuota_hl_volumen_pct": 4.51
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "LTC",
         "fuentes": {
           "binance": {
-            "precio": 40.84176471,
-            "funding_h_pct": -0.0002405,
-            "vol24h_usd": 97078845.16,
-            "oi_usd": 43626128.33088072,
-            "dif_precio_pct": 0.0509,
+            "precio": 40.93,
+            "funding_h_pct": -0.00014262,
+            "vol24h_usd": 97272502.35,
+            "oi_usd": 43789461.72878,
+            "dif_precio_pct": 0.0159,
             "simbolo": "LTCUSDT"
           },
           "bybit": {
-            "precio": 40.84,
-            "funding_h_pct": -0.0004445,
-            "vol24h_usd": 25785729.85,
-            "oi_usd": 42906303.88,
-            "dif_precio_pct": 0.0465,
+            "precio": 40.92,
+            "funding_h_pct": -0.00055025,
+            "vol24h_usd": 25783159.036,
+            "oi_usd": 42984385.36,
+            "dif_precio_pct": -0.0086,
             "simbolo": "LTCUSDT"
           }
         },
-        "precio_hl": 40.821,
+        "precio_hl": 40.9235,
         "funding_hl_h_pct": 0.0005318,
-        "funding_externo_h_pct": -0.0003425,
-        "dif_funding_h_pct": 0.0008743,
-        "oi_externo_usd": 86532432,
-        "oi_externo_cambio_1h_pct": -0.102,
-        "vol24h_externo_usd": 122864575,
-        "cuota_hl_volumen_pct": 4.62
+        "funding_externo_h_pct": -0.00034644,
+        "dif_funding_h_pct": 0.00087824,
+        "oi_externo_usd": 86773847,
+        "oi_externo_cambio_1h_pct": -0.028,
+        "vol24h_externo_usd": 123055661,
+        "cuota_hl_volumen_pct": 4.61
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "PUMP",
         "fuentes": {
           "binance": {
-            "precio": 0.00241735,
-            "funding_h_pct": 0.00096225,
-            "vol24h_usd": 113394683.718127,
-            "oi_usd": 40746785.62326645,
-            "dif_precio_pct": 0.0973,
+            "precio": 0.00242,
+            "funding_h_pct": 0.0011765,
+            "vol24h_usd": 114128102.033729,
+            "oi_usd": 40868577.85538,
+            "dif_precio_pct": 0.0,
             "simbolo": "PUMPUSDT"
           }
         },
-        "precio_hl": 0.002415,
+        "precio_hl": 0.00242,
         "funding_hl_h_pct": -0.00476187,
-        "funding_externo_h_pct": 0.00096225,
-        "dif_funding_h_pct": -0.00572412,
-        "oi_externo_usd": 40746786,
-        "oi_externo_cambio_1h_pct": -1.007,
-        "vol24h_externo_usd": 113394684,
-        "cuota_hl_volumen_pct": 24.83
+        "funding_externo_h_pct": 0.0011765,
+        "dif_funding_h_pct": -0.00593837,
+        "oi_externo_usd": 40868578,
+        "oi_externo_cambio_1h_pct": -0.433,
+        "vol24h_externo_usd": 114128102,
+        "cuota_hl_volumen_pct": 24.71
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ARB",
         "fuentes": {
           "binance": {
-            "precio": 0.11318259,
-            "funding_h_pct": -0.001256,
-            "vol24h_usd": 84361380.156391,
-            "oi_usd": 24069085.96642041,
-            "dif_precio_pct": 0.0111,
+            "precio": 0.11325144,
+            "funding_h_pct": -0.00107463,
+            "vol24h_usd": 84083138.983069,
+            "oi_usd": 24126960.26441637,
+            "dif_precio_pct": 0.0013,
             "simbolo": "ARBUSDT"
           },
           "bybit": {
-            "precio": 0.11316,
-            "funding_h_pct": 0.00024312,
-            "vol24h_usd": 23778575.4965,
-            "oi_usd": 14414339.34,
-            "dif_precio_pct": -0.0088,
+            "precio": 0.11327,
+            "funding_h_pct": -4.838e-05,
+            "vol24h_usd": 23692841.0375,
+            "oi_usd": 14438656.88,
+            "dif_precio_pct": 0.0177,
             "simbolo": "ARBUSDT"
           }
         },
-        "precio_hl": 0.11317,
+        "precio_hl": 0.11325,
         "funding_hl_h_pct": -0.00207245,
-        "funding_externo_h_pct": -0.00050644,
-        "dif_funding_h_pct": -0.00156601,
-        "oi_externo_usd": 38483425,
-        "oi_externo_cambio_1h_pct": 0.03,
-        "vol24h_externo_usd": 108139956,
-        "cuota_hl_volumen_pct": 6.36
+        "funding_externo_h_pct": -0.0005615,
+        "dif_funding_h_pct": -0.00151095,
+        "oi_externo_usd": 38565617,
+        "oi_externo_cambio_1h_pct": 0.272,
+        "vol24h_externo_usd": 107775980,
+        "cuota_hl_volumen_pct": 6.38
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "VVV",
         "fuentes": {
           "binance": {
-            "precio": 25.404,
+            "precio": 25.62660464,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 75482542.80037,
-            "oi_usd": 25601677.66944,
-            "dif_precio_pct": -0.0629,
+            "vol24h_usd": 76095837.36744,
+            "oi_usd": 25745071.82046188,
+            "dif_precio_pct": -0.0366,
             "simbolo": "VVVUSDT"
           },
           "bybit": {
-            "precio": 25.357,
-            "funding_h_pct": -0.0013465,
-            "vol24h_usd": 30418309.0997,
-            "oi_usd": 34609854.5,
-            "dif_precio_pct": -0.2478,
+            "precio": 25.623,
+            "funding_h_pct": -0.001792,
+            "vol24h_usd": 30905914.3163,
+            "oi_usd": 35024121.75,
+            "dif_precio_pct": -0.0507,
             "simbolo": "VVVUSDT"
           }
         },
-        "precio_hl": 25.42,
+        "precio_hl": 25.636,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": -4.825e-05,
-        "dif_funding_h_pct": 0.00129825,
-        "oi_externo_usd": 60211532,
-        "oi_externo_cambio_1h_pct": 1.854,
-        "vol24h_externo_usd": 105900852,
-        "cuota_hl_volumen_pct": 19.82
+        "funding_externo_h_pct": -0.000271,
+        "dif_funding_h_pct": 0.001521,
+        "oi_externo_usd": 60769194,
+        "oi_externo_cambio_1h_pct": 3.055,
+        "vol24h_externo_usd": 107001752,
+        "cuota_hl_volumen_pct": 19.66
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "TRUMP",
         "fuentes": {
           "binance": {
-            "precio": 0.84472079,
-            "funding_h_pct": -0.00470775,
-            "vol24h_usd": 82550614.33513,
-            "oi_usd": 25045489.30755632,
-            "dif_precio_pct": 0.0321,
+            "precio": 0.84591659,
+            "funding_h_pct": -0.005031,
+            "vol24h_usd": 82579314.1074,
+            "oi_usd": 25137889.73646852,
+            "dif_precio_pct": 0.0422,
             "simbolo": "TRUMPUSDT"
           },
           "bybit": {
-            "precio": 0.844,
-            "funding_h_pct": -0.00416125,
-            "vol24h_usd": 20907551.9824,
-            "oi_usd": 15358678.02,
-            "dif_precio_pct": -0.0533,
+            "precio": 0.846,
+            "funding_h_pct": -0.004446,
+            "vol24h_usd": 20894018.411,
+            "oi_usd": 15396456.37,
+            "dif_precio_pct": 0.052,
             "simbolo": "TRUMPUSDT"
           }
         },
-        "precio_hl": 0.84445,
+        "precio_hl": 0.84556,
         "funding_hl_h_pct": -0.009006720000000001,
-        "funding_externo_h_pct": -0.0044345,
-        "dif_funding_h_pct": -0.00457222,
-        "oi_externo_usd": 40404167,
-        "oi_externo_cambio_1h_pct": -0.398,
-        "vol24h_externo_usd": 103458166,
+        "funding_externo_h_pct": -0.0047385,
+        "dif_funding_h_pct": -0.00426822,
+        "oi_externo_usd": 40534346,
+        "oi_externo_cambio_1h_pct": 0.121,
+        "vol24h_externo_usd": 103473333,
         "cuota_hl_volumen_pct": 9.18
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "LIT",
         "fuentes": {
           "binance": {
-            "precio": 2.34932778,
-            "funding_h_pct": 0.00085675,
-            "vol24h_usd": 72557218.64837,
-            "oi_usd": 30619957.51237777,
-            "dif_precio_pct": 0.0757,
+            "precio": 2.38501159,
+            "funding_h_pct": 0.00125,
+            "vol24h_usd": 72933943.58723,
+            "oi_usd": 30948250.49449273,
+            "dif_precio_pct": 0.1243,
             "simbolo": "LITUSDT"
           },
           "bybit": {
-            "precio": 2.3468,
+            "precio": 2.381,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 24246204.8366,
-            "oi_usd": 29430835.8,
-            "dif_precio_pct": -0.0319,
+            "vol24h_usd": 24126074.8561,
+            "oi_usd": 29816790.13,
+            "dif_precio_pct": -0.0441,
             "simbolo": "LITUSDT"
           }
         },
-        "precio_hl": 2.34755,
+        "precio_hl": 2.38205,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": 0.00105338,
-        "dif_funding_h_pct": 0.00019662,
-        "oi_externo_usd": 60050793,
-        "oi_externo_cambio_1h_pct": -0.587,
-        "vol24h_externo_usd": 96803423,
-        "cuota_hl_volumen_pct": 22.87
+        "funding_externo_h_pct": 0.00125,
+        "dif_funding_h_pct": 0.0,
+        "oi_externo_usd": 60765041,
+        "oi_externo_cambio_1h_pct": 0.684,
+        "vol24h_externo_usd": 97060018,
+        "cuota_hl_volumen_pct": 22.83
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "PAXG",
         "fuentes": {
           "binance": {
-            "precio": 3614.72562601,
-            "funding_h_pct": 0.00071575,
-            "vol24h_usd": 89172908.311,
-            "oi_usd": 79022604.94261803,
-            "dif_precio_pct": -0.0256,
+            "precio": 3620.39,
+            "funding_h_pct": 0.00066975,
+            "vol24h_usd": 89376690.4698,
+            "oi_usd": 79180474.43417001,
+            "dif_precio_pct": -0.0099,
             "simbolo": "PAXGUSDT"
           },
           "bybit": {
-            "precio": 3615.8,
-            "funding_h_pct": -0.0010585,
-            "vol24h_usd": 5532796.0546,
-            "oi_usd": 22306116.07,
-            "dif_precio_pct": 0.0041,
+            "precio": 3622.36,
+            "funding_h_pct": -0.00038325,
+            "vol24h_usd": 5577356.1201,
+            "oi_usd": 22305724.94,
+            "dif_precio_pct": 0.0445,
             "simbolo": "PAXGUSDT"
           }
         },
-        "precio_hl": 3615.65,
+        "precio_hl": 3620.75,
         "funding_hl_h_pct": -0.00173153,
-        "funding_externo_h_pct": -0.00017138,
-        "dif_funding_h_pct": -0.00156015,
-        "oi_externo_usd": 101328721,
-        "oi_externo_cambio_1h_pct": 0.137,
-        "vol24h_externo_usd": 94705704,
-        "cuota_hl_volumen_pct": 3.62
+        "funding_externo_h_pct": 0.00014325,
+        "dif_funding_h_pct": -0.00187478,
+        "oi_externo_usd": 101486199,
+        "oi_externo_cambio_1h_pct": 0.164,
+        "vol24h_externo_usd": 94954047,
+        "cuota_hl_volumen_pct": 3.61
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ONDO",
         "fuentes": {
           "binance": {
-            "precio": 0.2798,
-            "funding_h_pct": 0.000138,
-            "vol24h_usd": 54394368.43192,
-            "oi_usd": 20397007.88258,
-            "dif_precio_pct": 0.0107,
+            "precio": 0.28180433,
+            "funding_h_pct": 0.0004025,
+            "vol24h_usd": 54409176.11207,
+            "oi_usd": 20571618.36025836,
+            "dif_precio_pct": 0.0193,
             "simbolo": "ONDOUSDT"
           },
           "bybit": {
-            "precio": 0.2798,
-            "funding_h_pct": -0.00130925,
-            "vol24h_usd": 26861161.075,
-            "oi_usd": 24713889.0,
-            "dif_precio_pct": 0.0107,
+            "precio": 0.2818,
+            "funding_h_pct": -0.00074225,
+            "vol24h_usd": 26915313.281,
+            "oi_usd": 25071960.73,
+            "dif_precio_pct": 0.0177,
             "simbolo": "ONDOUSDT"
           }
         },
-        "precio_hl": 0.27977,
+        "precio_hl": 0.28175,
         "funding_hl_h_pct": 0.0011906500000000001,
-        "funding_externo_h_pct": -0.00058562,
-        "dif_funding_h_pct": 0.00177628,
-        "oi_externo_usd": 45110897,
-        "oi_externo_cambio_1h_pct": -1.267,
-        "vol24h_externo_usd": 81255530,
-        "cuota_hl_volumen_pct": 5.51
+        "funding_externo_h_pct": -0.00016987,
+        "dif_funding_h_pct": 0.00136053,
+        "oi_externo_usd": 45643579,
+        "oi_externo_cambio_1h_pct": 0.216,
+        "vol24h_externo_usd": 81324489,
+        "cuota_hl_volumen_pct": 5.5
       },
       {
-        "t": 1795519066,
-        "m": "XMR",
-        "fuentes": {
-          "binance": {
-            "precio": 496.22,
-            "funding_h_pct": 0.00125,
-            "vol24h_usd": 50684120.82,
-            "oi_usd": 40740463.89152,
-            "dif_precio_pct": 0.0393,
-            "simbolo": "XMRUSDT"
-          },
-          "bybit": {
-            "precio": 496.07,
-            "funding_h_pct": 0.00125,
-            "vol24h_usd": 17878055.3361,
-            "oi_usd": 28859616.36,
-            "dif_precio_pct": 0.0091,
-            "simbolo": "XMRUSDT"
-          }
-        },
-        "precio_hl": 496.025,
-        "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": 0.00125,
-        "dif_funding_h_pct": 0.0,
-        "oi_externo_usd": 69600080,
-        "oi_externo_cambio_1h_pct": 0.039,
-        "vol24h_externo_usd": 68562176,
-        "cuota_hl_volumen_pct": 21.45
-      },
-      {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "ZRO",
         "fuentes": {
           "binance": {
-            "precio": 1.0549,
-            "funding_h_pct": 0.00037975,
-            "vol24h_usd": 45201730.35713,
-            "oi_usd": 18233211.55117,
-            "dif_precio_pct": 0.0379,
+            "precio": 1.04428985,
+            "funding_h_pct": 0.0007205,
+            "vol24h_usd": 46656699.16516,
+            "oi_usd": 18105365.87576635,
+            "dif_precio_pct": 0.0421,
             "simbolo": "ZROUSDT"
           },
           "bybit": {
-            "precio": 1.0518,
-            "funding_h_pct": 0.00031325,
-            "vol24h_usd": 23277062.8365,
-            "oi_usd": 17541198.65,
-            "dif_precio_pct": -0.256,
+            "precio": 1.0386,
+            "funding_h_pct": 0.00125,
+            "vol24h_usd": 23627022.729,
+            "oi_usd": 17410173.94,
+            "dif_precio_pct": -0.5029,
             "simbolo": "ZROUSDT"
           }
         },
-        "precio_hl": 1.0545,
+        "precio_hl": 1.04385,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": 0.0003465,
-        "dif_funding_h_pct": 0.0009035,
-        "oi_externo_usd": 35774410,
-        "oi_externo_cambio_1h_pct": -1.104,
-        "vol24h_externo_usd": 68478793,
-        "cuota_hl_volumen_pct": 9.11
+        "funding_externo_h_pct": 0.00098525,
+        "dif_funding_h_pct": 0.00026475,
+        "oi_externo_usd": 35515540,
+        "oi_externo_cambio_1h_pct": -1.36,
+        "vol24h_externo_usd": 70283722,
+        "cuota_hl_volumen_pct": 8.89
       },
       {
-        "t": 1795519066,
-        "m": "SKY",
+        "t": 1795520276,
+        "m": "XMR",
         "fuentes": {
           "binance": {
-            "precio": 0.03746894,
-            "funding_h_pct": -0.006989,
-            "vol24h_usd": 54590268.05042,
-            "oi_usd": 9705102.66100062,
-            "dif_precio_pct": 0.0319,
-            "simbolo": "SKYUSDT"
+            "precio": 497.38,
+            "funding_h_pct": 0.00125,
+            "vol24h_usd": 50599430.32,
+            "oi_usd": 40814609.8698,
+            "dif_precio_pct": 0.008,
+            "simbolo": "XMRUSDT"
           },
           "bybit": {
-            "precio": 0.03753,
+            "precio": 497.03,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 10977508.3523,
-            "oi_usd": 2656291.58,
-            "dif_precio_pct": 0.1949,
-            "simbolo": "SKYUSDT"
+            "vol24h_usd": 17936875.3217,
+            "oi_usd": 28927533.68,
+            "dif_precio_pct": -0.0623,
+            "simbolo": "XMRUSDT"
           }
         },
-        "precio_hl": 0.037457,
-        "funding_hl_h_pct": -0.01241234,
-        "funding_externo_h_pct": -0.0028695,
-        "dif_funding_h_pct": -0.00954284,
-        "oi_externo_usd": 12361394,
-        "oi_externo_cambio_1h_pct": -3.152,
-        "vol24h_externo_usd": 65567776,
-        "cuota_hl_volumen_pct": 9.44
+        "precio_hl": 497.34,
+        "funding_hl_h_pct": 0.00125,
+        "funding_externo_h_pct": 0.00125,
+        "dif_funding_h_pct": 0.0,
+        "oi_externo_usd": 69742144,
+        "oi_externo_cambio_1h_pct": 0.141,
+        "vol24h_externo_usd": 68536306,
+        "cuota_hl_volumen_pct": 21.46
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "TRX",
         "fuentes": {
           "binance": {
-            "precio": 0.30732,
-            "funding_h_pct": -3e-05,
-            "vol24h_usd": 53379373.65349,
-            "oi_usd": 65619822.28619999,
-            "dif_precio_pct": -0.013,
+            "precio": 0.30743,
+            "funding_h_pct": -0.00016788,
+            "vol24h_usd": 52541823.88307,
+            "oi_usd": 65597855.65218999,
+            "dif_precio_pct": 0.0065,
             "simbolo": "TRXUSDT"
           },
           "bybit": {
-            "precio": 0.30734,
-            "funding_h_pct": -0.00137462,
-            "vol24h_usd": 12043774.1324,
-            "oi_usd": 57764469.4,
-            "dif_precio_pct": -0.0065,
+            "precio": 0.3074,
+            "funding_h_pct": -0.00136412,
+            "vol24h_usd": 11822070.264,
+            "oi_usd": 57790460.4,
+            "dif_precio_pct": -0.0033,
             "simbolo": "TRXUSDT"
           }
         },
-        "precio_hl": 0.30736,
+        "precio_hl": 0.30741,
         "funding_hl_h_pct": -0.00186283,
-        "funding_externo_h_pct": -0.00070231,
-        "dif_funding_h_pct": -0.00116052,
-        "oi_externo_usd": 123384292,
-        "oi_externo_cambio_1h_pct": -0.661,
-        "vol24h_externo_usd": 65423148,
-        "cuota_hl_volumen_pct": 5.06
+        "funding_externo_h_pct": -0.000766,
+        "dif_funding_h_pct": -0.00109683,
+        "oi_externo_usd": 123388316,
+        "oi_externo_cambio_1h_pct": -0.458,
+        "vol24h_externo_usd": 64363894,
+        "cuota_hl_volumen_pct": 5.14
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
+        "m": "SKY",
+        "fuentes": {
+          "binance": {
+            "precio": 0.03726,
+            "funding_h_pct": -0.005858,
+            "vol24h_usd": 48496979.99749,
+            "oi_usd": 9663318.51498,
+            "dif_precio_pct": -0.0081,
+            "simbolo": "SKYUSDT"
+          },
+          "bybit": {
+            "precio": 0.03727,
+            "funding_h_pct": 0.00125,
+            "vol24h_usd": 9913306.0795,
+            "oi_usd": 2628620.68,
+            "dif_precio_pct": 0.0188,
+            "simbolo": "SKYUSDT"
+          }
+        },
+        "precio_hl": 0.037263,
+        "funding_hl_h_pct": -0.01241234,
+        "funding_externo_h_pct": -0.002304,
+        "dif_funding_h_pct": -0.01010834,
+        "oi_externo_usd": 12291939,
+        "oi_externo_cambio_1h_pct": -2.964,
+        "vol24h_externo_usd": 58410286,
+        "cuota_hl_volumen_pct": 10.47
+      },
+      {
+        "t": 1795520276,
         "m": "MON",
         "fuentes": {
           "binance": {
-            "precio": 0.01256415,
+            "precio": 0.0127227,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 33895914.47558,
-            "oi_usd": 12593401.03736025,
-            "dif_precio_pct": 0.1048,
+            "vol24h_usd": 33411326.74474,
+            "oi_usd": 12743130.5823999,
+            "dif_precio_pct": -0.073,
             "simbolo": "MONUSDT"
           },
           "bybit": {
-            "precio": 0.012552,
+            "precio": 0.012703,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 16142321.5683,
-            "oi_usd": 8444853.23,
-            "dif_precio_pct": 0.008,
+            "vol24h_usd": 15868426.7981,
+            "oi_usd": 8599729.99,
+            "dif_precio_pct": -0.2278,
             "simbolo": "MONUSDT"
           }
         },
-        "precio_hl": 0.012551,
+        "precio_hl": 0.012732,
         "funding_hl_h_pct": 0.00125,
         "funding_externo_h_pct": 0.00125,
         "dif_funding_h_pct": 0.0,
-        "oi_externo_usd": 21038254,
-        "oi_externo_cambio_1h_pct": 1.629,
-        "vol24h_externo_usd": 50038236,
-        "cuota_hl_volumen_pct": 18.2
+        "oi_externo_usd": 21342861,
+        "oi_externo_cambio_1h_pct": 0.422,
+        "vol24h_externo_usd": 49279754,
+        "cuota_hl_volumen_pct": 18.43
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "JUP",
         "fuentes": {
           "binance": {
-            "precio": 0.22781149,
-            "funding_h_pct": -0.00111875,
-            "vol24h_usd": 32692797.087,
-            "oi_usd": 12504279.49271237,
-            "dif_precio_pct": 0.0424,
+            "precio": 0.22701782,
+            "funding_h_pct": -0.00125025,
+            "vol24h_usd": 32460958.9889,
+            "oi_usd": 12478676.48269496,
+            "dif_precio_pct": -0.0472,
             "simbolo": "JUPUSDT"
           },
           "bybit": {
-            "precio": 0.2278,
-            "funding_h_pct": -0.00388775,
-            "vol24h_usd": 8548464.4297,
-            "oi_usd": 6054902.59,
-            "dif_precio_pct": 0.0373,
+            "precio": 0.2271,
+            "funding_h_pct": -0.006257,
+            "vol24h_usd": 8805107.1055,
+            "oi_usd": 5820906.38,
+            "dif_precio_pct": -0.011,
             "simbolo": "JUPUSDT"
           }
         },
-        "precio_hl": 0.227715,
+        "precio_hl": 0.227125,
         "funding_hl_h_pct": -0.00670837,
-        "funding_externo_h_pct": -0.00250325,
-        "dif_funding_h_pct": -0.00420512,
-        "oi_externo_usd": 18559182,
-        "oi_externo_cambio_1h_pct": -2.899,
-        "vol24h_externo_usd": 41241262,
-        "cuota_hl_volumen_pct": 17.6
+        "funding_externo_h_pct": -0.00375363,
+        "dif_funding_h_pct": -0.00295474,
+        "oi_externo_usd": 18299583,
+        "oi_externo_cambio_1h_pct": -2.762,
+        "vol24h_externo_usd": 41266066,
+        "cuota_hl_volumen_pct": 17.59
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "XPL",
         "fuentes": {
           "binance": {
-            "precio": 0.04512329,
-            "funding_h_pct": 7.25e-06,
-            "vol24h_usd": 29648488.37148,
-            "oi_usd": 30452503.08767752,
-            "dif_precio_pct": 0.0029,
+            "precio": 0.04501,
+            "funding_h_pct": 0.00035925,
+            "vol24h_usd": 29698634.97766,
+            "oi_usd": 30398689.64853,
+            "dif_precio_pct": -0.0067,
             "simbolo": "XPLUSDT"
           },
           "bybit": {
-            "precio": 0.04511,
+            "precio": 0.04503,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 11195492.4428,
-            "oi_usd": 17923993.37,
-            "dif_precio_pct": -0.0266,
+            "vol24h_usd": 11283851.9574,
+            "oi_usd": 17957100.86,
+            "dif_precio_pct": 0.0378,
             "simbolo": "XPLUSDT"
           }
         },
-        "precio_hl": 0.045122,
+        "precio_hl": 0.045013,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": 0.00062863,
-        "dif_funding_h_pct": 0.00062137,
-        "oi_externo_usd": 48376496,
-        "oi_externo_cambio_1h_pct": -0.537,
-        "vol24h_externo_usd": 40843981,
-        "cuota_hl_volumen_pct": 10.56
+        "funding_externo_h_pct": 0.00080463,
+        "dif_funding_h_pct": 0.00044538,
+        "oi_externo_usd": 48355791,
+        "oi_externo_cambio_1h_pct": -0.672,
+        "vol24h_externo_usd": 40982487,
+        "cuota_hl_volumen_pct": 10.52
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "CRV",
         "fuentes": {
           "binance": {
-            "precio": 0.1756,
-            "funding_h_pct": 0.00021325,
-            "vol24h_usd": 28192248.76124,
-            "oi_usd": 13668739.62924,
-            "dif_precio_pct": 0.0513,
+            "precio": 0.1761,
+            "funding_h_pct": 0.00045325,
+            "vol24h_usd": 28258782.84455,
+            "oi_usd": 13701491.95146,
+            "dif_precio_pct": 0.0682,
             "simbolo": "CRVUSDT"
           },
           "bybit": {
-            "precio": 0.1756,
-            "funding_h_pct": -0.00027138,
-            "vol24h_usd": 8363713.4524,
-            "oi_usd": 8424542.79,
-            "dif_precio_pct": 0.0513,
+            "precio": 0.1759,
+            "funding_h_pct": -0.0001605,
+            "vol24h_usd": 8370531.5103,
+            "oi_usd": 8433059.72,
+            "dif_precio_pct": -0.0455,
             "simbolo": "CRVUSDT"
           }
         },
-        "precio_hl": 0.17551,
+        "precio_hl": 0.17598,
         "funding_hl_h_pct": -0.00236493,
-        "funding_externo_h_pct": -2.906e-05,
-        "dif_funding_h_pct": -0.00233587,
-        "oi_externo_usd": 22093282,
-        "oi_externo_cambio_1h_pct": -0.646,
-        "vol24h_externo_usd": 36555962,
-        "cuota_hl_volumen_pct": 12.49
+        "funding_externo_h_pct": 0.00014638,
+        "dif_funding_h_pct": -0.00251131,
+        "oi_externo_usd": 22134552,
+        "oi_externo_cambio_1h_pct": -0.486,
+        "vol24h_externo_usd": 36629314,
+        "cuota_hl_volumen_pct": 12.47
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "FARTCOIN",
         "fuentes": {
           "binance": {
-            "precio": 0.07977338,
+            "precio": 0.0802,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 21347520.36669,
-            "oi_usd": 9316811.78652606,
-            "dif_precio_pct": -0.1335,
+            "vol24h_usd": 21418560.2428,
+            "oi_usd": 9379088.8891,
+            "dif_precio_pct": 0.0624,
             "simbolo": "FARTCOINUSDT"
           },
           "bybit": {
-            "precio": 0.07978,
+            "precio": 0.08021,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 11277191.5531,
-            "oi_usd": 7890784.42,
-            "dif_precio_pct": -0.1252,
+            "vol24h_usd": 11297247.4424,
+            "oi_usd": 7971194.8,
+            "dif_precio_pct": 0.0749,
             "simbolo": "FARTCOINUSDT"
           }
         },
-        "precio_hl": 0.07988,
+        "precio_hl": 0.08015,
         "funding_hl_h_pct": 0.00125,
         "funding_externo_h_pct": 0.00125,
         "dif_funding_h_pct": 0.0,
-        "oi_externo_usd": 17207596,
-        "oi_externo_cambio_1h_pct": -1.326,
-        "vol24h_externo_usd": 32624712,
-        "cuota_hl_volumen_pct": 18.04
+        "oi_externo_usd": 17350284,
+        "oi_externo_cambio_1h_pct": -0.158,
+        "vol24h_externo_usd": 32715808,
+        "cuota_hl_volumen_pct": 18.0
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "kBONK",
         "fuentes": {
           "binance": {
-            "precio": 0.00215388,
-            "funding_h_pct": -0.00432675,
-            "vol24h_usd": 20958427.100628,
-            "oi_usd": 9827586.43168968,
-            "dif_precio_pct": -0.052,
+            "precio": 0.002161,
+            "funding_h_pct": -0.002837,
+            "vol24h_usd": 20927308.507704,
+            "oi_usd": 9854427.434555,
+            "dif_precio_pct": 0.0463,
             "simbolo": "1000BONKUSDT"
           },
           "bybit": {
-            "precio": 0.0021535,
-            "funding_h_pct": -0.00203775,
-            "vol24h_usd": 6931544.3506,
-            "oi_usd": 4451129.02,
-            "dif_precio_pct": -0.0696,
+            "precio": 0.00216,
+            "funding_h_pct": 0.00012475,
+            "vol24h_usd": 6888755.4561,
+            "oi_usd": 4459736.88,
+            "dif_precio_pct": 0.0,
             "simbolo": "1000BONKUSDT"
           }
         },
-        "precio_hl": 0.002155,
+        "precio_hl": 0.00216,
         "funding_hl_h_pct": 0.00112924,
-        "funding_externo_h_pct": -0.00318225,
-        "dif_funding_h_pct": 0.00431149,
-        "oi_externo_usd": 14278715,
-        "oi_externo_cambio_1h_pct": -1.69,
-        "vol24h_externo_usd": 27889971,
-        "cuota_hl_volumen_pct": 2.58
+        "funding_externo_h_pct": -0.00135613,
+        "dif_funding_h_pct": 0.00248537,
+        "oi_externo_usd": 14314164,
+        "oi_externo_cambio_1h_pct": -1.055,
+        "vol24h_externo_usd": 27816064,
+        "cuota_hl_volumen_pct": 2.59
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "WIF",
         "fuentes": {
           "binance": {
-            "precio": 0.12244833,
-            "funding_h_pct": -0.001287,
-            "vol24h_usd": 14364565.87745,
-            "oi_usd": 7680408.74092976,
-            "dif_precio_pct": -0.0259,
+            "precio": 0.12261375,
+            "funding_h_pct": -0.00131475,
+            "vol24h_usd": 14399380.81157,
+            "oi_usd": 7696309.01245763,
+            "dif_precio_pct": -0.0581,
             "simbolo": "WIFUSDT"
           },
           "bybit": {
-            "precio": 0.12262,
-            "funding_h_pct": -0.0016535,
-            "vol24h_usd": 7038005.2649,
-            "oi_usd": 6228751.68,
-            "dif_precio_pct": 0.1143,
+            "precio": 0.1227,
+            "funding_h_pct": -0.0017565,
+            "vol24h_usd": 7084131.0831,
+            "oi_usd": 6284395.35,
+            "dif_precio_pct": 0.0122,
             "simbolo": "WIFUSDT"
           }
         },
-        "precio_hl": 0.12248,
+        "precio_hl": 0.122685,
         "funding_hl_h_pct": 0.00125,
-        "funding_externo_h_pct": -0.00147025,
-        "dif_funding_h_pct": 0.00272025,
-        "oi_externo_usd": 13909160,
-        "oi_externo_cambio_1h_pct": -1.196,
-        "vol24h_externo_usd": 21402571,
-        "cuota_hl_volumen_pct": 3.8
+        "funding_externo_h_pct": -0.00153563,
+        "dif_funding_h_pct": 0.00278562,
+        "oi_externo_usd": 13980704,
+        "oi_externo_cambio_1h_pct": -0.151,
+        "vol24h_externo_usd": 21483512,
+        "cuota_hl_volumen_pct": 3.78
       },
       {
-        "t": 1795519066,
+        "t": 1795520276,
         "m": "CHIP",
         "fuentes": {
           "binance": {
-            "precio": 0.0274591,
-            "funding_h_pct": 0.00108,
-            "vol24h_usd": 16914200.6036,
-            "oi_usd": 4621013.4883513,
-            "dif_precio_pct": 0.0368,
+            "precio": 0.02759,
+            "funding_h_pct": 0.001221,
+            "vol24h_usd": 16879840.49516,
+            "oi_usd": 4633427.43627,
+            "dif_precio_pct": -0.0145,
             "simbolo": "CHIPUSDT"
           },
           "bybit": {
-            "precio": 0.02748,
+            "precio": 0.02764,
             "funding_h_pct": 0.00125,
-            "vol24h_usd": 3813410.5265,
-            "oi_usd": 2792459.34,
-            "dif_precio_pct": 0.1129,
+            "vol24h_usd": 3634902.1164,
+            "oi_usd": 2805068.62,
+            "dif_precio_pct": 0.1667,
             "simbolo": "CHIPUSDT"
           }
         },
-        "precio_hl": 0.027449,
+        "precio_hl": 0.027594,
         "funding_hl_h_pct": 0.0012439600000000001,
-        "funding_externo_h_pct": 0.001165,
-        "dif_funding_h_pct": 7.896e-05,
-        "oi_externo_usd": 7413473,
-        "oi_externo_cambio_1h_pct": -1.266,
-        "vol24h_externo_usd": 20727611,
-        "cuota_hl_volumen_pct": 14.61
+        "funding_externo_h_pct": 0.0012355,
+        "dif_funding_h_pct": 8.46e-06,
+        "oi_externo_usd": 7438496,
+        "oi_externo_cambio_1h_pct": -0.384,
+        "vol24h_externo_usd": 20514743,
+        "cuota_hl_volumen_pct": 14.74
       }
     ],
     "no_coinciden": [
@@ -17236,10 +17236,11 @@
     "intenciones_shadow": 0
   },
   "datos_frescos": true,
-  "precios_ts": 1795519277.3637056,
+  "precios_ts": 1795520419.242249,
   "gestion": {
     "factor": 1.0,
     "motivos": [],
     "filtros_relajados": false
   },
-  "aviso_stops": "Un stop se activa con el precio de marca (mark) y se ejecuta a mercado: el precio real de salida puede ser peor que el del sto
+  "aviso_stops": "Un stop se activa con el precio de marca (mark) y se ejecuta a mercado: el precio real de salida puede ser peor que el del stop (deslizamiento), sobre todo con movimientos bruscos."
+}

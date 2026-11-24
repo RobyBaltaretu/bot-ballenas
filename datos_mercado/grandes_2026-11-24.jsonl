@@ -426,3 +426,10 @@
 {"t":1795518005,"moneda":"BTC","lado":"B","usd":276835,"cuentas":["0x7ca165f354e3260e2f8d5a7508cc9dd2fa009235","0xcc76b68ad97dc2516bdbb27d0e04c363037a28a4"],"px":"59756.0","tid":771796132492650}
 {"t":1795518014,"moneda":"ETH","lado":"B","usd":391668,"cuentas":["0x1ee7a73cb5b0b6b056d8138085b2009e6a6bedf5","0x39475d17bcd20adc540e647dae6781b153fbf3b1"],"px":"1684.4","tid":239061025866936}
 {"t":1795518295,"moneda":"BTC","lado":"A","usd":328131,"cuentas":["0xcf3f419d08a5bdc2c6e5fbd9ad70904c5420f95f","0x6c2c8c6e60dfaf81145ffad13736a4847ad4a201"],"px":"59781.0","tid":173120884092885}
+{"t":1795519330,"moneda":"BTC","lado":"B","usd":450004,"cuentas":["0x6c2c8c6e60dfaf81145ffad13736a4847ad4a201","0xcf3f419d08a5bdc2c6e5fbd9ad70904c5420f95f"],"px":"59556.0","tid":964760459231473}
+{"t":1795519330,"moneda":"BTC","lado":"B","usd":450042,"cuentas":["0x6c2c8c6e60dfaf81145ffad13736a4847ad4a201","0xcf3f419d08a5bdc2c6e5fbd9ad70904c5420f95f"],"px":"59561.0","tid":308776944737613}
+{"t":1795519330,"moneda":"BTC","lado":"B","usd":390049,"cuentas":["0x6c2c8c6e60dfaf81145ffad13736a4847ad4a201","0xcf3f419d08a5bdc2c6e5fbd9ad70904c5420f95f"],"px":"59563.0","tid":338097137961684}
+{"t":1795519332,"moneda":"ETH","lado":"A","usd":388903,"cuentas":["0x34fb5ec7d4e939161946340ea2a1f29254b893de","0xa764f11b66e6bb68a45c5e83824cac05d207646a"],"px":"1680.6","tid":758523945544782}
+{"t":1795519332,"moneda":"ETH","lado":"A","usd":390781,"cuentas":["0x95995f302ad58138d791ce49f9f3b1274e80c60a","0xa764f11b66e6bb68a45c5e83824cac05d207646a"],"px":"1680.6","tid":381929428217835}
+{"t":1795520036,"moneda":"ETH","lado":"B","usd":351721,"cuentas":["0x52ad59252fb2fe9cf695febc1b1b140de692c17e","0xcc76b68ad97dc2516bdbb27d0e04c363037a28a4"],"px":"1688.7","tid":792836449583232}
+{"t":1795520160,"moneda":"BTC","lado":"B","usd":276606,"cuentas":["0xd92027fc1bf15ea8e1c9c0a1aa4a9f58b5433f20","0xcf3f419d08a5bdc2c6e5fbd9ad70904c5420f95f"],"px":"59891.0","tid":1056156273387454}

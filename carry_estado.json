@@ -1,5 +1,5 @@
 {
- "ts": 1795519165.04514,
+ "ts": 1795520367.1858535,
  "estado": "activo",
  "motivo": null,
  "simulado": true,
@@ -16,35 +16,35 @@
    "coin": "BTC",
    "funding_anual_pct": 5.18,
    "positivas_pct": 79.2,
-   "base_pct": 1.2966,
+   "base_pct": 0.9191,
    "horas_amortizacion": 524.5
   },
   {
    "coin": "ETH",
    "funding_anual_pct": -3.78,
    "positivas_pct": 31.2,
-   "base_pct": 0.9541,
+   "base_pct": 0.5595,
    "horas_amortizacion": null
   },
   {
    "coin": "HYPE",
    "funding_anual_pct": 7.77,
    "positivas_pct": 83.3,
-   "base_pct": 2.8021,
+   "base_pct": 2.3883,
    "horas_amortizacion": 349.7
   },
   {
    "coin": "SOL",
    "funding_anual_pct": 0.42,
    "positivas_pct": 72.9,
-   "base_pct": 2.0592,
+   "base_pct": 1.7309,
    "horas_amortizacion": 6416.3
   },
   {
    "coin": "ZEC",
    "funding_anual_pct": 5.82,
    "positivas_pct": 81.2,
-   "base_pct": 3.2025,
+   "base_pct": 3.5122,
    "horas_amortizacion": 466.6
   }
  ],

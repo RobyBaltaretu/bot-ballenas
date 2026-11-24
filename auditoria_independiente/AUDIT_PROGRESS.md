@@ -70,3 +70,12 @@
 | 7 | Descarga de `data.binance.vision` (2 800 archivos, 4 h + funding, 20 símbolos, 2021-01 → 2026-10) | 0 fallos |
 | 8 | `python3 -I experimentos/backtest_independiente.py <copia> <datos> …` | Ver 04 y 09 |
 | 9 | Búsquedas web (documentación de Hyperliquid, literatura, prensa, proyectos) | Ver 11 |
+| 10 | `generar_propuestas.py`, `generar_indice_hallazgos.py`, `generar_plantilla_evaluacion.py` | 61 propuestas, 50 hallazgos, plantilla |
+| 11 | Re-ejecución de los 3 experimentos sobre la copia | Resultados idénticos a los guardados |
+
+## Entrega 2 (24/11/2026): paquete para revisión externa
+- `CAMBIOS_PROPUESTOS.md` + `propuestas.json` (61 propuestas, ninguna aplicada), `INDICE_HALLAZGOS.md` (50 IDs),
+  `PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md`, `PROMPT_CODEX.md`, `plantilla_evaluacion_propuestas.json`.
+- Corrección: el documento 12 decía «20 monedas archivadas» para la referencia de mercado; son las 72 monedas con
+  velas de 1 h archivadas (las cifras no cambian: el script ya usaba las 72).
+- Definidos 6 IDs citados sin definición (IA-04, S-04, V-01..V-04) en `experimentos/hallazgos_borrador.md`.

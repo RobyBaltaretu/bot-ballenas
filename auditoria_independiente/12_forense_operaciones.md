@@ -2,7 +2,8 @@
 
 Datos: 30 operaciones cerradas desde la puesta a cero (28/10 → 23/11), reconstruidas desde los eventos crudos del ledger
 (`experimentos/forense_ledger.py`, resultado en `forense_ledger_resultado.json`), MAE/MFE con las velas de 1 h que el
-propio bot archiva, y referencia de mercado = mismo lado en el universo equiponderado (20 monedas archivadas) en la
+propio bot archiva, y referencia de mercado = mismo lado en el universo equiponderado (las 72 monedas con velas de 1 h archivadas por el bot; en cada ventana solo cuentan las que
+tienen datos) en la
 misma ventana.
 
 ## 1. Ranking de causas de pérdida por impacto económico (17 perdedoras, −19,61 $)

@@ -24,6 +24,17 @@ funcional ni la configuración. No se ejecutó ninguna orden real. Las afirmacio
 | [15 — Veredicto final](15_veredicto_final.md) | Puntuaciones, GO/NO-GO, criterios, 20 respuestas |
 | [AUDIT_PROGRESS](AUDIT_PROGRESS.md) | Estado, pendientes y cómo reanudar |
 
+## Para aplicar cambios y para una revisión externa
+
+| Archivo | Contenido |
+|---|---|
+| [CAMBIOS_PROPUESTOS.md](CAMBIOS_PROPUESTOS.md) | Las 61 propuestas: 16 eliminar, 24 modificar, 16 añadir, 5 validar. Dónde, qué hay, qué cambiar, evidencia, riesgo, huella, quién decide, prioridad, aceptación, dependencias y orden de aplicación. **Ninguna está aplicada** |
+| [propuestas.json](propuestas.json) | Las mismas propuestas en formato de máquina (fuente única: `experimentos/generar_propuestas.py`) |
+| [INDICE_HALLAZGOS.md](INDICE_HALLAZGOS.md) | Los 50 hallazgos con su ID, severidad y dónde se definen |
+| [PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md](PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md) | Supuestos, dudas y límites de esta auditoría: por dónde empezar a revisarla |
+| [PROMPT_CODEX.md](PROMPT_CODEX.md) | Prompt para que Codex haga su propia auditoría a ciegas y después evalúe esta |
+| [plantilla_evaluacion_propuestas.json](plantilla_evaluacion_propuestas.json) | Plantilla que el revisor rellena: 61 propuestas, 50 hallazgos, 3 experimentos |
+
 ## Experimentos reproducibles (`experimentos/`)
 
 | Script | Qué hace | Resultado |
@@ -33,6 +44,12 @@ funcional ni la configuración. No se ejecutó ninguna orden real. Las afirmacio
 | `sesgo_sombras.py` | Re-simulación OHLC de las sombras con la `SimSalida` del bot | `sesgo_sombras_resultado.json` |
 | `backtest_independiente.py` | Backtest de momentum/ruptura/fuerza con Binance 2021–2026 y benchmarks | `backtest_independiente_resultado.json` |
 | `salida_pruebas_20261124.txt` | Salida de la batería de pruebas (764 OK) | — |
+| `descargar_binance.sh` | Descarga los datos públicos que usa el backtest | ≈ 2 800 archivos, 23 MB |
+| `generar_propuestas.py` | Genera `CAMBIOS_PROPUESTOS.md` y `propuestas.json` | — |
+| `generar_indice_hallazgos.py` | Genera `INDICE_HALLAZGOS.md` (falla si se cita un ID sin definir) | — |
+| `generar_plantilla_evaluacion.py` | Genera `plantilla_evaluacion_propuestas.json` | — |
+
+Reproducción comprobada el 24/11/2026: los tres experimentos dan resultados idénticos a los JSON guardados.
 
 Reproducción: crear una COPIA del repositorio (los scripts que importan `estrategia.py`/`senales.py` deben apuntar a la
 copia), un venv con `requirements-bloqueado.txt`, y para el backtest descargar de `data.binance.vision` las velas de 4 h y

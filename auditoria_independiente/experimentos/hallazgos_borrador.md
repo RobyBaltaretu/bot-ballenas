@@ -95,3 +95,19 @@ Formato: ID · archivo:línea · severidad (P0–P3) · evidencia · estado de v
   > EMA200 (4 h) y fuera si no: CAGR 23 %, caída 44 %, Sharpe 0,75. Carteras de las estrategias a 1 % de riesgo por
   operación sin tope de posiciones: Sharpe 0,12–0,36 y caídas enormes (muchas posiciones correlacionadas a la vez).
   Limitación: universo superviviente, fuente Binance, sin cola/latencia; aproximación R → % sin compuesto por posición.
+
+## Definiciones añadidas al preparar la revisión externa (mismo contenido que en los documentos 04, 07 y 09)
+
+- IA-04 analista_ia.py (informe diario) · P3 · Sin valor incremental: el informe del 24/11 repite la conclusión que ya
+  calcula `veredicto.contra_mercado` de forma determinista; sus hallazgos quedan «no_verificado». Ver 07.
+- S-04 cartera_funding.py / config cartera_funding.activa · P2 · Activa en simulado sin pasar por el laboratorio; el
+  propio módulo declara que no es lo que se estudió (otro funding, otro universo, 2 patas, con stop). Ver 04.
+- V-01 validacion.py:665-671 (familia_idea) · P2 · Bonferroni por familias razonable para el laboratorio, laxo para la
+  investigación: ideas con distintos filtros o salidas cuentan como una sola prueba. Ver 09 §1.
+- V-02 validacion.py / laboratorio.py · P2 · Sin Deflated Sharpe Ratio ni PBO: la corrección por selección se limita a
+  Bonferroni. Ver 09 §1 y 11.
+- V-03 estrategia_elegida.json → momentum_4h · P1 · Parámetros inestables entre tramos (lookback 180/umbral 6 → 63/3) y
+  holdout positivo (+0,18 R) frente a OOS negativo (−0,107 R): el holdout reciente refleja un régimen, no una ventaja.
+  Ver 04.
+- V-04 laboratorio.py:preparar_datos · P2 · Historia de 6 años sustituida con Binance/Bybit; el cerebro solo mejora
+  donde hay esa historia (C-01). Diferencias de funding, base y microestructura no modeladas. Ver 09 §1.

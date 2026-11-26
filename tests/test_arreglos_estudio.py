@@ -128,11 +128,16 @@ class AmpliarGanadoras(Base):
         op = self.estado["posiciones"]["ETH"]
         self.gestor.gestionar(op, self.m.precios["ETH"])
         self.assertTrue(op["en_breakeven"])
+        # CP-E06: tras el TP1 solo se amplía cuando el precio pasa el TP1 en 1 R más, en otro ciclo.
+        mover(self.papel, self.m, "ETH", op["tp1"] + 1.05 * op["r_dist"])
+        self.gestor.conciliar(self.m.precios)
+        op = self.estado["posiciones"]["ETH"]
+        self.gestor.gestionar(op, self.m.precios["ETH"])
         return op
 
     def test_amplia_una_vez_y_protege_el_tamano_nuevo(self):
         op = self.a_breakeven()
-        self.assertIsNone(self.gestor.ampliable(op))
+        self.assertIsNone(self.gestor.ampliable(op, self.m.precios["ETH"]))
         antes = op["tam"]
         añadido = self.gestor.ampliar(op, 0.025, "prueba")
         self.assertAlmostEqual(añadido, 0.025)
@@ -174,6 +179,48 @@ class AmpliarGanadoras(Base):
         op["cartera_funding"] = False
         self.gestor.sin_stop["ETH"] = "prueba"
         self.assertIn("congelado", self.gestor.ampliable(op))
+
+
+class NoRecompraElTP1(Base):
+    """CP-E06 (auditoría 26/11, Q-05): cobrar el TP1 ponía el stop en la entrada y en el ciclo siguiente se recompraba
+    el 50 % recién vendido (SKY: +0,29 R -> -0,38 R). La piramidación sigue activa, pero espera al menos 1 R más."""
+
+    def cobrar_tp1(self):
+        op = self.gestor.abrir(self.plan(tam=0.05))
+        self.assertTrue(op["parcial"])
+        mover(self.papel, self.m, "ETH", op["tp1"] * 1.001)
+        self.gestor.conciliar(self.m.precios)
+        op = self.estado["posiciones"]["ETH"]
+        self.gestor.gestionar(op, self.m.precios["ETH"])
+        self.assertTrue(op["tp1_hecho"] and op["en_breakeven"])
+        return op
+
+    def test_no_amplia_en_el_ciclo_del_cobro(self):
+        op = self.cobrar_tp1()
+        motivo = self.gestor.ampliable(op, op["tp1"] + 2 * op["r_dist"])    # ni con el precio muy lejos
+        self.assertIn("mismo ciclo", motivo)
+
+    def test_sin_avanzar_1r_no_amplia_y_tras_1r_si(self):
+        op = self.cobrar_tp1()
+        self.gestor.conciliar(self.m.precios)                                # otro ciclo, precio igual
+        op = self.estado["posiciones"]["ETH"]
+        self.assertIn("no ha avanzado", self.gestor.ampliable(op, self.m.precios["ETH"]))
+        self.assertIn("no ha avanzado", self.gestor.ampliable(op, op["tp1"] + 0.9 * op["r_dist"]))
+        self.assertIn("sin precio", self.gestor.ampliable(op, None))
+        self.assertIsNone(self.gestor.ampliable(op, op["tp1"] + 1.0 * op["r_dist"]))
+        self.assertIsNone(self.gestor.ampliable(op, op["tp1"] + 1.5 * op["r_dist"]))
+
+    def test_el_avance_exigido_es_configurable(self):
+        op = self.cobrar_tp1()
+        self.gestor.conciliar(self.m.precios)
+        op = self.estado["posiciones"]["ETH"]
+        self.gestor.c["piramide"]["avance_tras_tp1_r"] = 0.5
+        self.assertIsNone(self.gestor.ampliable(op, op["tp1"] + 0.6 * op["r_dist"]))
+
+    def test_sin_objetivo_parcial_no_cambia(self):
+        op = self.gestor.abrir(self.plan(tam=0.05))
+        op["tp1_hecho"], op["en_breakeven"], op["sl"] = False, True, op["entrada"]
+        self.assertIsNone(self.gestor.ampliable(op, op["entrada"]))         # sin TP1 cobrado: como antes
 
 
 class FundingConSuHora(ConCarpeta):

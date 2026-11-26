@@ -153,7 +153,9 @@ DEFECTOS = {
     # Ampliar ganadoras / piramidar (SOLO simulado, bot._ampliar_ganadoras): con el stop ya en la entrada, se añade UNA
     # vez 'fraccion' del tamaño inicial; la parte añadida arriesga como mucho 'riesgo_max_frac_original' × el riesgo
     # planificado al abrir. Apagado por defecto; en real no existe.
-    "piramide": {"activa": False, "fraccion": 0.5, "riesgo_max_frac_original": 1.0},
+    # avance_tras_tp1_r (CP-E06): tras cobrar el objetivo parcial, no se amplía hasta que el precio pasa el TP1 en
+    # al menos ese número de R (y nunca en el mismo ciclo del cobro).
+    "piramide": {"activa": False, "fraccion": 0.5, "riesgo_max_frac_original": 1.0, "avance_tras_tp1_r": 1.0},
     # Binance y Bybit: lectura de datos públicos de mercado para informe e investigación (contexto_externo.py).
     "contexto_externo": {"activo": True, "cada_min": 5, "fuentes": ["binance", "bybit"], "desviacion_max_pct": 2.0},
     "archivo": {"activo": True, "velas": True, "libro": True, "libro_cada_min": 5, "libro_niveles": 10,
@@ -518,6 +520,7 @@ def validar(c, entorno=None, modulos=None):
     _bool(c, ("piramide", "activa"), errores)
     _num(c, ("piramide", "fraccion"), 0, 1, errores=errores, minimo_excl=True)
     _num(c, ("piramide", "riesgo_max_frac_original"), 0, 2, errores=errores, minimo_excl=True)
+    _num(c, ("piramide", "avance_tras_tp1_r"), 0, 10, errores=errores)
 
     # ---- estrategias
     if not isinstance(c.get("estrategias"), dict):

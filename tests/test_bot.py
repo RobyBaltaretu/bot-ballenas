@@ -306,6 +306,19 @@ class BotShadowYSimulado(ConCarpeta):
         b.c["piramide"] = {"activa": True, "fraccion": 0.5, "riesgo_max_frac_original": 1.0}
         return b, op, llamadas
 
+    def test_ampliar_tras_cobrar_el_tp1_espera_1r_mas(self):
+        # CP-E06 (auditoría 26/11): con el TP1 cobrado no se recompra hasta que el precio pase el TP1 en 1 R.
+        b, op, llamadas = self._bot_con_op_en_breakeven()
+        b.c["piramide"]["avance_tras_tp1_r"] = 1.0
+        px, r = b.mids["ETH"], op["r_dist"]
+        s = 1 if op["lado"] == "L" else -1
+        op.update(parcial=True, tp1_hecho=True, tp1=px - s * 0.5 * r)       # solo 0,5 R más allá del TP1
+        b._ampliar_ganadoras()
+        self.assertEqual(llamadas, [])
+        op["tp1"] = px - s * 1.2 * r                                        # ya 1,2 R más allá
+        b._ampliar_ganadoras()
+        self.assertEqual(len(llamadas), 1)
+
     def test_ampliar_respeta_los_bloqueos_de_entrada(self):
         # Auditoría 19/11 (R-01): antes ampliaba con pausa manual, límites de pérdida o datos viejos.
         b, _, llamadas = self._bot_con_op_en_breakeven()

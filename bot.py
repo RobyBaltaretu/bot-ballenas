@@ -1255,7 +1255,8 @@ class Bot:
         if not eq:
             return
         lim = limites_efectivos(self.c)
-        candidatas = [op for op in self.estado["posiciones"].values() if not self.gestor.ampliable(op)]
+        candidatas = [op for op in self.estado["posiciones"].values()
+                      if not self.gestor.ampliable(op, self.mids.get(op["moneda"]))]
         if not candidatas:
             return
         # Auditoría 19/11 (R-01): una ampliación es una ENTRADA más y pasa los mismos controles. Antes se saltaba la

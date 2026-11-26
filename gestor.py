@@ -179,6 +179,7 @@ class Gestor:
         self.origen, self.avisar, self.guardar, self.memoria = origen, avisar, guardar, memoria
         self.esperar = esperar
         self.ultima_cuenta = None
+        self.arranque, self.ciclo = time.time(), 0          # identifican el ciclo de conciliación (CP-E06)
         self.externas_vistas = set()
         self.sin_stop = {}               # moneda -> motivo (bloquea entradas mientras no se resuelva)
         self.ultimo_informe = None
@@ -267,6 +268,7 @@ class Gestor:
     def conciliar(self, mids):
         """Lee la cuenta, la compara con el registro y aplica SOLO acciones seguras sobre posiciones del bot.
         Devuelve el informe (o None si no se pudo leer la cuenta: en ese caso no se hace nada)."""
+        self.ciclo += 1                                     # CP-E06: lo cobrado en ESTE ciclo no se recompra en él
         cuenta = self.leer()
         if cuenta is None:
             return None
@@ -583,6 +585,8 @@ class Gestor:
         else:
             if op.get("parcial") and not op.get("tp1_hecho"):
                 op["tp1_hecho"] = True
+                op["tp1_ts"] = time.time()                  # CP-E06: cuándo y en qué ciclo se cobró
+                op["tp1_ciclo"] = [self.arranque, self.ciclo]
                 self.avisar(f"💰 {nombre_op(op['lado'], op['moneda'])}: primer objetivo cobrado.", "info")
         op["tam"] = tam_cuenta
         # Hora del cambio de tamaño: la del FILL en el exchange si se conoce; si no, la de detección marcada como
@@ -1257,9 +1261,12 @@ class Gestor:
                    "r_sin_ampliacion": round(sin / riesgo, 4) if sin is not None and riesgo else None}
         return res, resumen
 
-    def ampliable(self, op):
+    def ampliable(self, op, px=None):
         """¿Se puede ampliar ya? Una sola vez, posición abierta y propia, con el stop YA en la entrada o mejor (la parte
-        original no puede perder), stop verificado y mercado no congelado. Devuelve el motivo si no, o None."""
+        original no puede perder), stop verificado y mercado no congelado. Devuelve el motivo si no, o None.
+        CP-E06 (auditoría 26/11): si la operación tenía objetivo parcial y ya lo cobró, no se recompra lo recién
+        vendido: nunca en el mismo ciclo del cobro y solo cuando el precio 'px' ha avanzado al menos
+        'piramide.avance_tras_tp1_r' R más allá del TP1."""
         if op.get("ampliacion") or op.get("ampliacion_intentada"):
             return "ya ampliada (o intentada) una vez"
         if op.get("estado") != "abierta" or op.get("entrada") is None or op.get("sl") is None:
@@ -1273,6 +1280,14 @@ class Gestor:
             return "el stop sigue por debajo de la entrada"
         if op["moneda"] in self.ej.congelados or op["moneda"] in self.sin_stop:
             return "mercado congelado o stop sin verificar"
+        if op.get("tp1_hecho"):
+            if op.get("tp1_ciclo") == [self.arranque, self.ciclo]:
+                return "objetivo parcial cobrado en este mismo ciclo"
+            avance = (self.c.get("piramide") or {}).get("avance_tras_tp1_r", 1.0)
+            if px is None or not op.get("tp1") or not op.get("r_dist"):
+                return "objetivo parcial cobrado: sin precio para medir el avance desde el TP1"
+            if s * (px - op["tp1"]) < avance * op["r_dist"]:
+                return f"objetivo parcial cobrado: el precio aún no ha avanzado {avance:g} R más allá del TP1"
         return None
 
     def ampliar(self, op, tam, motivo):

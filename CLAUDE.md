@@ -135,7 +135,14 @@ Lee `LEEME.md` para el detalle completo (es la documentación de referencia del 
   (`papel.HUECO_MIN_S`), se repasan las velas reales de 1 min del hueco y se ejecutan en orden cronológico los stops y
   objetivos reduce-only que se habrían disparado (stop al disparo o a la apertura si hubo hueco, ESTIMADO). Queda en
   `papel.json` → `huecos_recuperados`. Las velas son de operaciones, no de marca (aproximación).
-- **Reloj de baja resolución** (salió al probar con Python 3.12 en Windows): `ledger.destino_libre` (al rotar ledger o`n  feed nunca se pisa un archivado con el mismo nombre; antes se perdían eventos) y `gestor._ultima_tp` (empate de hora`n  -> gana el objetivo creado después; antes la conciliación duplicaba el objetivo final).`n- **Hetzner** (Roberto, 21/11; sustituye a Oracle): `despliegue/GUIA_HETZNER.md`, `herramientas\parar-para-migrar.bat``n  (`despliegue/parar_windows.ps1`). `instalar_vps.sh`: recordatorio mensual solo en Oracle, exige Python ≥ 3.12, reinicio`n  automático a las 07:30 (hora de Madrid; antes 04:00 chocaba con el laboratorio). Las pruebas pasan con 3.12 y 3.14;`n  el bot aún no se ha ejecutado en Linux (la guía pide pasar las pruebas en el servidor antes de arrancar).`n- 734 pruebas (`tests/test_mejoras_auditoria.py`).
+- **Reloj de baja resolución** (salió al probar con Python 3.12 en Windows): `ledger.destino_libre` (al rotar ledger o
+  feed nunca se pisa un archivado con el mismo nombre; antes se perdían eventos) y `gestor._ultima_tp` (empate de hora
+  -> gana el objetivo creado después; antes la conciliación duplicaba el objetivo final).
+- **Hetzner** (Roberto, 21/11; sustituye a Oracle): `despliegue/GUIA_HETZNER.md`, `herramientas\parar-para-migrar.bat`
+  (`despliegue/parar_windows.ps1`). `instalar_vps.sh`: recordatorio mensual solo en Oracle, exige Python ≥ 3.12, reinicio
+  automático a las 07:30 (hora de Madrid; antes 04:00 chocaba con el laboratorio). Las pruebas pasan con 3.12 y 3.14;
+  el bot aún no se ha ejecutado en Linux (la guía pide pasar las pruebas en el servidor antes de arrancar).
+- 734 pruebas (`tests/test_mejoras_auditoria.py`).
 - **Preregistro: veredicto falso anulado** (21/11): «fuerza_4h confirmada» (30 ops, +0,40 R, t 10,77) lo escribió el
   17/11 14:08 una prueba de humo de Claude con datos inventados: `cargar_estado`/`guardar_estado` fijaban la ruta al
   definirse y cambiar `pr.RUTA_ESTADO` no la redirigía. Arreglado (ruta al llamar + prueba). Quitado de

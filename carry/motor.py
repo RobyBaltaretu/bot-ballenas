@@ -1,4 +1,4 @@
-﻿"""Fase 3 del carry: el motor SIMULADO que lo une todo. Dinero ficticio con precios, libros y funding REALES (solo lectura
+"""Fase 3 del carry: el motor SIMULADO que lo une todo. Dinero ficticio con precios, libros y funding REALES (solo lectura
 de la API pública de Hyperliquid). No envía órdenes, no firma, no usa claves ni cuenta: no existe código de orden real en este
 paquete (una prueba lo exige) y se niega a funcionar si config.json no está en modo simulado.
 

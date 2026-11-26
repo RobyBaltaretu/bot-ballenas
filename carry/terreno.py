@@ -1,4 +1,4 @@
-﻿"""Fase 0 del carry: verificar el terreno. SOLO LECTURA de la API pública de Hyperliquid (sin firmar, sin cuenta).
+"""Fase 0 del carry: verificar el terreno. SOLO LECTURA de la API pública de Hyperliquid (sin firmar, sin cuenta).
 
 Responde: ¿qué monedas de nuestro universo tienen contado (spot) en Hyperliquid, cuánto se aleja su precio del
 perpetuo (la «base»), y hay libro suficiente para entrar y salir sin mover el precio? Guarda el resultado en

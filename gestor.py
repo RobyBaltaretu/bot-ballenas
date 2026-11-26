@@ -1443,9 +1443,12 @@ class Gestor:
             if o.get("oid") is not None:
                 roles[o["oid"]] = o["rol"]
         ent, sal, ent_add = [], [], []
+        sal_stop = []                                       # CP-M05: solo los fills del stop miden su deslizamiento
         for f in fills or []:
             rol = roles.get(f.get("cloid")) or roles.get(f.get("oid")) or "salida"
             (ent if rol in ("entrada", "ampliacion") else sal).append(f)
+            if rol in ("stop", "stop_sobrante"):
+                sal_stop.append(f)
             if rol == "ampliacion":
                 ent_add.append(f)
             elif rol != "entrada":
@@ -1476,6 +1479,7 @@ class Gestor:
                     if faltante <= tol:
                         break
                     sal.append(f)
+                    sal_stop.append(f)                      # stop disparado u orden hija (ver arriba)
                     faltante -= float(f["sz"])
                     self._registrar_fills(op, [f], "salida", atribucion="por moneda y tiempo (stop disparado u orden hija)")
             if faltante > tol:
@@ -1518,8 +1522,13 @@ class Gestor:
                      "stop sin pérdidas" if r > -0.5 and op.get("en_breakeven") else "stop-loss")
         datos_fills = ("incompletos" if contabilidad_incompleta else "reales") if fills is not None else "no disponibles"
         # Cola del stop: pérdida realizada frente al riesgo planificado y fill peor que el trigger (si lo hubo).
-        cola = analisis_salida_stop(op["lado"], op.get("sl"), res["precio_medio_salida"],
+        # CP-M05 (auditoría 26/11, Q-06): el fill se mide con los fills DEL STOP, no con la media de todas las
+        # salidas (con un TP1 previo la media quedaba «mejor que el trigger»: SKY 0,0 % registrado, −2,0 % real).
+        sz_stop = sum(float(f["sz"]) for f in sal_stop)
+        px_stop = sum(float(f["px"]) * float(f["sz"]) for f in sal_stop) / sz_stop if sz_stop > 0 else None
+        cola = analisis_salida_stop(op["lado"], op.get("sl"), px_stop,
                                     op.get("riesgo_plan_usd") or res["riesgo_inicial_usd"], res["pnl_neto"])
+        cola["precio_medio_stop"] = round(px_stop, 10) if px_stop else None
         if (cola["peor_que_trigger_pct"] or 0) > 0 and str(causa).startswith("stop"):
             self._ev("alerta", op, severidad="aviso", precio_referencia="fill",
                      mensaje=f"salida por stop {cola['peor_que_trigger_pct']:.3f}% peor que el trigger")

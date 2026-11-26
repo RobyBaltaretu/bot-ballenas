@@ -223,6 +223,35 @@ class NoRecompraElTP1(Base):
         self.assertIsNone(self.gestor.ampliable(op, op["entrada"]))         # sin TP1 cobrado: como antes
 
 
+class DeslizamientoDelStop(Base):
+    """CP-M05 (auditoría 26/11, Q-06): el fill del stop se compara con el trigger usando SOLO los fills del stop. Con un
+    TP1 previo, la media de todas las salidas salía «mejor que el trigger» (SKY: 0,0 % registrado, −2,0 % real)."""
+
+    def test_tp1_y_stop_peor_que_el_trigger(self):
+        op = self.gestor.abrir(self.plan(tam=0.05))
+        self.assertTrue(op["parcial"])
+        mover(self.papel, self.m, "ETH", op["tp1"] * 1.001)               # cobra el TP1
+        self.gestor.conciliar(self.m.precios)
+        op = self.estado["posiciones"]["ETH"]
+        self.gestor.gestionar(op, self.m.precios["ETH"])                   # stop a sin pérdidas
+        self.assertTrue(op["tp1_hecho"] and op["en_breakeven"])
+        sl = op["sl"]
+        mover(self.papel, self.m, "ETH", sl * 0.98)                        # hueco: el stop llena un 2 % peor
+        self.gestor.conciliar(self.m.precios)
+        self.assertNotIn("ETH", self.estado["posiciones"])
+        cierre = [e for e in self.ledger.leer()[0] if e["tipo"] == "cierre"][-1]
+        self.assertGreater(cierre["peor_que_trigger_pct"], 1.5)            # antes: ~0 por la media con el TP1
+        self.assertLess(cierre["precio_medio_stop"], sl)
+        self.assertGreater(cierre["precio_medio_salida"], cierre["precio_medio_stop"])
+
+    def test_sin_fills_del_stop_no_se_inventa(self):
+        op = self.gestor.abrir(self.plan(tam=0.05))
+        self.gestor.cerrar(op, "prueba")                                   # cierre manual: no hay stop disparado
+        cierre = [e for e in self.ledger.leer()[0] if e["tipo"] == "cierre"][-1]
+        self.assertIsNone(cierre["peor_que_trigger_pct"])
+        self.assertIsNone(cierre["precio_medio_stop"])
+
+
 class FundingConSuHora(ConCarpeta):
     def test_cada_pago_conserva_la_hora_del_cobro(self):
         ledger = Ledger(os.path.join(self.dir, "registro"))

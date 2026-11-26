@@ -98,6 +98,68 @@ class Papel(ConCarpeta):
         self.assertAlmostEqual(pago, -0.01 * 4000.0 * 0.0001, places=8)
 
 
+class MercadoConHistoria(MercadoFalso):
+    """Añade fundingHistory y velas de 1 h (lo que usa CuentaPapel para recuperar las horas perdidas)."""
+
+    def __init__(self):
+        super().__init__()
+        self.historia = {}                  # hora (entero) -> tasa
+        self.aperturas = {}                 # hora -> precio de apertura de la vela de 1 h
+        self.fallar = False
+
+    def funding_history(self, moneda, desde, hasta=None):
+        if self.fallar:
+            raise RuntimeError("sin red")
+        return [{"coin": moneda, "fundingRate": str(t), "premium": "0", "time": h * 3600_000 + 7}
+                for h, t in sorted(self.historia.items()) if desde <= h * 3600_000 <= (hasta or 10**15)]
+
+    def candles_snapshot(self, moneda, intervalo, desde, hasta):
+        return [{"t": h * 3600_000, "o": str(p), "c": str(p), "h": str(p), "l": str(p)}
+                for h, p in sorted(self.aperturas.items()) if desde <= h * 3600_000 <= hasta]
+
+
+class FundingHorasPerdidas(ConCarpeta):
+    """CP-M15 (auditoría 26/11, T-08): al volver de un parón se aplica el funding de CADA hora perdida con su tasa real;
+    antes solo se aplicaba la hora de la vuelta."""
+
+    def setUp(self):
+        super().setUp()
+        self.m = MercadoConHistoria()
+        self.papel, _ = nuevo_papel(self.dir, self.m)
+        self.papel.order("ETH", True, 0.01, 4100.0, {"limit": {"tif": "Ioc"}})
+        self.hora = int(__import__("time").time() // 3600)
+        self.papel.d["ultima_hora_funding"] = self.hora - 4            # parado: faltan hora-3, hora-2 y hora-1
+        self.m.tasas["ETH"] = 0.0001                                    # tasa de la hora actual
+        self.efectivo = self.papel.d["efectivo"]
+
+    def test_hueco_de_3_horas(self):
+        for k, (tasa, px) in enumerate(((0.0002, 3900.0), (-0.0001, 3950.0), (0.0003, 4050.0)), start=1):
+            self.m.historia[self.hora - 4 + k] = tasa
+            self.m.aperturas[self.hora - 4 + k] = px
+        self.papel._funding()
+        pagos = self.papel.d["funding"]
+        self.assertEqual([p["time"] // 3600_000 for p in pagos], [self.hora - 3, self.hora - 2, self.hora - 1, self.hora])
+        esperado = [-0.01 * 3900.0 * 0.0002, -0.01 * 3950.0 * -0.0001, -0.01 * 4050.0 * 0.0003, -0.01 * 4000.0 * 0.0001]
+        for p, e in zip(pagos, esperado):
+            self.assertAlmostEqual(float(p["delta"]["usdc"]), e, places=8)
+        self.assertTrue(all(p.get("recuperado") for p in pagos[:3]))
+        self.assertAlmostEqual(self.papel.d["efectivo"], self.efectivo + sum(esperado), places=8)
+        self.assertEqual(self.papel.d["ultima_hora_funding"], self.hora)
+        self.papel._funding()                                           # no se paga dos veces
+        self.assertEqual(len(self.papel.d["funding"]), 4)
+
+    def test_sin_historia_no_se_inventa(self):
+        self.m.fallar = True
+        self.papel._funding()
+        self.assertEqual(len(self.papel.d["funding"]), 1)                # solo la hora actual, con su tasa real
+        self.m.fallar = False
+        self.m.historia[self.hora - 2] = 0.0002                         # solo hay tasa para una de las tres
+        self.papel.d["ultima_hora_funding"] = self.hora - 4
+        self.papel.d["funding"] = []
+        self.papel._funding()
+        self.assertEqual([p["time"] // 3600_000 for p in self.papel.d["funding"]], [self.hora - 2, self.hora])
+
+
 class Laboratorio(unittest.TestCase):
     def test_stop_simulado_sale_peor_que_su_precio(self):
         cfg = dict(config()["salida"], parcial_activo=False)

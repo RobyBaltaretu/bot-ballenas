@@ -41,6 +41,7 @@ from compat import reemplazar
 MODELO = 3                     # versión del modelo de ejecución (entra en la huella vía promocion.MODELO_SIMULACION)
 HUECO_MIN_S = 180              # sin procesar más de 3 min = el bot estuvo parado: se repasan las velas del hueco
 TOLERANCIA_MERCADO = 0.10     # las órdenes trigger de mercado de Hyperliquid admiten un 10 % de deslizamiento
+MAX_HORAS_FUNDING_PERDIDAS = 24 * 7   # tras un parón, se recupera el funding de hasta 7 días (CP-M15)
 
 
 def _cloid_txt(cloid):
@@ -254,6 +255,11 @@ class CuentaPapel:
                      for a, x in zip(meta["universe"], ctxs)}
         except Exception:  # noqa: BLE001  (sin datos: no se inventa el funding; se reintenta en el siguiente ciclo)
             return False
+        # CP-M15 (auditoría 26/11, T-08): las horas en que el bot estuvo parado también se pagan/cobran, cada una con
+        # su tasa REAL (fundingHistory). Antes solo se aplicaba la hora de la vuelta.
+        perdidas = list(range(max(self.d["ultima_hora_funding"] + 1, hora - MAX_HORAS_FUNDING_PERDIDAS), hora))
+        if perdidas:
+            self._funding_perdido(perdidas, tasas)
         for m, p in self.d["posiciones"].items():
             if m not in tasas:
                 continue
@@ -266,6 +272,47 @@ class CuentaPapel:
                                                 "szi": str(p["szi"]), "fundingRate": str(tasa)}})
         self.d["ultima_hora_funding"] = hora
         return True
+
+    def _funding_perdido(self, horas, tasas):
+        """Funding de las 'horas' (enteros, hora UTC desde epoch) en que el bot no estuvo: tasa real de cada hora
+        (fundingHistory) y precio de apertura de su vela de 1 h (si falta, el oráculo actual). Supone el tamaño que
+        hay ahora durante todo el hueco (las órdenes del hueco se repasan después). Sin historia de una moneda no se
+        inventa nada: queda en el log."""
+        desde, hasta = horas[0] * 3600_000, (horas[-1] + 1) * 3600_000 - 1
+        for m, p in self.d["posiciones"].items():
+            try:
+                hist = self.info.funding_history(m, desde, hasta) or []
+            except Exception as e:  # noqa: BLE001
+                if self.log:
+                    self.log.warning(f"Funding simulado: no pude leer la historia de {m} para {len(horas)} h perdidas "
+                                     f"({e}); esas horas quedan sin aplicar")
+                continue
+            por_hora = {}
+            for x in hist:
+                try:
+                    por_hora[int(x["time"]) // 3600_000] = float(x["fundingRate"])
+                except (KeyError, TypeError, ValueError):
+                    continue
+            try:
+                velas = self.info.candles_snapshot(m, "1h", desde, hasta) or []
+                precios = {int(v["t"]) // 3600_000: float(v["o"]) for v in velas}
+            except Exception:  # noqa: BLE001
+                precios = {}
+            reserva = (tasas.get(m) or (0.0, 0.0))[1] or self._mids().get(m, p["entrada"])
+            aplicadas = 0
+            for h in horas:
+                if h not in por_hora:
+                    continue
+                tasa = por_hora[h]
+                pago = -p["szi"] * (precios.get(h) or reserva) * tasa
+                self.d["efectivo"] += pago
+                self.d["funding"].append({"time": h * 3600_000, "hash": None, "simulado": True, "recuperado": True,
+                                          "delta": {"type": "funding", "coin": m, "usdc": str(round(pago, 8)),
+                                                    "szi": str(p["szi"]), "fundingRate": str(tasa)}})
+                aplicadas += 1
+            if self.log and aplicadas < len(horas):
+                self.log.warning(f"Funding simulado: {m} sin tasa para {len(horas) - aplicadas} de {len(horas)} h "
+                                 f"perdidas; no se inventan")
 
     def _velas_1m(self, moneda, desde_ms):
         """Velas REALES de 1 minuto desde 'desde_ms' (cacheadas 30 s). Sirven para saber si hubo operaciones a un

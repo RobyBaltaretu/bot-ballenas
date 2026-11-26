@@ -25,6 +25,14 @@ if [ -z "${PROVEEDOR:-}" ]; then
 fi
 
 paso() { echo; echo ">> $*"; }
+# CP-M18 (auditoría 26/11, OPS-01): el servidor debe quedar con EXACTAMENTE el entorno probado
+# (requirements-bloqueado.txt, dependencias indirectas incluidas), no con lo que resuelva pip ese día.
+entorno_igual_al_bloqueado() {  # $1 = requirements-bloqueado.txt, $2 = pip del entorno
+  local esperado actual
+  esperado=$(tr -d '\r' < "$1" | grep -vE '^[[:space:]]*(#|$)' | tr 'A-Z_' 'a-z-' | sort)
+  actual=$("$2" freeze 2>/dev/null | tr -d '\r' | tr 'A-Z_' 'a-z-' | sort)
+  [ "$esperado" = "$actual" ]
+}
 sistema() { if [ "$PRUEBA" = "1" ]; then echo "   (prueba) $*"; else "$@"; fi; }
 
 if [ "$PRUEBA" != "1" ] && [ "$(id -u)" -ne 0 ]; then
@@ -134,7 +142,12 @@ if [ "$PRUEBA" = "1" ]; then
 else
   python3 -m venv "$DESTINO/.venv"
   "$DESTINO/.venv/bin/pip" install -q --upgrade pip
-  "$DESTINO/.venv/bin/pip" install -q -r "$DESTINO/requirements.txt"
+  "$DESTINO/.venv/bin/pip" install -q -r "$DESTINO/requirements-bloqueado.txt"
+  if ! entorno_igual_al_bloqueado "$DESTINO/requirements-bloqueado.txt" "$DESTINO/.venv/bin/pip"; then
+    echo "   ERROR: las dependencias instaladas no coinciden con requirements-bloqueado.txt (pip freeze distinto)."
+    echo "   No sigo: el bot solo se arranca con el entorno probado. Revisa la salida de pip y vuelve a lanzarlo."
+    exit 1
+  fi
 fi
 
 if [ ! -f "$DESTINO/config.json" ]; then

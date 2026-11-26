@@ -4,6 +4,14 @@
 # Uso (en el servidor, dentro de la carpeta con la versión NUEVA):   sudo bash despliegue/actualizar_vps.sh
 set -euo pipefail
 ORIGEN="$(cd "$(dirname "$0")/.." && pwd)"
+# CP-M18 (auditoría 26/11, OPS-01): el servidor debe quedar con EXACTAMENTE el entorno probado
+# (requirements-bloqueado.txt, dependencias indirectas incluidas), no con lo que resuelva pip ese día.
+entorno_igual_al_bloqueado() {  # $1 = requirements-bloqueado.txt, $2 = pip del entorno
+  local esperado actual
+  esperado=$(tr -d '\r' < "$1" | grep -vE '^[[:space:]]*(#|$)' | tr 'A-Z_' 'a-z-' | sort)
+  actual=$("$2" freeze 2>/dev/null | tr -d '\r' | tr 'A-Z_' 'a-z-' | sort)
+  [ "$esperado" = "$actual" ]
+}
 DESTINO="${DESTINO:-/opt/bot-ballenas}"
 USUARIO="${USUARIO:-botballenas}"
 PRUEBA="${PRUEBA:-0}"
@@ -24,7 +32,14 @@ rsync -a --prune-empty-dirs \
   --exclude '*' "$ORIGEN"/ "$DESTINO"/
 
 echo ">> Dependencias..."
-if [ "$PRUEBA" != "1" ]; then "$DESTINO/.venv/bin/pip" install -q -r "$DESTINO/requirements.txt"; fi
+if [ "$PRUEBA" != "1" ]; then
+  "$DESTINO/.venv/bin/pip" install -q -r "$DESTINO/requirements-bloqueado.txt"
+  # Al actualizar no se para nada por esto (el bot tiene que seguir operando): se avisa para revisarlo.
+  if ! entorno_igual_al_bloqueado "$DESTINO/requirements-bloqueado.txt" "$DESTINO/.venv/bin/pip"; then
+    echo "   AVISO: el entorno del servidor no coincide con requirements-bloqueado.txt (pip freeze distinto)."
+    echo "   Hay paquetes de más o con otra versión. Revísalo con: $DESTINO/.venv/bin/pip freeze"
+  fi
+fi
 if [ "$PRUEBA" != "1" ]; then chown -R "$USUARIO:$USUARIO" "$DESTINO"; fi
 
 echo ">> Comprobando (y si hace falta migrando, con copia de seguridad) la configuración..."

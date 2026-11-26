@@ -193,7 +193,9 @@ def huella_bien_formada(h):
     return isinstance(h, str) and len(h) == LARGO_HUELLA and all(c in "0123456789abcdef" for c in h)
 
 
-MODELO_SIMULACION = 2      # sube cuando cambia cómo se simulan fills, costes o funding (papel.py / laboratorio.py)
+# CP-M16 (auditoría 26/11, T-11): una sola fuente. Sube (en papel.MODELO) cuando cambia cómo se simulan fills, costes o
+# funding (papel.py / laboratorio.py). Antes valía 2 aquí y 3 en papel.py.
+from papel import MODELO as MODELO_SIMULACION  # noqa: E402
 
 
 VERSION_REGISTRO = 2       # v2: aprobaciones ligadas a huella v3 (con identidad del modelo)

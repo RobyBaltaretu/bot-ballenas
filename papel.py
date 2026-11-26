@@ -38,7 +38,8 @@ import time
 
 from compat import reemplazar
 
-MODELO = 3                     # versión del modelo de ejecución (entra en la huella vía promocion.MODELO_SIMULACION)
+MODELO = 4                     # versión del modelo de ejecución (entra en la huella vía promocion.MODELO_SIMULACION)
+                               # 4 (26/11/2026): funding de las horas perdidas tras un parón (CP-M15)
 HUECO_MIN_S = 180              # sin procesar más de 3 min = el bot estuvo parado: se repasan las velas del hueco
 TOLERANCIA_MERCADO = 0.10     # las órdenes trigger de mercado de Hyperliquid admiten un 10 % de deslizamiento
 MAX_HORAS_FUNDING_PERDIDAS = 24 * 7   # tras un parón, se recupera el funding de hasta 7 días (CP-M15)

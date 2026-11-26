@@ -1,6 +1,7 @@
 import os
 import unittest
 
+import promocion
 import validacion as vd
 from promocion import Registro, huella
 from tests.comunes import ConCarpeta, config, evidencia_para_apta
@@ -250,3 +251,12 @@ class Huella(ConCarpeta):
         c2["real"]["subcuenta"] = "0x" + "ab" * 20
         self.assertEqual(self.h(c2), self.base)            # la subcuenta no entra
         self.assertEqual(len(self.base), 20)
+
+
+class ModeloSimulacion(unittest.TestCase):
+    """CP-M16 (auditoría 26/11, T-11): la versión del modelo de simulación tiene una sola fuente (papel.MODELO)."""
+
+    def test_misma_version_que_papel(self):
+        import papel
+        self.assertEqual(promocion.MODELO_SIMULACION, papel.MODELO)
+        self.assertGreaterEqual(papel.MODELO, 4)                 # 4: funding de las horas perdidas (CP-M15)

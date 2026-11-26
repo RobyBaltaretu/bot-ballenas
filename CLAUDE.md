@@ -442,6 +442,40 @@ HyperGrok no trae estrategia: se copiaron solo controles y método. Su código s
 - El veredicto muestra «¿Bot o mercado?» (`veredicto.contra_mercado`): las mismas operaciones todas cortas o todas largas.
   El analista: «retirar» solo con t ≤ −2 o 5+ operaciones negativas en vivo; ideas solo los lunes.
 
+## Auditoría independiente: plan de desarrollo, fase 1 (26/11/2026, pedida por Roberto)
+
+- Plan en `auditoria_independiente/PLAN_DESARROLLO.md` (48 tareas en 5 fases y 13 propuestas excluidas, que no se tocan).
+  Regla de Roberto: **el bot tiene que seguir operando**; ninguna tarea puede impedir, pausar ni reducir las entradas en
+  simulado. Una rama por fase (`desarrollo/fase-N`), un commit por tarea con su ID; Roberto revisa cada fase antes de la
+  siguiente y no se fusiona a `main`. La fase 1 parte de un commit base con la cuenta agresiva, que estaba sin commitear.
+- **CP-E06** piramidación: con el TP1 cobrado, `gestor.ampliable(op, px)` no amplía en el mismo ciclo del cobro (contador
+  `gestor.ciclo`, `op.tp1_ciclo`) ni hasta que el precio pase el TP1 en `piramide.avance_tras_tp1_r` (1 R). Sigue activa;
+  sin TP1 cobrado nada cambia. Las estrategias con `tp_final_r` 2 y TP1 a 1 R casi no ampliarán tras el TP1.
+- **CP-M05** `peor_que_trigger_pct` se mide solo con los fills del stop (o los atribuidos al stop disparado); sin ellos,
+  `None`. El cierre guarda `precio_medio_stop`.
+- **CP-M06** prompt del escéptico: `funding_contra > 0` = el funding juega EN CONTRA del lado (lo paga).
+- **CP-M15** `papel._funding_perdido`: al volver de un parón, funding de cada hora perdida (hasta 7 días) con su tasa de
+  `fundingHistory` y el precio de apertura de la vela de 1 h; sin historia no se inventa (aviso en el log). `recuperado: true`.
+- **CP-M16** `promocion.MODELO_SIMULACION` es `papel.MODELO` (una sola fuente), que sube a 4 por CP-M15.
+- **CP-M17** `curva_valor.py` («sin efecto»): `registro/curva_valor.jsonl`, un punto por día UTC (valor al empezar el día)
+  que nunca se recorta. Al crearse rellena desde la puesta a cero: `historial_saldo` si hay y, si no, saldo inicial +
+  cierres del ledger (`ledger_realizado`, solo lo realizado). Cada punto dice `fuente` y `cuenta_desde`.
+- **CP-M18** `instalar_vps.sh` y `actualizar_vps.sh` instalan `requirements-bloqueado.txt` y comparan `pip freeze` con él
+  (`entorno_igual_al_bloqueado`): el instalador se detiene si no coincide; el actualizador solo avisa (no para el bot).
+- **CP-M19** pruebas herméticas: `tests/__init__.py` corta la red (fuera de 127.0.0.1 lanza `RedProhibida`, que deriva de
+  BaseException) y anota como error de la prueba un intento desde un hilo. Para construir un `Bot` en una prueba, llama a
+  `tests.comunes.aislar_bot(b)` (tabla de ballenas, Binance/Bybit y funding histórico sin red).
+- **CP-M23** `contexto_externo`: los lectores anotan en `.fallos` lo que falla (intervalos de funding, OI, series del
+  cerebro), la fuente pasa a `degradado` con el motivo y hay aviso en el log (como mucho uno por hora si no cambia). Solo
+  informa: el estado de la fuente no decide nada.
+- **CP-M24** sin BOM ni CRLF en los `.py` (`carry/motor.py`, `carry/terreno.py`), `.editorconfig` y
+  `tests/test_codificacion.py`.
+- **CP-E13** `datos_mercado/` ya no se borra (`mercado._limpiar` eliminado; `mercado.dias_guardar` retirado). ~200 MB/mes.
+  Ojo: `archivo.py` sigue borrando el libro de `datos_archivo/` de más de `archivo.dias_guardar_libro` (365) días; no
+  está en el plan y no se ha tocado.
+- Ninguna tarea cambia cuántas operaciones se abren: sin cambios en estrategias, vías, riesgo ni límites. Cambia la
+  huella (esperado). 852 pruebas.
+
 ## Arquitectura (archivos clave)
 
 | Archivo | Qué hace |
@@ -452,6 +486,7 @@ HyperGrok no trae estrategia: se copiaron solo controles y método. Su código s
 | `riesgo.py` | Tamaño (incluye funding previsto), límites, suelo de emergencia, rebase de capital |
 | `gestor.py` / `ejecucion.py` | Una operación por moneda, stops verificados, conciliación, órdenes huérfanas |
 | `papel.py` | Cuenta simulada (`papel.json`), registra `ajustes_capital` |
+| `curva_valor.py` | Curva de valor diaria completa (`registro/curva_valor.jsonl`), solo informa |
 | `laboratorio.py` / `validacion.py` / `historia_externa.py` | Walk-forward, holdout sellado, t por días, cartera, historia Binance/Bybit |
 | `investigacion.py` | Ideas nuevas con el rigor del laboratorio |
 | `contexto_externo.py` | Datos públicos de Binance/Bybit en vivo (solo velas cerradas) |
@@ -477,7 +512,7 @@ HyperGrok no trae estrategia: se copiaron solo controles y método. Su código s
 
 ## Cómo trabajar
 
-- **Pruebas** (deben pasar todas antes de dar algo por terminado; hoy son 734):
+- **Pruebas** (deben pasar todas antes de dar algo por terminado; hoy son 852; sin red, ver CP-M19):
   `.venv\Scripts\python -m unittest discover -s tests -t .`
 - **Reiniciar el bot** para aplicar código o config: escribir `comandos_panel.json` con
   `[{"cmd": "/aplicarconfig", "id": "<algo>"}]` (o el panel). El bot sale con código 4 y el lanzador lo rearranca.

@@ -28,7 +28,7 @@ if (Procesos 'bot\.py') {
 Write-Host "   bot parado." -ForegroundColor Green
 
 Write-Host ">> 2/3 Panel y carry en segundo plano" -ForegroundColor Cyan
-$sueltos = @(Procesos 'panel\.py|carry\.motor|laboratorio|investigacion')
+$sueltos = @(Procesos 'panel\.py|carry\.motor|agresiva\.motor|laboratorio|investigacion')
 $sueltos | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
 Write-Host "   $($sueltos.Count) proceso(s) parado(s)." -ForegroundColor Green
 

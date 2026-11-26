@@ -13,7 +13,7 @@ sistema() { if [ "$PRUEBA" = "1" ]; then echo "   (prueba) $*"; else "$@"; fi; }
 if [ "$PRUEBA" != "1" ] && [ "$(id -u)" -ne 0 ]; then echo "Ejecútalo con sudo."; exit 1; fi
 
 echo ">> Parando el bot (apagado ordenado: conserva los stops)..."
-sistema systemctl stop bot-ballenas bot-ballenas-panel bot-ballenas-carry || true
+sistema systemctl stop bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva || true
 
 echo ">> Copiando solo el código..."
 rsync -a --prune-empty-dirs \
@@ -33,7 +33,7 @@ if [ "$PRUEBA" = "1" ]; then
 else
   (cd "$DESTINO" && sudo -u "$USUARIO" .venv/bin/python bot.py --validar-config) || {
     echo "La configuración no es válida. El bot NO se ha arrancado. Corrige config.json y ejecuta:"
-    echo "  sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry"; exit 1; }
+    echo "  sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva"; exit 1; }
 fi
 
 if [ "$PRUEBA" != "1" ]; then
@@ -41,9 +41,9 @@ if [ "$PRUEBA" != "1" ]; then
     cp "$u" /etc/systemd/system/
   done
   systemctl daemon-reload
-  systemctl enable bot-ballenas bot-ballenas-panel bot-ballenas-carry >/dev/null
+  systemctl enable bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva >/dev/null
   systemctl enable --now bot-ballenas-investigacion.timer bot-ballenas-laboratorio.timer bot-ballenas-recordatorio.timer bot-ballenas-copia.timer >/dev/null
 fi
-sistema systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry
+sistema systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva
 echo "Actualizado y en marcha. Ver lo que hace: journalctl -u bot-ballenas -f"
 if [ "$PRUEBA" != "1" ]; then sleep 20; (cd "$DESTINO" && sudo -u "$USUARIO" .venv/bin/python comprobar.py) || true; fi

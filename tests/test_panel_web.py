@@ -76,7 +76,7 @@ class PanelWeb(Panel):
     def test_todos_los_endpoints_existentes_siguen_respondiendo(self):
         for ruta in ("/api/datos", "/api/operaciones", "/api/operaciones?formato=csv", "/api/operacion?id=op-1",
                      "/api/observabilidad", "/api/diagnostico", "/api/feed", "/api/feed/tipos", "/api/config",
-                     "/api/config/historial", "/api/laboratorio", "/api/glosario", "/api/resultado?id=x", "/api/taller"):
+                     "/api/config/historial", "/api/laboratorio", "/api/glosario", "/api/resultado?id=x", "/api/taller", "/api/agresiva"):
             self.assertEqual(self.get(ruta)[0], 200, ruta)
         self.assertEqual(self.get("/api/estrategia?clave=nada")[0], 404)
         self.assertEqual(self.get("/api/caso?id=nada")[0], 404)

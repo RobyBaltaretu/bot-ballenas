@@ -174,6 +174,13 @@ try {
     $carry = Start-Process -FilePath $carryExe -ArgumentList "-m carry.motor" -WorkingDirectory $Raiz -PassThru -WindowStyle Hidden
 } catch { $carry = $null }
 
+# Cuenta AGRESIVA simulada (experimento aparte, dinero ficticio, solo lectura de la API publica): proceso aparte con su
+# bloqueo agresiva.lock. Se para sola si el bot no esta en modo simulado.
+$agresiva = $null
+try {
+    $agresiva = Start-Process -FilePath $carryExe -ArgumentList "-m agresiva.motor" -WorkingDirectory $Raiz -PassThru -WindowStyle Hidden
+} catch { $agresiva = $null }
+
 Paso "Comprobando la configuracion..."
 # Pasa config.json al formato actual (guarda antes una copia config.json.v1-....bak) y lo valida SIN conectar ni operar.
 & $VenvPy bot.py --validar-config
@@ -200,6 +207,7 @@ try {
 } finally {
     if ($panel -and -not $panel.HasExited) { Stop-Process -Id $panel.Id -ErrorAction SilentlyContinue }
     if ($carry -and -not $carry.HasExited) { Stop-Process -Id $carry.Id -ErrorAction SilentlyContinue }
+    if ($agresiva -and -not $agresiva.HasExited) { Stop-Process -Id $agresiva.Id -ErrorAction SilentlyContinue }
 }
 Write-Host ""
 Write-Host "El bot se ha detenido." -ForegroundColor Yellow

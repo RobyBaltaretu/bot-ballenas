@@ -24,6 +24,7 @@ const VISTAS = {
   objetivo: () => import("./vistas/objetivo.js"),
   macro: () => import("./vistas/macro.js"),
   sombras: () => import("./vistas/sombras.js"),
+  agresiva: () => import("./vistas/agresiva.js"),
 };
 
 let vistaActual = null;

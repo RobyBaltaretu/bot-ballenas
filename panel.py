@@ -1067,6 +1067,8 @@ class Manejador(BaseHTTPRequestHandler):
                 self._json(200, limpio(resumen_proceso(leer_json("panel_datos.json", {}).get("modo") or "simulado")))
             elif url.path == "/api/vias":
                 self._json(200, limpio(resumen_vias(leer_json("panel_datos.json", {}).get("modo") or "simulado")))
+            elif url.path == "/api/agresiva":    # lo escribe el motor de la cuenta agresiva (proceso aparte); aquí solo se lee
+                self._json(200, limpio(leer_json("agresiva_estado.json", {})))
             elif url.path == "/api/carry":       # lo escribe el motor del carry (proceso aparte); aquí solo se lee
                 self._json(200, limpio(leer_json("carry_estado.json", {})))
             elif url.path == "/api/velas":

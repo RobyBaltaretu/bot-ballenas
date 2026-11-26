@@ -7,7 +7,7 @@ $Nombre = Split-Path -Leaf $Raiz
 $Salida = Join-Path ([Environment]::GetFolderPath("Desktop")) "bot-migracion.tar.gz"
 
 # ¿Sigue el bot en marcha? (escribe su estado cada pocos segundos)
-$vivos = @("panel_datos.json", "carry_estado.json") | ForEach-Object { Join-Path $Raiz $_ } |
+$vivos = @("panel_datos.json", "carry_estado.json", "agresiva_estado.json") | ForEach-Object { Join-Path $Raiz $_ } |
     Where-Object { (Test-Path $_) -and ((Get-Date) - (Get-Item $_).LastWriteTime).TotalSeconds -lt 120 }
 if ($vivos) {
     Write-Host "Parece que el bot o el carry SIGUEN EN MARCHA en este PC (han escrito datos hace menos de 2 minutos)." -ForegroundColor Yellow

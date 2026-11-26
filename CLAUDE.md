@@ -355,6 +355,60 @@ HyperGrok no trae estrategia: se copiaron solo controles y método. Su código s
   (y lo dice en `nota_recorte`), `reasoning_effort: low` evita que el razonamiento corte el JSON (400), y un 429 espera
   `retry-after` y reintenta una vez. El error guardado incluye el código de Groq (nunca el cuerpo).
 
+## Cuenta agresiva: experimento aparte, SIMULADO y en marcha (25/11/2026)
+
+- Pedida por Roberto: señales PROPIAS de 15 min al estilo de los canales de señales (stop corto, cinco objetivos,
+  apalancamiento alto) para ver con números si ese estilo es viable. Paquete `agresiva/`, proceso aparte
+  `python -m agresiva.motor` (lo arranca `despliegue/iniciar_windows.ps1`; en VPS, `bot-ballenas-agresiva.service`).
+- **No toca el bot**: cuenta propia `papel_agresiva.json`, registro `registro/agresiva.jsonl`, estado `agresiva_estado.json`,
+  ajustes opcionales `agresiva_config.json` (claves de `agresiva.logica.CFG_DEFECTO` + `intervalo_s`, `pausa_peticion_s`,
+  `activo`). Ningún .py de la raíz lo importa (prueba), sin código de órdenes (prueba), solo `/info` público con lista
+  blanca y se para si `config.json` no está en simulado. No está en `promocion.py` a propósito: la huella no cambia.
+- Panel: sección propia «Agresiva» (barra de arriba y lateral → «Experimento aparte»), `/api/agresiva` solo lectura,
+  vista `panel_web/assets/js/vistas/agresiva.js`. Cada señal abierta lleva su gráfico de velas en vivo (1 min de las últimas 6 h o 15 min
+  de 30 h, con la vela en formación) con liquidación, stop, entrada, objetivos, precio de ahora y eventos: las velas las
+  lee el motor en cada pasada (`MotorAgresiva._graficos`, una consulta por moneda que sirve también para mover stops) y
+  van en `agresiva_estado.json`; el panel las pinta con `grafico.graficoVelas` y se refresca cada 15 s. No se mezcla con operaciones, estrategias ni ledger de las ballenas.
+- Reglas fijadas con Roberto: 232 $ ficticios; reglas `ruptura_15m`, `retroceso_15m`, `giro_15m`; stop 1,5×ATR entre
+  0,8 % y 3 %; objetivos 0,5/1/1,5/2/3 R con 20 % cada uno y stop a la entrada tras el primero; cierre a 48 h; máx. 3
+  abiertas; 20× recortado al máximo de la moneda y sus tramos (hasta el 25/11 con margen aislado fijo del 10 %; desde la
+  auditoría, riesgo fijo del 5 %, ver abajo); si la liquidación llega antes que el stop, se liquida. **Gemela** con las mismas señales a riesgo 2 % y
+  ≤ 5× para separar señal de apalancamiento. Frenos: pausa 24 h al perder 50 % (una vez por etapa), sin entradas el resto
+  del día UTC al perder 15 % en el día, quiebra < 10 % del inicial (cierra y para). Reinicio solo a mano:
+  `python -m agresiva.motor --reiniciar` (deja `agresiva_reinicio.json`; cada etapa queda contada).
+- Universo: las 25 monedas de más volumen (≥ 20 M$/día), refrescado cada 6 h. Peticiones de 15 min espaciadas 3 s para
+  no comer el límite de la API que comparte con el bot.
+- **Auditoría y arreglos del 25/11/2026** (`audit/agresiva/README.md`, pedidos por Roberto: «arregla todos los errores y
+  haz la cuenta agresiva»). Cuenta versión 2 (`cuenta.migrar_estado` anota el cambio en `cambios_reglas` y en el registro;
+  las señales ya abiertas conservan su tamaño):
+  - **F8 riesgo fijo**: `riesgo_pct` 5 % hasta el stop (con comisiones); el apalancamiento solo decide el margen
+    (`margen_max_pct` 30 % por operación, `margen_total_max_pct` 90 %); si no cabe, arriesga menos (`recortada`). Antes,
+    margen fijo del 10 % → mediana 1,2 % de riesgo, menos que la gemela.
+  - **F1** cada pierna se abre aunque la otra no pueda (`sin_gemela`, contador `solo_agresiva`). En la historia vieja la
+    gemela arruinada bloqueó 1 032 entradas de la agresiva.
+  - **F2/F6** `min_orden_usd` 10 $ en entradas; `logica.tamanos_objetivos`: parciales redondeados a `szDecimals` y, si no
+    llegan a 10 $, juntados con el siguiente (no confirmado si Hyperliquid exime las reduce-only).
+  - **F3** liquidación por el libro conserva el margen sobrante; hueco por debajo de 2/3 del mantenimiento = rescate (todo).
+  - **F4** stop y liquidación con `logica.vela_disparo`: el extremo en contra es el menos extremo de la vela de 1 min de
+    Hyperliquid y la de Binance (`motor.velas_binance_1m`, GET público). Sin perpetuo en Binance → solo Hyperliquid
+    (`sin_binance`). La historia sigue con la vela de Binance.
+  - **F5** objetivos que una vela ya abre más allá se llenan a su precio (orden límite en reposo).
+  - **F7** funding de `fundingHistory` (lista blanca) cada hora, dentro del margen aislado (`margen_extra`), mueve la
+    liquidación. Se aplica antes de pasar las velas.
+  - **F9/F10 historia**: universo diario = las `--monedas` de más volumen de Binance de los 7 días ANTERIORES entre todas
+    las de Hyperliquid (también retiradas) y Binance (`historia.universo_por_dia`, cachés `datos_backtest/agresiva_1d/` y
+    `agresiva_funding/`), funding de Binance y Monte Carlo por días (`rendimientos_diarios`).
+  - La prueba de aislamiento prohíbe ahora `hyperliquid.xyz/exchange`, `"/exchange"` y rutas de órdenes de Binance (la URL
+    pública `exchangeInfo` de Binance es lectura).
+  - Historia rehecha tras los arreglos (28/07–25/11/2026, 20 monedas al día, 51 distintas): 2 330 operaciones,
+    gemela −0,17 R, agresiva −1 038 $ con riesgo medio 3,4 % y 4 quiebras (32, 20, 19 y 28 días), 0 liquidaciones; ruina
+    por días 100 % (mediana 25 días). 816 pruebas (52 de la agresiva).
+- `python -m agresiva.historia`: misma lógica sobre 120 días de velas de 15 min de Binance (caché en
+  `datos_backtest/agresiva_15m/`) + Monte Carlo → `agresiva_historia.json` (lo muestra el panel). Primera pasada (25/11):
+  2805 operaciones, gemela −0,17 R de media y 44,6 % de acierto (negativa en las tres reglas), agresiva −569 $ con
+  2 quiebras (≈ 47 y 45 días por etapa) y 0 liquidaciones; las comisiones son ~45 % de la pérdida. Con los máximos de
+  Hyperliquid (la mayoría 3–10×) la agresiva arriesga ~1–2 % por operación, poco más que la gemela.
+
 ## Carry de funding: fase 3 hecha, SIMULADO y en marcha (19/11/2026)
 
 - **Motor propio** `carry/motor.py` (`python -m carry.motor`): proceso aparte del bot y del panel (lo arranca

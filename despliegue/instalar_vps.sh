@@ -162,7 +162,7 @@ if [ "$PRUEBA" != "1" ]; then timedatectl set-timezone Europe/Madrid || true; fi
 mkdir -p "$DESTINO/solicitudes"
 [ "$PRUEBA" = "1" ] || chown "$USUARIO" "$DESTINO/solicitudes"
 if [ "$PRUEBA" != "1" ]; then
-  for u in bot-ballenas.service bot-ballenas-panel.service bot-ballenas-carry.service \
+  for u in bot-ballenas.service bot-ballenas-panel.service bot-ballenas-carry.service bot-ballenas-agresiva.service \
            bot-ballenas-copia.service bot-ballenas-copia.timer \
            bot-ballenas-laboratorio.service bot-ballenas-laboratorio.timer \
            bot-ballenas-investigacion.service bot-ballenas-investigacion.timer \
@@ -175,7 +175,7 @@ if [ "$PRUEBA" != "1" ]; then
     cp "$DESTINO/despliegue/bot-ballenas-recordatorio.service" "$DESTINO/despliegue/bot-ballenas-recordatorio.timer" /etc/systemd/system/
   fi
   systemctl daemon-reload
-  systemctl enable bot-ballenas bot-ballenas-panel bot-ballenas-carry >/dev/null
+  systemctl enable bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva >/dev/null
   systemctl enable --now bot-ballenas-investigacion.timer bot-ballenas-laboratorio.timer bot-ballenas-copia.timer >/dev/null
   systemctl enable --now bot-ballenas-laboratorio.path bot-ballenas-investigacion.path >/dev/null
   if [ "$PROVEEDOR" = "oracle" ]; then systemctl enable --now bot-ballenas-recordatorio.timer >/dev/null; fi
@@ -186,7 +186,7 @@ echo "================================================================"
 echo " Instalación terminada."
 echo "  1) Copias diarias a Cloudflare R2:   sudo bash $DESTINO/despliegue/configurar_copias.sh"
 echo "  2) Panel por Cloudflare Tunnel:      sudo bash $DESTINO/despliegue/cloudflare_linux.sh"
-echo "  3) Arrancar el bot y el panel:       sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry"
+echo "  3) Arrancar el bot y el panel:       sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva"
 echo "  4) Ver lo que hace:                  journalctl -u bot-ballenas -f      (Ctrl+C para salir)"
 echo "  5) Comprobar el despliegue:          cd $DESTINO && sudo -u $USUARIO .venv/bin/python comprobar.py"
 echo " IMPORTANTE: antes de arrancarlo aquí, para el bot de tu PC. Nunca deben funcionar los dos a la vez."

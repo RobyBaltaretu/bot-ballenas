@@ -1221,3 +1221,71 @@ main.anim-entrada .ceto-lado > :nth-child(2) { animation-delay: .12s; } main.ani
   .sonar-giro, .sonar-eco, .sonar-onda, .carril-pez { animation: none; }
   .bal-brazo, .bal-plato-mueve { transition: none; }
 }
+
+/* ---------------------------------------------------------------- cuenta agresiva (experimento aparte, 25/11/2026) */
+.agresiva .agr-cabecera h1 { margin-bottom: 4px; }
+.agr-aviso { margin: 0 0 10px; padding: 10px 14px; border: 1px solid var(--ambar); border-radius: var(--radio); background: var(--ambar-fondo);
+  color: var(--texto); font-size: .9rem; }
+.agr-kpis .paso.agr-mal .v { color: var(--rojo); }
+.agr-liq-txt { color: var(--rojo); }
+.agr-curvas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.agr-curva { border: 1px solid var(--borde); border-radius: var(--radio); padding: 12px 14px; background: var(--superficie); min-width: 0; }
+.agr-curva-etq { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--texto-2); }
+.agr-curva .cifra { font-family: var(--mono); font-size: 1.3rem; margin: 2px 0; }
+.agr-curva .variacion { font-size: .8rem; color: var(--texto-2); min-height: 1.2em; }
+.agr-freno { display: grid; grid-template-columns: minmax(150px, 1fr) 2fr 120px; align-items: center; gap: 10px; margin: 8px 0; font-size: .88rem; }
+.agr-freno-barra { height: 8px; border-radius: 99px; background: var(--superficie-2); overflow: hidden; }
+.agr-freno-relleno { display: block; height: 100%; background: var(--ambar); border-radius: 99px; transition: width .6s ease; }
+.agr-freno-relleno.mal { background: var(--rojo); }
+.agr-freno-v { font-family: var(--mono); font-size: .8rem; color: var(--texto-2); text-align: right; }
+.agr-quebrada { padding: 10px 14px; border-radius: var(--radio); background: var(--rojo-fondo); border: 1px solid var(--rojo); }
+.agr-pausa { padding: 10px 14px; border-radius: var(--radio); background: var(--ambar-fondo); border: 1px solid var(--ambar); }
+.agr-comp th[scope="row"] { text-align: left; font-weight: 500; color: var(--texto-2); }
+.agr-pos { border: 1px solid var(--borde); border-radius: 14px; padding: 14px 16px; margin: 0 0 14px; background: var(--superficie); }
+.agr-pos-cab { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 1.05rem; }
+.agr-escalera { position: relative; height: 58px; margin: 6px 12px 16px; }
+.agr-pista { position: absolute; left: 0; right: 0; top: 28px; height: 2px; background: var(--borde-fuerte); }
+.agr-nivel { position: absolute; top: 20px; width: 2px; height: 18px; margin-left: -1px; background: var(--texto-2); }
+.agr-nivel-etq { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); font-size: .64rem; color: var(--texto-2); white-space: nowrap; }
+.agr-nivel.liq { background: var(--rojo); width: 4px; margin-left: -2px; } .agr-nivel.liq .agr-nivel-etq { color: var(--rojo); top: -18px; }
+.agr-nivel.stop { background: var(--ambar); } .agr-nivel.stop .agr-nivel-etq { color: var(--ambar); top: -18px; }
+.agr-nivel.entrada { background: var(--texto); height: 26px; top: 16px; } .agr-nivel.entrada .agr-nivel-etq { top: -16px; color: var(--texto); }
+.agr-nivel.obj { background: var(--verde); opacity: .55; } .agr-nivel.obj.tocado { opacity: 1; height: 24px; top: 17px; }
+.agr-marca { position: absolute; top: 24px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--enlace);
+  box-shadow: 0 0 0 4px var(--azul-fondo); transition: left .6s ease; }
+.agr-marca span { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); font-family: var(--mono); font-size: .68rem; color: var(--enlace); white-space: nowrap; }
+.agr-piernas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.agr-pierna { border: 1px solid var(--borde); border-radius: 12px; padding: 10px 12px; background: var(--superficie-2); min-width: 0; }
+.agr-pierna.peligro { border-color: var(--rojo); }
+.agr-pierna.vacia { opacity: .7; }
+.agr-pierna-etq { font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; color: var(--texto-2); display: flex; align-items: center; gap: 6px; }
+.agr-pierna-v { font-family: var(--mono); font-size: 1.15rem; margin: 4px 0 6px; }
+.agr-mcs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.agr-mc { border: 1px solid var(--borde); border-radius: var(--radio); padding: 12px 14px; background: var(--superficie); }
+.agr-mc h3 { margin: 0 0 6px; font-size: .95rem; }
+@media (max-width: 720px) {
+  .agr-curvas, .agr-piernas, .agr-mcs { grid-template-columns: minmax(0, 1fr); }
+  .agr-freno { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .agr-freno-v { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) { .agr-marca, .agr-freno-relleno { transition: none; } }
+/* Gráfico de velas de cada señal abierta de la cuenta agresiva */
+.grafico-velas { height: 260px; margin: 8px 0 6px; padding-right: 0; }
+.grafico-velas .mecha { stroke-width: 1; }
+.grafico-velas .mecha.vela-sube { stroke: var(--verde); } .grafico-velas .mecha.vela-baja { stroke: var(--rojo); }
+.grafico-velas .cuerpo.vela-sube { fill: var(--verde); } .grafico-velas .cuerpo.vela-baja { fill: var(--rojo); }
+.grafico-velas .vela-entrada { stroke: var(--texto-2); stroke-width: 1; stroke-dasharray: 3 3; }
+.grafico-velas .nivel.liq { stroke: var(--rojo); stroke-width: 2; stroke-dasharray: none; opacity: .9; }
+.grafico-velas .nivel.entrada { stroke: var(--texto); opacity: .7; }
+.grafico-velas .nivel.ahora { stroke: var(--enlace); stroke-dasharray: 1 3; }
+.grafico-velas .nivel-texto.liq { color: var(--rojo); font-weight: 600; }
+.grafico-velas .nivel-texto.ahora { color: var(--enlace); }
+.grafico-velas .nivel-texto.tocado { opacity: .55; text-decoration: line-through; }
+.grafico-velas .marca-punto.objetivo { border-color: var(--verde); background: var(--verde); }
+.grafico-velas .marca-punto.stop { border-color: var(--rojo); background: var(--rojo); }
+.agr-grafico { margin: 4px 0 12px; }
+.agr-grafico-cab { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.agr-grafico-leyenda { font-family: var(--mono); font-size: .76rem; color: var(--texto-2); min-height: 1.3em; }
+.agr-grafico-leyenda .sube { color: var(--verde); } .agr-grafico-leyenda .baja { color: var(--rojo); }
+.agr-grafico .periodos { margin: 0; }
+.agr-grafico .periodos button { padding: 4px 10px; font-size: .78rem; }

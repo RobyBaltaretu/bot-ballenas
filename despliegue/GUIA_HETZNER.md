@@ -129,7 +129,7 @@ sudo bash /opt/bot-ballenas/despliegue/configurar_copias.sh
    La ruta pública debe seguir apuntando a `http://localhost:8080`.
 2. Arranca todo:
    ```
-   sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry
+   sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva
    journalctl -u bot-ballenas -f          # Ctrl+C para dejar de mirar (el bot sigue)
    ```
    Te llegará «🤖 Bot en marcha» por Telegram.
@@ -163,7 +163,7 @@ sudo bash /opt/bot-ballenas/despliegue/configurar_copias.sh
 `tar -xzf bot-actualizacion.tar.gz && cd bot-ballenas && sudo bash despliegue/actualizar_vps.sh`.
 **Nunca subas la carpeta del PC entera** (llevaría tu `.env`).
 
-**Volver al PC** (si algún día hiciera falta): `sudo systemctl stop bot-ballenas bot-ballenas-panel bot-ballenas-carry`
+**Volver al PC** (si algún día hiciera falta): `sudo systemctl stop bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva`
 en el servidor, trae los datos con `scp` y abre `INICIAR.bat`. Nunca los dos a la vez.
 
 ## Seguridad

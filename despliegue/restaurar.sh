@@ -19,7 +19,7 @@ rclone size "$ORIGEN" || { echo "No encuentro la copia en R2."; exit 1; }
 read -r -p "Esto SUSTITUYE los datos actuales del bot por los de la copia. ¿Seguir? escribe RESTAURAR: " r < /dev/tty
 [ "$r" = "RESTAURAR" ] || { echo "Cancelado."; exit 1; }
 
-systemctl stop bot-ballenas bot-ballenas-panel bot-ballenas-carry || true
+systemctl stop bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva || true
 APARTE="$DESTINO/datos_antes_de_restaurar_$(date -u +%Y%m%dT%H%M%SZ)"
 mkdir -p "$APARTE"
 for f in estado.json papel.json aprendizaje.json promociones.json config.json; do
@@ -28,4 +28,4 @@ done
 rclone copy "$ORIGEN" "$DESTINO" --transfers 4 --retries 3 -q
 chown -R "$USUARIO:$USUARIO" "$DESTINO"
 echo "Restaurado. Lo que había antes se ha guardado en $APARTE."
-echo "Arranca el bot:  sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry"
+echo "Arranca el bot:  sudo systemctl start bot-ballenas bot-ballenas-panel bot-ballenas-carry bot-ballenas-agresiva"

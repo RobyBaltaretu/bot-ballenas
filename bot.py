@@ -42,6 +42,7 @@ from dotenv import load_dotenv
 
 import cartera_funding as cartera
 import configuracion as conf
+import curva_valor
 import vigilancia
 from aprendizaje import Memoria
 from ballenas import FlujoBallenas, moneda_valida
@@ -1754,6 +1755,22 @@ class Bot:
         return factor_capital(saldo or 0, e.get("saldo_maximo"), ultimos, self.c["gestion_capital"],
                               e.get("saldo_inicio_dia"), e.get("saldo_inicio_semana"), self.horas_sin_operar())
 
+    def _curva_valor(self, eq, hist):
+        """CP-M17 (auditoría 26/11, T-13): un punto por día UTC en registro/curva_valor.jsonl, sin recortar. Al crearlo
+        rellena los días desde la puesta a cero (historial_saldo o, si no hay, saldo inicial + cierres del ledger)."""
+        ahora = time.time()
+        hoy = curva_valor.dia_utc(ahora)
+        if getattr(self, "_curva_dia", None) == hoy:
+            return
+        papel = getattr(self.ej, "ex", None)
+        saldo_inicial = papel.d.get("saldo_inicial") if isinstance(getattr(papel, "d", None), dict) else None
+        try:
+            curva_valor.registrar(os.path.join(DIR_REGISTRO, curva_valor.ARCHIVO), ahora, eq,
+                                  self.inicio_cuenta_simulada(), saldo_inicial, lambda: self.ledger.leer()[0], hist)
+            self._curva_dia = hoy
+        except Exception as e:  # noqa: BLE001  (un informe: nunca para el bot)
+            log_sis.warning("No pude escribir la curva de valor diaria: %s", e)
+
     def escribir_panel(self):
         """Foto del estado de TRADING para el panel (la del sistema va en estado_sistema.json)."""
         try:
@@ -1763,7 +1780,9 @@ class Bot:
             hist = e.setdefault("historial_saldo", [])
             if eq is not None and (not hist or time.time() - hist[-1][0] >= 300):
                 hist.append([int(time.time()), round(eq, 4)])
-                del hist[:-3000]
+                del hist[:-3000]                    # solo para el gráfico; la curva completa va en curva_valor.jsonl
+            if eq is not None:
+                self._curva_valor(eq, hist)
             inf = (self.gestor.ultimo_informe if self.gestor else None) or {}
             posiciones = []
             for m, d in e["posiciones"].items():

@@ -306,6 +306,21 @@ class BotShadowYSimulado(ConCarpeta):
         b.c["piramide"] = {"activa": True, "fraccion": 0.5, "riesgo_max_frac_original": 1.0}
         return b, op, llamadas
 
+    def test_curva_de_valor_diaria(self):
+        # CP-M17 (auditoría 26/11, T-13): un punto por día UTC en registro/curva_valor.jsonl, sin recortar.
+        import curva_valor
+        b, _ = self.nuevo("simulado")
+        b.leer_precios()
+        b.conciliacion_ok = b.conciliacion_inicial()                    # sin cuenta leída no hay valor que guardar
+        b.escribir_panel()
+        b.escribir_panel()                                              # mismo día: no se repite
+        ruta = os.path.join(self.bot.DIR_REGISTRO, curva_valor.ARCHIVO)
+        puntos = curva_valor.leer(ruta)
+        self.assertEqual(len(puntos), 1)
+        self.assertEqual(puntos[0]["fuente"], "equity")
+        self.assertEqual(puntos[0]["dia"], curva_valor.dia_utc(time.time()))
+        self.assertGreater(puntos[0]["equity"], 0)
+
     def test_ampliar_tras_cobrar_el_tp1_espera_1r_mas(self):
         # CP-E06 (auditoría 26/11): con el TP1 cobrado no se recompra hasta que el precio pase el TP1 en 1 R.
         b, op, llamadas = self._bot_con_op_en_breakeven()

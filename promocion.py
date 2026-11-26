@@ -77,7 +77,9 @@ ARCHIVOS_SIN_EFECTO = ("panel.py", "notificaciones.py", "observabilidad.py", "in
                        # Manifiesto de datos del laboratorio (huecos, funding, historia cambiada): solo informa.
                        "manifiesto_datos.py",
                        # Sónar de sombras (panel): resume lo descartado y seguido en papel; no decide nada.
-                       "sombras.py")
+                       "sombras.py",
+                       # Curva de valor diaria (CP-M17): solo escribe un informe.
+                       "curva_valor.py")
 # Partes de config.json que NO deciden nada (no entran en la huella). Todo lo demás, sí (también
 # 'contexto_externo': fuentes, frecuencia y desviación máxima alteran los rasgos que ve el cerebro).
 CONFIG_SIN_EFECTO = ("panel", "modo", "real", "saldo_simulado_usd", "shadow", "feed", "agenda", "avisos")

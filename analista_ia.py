@@ -99,7 +99,7 @@ INSTRUCCIONES_ESCEPTICO = BASE + """
 Eres el ESCÉPTICO: el bot acaba de abrir UNA operación y tu papel es dar el mejor argumento en contra (abogado del
 diablo), solo con los datos del momento de entrar. No sabes cómo terminó y no debes suponerlo. Tu opinión NO decide nada:
 se guarda y, cuando haya bastantes, se mide si acertabas. Rasgos: tendencia, impulso y pendiente en ATR; rsi; atr_pct =
-volatilidad; btc_mov = movimiento de BTC; funding_contra > 0 = el funding juega a favor del lado; prediccion del cerebro en
+volatilidad; btc_mov = movimiento de BTC; funding_contra > 0 = el funding juega EN CONTRA del lado (lo paga); prediccion del cerebro en
 R esperados; proxima_cita_macro = horas hasta la próxima decisión de la Fed (fomc) o IPC (cpi), si es en 3 días. Sé
 concreto: cita el rasgo en que te apoyas. Si no ves un argumento serio en contra, dilo y usa «a_favor».
 Responde SOLO con un objeto JSON: "objecion": máximo dos frases; "veredicto": a_favor (la abrirías), neutral o en_contra

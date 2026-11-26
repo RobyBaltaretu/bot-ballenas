@@ -467,3 +467,14 @@ class Gramatica(unittest.TestCase):
                      dict(IDEA, disparador={"tipo": "ruptura", "n": 7}), dict(IDEA, disparador={"tipo": "ruptura"}),
                      dict(IDEA, disparador={"tipo": "cruce_medias", "rapida": 20, "lenta": 30, "x": 1})):
             self.assertFalse(investigacion.idea_valida(mala), mala)
+
+
+class PromptEsceptico(unittest.TestCase):
+    """CP-M06 (auditoría 26/11, IA-01): funding_contra = lado × funding (motor.py, bot.py). Con funding positivo el
+    largo PAGA, así que funding_contra > 0 es funding EN CONTRA. El prompt decía lo contrario."""
+
+    def test_funding_contra_en_contra(self):
+        txt = analista_ia.INSTRUCCIONES_ESCEPTICO
+        self.assertIn("funding_contra > 0 = el funding juega EN CONTRA del lado (lo paga)", txt)
+        self.assertNotIn("juega a favor del lado", txt)
+

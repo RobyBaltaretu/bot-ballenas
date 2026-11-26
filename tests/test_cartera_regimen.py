@@ -11,7 +11,7 @@ from unittest import mock
 import cartera_funding as cartera
 import cerebro
 import configuracion as conf
-from tests.comunes import ConCarpeta, config, nuevo_papel
+from tests.comunes import ConCarpeta, aislar_bot, config, nuevo_papel
 from tests.test_bot import CerebroFalso, InfoFalsa, modulos_falsos, preparar_rutas
 
 AQUI = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -149,6 +149,7 @@ class BotCarteraYRegimen(ConCarpeta):
         b = self.bot.Bot(c, info, ej, cuenta, None, Telegram(None, None), ledger, Sistema(self.dir),
                          Registro(os.path.join(self.dir, "promociones.json")))
         b.cerebro = CerebroFalso(abre=True)
+        aislar_bot(b)                                # CP-M19: sin red
         b.leer_precios()
         if modo == "simulado":
             b.conciliacion_ok = b.conciliacion_inicial()

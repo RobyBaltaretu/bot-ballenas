@@ -9,7 +9,7 @@ import types
 import unittest
 from unittest import mock
 
-from tests.comunes import ConCarpeta, MercadoFalso, config
+from tests.comunes import ConCarpeta, MercadoFalso, aislar_bot, config
 
 SUB = "0x" + "ab" * 20
 MAESTRA = "0x" + "cd" * 20
@@ -216,6 +216,7 @@ class BotShadowYSimulado(ConCarpeta):
         b = self.bot.Bot(c, info, ej, cuenta, None, self.Telegram(None, None), ledger, self.Sistema(self.dir),
                          self.Registro(os.path.join(self.dir, "promociones.json")))
         b.cerebro = CerebroFalso(abre=True)          # el cerebro real se prueba en test_cerebro_vivo.py
+        aislar_bot(b)                                # CP-M19: sin red
         return b, ledger
 
     def test_si_el_cerebro_dice_no_no_entra(self):

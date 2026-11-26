@@ -58,6 +58,17 @@ class MercadoFalso:
                               "oraclePx": str(p)} for m, p in self.precios.items()]
 
 
+def aislar_bot(b):
+    """CP-M19 (auditoría 26/11, T-09): el bot de las pruebas no sale a la red. Sustituye por versiones sin red lo que el
+    bot lee fuera de Info (que ya es falso): la tabla de ballenas (stats-data.hyperliquid.xyz), los lectores públicos de
+    Binance/Bybit y la descarga en segundo plano del funding histórico (api.hyperliquid.xyz). tests/__init__.py hace
+    fallar la prueba si algo intenta conectarse igualmente."""
+    b._leaderboard = lambda: []
+    b.ctx_externo.lectores = []
+    b.motor.preparar_funding = lambda: None
+    return b
+
+
 def nuevo_papel(carpeta, mercado, saldo=1000.0):
     from papel import CuentaPapel, InfoConPapel
     cuenta = CuentaPapel(mercado, os.path.join(carpeta, "papel.json"), saldo, 0.00015, 0.00045, LOG)

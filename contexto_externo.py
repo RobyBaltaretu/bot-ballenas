@@ -33,20 +33,27 @@ def _dia(ts):
     return time.strftime("%Y-%m-%d", time.gmtime(ts))
 
 
+def _fallo(e):
+    return f"{type(e).__name__}: {e}"[:160]
+
+
 class LectorBinance:
     nombre = "binance"
 
     def __init__(self, cliente):
         self.c, self.url = cliente, Binance.URL
         self._intervalos, self._intervalos_ts = {}, 0.0
+        # CP-M23 (auditoría 26/11): partes de la lectura que fallaron en la última pasada (antes, en silencio).
+        self.fallos = {}
 
     def _horas_funding(self):
         if time.time() - self._intervalos_ts > 3600:
             try:
                 info = self.c.get(self.url + "/fapi/v1/fundingInfo", {})
                 self._intervalos = {x["symbol"]: int(x.get("fundingIntervalHours") or 8) for x in info}
-            except Exception:  # noqa: BLE001  (si falla, 8 h por defecto)
-                pass
+                self.fallos.pop("intervalos_funding", None)
+            except Exception as e:  # noqa: BLE001  (si falla, 8 h por defecto; queda anotado)
+                self.fallos["intervalos_funding"] = f"{_fallo(e)} (uso 8 h)"
             self._intervalos_ts = time.time()
         return self._intervalos
 
@@ -55,6 +62,7 @@ class LectorBinance:
         prem = {x["symbol"]: x for x in self.c.get(self.url + "/fapi/v1/premiumIndex", {})}
         tick = {x["symbol"]: x for x in self.c.get(self.url + "/fapi/v1/ticker/24hr", {})}
         horas = self._horas_funding()
+        sin_oi = []
         out = {}
         for s in simbolos:
             p, t = prem.get(s), tick.get(s)
@@ -66,9 +74,13 @@ class LectorBinance:
             try:
                 oi = self.c.get(self.url + "/fapi/v1/openInterest", {"symbol": s})
                 fila["oi_usd"] = float(oi.get("openInterest") or 0) * precio
-            except Exception:  # noqa: BLE001
-                pass
+            except Exception as e:  # noqa: BLE001  (sin OI de ese símbolo: queda anotado)
+                sin_oi.append(f"{s} ({type(e).__name__})")
             out[s] = fila
+        if sin_oi:
+            self.fallos["open_interest"] = f"sin OI de {len(sin_oi)}: {', '.join(sin_oi[:5])}"
+        else:
+            self.fallos.pop("open_interest", None)
         return out
 
 
@@ -90,6 +102,7 @@ class LectorBybit:
     def __init__(self, cliente):
         self.c, self.url = cliente, Bybit.URL
         self._intervalos, self._intervalos_ts = {}, 0.0
+        self.fallos = {}                                   # CP-M23: ver LectorBinance
 
     def _horas_funding(self):
         if time.time() - self._intervalos_ts > 3600:
@@ -97,8 +110,9 @@ class LectorBybit:
                 d = self.c.get(self.url + "/v5/market/instruments-info", {"category": "linear", "limit": 1000})
                 self._intervalos = {x["symbol"]: max(1, int(x.get("fundingInterval") or 480) // 60)
                                     for x in d.get("result", {}).get("list", [])}
-            except Exception:  # noqa: BLE001
-                pass
+                self.fallos.pop("intervalos_funding", None)
+            except Exception as e:  # noqa: BLE001  (si falla, 8 h por defecto; queda anotado)
+                self.fallos["intervalos_funding"] = f"{_fallo(e)} (uso 8 h)"
             self._intervalos_ts = time.time()
         return self._intervalos
 
@@ -136,6 +150,27 @@ class ContextoExterno:
         self.ts = None
         self.escritos = 0
         self.recientes = {}                   # moneda -> {"ts", "1h": velas, "4h": velas, "funding": regs}
+        self.fallos_series = {}               # moneda -> último error al leer su serie (CP-M23)
+        self._avisados = {}                   # fuente -> (partes avisadas, ts): no repetir el aviso en cada lectura
+
+    def _avisar(self, fuente, fallos):
+        """CP-M23 (auditoría 26/11): un fallo de una fuente externa deja rastro en el log (nivel aviso). Se avisa cuando
+        cambia qué partes fallan, y como mucho una vez por hora si sigue igual. Sin fallos, se anota la recuperación."""
+        claves = tuple(sorted(fallos))
+        avisados, log = self.__dict__.setdefault("_avisados", {}), getattr(self, "log", None)
+        previas, ts = avisados.get(fuente, ((), 0.0))
+        ahora = time.time()
+        if not claves:
+            if previas and log:
+                log.info("Contexto externo: %s vuelve a leerse completa.", fuente)
+            avisados.pop(fuente, None)
+            return
+        if claves == previas and ahora - ts < 3600:
+            return
+        avisados[fuente] = (claves, ahora)
+        if log:
+            log.warning("Contexto externo: fallo en %s (%s). Los rasgos afectados quedan «sin dato».", fuente,
+                             "; ".join(f"{k}: {v}" for k, v in sorted(fallos.items())))
 
     # ------------------------------------------------------------ ciclo
     def actualizar(self, monedas, mids, funding_hl, volumen_hl=None, ahora=None, en_segundo_plano=True):
@@ -174,11 +209,17 @@ class ContextoExterno:
                         continue
                     if m not in por_fuente[lec.nombre]:
                         por_fuente[lec.nombre][m] = fila
-                self.estado[lec.nombre] = {"estado": "correcto", "detalle": f"{len(por_fuente[lec.nombre])} monedas",
-                                           "ts": ahora}
+                fallos = dict(getattr(lec, "fallos", None) or {})
+                detalle = f"{len(por_fuente[lec.nombre])} monedas"
+                if fallos:
+                    detalle += " · fallos parciales: " + "; ".join(f"{k}: {v}" for k, v in sorted(fallos.items()))
+                self.estado[lec.nombre] = {"estado": "degradado" if fallos else "correcto", "detalle": detalle,
+                                           "ts": ahora, "fallos": fallos}
+                self._avisar(lec.nombre, fallos)
             except Exception as e:  # noqa: BLE001  (bloqueo regional, red caída...)
                 self.estado[lec.nombre] = {"estado": "fallido", "detalle": f"no responde ({type(e).__name__})",
-                                           "ts": ahora}
+                                           "ts": ahora, "fallos": {"lectura": _fallo(e)}}
+                self._avisar(lec.nombre, {"lectura": _fallo(e)})
         filas = {}
         for m in monedas:
             ext = {f: d[m] for f, d in por_fuente.items() if m in d}
@@ -216,8 +257,17 @@ class ContextoExterno:
                 r = lec.recientes(fila["simbolo"])
                 with self.bloqueo:
                     self.recientes[m] = dict(r, ts=ahora)
-            except Exception:  # noqa: BLE001  (sin serie: el cerebro trata esos rasgos como «sin dato»)
+                self.fallos_series.pop(m, None)
+            except Exception as e:  # noqa: BLE001  (sin serie: el cerebro trata esos rasgos como «sin dato»)
+                self.fallos_series[m] = _fallo(e)
                 continue
+        if self.fallos_series and lec:
+            est = self.estado.get(lec.nombre) or {}
+            fallos = dict(est.get("fallos") or {}, series_cerebro=f"{len(self.fallos_series)} monedas sin serie "
+                                                                 f"({', '.join(sorted(self.fallos_series)[:5])})")
+            self.estado[lec.nombre] = dict(est, estado="fallido" if est.get("estado") == "fallido" else "degradado",
+                                           fallos=fallos)
+            self._avisar(lec.nombre, fallos)
 
     def _refrescar_serie(self, moneda, ahora):
         """Serie de una moneda ya validada por precio en la última lectura. Un fallo devuelve None: sin dato."""
@@ -228,7 +278,9 @@ class ContextoExterno:
             return None
         try:
             r = dict(lec.recientes(simbolo), ts=ahora)
-        except Exception:  # noqa: BLE001  (red caída, bloqueo regional...)
+        except Exception as e:  # noqa: BLE001  (red caída, bloqueo regional...)
+            self.__dict__.setdefault("fallos_series", {})[moneda] = _fallo(e)
+            self._avisar(lec.nombre, {"series_cerebro": f"{moneda}: {_fallo(e)}"})
             return None
         with self.bloqueo:
             self.recientes[moneda] = r

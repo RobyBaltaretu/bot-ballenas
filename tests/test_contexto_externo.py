@@ -1,5 +1,6 @@
 """Contexto de Binance/Bybit en vivo: solo lectura, nunca frena ni rompe el bot. Sin red: lectores falsos."""
 
+import logging
 import os
 import shutil
 import tempfile
@@ -99,6 +100,88 @@ class TestContexto(unittest.TestCase):
         y = cx.LectorBybit(cli).leer(["BTCUSDT"])
         self.assertEqual(y["BTCUSDT"]["funding_h_pct"], 0.01)
         self.assertEqual(y["BTCUSDT"]["oi_usd"], 9.0)
+
+
+class TestFallosVisibles(unittest.TestCase):
+    """CP-M23 (auditoría 26/11): un fallo parcial de Binance/Bybit (intervalos de funding, OI, series del cerebro) ya no
+    pasa en silencio: queda en el log con nivel aviso y la fuente marcada como degradada con el motivo."""
+
+    def setUp(self):
+        self.dir = tempfile.mkdtemp()
+        self.log = logging.getLogger("prueba.contexto_externo")
+
+    def tearDown(self):
+        shutil.rmtree(self.dir, ignore_errors=True)
+
+    @staticmethod
+    def cliente(caidos):
+        def get(url, p):
+            if any(url.endswith(x) for x in caidos):
+                raise ConnectionError("bloqueado")
+            if url.endswith("/premiumIndex"):
+                return [{"symbol": "BTCUSDT", "markPrice": "100", "lastFundingRate": "0.0004"}]
+            if url.endswith("/ticker/24hr"):
+                return [{"symbol": "BTCUSDT", "lastPrice": "100", "quoteVolume": "5000"}]
+            if url.endswith("/fundingInfo"):
+                return [{"symbol": "BTCUSDT", "fundingIntervalHours": 4}]
+            if url.endswith("/openInterest"):
+                return {"openInterest": "3"}
+            if url.endswith("/instruments-info"):
+                return {"result": {"list": [{"symbol": "BTCUSDT", "fundingInterval": 480}]}}
+            if url.endswith("/tickers"):
+                return {"result": {"list": [{"symbol": "BTCUSDT", "markPrice": "101", "fundingRate": "0.0008",
+                                             "turnover24h": "7", "openInterestValue": "9"}]}}
+            if url.endswith("/klines"):
+                return []
+            if url.endswith("/fundingRate"):
+                return []
+            raise AssertionError(url)
+        return hx.Cliente(get=get, dormir=lambda s: None)
+
+    def test_lectores_anotan_lo_que_falla(self):
+        b = cx.LectorBinance(self.cliente(["/fundingInfo", "/openInterest"]))
+        fila = b.leer(["BTCUSDT"])["BTCUSDT"]
+        self.assertEqual(fila["funding_h_pct"], 0.005)                    # sigue con 8 h por defecto
+        self.assertIsNone(fila["oi_usd"])
+        self.assertIn("intervalos_funding", b.fallos)
+        self.assertIn("BTCUSDT", b.fallos["open_interest"])
+        y = cx.LectorBybit(self.cliente(["/instruments-info"]))
+        y.leer(["BTCUSDT"])
+        self.assertIn("intervalos_funding", y.fallos)
+        bien = cx.LectorBinance(self.cliente([]))
+        bien.leer(["BTCUSDT"])
+        self.assertEqual(bien.fallos, {})
+
+    def test_fuente_degradada_y_aviso_en_el_log(self):
+        b = cx.LectorBinance(self.cliente(["/fundingInfo"]))
+        c = cx.ContextoExterno({}, self.dir, self.log, lectores=[b])
+        with self.assertLogs(self.log, "WARNING") as reg:
+            c.actualizar(["BTC"], {"BTC": 100.0}, {}, ahora=1.0, en_segundo_plano=False)
+        est = c.resumen()["fuentes"]["binance"]
+        self.assertEqual(est["estado"], "degradado")
+        self.assertIn("intervalos_funding", est["fallos"])
+        self.assertIn("intervalos_funding", est["detalle"])
+        self.assertTrue(any("binance" in x and "intervalos_funding" in x for x in reg.output))
+        self.assertEqual(c.resumen()["monedas"][0]["m"], "BTC")             # los datos que sí llegan se usan
+
+    def test_series_del_cerebro_que_fallan(self):
+        b = cx.LectorBinance(self.cliente(["/klines"]))
+        c = cx.ContextoExterno({}, self.dir, self.log, lectores=[b])
+        with self.assertLogs(self.log, "WARNING") as reg:
+            c.actualizar(["BTC"], {"BTC": 100.0}, {}, ahora=1.0, en_segundo_plano=False)
+        est = c.resumen()["fuentes"]["binance"]
+        self.assertEqual(est["estado"], "degradado")
+        self.assertIn("series_cerebro", est["fallos"])
+        self.assertIn("BTC", c.fallos_series)
+        self.assertTrue(any("series_cerebro" in x for x in reg.output))
+
+    def test_el_aviso_no_se_repite_en_cada_lectura(self):
+        b = cx.LectorBinance(self.cliente(["/openInterest"]))
+        c = cx.ContextoExterno({"cada_min": 0}, self.dir, self.log, lectores=[b])
+        with self.assertLogs(self.log, "WARNING") as reg:
+            for t in (1.0, 2.0, 3.0):
+                c.actualizar(["BTC"], {"BTC": 100.0}, {}, ahora=t, en_segundo_plano=False)
+        self.assertEqual(len(reg.output), 1)
 
 
 if __name__ == "__main__":

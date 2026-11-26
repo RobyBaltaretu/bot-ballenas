@@ -24,7 +24,7 @@ funcional ni la configuración. No se ejecutó ninguna orden real. Las afirmacio
 | [15 — Veredicto final](15_veredicto_final.md) | Puntuaciones, GO/NO-GO, criterios, 20 respuestas |
 | [AUDIT_PROGRESS](AUDIT_PROGRESS.md) | Estado, pendientes y cómo reanudar |
 
-## Para aplicar cambios y para una revisión externa
+## Para aplicar cambios
 
 | Archivo | Contenido |
 |---|---|
@@ -32,8 +32,9 @@ funcional ni la configuración. No se ejecutó ninguna orden real. Las afirmacio
 | [propuestas.json](propuestas.json) | Las mismas propuestas en formato de máquina (fuente única: `experimentos/generar_propuestas.py`) |
 | [INDICE_HALLAZGOS.md](INDICE_HALLAZGOS.md) | Los 50 hallazgos con su ID, severidad y dónde se definen |
 | [PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md](PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md) | Supuestos, dudas y límites de esta auditoría: por dónde empezar a revisarla |
-| [PROMPT_CODEX.md](PROMPT_CODEX.md) | Prompt para que Codex haga su propia auditoría a ciegas y después evalúe esta |
-| [plantilla_evaluacion_propuestas.json](plantilla_evaluacion_propuestas.json) | Plantilla que el revisor rellena: 61 propuestas, 50 hallazgos, 3 experimentos |
+| [PLAN_DESARROLLO.md](PLAN_DESARROLLO.md) | **Lo que tiene que desarrollar el programador**: 48 tareas en 5 fases, sin nada que reduzca la operativa; 13 propuestas excluidas con su motivo |
+| [plan_desarrollo.json](plan_desarrollo.json) | El mismo plan en formato de máquina |
+| [PROMPT_DESARROLLADOR.md](PROMPT_DESARROLLADOR.md) | Prompt para que el desarrollador se ponga a ello |
 
 ## Experimentos reproducibles (`experimentos/`)
 
@@ -47,7 +48,7 @@ funcional ni la configuración. No se ejecutó ninguna orden real. Las afirmacio
 | `descargar_binance.sh` | Descarga los datos públicos que usa el backtest | ≈ 2 800 archivos, 23 MB |
 | `generar_propuestas.py` | Genera `CAMBIOS_PROPUESTOS.md` y `propuestas.json` | — |
 | `generar_indice_hallazgos.py` | Genera `INDICE_HALLAZGOS.md` (falla si se cita un ID sin definir) | — |
-| `generar_plantilla_evaluacion.py` | Genera `plantilla_evaluacion_propuestas.json` | — |
+| `generar_plan_desarrollo.py` | Genera `PLAN_DESARROLLO.md` y `plan_desarrollo.json` desde las propuestas | — |
 
 Reproducción comprobada el 24/11/2026: los tres experimentos dan resultados idénticos a los JSON guardados.
 

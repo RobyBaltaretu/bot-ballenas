@@ -1,74 +1,45 @@
-# Entrega al desarrollador
+# Prompt para el desarrollador
 
-## Antes de dárselo (lo hace Roberto)
-
-1. **Esperar la evaluación de Codex** (`auditoria_codex/fase_b/evaluacion_propuestas.json`). Se aplica lo que ambos
-   aceptan; lo que Codex rechace o cambie, se decide caso a caso.
-2. **Fusionar la rama `claude/audit-algo-trading-bot-nua1pw` (y la de Codex) en `main`**, para que el desarrollador
-   tenga los archivos en la carpeta donde trabaja.
-3. **Decidir las propuestas que son decisión de negocio** (en `CAMBIOS_PROPUESTOS.md` llevan «Decide: propietario»).
-   Marca cada una con SÍ / NO / MÁS ADELANTE en la tabla de abajo; el desarrollador no las tocará sin esa marca.
-
-| ID | Decisión | SÍ / NO / MÁS ADELANTE |
-|---|---|---|
-| CP-E01 | Apagar momentum_4h | |
-| CP-E02 | Quitar la exploración amplia | |
-| CP-E03 | Quitar la exploración del cerebro en simulado | |
-| CP-E06 | Quitar la piramidación | |
-| CP-E07 | Quitar ballenas como señal y veto | |
-| CP-E08 | Quitar el seguimiento de ballenas del bot | |
-| CP-E11 | Quitar el escéptico y el revisor de IA | |
-| CP-E12 | Quitar el factor «objetivo diario» | |
-| CP-E14 | Quitar el túnel sin contraseña (tras poner PANEL_PASSWORD) | |
-| CP-E15 | Apagar la cartera de funding | |
-| CP-E16 | Simplificar las vistas decorativas del panel | |
-| CP-M07 | Riesgo simulado 1 % / 3 % | |
-| CP-M08 | Límites del piloto real 1 % / 3 % / 3 / 2× / −20 % / BTC-ETH-SOL | |
-| CP-M09 | Techos duros del real más bajos | |
-| CP-M10 | Suelo de emergencia −20 % | |
-| CP-M11 | Exposición neta y beta ≤ 100 % | |
-| CP-A05 | Prerregistrar ruptura_4h + régimen | |
-| CP-A10 | Campaña en testnet | |
-| CP-A11 / A16 | Alertas y contraseña del panel (los secretos los pone Roberto) | |
-| CP-A12 | Migración al VPS | |
-| CP-V01 | Seguir el prerregistro de fuerza_4h | |
-
-## Prompt para el desarrollador (copiar desde la línea `=====`)
+Antes de pasárselo: fusiona la rama `claude/audit-algo-trading-bot-nua1pw` en `main` (o dile que trabaje desde esa rama)
+para que tenga la carpeta `auditoria_independiente/`. Copia el texto entre las dos líneas `=====`.
 
 =====
 
-Vas a aplicar las correcciones de dos auditorías externas del bot. Todo está en el repositorio:
-- `auditoria_independiente/CAMBIOS_PROPUESTOS.md` y `propuestas.json`: 61 propuestas con ID `CP-…`, dónde, qué
-  cambiar, evidencia, criterio de aceptación y dependencias.
-- `auditoria_codex/fase_b/evaluacion_propuestas.json`: la evaluación de cada propuesta por Codex.
-- `auditoria_independiente/PROMPT_DESARROLLADOR.md`: la tabla de decisiones de Roberto.
+Vas a corregir errores y añadir mejoras al bot a partir de una auditoría independiente. Todo está en
+`auditoria_independiente/`:
+- `PLAN_DESARROLLO.md` (y `plan_desarrollo.json`): **las 48 tareas que tienes que hacer**, en 5 fases, cada una con
+  dónde está, qué hay ahora, qué hacer, por qué, riesgo, si cambia la huella, criterio de «hecho» y dependencias.
+- `03_auditoria_tecnica.md` e `INDICE_HALLAZGOS.md`: el detalle de cada hallazgo citado en las tareas.
+- `experimentos/`: scripts que reproducen las mediciones (forense del ledger, sesgo de las sombras, backtest).
 
-Qué aplicar:
-1. Una propuesta se aplica solo si Codex la marca `ACEPTAR` o `ACEPTAR_CON_CAMBIOS` (en ese caso, con sus cambios) y,
-   si es «Decide: propietario», Roberto la ha marcado SÍ. Las marcadas `RECHAZAR`, `NO_VERIFICABLE`, NO o MÁS
-   ADELANTE no se tocan; lístalas al final con su motivo.
-2. Antes de cambiar nada, comprueba en el código que el diagnóstico sigue siendo cierto (las líneas pueden haberse
-   movido). Si no lo es, no lo apliques y dilo.
+Regla principal del propietario: **el bot tiene que seguir operando**. Ninguna tarea puede impedir, pausar ni reducir
+las entradas en simulado (no apagues estrategias, vías de exploración, ballenas ni la cartera de funding, no bajes el
+riesgo ni endurezcas límites del simulado). Si al implementar algo ves que reduciría la operativa, no lo hagas así:
+busca la forma que no la reduzca o déjalo sin hacer y explícalo. Las 13 propuestas de la sección «Excluidas» del plan
+no se tocan.
 
 Cómo trabajar:
-- Por fases, en el orden de `CAMBIOS_PROPUESTOS.md` («Orden de aplicación recomendado»): fase 0, luego 1, luego 2.
-  Una rama y un commit por propuesta (mensaje con su ID), y una rama por fase. No pases a la siguiente fase sin que
-  Roberto revise la anterior.
-- Cada propuesta con su prueba, según su criterio de aceptación. La batería completa
-  (`.venv\Scripts\python -m unittest discover -s tests -t .`) debe pasar al cerrar cada propuesta.
-- Respeta `CLAUDE.md`: nada de modo real, ni órdenes reales, ni secretos; todo `.py` nuevo clasificado en
-  `promocion.py`; panel sin `innerHTML` ni estilos en línea.
-- Los cambios de `piloto_real` y de `TECHOS_REAL` solo se aplican con arranque manual (`INICIAR.bat`), nunca con
-  `/aplicarconfig`.
-- No borres código de estrategias ni datos: lo que se elimina de la operativa se desactiva y queda documentado en el
-  cementerio de investigación.
-- Casi todo cambia la huella de `promocion.py` y reinicia la evidencia: es esperado. Al terminar la fase 0, propón a
-  Roberto una puesta a cero de la cuenta simulada (`reiniciar_simulado.json`) para empezar evidencia limpia.
+1. Por fases y en orden (1 → 5). Dentro de cada fase, respeta las dependencias. Una rama por fase y un commit por
+   tarea, con el ID en el mensaje (p. ej. `CP-M05: deslizamiento del stop con los fills del stop`).
+2. Antes de cambiar nada, comprueba en el código que el problema sigue ahí tal como se describe (las líneas pueden
+   haberse movido). Si no es así, no lo cambies y dilo.
+3. Cada tarea con su prueba en `tests/` según su «Hecho cuando». La batería completa
+   (`.venv\Scripts\python -m unittest discover -s tests -t .`) tiene que pasar al cerrar cada tarea.
+4. Respeta `CLAUDE.md`: nada de modo real ni órdenes reales, no muestres secretos, todo `.py` nuevo clasificado en
+   `promocion.ARCHIVOS_CODIGO` o en los «sin efecto», panel sin `innerHTML` ni estilos en línea, no borres datos.
+5. Lo marcado «Acción de Roberto» (contraseña del panel, Telegram, Healthchecks, VPS, testnet) déjalo preparado y
+   documentado paso a paso; los secretos los pone él. CP-M08 y CP-M09 solo afectan al modo real y se aplican con
+   arranque manual (`INICIAR.bat`), nunca con `/aplicarconfig`.
+6. Para aplicar cada fase en el bot en marcha usa el reinicio ordenado de siempre (`/aplicarconfig`). Casi todas las
+   tareas cambian la huella de `promocion.py`: es esperado.
+7. No hagas push a `main` ni fusiones: Roberto revisa cada fase antes de pasar a la siguiente.
 
 Al terminar cada fase, entrega:
-- tabla `ID → aplicada / no aplicada / modificada`, con el commit y la prueba de cada una;
+- tabla `ID → hecha / no hecha / hecha de otra forma`, con el commit y la prueba de cada una (y el motivo si no);
 - resultado de la batería de pruebas;
-- qué cambió en el comportamiento del bot (qué deja de operar, qué límites cambian);
-- actualización de `CLAUDE.md` con los cambios de la fase.
+- qué cambia en el comportamiento del bot, confirmando que sigue abriendo operaciones igual que antes;
+- `CLAUDE.md` actualizado con los cambios de la fase.
+
+Empieza por la fase 1.
 
 =====

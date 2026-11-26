@@ -70,12 +70,21 @@
 | 7 | Descarga de `data.binance.vision` (2 800 archivos, 4 h + funding, 20 símbolos, 2021-01 → 2026-10) | 0 fallos |
 | 8 | `python3 -I experimentos/backtest_independiente.py <copia> <datos> …` | Ver 04 y 09 |
 | 9 | Búsquedas web (documentación de Hyperliquid, literatura, prensa, proyectos) | Ver 11 |
-| 10 | `generar_propuestas.py`, `generar_indice_hallazgos.py`, `generar_plantilla_evaluacion.py` | 61 propuestas, 50 hallazgos, plantilla |
+| 10 | `generar_propuestas.py`, `generar_indice_hallazgos.py`, `generar_plan_desarrollo.py` | 61 propuestas, 50 hallazgos, plan de 48 tareas |
 | 11 | Re-ejecución de los 3 experimentos sobre la copia | Resultados idénticos a los guardados |
 
 ## Entrega 2 (24/11/2026): paquete para revisión externa
 - `CAMBIOS_PROPUESTOS.md` + `propuestas.json` (61 propuestas, ninguna aplicada), `INDICE_HALLAZGOS.md` (50 IDs),
-  `PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md`, `PROMPT_CODEX.md`, `plantilla_evaluacion_propuestas.json`.
+  `PUNTOS_DEBILES_DE_ESTA_AUDITORIA.md`.
 - Corrección: el documento 12 decía «20 monedas archivadas» para la referencia de mercado; son las 72 monedas con
   velas de 1 h archivadas (las cifras no cambian: el script ya usaba las 72).
 - Definidos 6 IDs citados sin definición (IA-04, S-04, V-01..V-04) en `experimentos/hallazgos_borrador.md`.
+
+## Entrega 3 (26/11/2026): plan para el desarrollador
+- El propietario descarta la revisión de Codex (no había nada suyo en el repositorio remoto: solo `main` y esta rama).
+  Se retiran `PROMPT_CODEX.md`, la plantilla de evaluación y su generador.
+- Condición del propietario: **nada que impida o reduzca que el bot opere**. `PLAN_DESARROLLO.md` / `plan_desarrollo.json`
+  (48 tareas en 5 fases) y 13 propuestas excluidas con su motivo. Transformadas: piramidación corregida en vez de
+  eliminada (CP-E06), avisos en vez de pausas (CP-A07, CP-A14), límites solo para modo real (CP-M08, CP-M09),
+  margen simulado que redimensiona en vez de descartar (CP-M13).
+- `PROMPT_DESARROLLADOR.md` reescrito.

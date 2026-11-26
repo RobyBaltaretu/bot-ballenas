@@ -197,7 +197,6 @@
     "grabar_operaciones": true,
     "operacion_grande_usd": 50000,
     "operacion_enorme_usd": 250000,
-    "dias_guardar": 120,
     "liquidaciones": {
       "activo": true,
       "ventana_min": 60,

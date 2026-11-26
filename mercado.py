@@ -42,7 +42,6 @@ class Mercado:
         self.ultima_senal = {}
         self.subs = {}
         self.ultimo_mensaje = 0.0          # último mensaje del websocket de trades (para vigilar el silencio)
-        self.ultima_limpieza = 0.0
         self.trades_recibidos = 0
         self.observador_grandes = None      # función(evento) opcional: feed del panel
 
@@ -83,7 +82,6 @@ class Mercado:
         if fila:
             self._anotar("ctx", ahora, {"t": int(ahora), "d": fila})
         self._cerrar_minuto(ahora)
-        self._limpiar(ahora)
 
     def _cerrar_minuto(self, ahora):
         m_ahora = int(ahora // 60)
@@ -103,19 +101,9 @@ class Mercado:
         for g in grandes:
             self._anotar("grandes", g["t"], g)
 
-    def _limpiar(self, ahora):
-        """Borra lo grabado hace más de 'dias_guardar' días (por defecto 120)."""
-        if ahora - self.ultima_limpieza < 86400:
-            return
-        self.ultima_limpieza = ahora
-        limite = _dia(ahora - self.cfg.get("dias_guardar", 120) * 86400)
-        try:
-            for f in os.listdir(self.carpeta):
-                partes = f.rsplit("_", 1)
-                if f.endswith(".jsonl") and len(partes) == 2 and partes[1][:10] < limite:
-                    os.remove(os.path.join(self.carpeta, f))
-        except OSError:
-            pass
+    # CP-E13 (auditoría 26/11, W-03): ya NO se borra nada de datos_mercado/. Antes, lo de más de 120 días (OI, flujo y
+    # operaciones grandes) se eliminaba cada día, y es la única historia propia de eso: Hyperliquid no la ofrece.
+    # Disco: unos 200 MB al mes.
 
     # ---------------------------------------------------------------- websocket
     def al_recibir_trades(self, msg):

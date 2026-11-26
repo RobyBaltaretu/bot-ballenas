@@ -171,8 +171,8 @@ DEFECTOS = {
                  "ventana_min": 60, "aumento_min_usd": 50_000, "flujo_min_usd": 100_000, "contra_max_fraccion": 0.5,
                  "veto_usd": 150_000, "sl_atr": 1.5, "barras_max": 8, "datos_max_antiguedad_seg": 180,
                  "salida": {"tp1_r": 1.0, "tp_final_r": 2.5, "trailing_r": 1.0}},
+    # CP-E13: «dias_guardar» ya no existe (datos_mercado/ no se borra nunca); si sigue en config.json, se ignora.
     "mercado": {"grabar_operaciones": True, "operacion_grande_usd": 50_000, "operacion_enorme_usd": 250_000,
-                "dias_guardar": 120,
                 "liquidaciones": {"activo": True, "ventana_min": 60, "caida_oi_pct": 3.0, "movimiento_atr": 2.0,
                                   "sl_atr": 1.5, "barras_max": 6, "espera_horas": 4, "corroboracion_usd": 250_000,
                                   "salida": {"tp1_r": 1.0, "tp_final_r": 2.0, "trailing_r": 0.8}}},
